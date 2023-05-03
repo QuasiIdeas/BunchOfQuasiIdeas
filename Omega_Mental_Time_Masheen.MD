@@ -29,3 +29,10 @@
 
 Огромную сложность также представляется вопрос о деактивации Омеги.
 Можно рассмотреть вариант будущего когда в мире оперируют сразу две Омеги с противоположными целями.
+
+# References
+* https://en.wikipedia.org/wiki/Hiroshi_Sakurazaka
+* https://en.wikipedia.org/wiki/The_Edge_of_Tomorrow_(Asimov_book)
+* https://en.wikipedia.org/wiki/Time_viewer
+
+
