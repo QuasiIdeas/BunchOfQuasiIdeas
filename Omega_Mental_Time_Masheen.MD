@@ -34,5 +34,7 @@
 * https://en.wikipedia.org/wiki/Hiroshi_Sakurazaka
 * https://en.wikipedia.org/wiki/The_Edge_of_Tomorrow_(Asimov_book)
 * https://en.wikipedia.org/wiki/Time_viewer
+* https://en.wikipedia.org/wiki/The_Light_of_Other_Days
+
 
 
