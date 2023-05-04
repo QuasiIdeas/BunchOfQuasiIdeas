@@ -30,6 +30,18 @@
 Огромную сложность также представляется вопрос о деактивации Омеги.
 Можно рассмотреть вариант будущего когда в мире оперируют сразу две Омеги с противоположными целями.
 
+Citations from The_Light_of_Other_Days
+"The new cortical implants, adapted from neural-implant VR apparatus, were the final expression of WormCam technology: a small squeezed-vacuum wormhole generator, together with neural sensor apparatus, buried deep in the cortex of the recipient. The generator was laced with neurotropic chemicals so that, over several months, the recipient’s neurons would grow pathways into the generator. And the neural sensor was a highly sensitive neuron activity pattern analyzer, capable of pinpointing individual neuronal synapses.
+Such an implant could read and write to a brain, and link it to others. By a conscious effort of will, an implant recipient could establish a WormCam connection from the center of her own mind to any other recipient’s.
+Armed with the implants, a new linked community was emerging from the Arenas and the truth squads and other swirling maelstroms of thought and discussion that had come to characterize the new, young, worldwide polity. Brains joined to brains. Minds linked."
+
+“There was a Jesuit called Teilhard de Chardin. He believed that just as life had covered the Earth to form the biosphere, so mankind—thinking life—would eventually encompass life to form a higher layer, a cogitative layer he called the noosphere. He argued that the rough organization of the noosphere would grow, until it cohered into a single supersapient being he called the Omega Point.”
+
+"A WormCam essentially enables us to locate a remote camera (in technical terms a “viewpoint”) anywhere, without the need for physical intervention. WormCam intelligence—“wormint,” as the insiders are already calling it—is proving so valuable that WormCam posts have been set up to monitor most of the world’s political leaders, friendly and otherwise, the leaders of sundry religious and fanatic groups, many of the world’s larger corporations, and so on.
+WormCam technology is intimate and personal. We can watch an opponent in the most private of acts, if necessary. The potential for exposure of illicit activities, even blackmail if we choose, is obvious. But more important is the picture we are now able to build up of an enemy’s intentions. The WormCam gives us information on an opponent’s contacts—for instance weapons suppliers—and we can assess knowledge factors like his religious views, culture, level of education and training, his sources of information, the media outlets he uses."
+
+
+
 # References
 * https://en.wikipedia.org/wiki/Hiroshi_Sakurazaka
 * https://en.wikipedia.org/wiki/The_Edge_of_Tomorrow_(Asimov_book)
