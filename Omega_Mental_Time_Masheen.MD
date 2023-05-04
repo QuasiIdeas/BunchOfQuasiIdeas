@@ -30,7 +30,7 @@
 Огромную сложность также представляется вопрос о деактивации Омеги.
 Можно рассмотреть вариант будущего когда в мире оперируют сразу две Омеги с противоположными целями.
 
-Citations from The_Light_of_Other_Days
+# Citations from The_Light_of_Other_Days
 "The new cortical implants, adapted from neural-implant VR apparatus, were the final expression of WormCam technology: a small squeezed-vacuum wormhole generator, together with neural sensor apparatus, buried deep in the cortex of the recipient. The generator was laced with neurotropic chemicals so that, over several months, the recipient’s neurons would grow pathways into the generator. And the neural sensor was a highly sensitive neuron activity pattern analyzer, capable of pinpointing individual neuronal synapses.
 Such an implant could read and write to a brain, and link it to others. By a conscious effort of will, an implant recipient could establish a WormCam connection from the center of her own mind to any other recipient’s.
 Armed with the implants, a new linked community was emerging from the Arenas and the truth squads and other swirling maelstroms of thought and discussion that had come to characterize the new, young, worldwide polity. Brains joined to brains. Minds linked."
