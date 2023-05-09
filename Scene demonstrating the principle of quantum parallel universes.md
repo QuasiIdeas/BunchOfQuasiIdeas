@@ -25,4 +25,8 @@ Also the simulator can contain some classical physics lab toys, such as mathemat
 Also we need to simulate classical Turing machine in that lab environment. Examples can be found here https://turingmachinesimulator.com/shared/hrtjbntayc Main idea is to grow initial seed of knowledge in the brain of young physicist or computer scientist about quantum mechanics and how this laws related to computation in general.
 
 
+References
+* [Complete virtual experimental lab ROQED Physics](https://youtu.be/6EBIrK_dgPQ)
+* 
+
 
