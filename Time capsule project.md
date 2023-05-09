@@ -1,4 +1,4 @@
-# Site apocalyptoLIB <br/>
+* * * # Site apocalyptoLIB <br/>
 Baranov Vladimir vsbaranov83@gmail.com <br/>
 Document creation date: August 30, 2021<br/>
 <br/>
@@ -521,4 +521,54 @@ Matthias Wandel](https://woodgears.ca/dust_collector/blower_build.html) <br/>
 * Оказание первой медицинской помощи при травмах (ушибах, вывихах, переломах) (Жилин А.Н., Гафарова К.Я.)                                                                                           
 * Первая медицинская помощь при травмах и несчастных случаях (Марченко Д.В.)                
 * Первая помощь при травмах (Юденич В.)                                                    
+* Cyclopedia of Locomotive Engineering 1916
 * 
+* A Compendium of Mechanics 1830	PDF 3 mb
+* A Manual of Steam Engineering 1920	PDF 11 mb
+* A Treatise on Hydraulic and Water Supply Engineering 1886	PDF 24 mb
+* A Treatise on Mining Railway Surveying Engineering 1863	PDF 8 mb
+* A Treatise on the Principles and Practice of Levelling 1870	PDF 12 mb
+* Agricultural Engineering 1913	PDF 21 mb
+* Analysis of Elastic Arches Three-Hinged Two-Hinged and Hingeless 1908	PDF 8 mb
+* Analytical Mechanics for Students of Physics and Engineering 1913	PDF 5 mb
+* Appletons Cyclopaedia of Applied Mechanics 1880	PDF 108 mb
+* Applied Mechanics for Engineers-A Text Book for Students 1909	PDF 21 mb
+* Civil Engineering Types and Devices 1915	PDF 15 mb
+* Cyclopedia of Locomotive Engineering 1916	PDF 72 mb
+* Elements of Civil Engineering 1839	PDF 41 mb
+* Elements of Heat Power Engineering 1912	PDF 29 mb
+* Elements of Sanitary Engineering 1918	PDF 3 mb
+* Engineering Descriptive Geometry 1910	PDF 7 mb
+* Engineering of Power Plants 1916	PDF 36 mb
+* Engineers and Mechanics Pocket Book 1881	PDF 65 mb
+* Every Man His Own Civil Engineer and Surveyor 1895	PDF 5 mb
+* Experimental Engineering and Manual for Testing 1911	PDF 30 mb
+* Handbook of Shoe Factory Engineering 1916	PDF 2 mb
+* Handbook on Engineering 1900	PDF 41 mb
+* Heat Engineering-Applied Thermodynamics for Engineers and Students 1915	PDF 17 mb
+* Key to Steam Engineering 1892	PDF 8 mb
+* Knights New Mechanical Dictionary 1884	PDF 166 mb
+* Manual of Examinations for Engineering Positions 1906	PDF 30 mb
+* Manual of Military Field Engineering 1902	PDF 8 mb
+* Mathematics for Engineering Students 1908	PDF 20 mb
+* Mathematics for Engineering Students-Analytical Geometry and Calculus 1907	PDF 16 mb
+* Mechanics of Engineering 1893	PDF 23 mb
+* Mechanics of Engineering-Theoretical Mechanics 1875	PDF 67 mb
+* Modern Locomotive Engineering with Questions and Answers 1913	PDF 50 mb
+* Modern Steam Engineering in Theory and Practice 1907	PDF 16 mb
+* Pocket Edition of Locomotive Engineering 1911	PDF 19 mb
+* Standard American Cyclopedia of Steam Engineering 1915	PDF 121 mb
+* Steam Power 1916	PDF 22 mb
+* Steam Power Plant Engineering 1917	PDF 62 mb
+* Straight Line Engineering Diagrams 1911	PDF 3 mb
+* Technical Sketching and Free Hand Lettering for Engineering Students 1912	PDF 5 mb
+* The Fighting Engineers 1918	PDF 4 mb
+* The Home Mechanic and Complete Self Instructor 1897	PDF 38 mb
+* The Mechanical Engineering of Steam Power Plants 1897	PDF 39 mb
+* The Panama Canal-Pictorial View 1913	PDF 8 mb
+* The Romance of Modern Invention 1903	PDF 13 mb
+* The Theory of Engineering Drawing 1915	PDF 17 mb
+* The Young Man and Civil Engineering 1922	PDF 2 mb
+* Theoretical Mechanics with an Introduction to the Calculus 1882	PDF 61 mb
+* Twentieth Century Hand Book for Steam Engineers 1913	PDF 106 mb
+* Useful Information for Practical Men 1908
