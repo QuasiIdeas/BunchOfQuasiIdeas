@@ -402,6 +402,7 @@ Matthias Wandel](https://woodgears.ca/dust_collector/blower_build.html) <br/>
 
 # Models of different engines
 [Heat engine](https://youtu.be/FYe_8EFRMyE)
+[Jet engine](https://youtu.be/L24Wf0VlTE0)
 
 # List of books (August 2021)
 
