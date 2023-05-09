@@ -1,0 +1,157 @@
+<html lang="ru" dir="ltr" class="">
+<meta charset="UTF8">
+  <title>Шансы умереть от ковида. </title>
+  <h3><a href="probability_en.html"> ENGLISH VERSION </a></h3>
+Эта форма расчитывает вероятность заражения ковид от «контакта» со случайным человеком 
+с неквестным инфекционным статусом.<br/>
+Данные представлены на Санкт-Петербург 05.10.2020. <br/>
+Вы можете использовать эту форму для данных вашего региона.<br/>
+Я не являюсь профессионалом в медицине или статистике.<br/>
+Формулы для рачета взяты к  
+<a href="https://www.medrxiv.org/content/10.1101/2020.06.06.20124446v2.full.pdf">этой</a> статьи: <br/>
+
+<form name="myForm"  method="post">
+<br/><br/>
+Количество подтвержденных случаев в день (пример Санкт-Петербург):<br/> <input type="text" name="fname" value="44358">
+<br/><br/>
+Население (пример Санкт-Петербург):<br/> <input type="text" name="population" value="4991000">
+<br/><br/>
+Количество контактов в день:<br/> <input type="text" name="contacts" value="1">
+<br/><br/>
+<label for="age">Возраст:</label><br/>
+<select name="age" id="age">
+  <optgroup label="Возраст">
+    <option value="1">между 0 и 49 лет</option>
+    <option value="2">между 50 и 64 лет</option>
+	<option value="3">больше 65 лет</option>
+  </optgroup>
+</select><br/><br/>
+<input type="button" value="Расчитать мои шансы" onclick="return validateForm()">
+<br/><br/><br/>
+<label>
+      Шансы заразиться <label id="chanses_infect"><b></b></label>
+</label>
+<br/>
+<label>
+      Шансы умереть от ковида <label id="chanses"><b></b></label>
+</label>
+<br/>
+<label>
+      Вероятность смерти от ковида <label id="probability"><b></b></label>
+</label>
+<br/>
+<label>
+      Шансы госпитализации <label id="chanses_hosp"><b></b></label>
+</label>
+<br/>
+<label>
+      Вероятность госпитализации <label id="probability_hosp"><b></b></label>
+</label>
+<br/>
+<svg width = "400" height = "180">
+<style>
+    .small { font: italic 13px sans-serif; }
+    .heavy { font: bold 30px sans-serif; }
+    .red { fill: red; stroke: black; stroke-width: 5; opacity: 0.5 }
+    .green { fill: green; stroke: black; stroke-width: 5; opacity: 0.5 }
+    /* Обратите внимание, что цвет текста задаётся с помощью        *
+     * fill свойства, а свойство color используется только для HTML */
+    .Rrrrr { font: italic 40px serif; fill: red; }
+  </style>
+  <rect id = "square" x = "50" y = "20" rx = "20" ry = "20" width = "150" height = "150"
+  class = "green" />
+   <text id = "chanses_square" x="95" y="95" class="small"> unknown </text>
+</svg>
+
+<script>
+function validateForm () {
+  var x = document.forms ["myForm"] ["fname"]. value;
+  var y = document.forms ["myForm"] ["population"]. value;
+  var contacts = document.forms ["myForm"] ["contacts"]. value;
+  var S = 0.95;
+  var Iconfirmed = x / y;
+  var C = 1;
+  var alpha = 0.75;
+  var beta = 0.1;
+  var DInfectious = 8;
+  var sigma = 0.4;
+  var nu = 0.25;
+  var CHR_0_49 = 0.026;
+  var CHR_50_64 = 0.057;
+  var CHR_65 = 0.1;
+  var CFR_0_49 = 0.006;
+  var CFR_50_64 = 0.020;
+  var CFR_65 = 0.062;
+  var term = (sigma * DInfectious + nu * (1 - sigma) * DInfectious);
+  var Pinfection_contact = S * Iconfirmed * C * beta * (1 + alpha / (1 - alpha)) * term;
+  var Pconfirmed_infection_contact = Pinfection_contact / (1 - alpha);
+
+  var age = document.getElementById ("age"). value; // document.forms ["myForm"] ["age"]. value;
+
+  var CHR = 0;
+  var CFR = 0;
+  switch (age)
+  {
+    case "1":
+    // alert ('Not enough');
+    CHR = CHR_0_49;
+    CFR = CFR_0_49;
+    break;
+    case "2":
+    // alert ('To the point!');
+    CHR = CHR_50_64;
+    CFR = CFR_50_64;
+    break;
+    case "3":
+    // alert ('Overkill');
+    CHR = CHR_65;
+    CFR = CFR_65;
+    break;
+    default:
+    alert ("There are no such values");
+   }
+  var Phospitalization_contact = CHR * Pconfirmed_infection_contact * contacts;
+  var Pdeath_contact = CFR * Pconfirmed_infection_contact * contacts;
+  var chanses = 1. / Pdeath_contact;
+  var chanses_infect = 1. / (Pconfirmed_infection_contact * contacts);
+  document.getElementById ("probability"). innerHTML = `<b> ${Pdeath_contact * 100}% </b>`;
+  document.getElementById ("chanses"). innerHTML = `<b> 1 to ${Math.round (chanses)} </b>`;
+  document.getElementById ("chanses_infect"). innerHTML = `<b> 1 to ${Math.round (chanses_infect)} </b>`;
+
+  document.getElementById ("probability_hosp"). innerHTML = `<b> ${Phospitalization_contact * 100}% </b>`;
+  chanses = 1. / Phospitalization_contact;
+  document.getElementById ("chanses_hosp"). innerHTML = `<b> 1 to ${Math.round (chanses)} </b>`;
+  document.getElementById ("chanses_square").innerHTML = `1 to ${Math.round (chanses)}`;
+
+  if(chanses < 50 )
+     document.getElementById ("square").setAttribute("class","red");
+  if(chanses > 50 )
+     document.getElementById ("square").setAttribute("class","green");
+
+  if (x == "") {
+    alert ("Name must be filled out");
+    return false;
+  }
+}
+</script> <br/>
+
+Шансы умереть от болезней сердца: <b> 1 к 3</b> <br/>
+Шансы умереть от травмы: <b>1 к 12</b><br/>
+Шансы умереть в авиакатастрофе: <b>1 к 103</b><br/>
+Вероятность умереть при переходе дороги: <b>1 к 556</b><br/>
+Вероятность умереть от удара током: <b>1 к 300,000</b><br/>
+Вероятность умереть от удара молнии: <b>1 к 6,632,653</b> <br/>
+Шансы умереть от смеха: <b>1 к 100000</b> <br/>
+Шансы умереть в торнадо: <b>1 к 5,693,092</b> <br/>
+Вероятность попадания астеройда на Землю : <b>1 к 74,817,414 </b><br/>
+Вероятность умереть в черной дыре LHC:  <b> 1 к 50,000,000 </b><br/>
+Вероятность умереть в ядерной зиме через 10 лет: <b> 1 из 3</b><br/>
+Вероятность умереть от суперинтеллектуального ИИ :<b> 1 из 1000 </b><br/>
+Вероятность умереть от гамма-всплеска: <b>1 к 10^1000</b><br/>
+
+Шансы родится человеком в 21 веке <b> 1 к 14 </b> <br/>
+Шансы что мы живем в симулируемой реальности: <b> 1000000 к 1	 </b><br/>
+<br/>
+
+</form>
+</html>
