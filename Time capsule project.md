@@ -405,6 +405,9 @@ Matthias Wandel](https://woodgears.ca/dust_collector/blower_build.html) <br/>
 [Jet engine](https://youtu.be/L24Wf0VlTE0)
 [Jet engine 2](https://youtu.be/MgL0GW248mE)
 
+# Models of aircrafts
+[Zeppelin](https://youtu.be/Z3PU0b8-lks)
+
 # List of books (August 2021)
 
 * The Knowledge: How to Rebuild our World from Scratch 
