@@ -400,6 +400,9 @@ Matthias Wandel](https://woodgears.ca/dust_collector/blower_build.html) <br/>
 [Barrel Organs Beware - Other Color Pics Share This Title (1960)](https://youtu.be/dHcmIcP7ouo?list=PLcu6g4pkhOD5Fxn2qFk9dIVnAnl_jVhsE)
 [Street Organ how it works](https://youtu.be/DSNAypbWe0g?list=PLcu6g4pkhOD5Fxn2qFk9dIVnAnl_jVhsE)
 
+# Models of different engines
+[Heat engine](https://youtu.be/FYe_8EFRMyE)
+
 # List of books (August 2021)
 
 * The Knowledge: How to Rebuild our World from Scratch 
