@@ -336,3 +336,76 @@ Matthias Wandel](https://woodgears.ca/dust_collector/blower_build.html) <br/>
 85. Bit_by_Bit_An_Illustrated_History_of_Computers_by_Stan_Augarten_(z-lib.org).pdf
 86. The_knowledge_how_to_rebuild_our_world_from_scratch_by_Dartnell,_Lewis_(z-lib.org).epub
 87. Heather Heying & Bret Weinstein A Hunter-Gatherer's Guide to the 21st Century. 
+88. Adventurer-Woodstravel-Module
+89. Topographic-Operations					
+90. Traps					
+91. Tying-Farm-Knots					
+92. Ultimate-Guide-to-Wilderness-Living					
+93. United-States-Marine-Corps-Fmfrp-12185-April-1989Mao-Guerrila-Warfare					
+94. Urban-Preparation-Kit-Part-I-On					
+95. US-Army-Combatives-handtohand-combat-FM-325-150					
+96. US-Army-Combat-Training-w-Pistols-fm-323x35					
+97. US-Army-How-to-Kill-Tanks					
+98. US-Army-Map-Reading-and-Land-Navigation					
+99. US-Marine-Corp-Pistol-Markmanship					
+100. US-Marine-Corps-Hand-to-Hand-Combat					
+101. US-Marines-Close-Quarters-Combat-Manual-FMFM-07					
+102. USMC-Kill-or-Get-Killed					
+103. USMC-MCRP-301A-Rifle-Marksmanship					
+104. USMC-Summer-Survival-Course					
+105. USMC-Winter-Survival-Course					
+106. What-Knot-Useful-Knots-for-Scouting-and-Climbing-Martin-Stone					
+107. Wilderness-Evasion-a-Guide-to-Hiding-Out-and-Eluding-Pursuit-in-Remote-Areas					
+108. Wilderness-Medicine-Course					
+109. Wilderness-Survival-Skills					
+110. Woodsman-Ship					
+111.Survival-Water-Purification		
+112. A Compendium of Mechanics 1830
+113. A Manual of Steam Engineering 1920
+114. A Treatise on Hydraulic and Water Supply Engineering 1886
+115. A Treatise on Mining Railway Surveying Engineering 1863
+116. A Treatise on the Principles and Practice of Levelling 1870
+117. Agricultural Engineering 1913
+118. Analysis of Elastic Arches Three-Hinged Two-Hinged and Hingeless 1908
+119. Analytical Mechanics for Students of Physics and Engineering 1913
+120. Appletons Cyclopaedia of Applied Mechanics 1880
+121. Applied Mechanics for Engineers-A Text Book for Students 1909
+122. Civil Engineering Types and Devices 1915
+123. Cyclopedia of Locomotive Engineering 1916
+124. Elements of Civil Engineering 1839
+125. Elements of Heat Power Engineering 1912
+126. Elements of Sanitary Engineering 1918
+127. Engineering Descriptive Geometry 1910
+128. Engineering of Power Plants 1916
+129. Engineers and Mechanics Pocket Book 1881
+130. Every Man His Own Civil Engineer and Surveyor 1895
+131. Experimental Engineering and Manual for Testing 1911
+132. Handbook of Shoe Factory Engineering 1916
+133. Handbook on Engineering 1900
+134. Heat Engineering-Applied Thermodynamics for Engineers and Students 1915
+135. Key to Steam Engineering 1892
+136. Knights New Mechanical Dictionary 1884
+137. Manual of Examinations for Engineering Positions 1906
+138. Manual of Military Field Engineering 1902
+139. Mathematics for Engineering Students 1908
+140. Mathematics for Engineering Students-Analytical Geometry and Calculus 1907
+141. Mechanics of Engineering 1893
+142. Mechanics of Engineering-Theoretical Mechanics 1875
+143. Modern Locomotive Engineering with Questions and Answers 1913
+144. Modern Steam Engineering in Theory and Practice 1907
+145. Pocket Edition of Locomotive Engineering 1911
+146. Standard American Cyclopedia of Steam Engineering 1915
+147. Steam Power 1916
+148. Steam Power Plant Engineering 1917
+149. Straight Line Engineering Diagrams 1911
+150. Technical Sketching and Free Hand Lettering for Engineering Students 1912
+151. The Fighting Engineers 1918
+152. The Home Mechanic and Complete Self Instructor 1897
+153. The Mechanical Engineering of Steam Power Plants 1897
+154. The Panama Canal-Pictorial View 1913
+155. The Romance of Modern Invention 1903
+156. The Theory of Engineering Drawing 1915
+157. The Young Man and Civil Engineering 1922
+158. Theoretical Mechanics with an Introduction to the Calculus 1882
+159. Twentieth Century Hand Book for Steam Engineers 1913
+160. Useful Information for Practical Men 1908
