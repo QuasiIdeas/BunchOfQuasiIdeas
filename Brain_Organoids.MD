@@ -15,3 +15,6 @@ Each problem has its own unique mini brain.
 They must be compatible and interchangeable and work like Lego bricks as universal computer components. 
 Or like general purpouse software modules of python.
 Be robust to radiation and memory confibulations
+
+References
+* https://www.newscientist.com/article/2301500-human-brain-cells-in-a-dish-learn-to-play-pong-faster-than-an-ai/
