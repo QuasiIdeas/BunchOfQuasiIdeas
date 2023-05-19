@@ -14,7 +14,11 @@ last update: 12/4/2022
 
 This work is a continuation of my previous philosophical essay Low resolution simulations for our world. it focussed on consciousness issues. What techniques you can implement to reduce the amount of calculations per digital brain in a simulation like in "The matrix" movie. In this papers i assume that if you reverse engineer the real world technology you can access resources of the outer world from the simulation. just like in the Matrix movie.
 
-[![image](https://web.archive.org/web/20221205034332im_/https://raw.githubusercontent.com/Kvazikot/BunchofBaranovIdeas/master/images/woman_eggs.jpg)](https://web.archive.org/web/20221205034332/https://raw.githubusercontent.com/Kvazikot/BunchofBaranovIdeas/master/images/woman_eggs.jpg)
+
+|  |  |	|
+|--|--|--|
+|**`==============>>`**  | [![image](https://web.archive.org/web/20221205034332im_/https://raw.githubusercontent.com/Kvazikot/BunchofBaranovIdeas/master/images/woman_eggs.jpg)] |	**`<<==============  `**|
+|  |  |	|
 
 In this youtube video i explain how we can optimize simulation of Сonsciousness. I use example of cooking eggs scene where the player cooks eggs in his kitchen and in the middle of that process he receive incoming call on a smartphone from his old friend. She cooking the meal about 20 minutes. In this timeframe player of our hypothetical simulation does not have to use social intelligence, recognize emotions, use some map navigation skills. The only thing that she need to do is very precise motor activity of the muscles. We assume that central nervous system is not simulated int the VR. We simulate only spinal cord impulses and doing rerouting of signals from the so called "real" world using spy nanobots that trace single neuron spikes from the real brain in the real world. The phone call appears at 5 minutes and holds about 15 seconds. This is a call from the pizza delivery guy. In the first 10 seconds before the call "real" brain from "real" world wakes up from an anabiosis state and after that moment we have to do full scale simulation of quantum consciousness or digital consciousness. All the body movements before the call can be done with simple AI movement model in NPC, something like ragdoll.
 
