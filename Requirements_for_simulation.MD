@@ -1,4 +1,4 @@
-The original document can be found at webarhive
+The original document can be found at webarchive
 https://web.archive.org/web/20221205034332/https://github.com/Kvazikot/BunchofBaranovIdeas/blob/master/Requirements_for_the_simulation.MD
 
 # Requirements for the simulation
@@ -12,21 +12,21 @@ last update: 12/4/2022
 
 ― Albert Einstein
 
-This work is a continuation of my previous philosophical esse Low resolution simulations for our world. it focuassed on consciousness issue. What technics you can implement to reduce amount of calculations per digital brain in a simulation like in "The matrix" movie. In this papers i assume that if you can do reverse enginering of the real world technology you can access resources of the outer world from the simulation. just like in the Matrix movie.
+This work is a continuation of my previous philosophical essay Low resolution simulations for our world. it focussed on consciousness issues. What techniques you can implement to reduce the amount of calculations per digital brain in a simulation like in "The matrix" movie. In this papers i assume that if you reverse engineer the real world technology you can access resources of the outer world from the simulation. just like in the Matrix movie.
 
 [![image](https://web.archive.org/web/20221205034332im_/https://raw.githubusercontent.com/Kvazikot/BunchofBaranovIdeas/master/images/woman_eggs.jpg)](https://web.archive.org/web/20221205034332/https://raw.githubusercontent.com/Kvazikot/BunchofBaranovIdeas/master/images/woman_eggs.jpg)
 
-In this youtube video i explain how we can optimise simulation of Сonsciousness. I use example of cooking eggs scene where the player cooks eggs in his kitchen and in the middle of that process he receive incoming call on a smartphone from his old friend. She cooking the meal about 20 minutes. In this timeframe player of our hypotetical simulation does not have to use social intelligense, recognize emotions, use some map navigation skills. The only thing that she need to do is very precise motor activity of the muscles. We assume that central nervouse system is not simulated int the VR. We simulate only spinal cord impulses and doing rerouting of signals from the so called "real" world using spy nanobots that trace single neuron spikes from the real brain in the real world. The phone call apears at 5 minutes and holds about 15 seconds. This is a call from the pizza delivery guy. In the first 10 seconds before the call "real" brain from "real" world wakes up from anabiosys state and after that moment we have to do full scale simulation of quantum consciousness or digital consciousness. All the body movements before the call can be done with simple AI movement model in NPC, something like ragdoll.
+In this youtube video i explain how we can optimize simulation of Сonsciousness. I use example of cooking eggs scene where the player cooks eggs in his kitchen and in the middle of that process he receive incoming call on a smartphone from his old friend. She cooking the meal about 20 minutes. In this timeframe player of our hypothetical simulation does not have to use social intelligence, recognize emotions, use some map navigation skills. The only thing that she need to do is very precise motor activity of the muscles. We assume that central nervous system is not simulated int the VR. We simulate only spinal cord impulses and doing rerouting of signals from the so called "real" world using spy nanobots that trace single neuron spikes from the real brain in the real world. The phone call appears at 5 minutes and holds about 15 seconds. This is a call from the pizza delivery guy. In the first 10 seconds before the call "real" brain from "real" world wakes up from an anabiosis state and after that moment we have to do full scale simulation of quantum consciousness or digital consciousness. All the body movements before the call can be done with simple AI movement model in NPC, something like ragdoll.
 
-To test the hypothesis of rerouting signals from peripheral nervous system you can find evidence of extrasensory phenomena. People that can "feel" the physical pain or other important sensations of other people. I think the help from professional anesthesiology and the scientists like Stuart hameroff can help to dig to the theory of consciousness states and transition from "sleep" state to "awake" state. How we can trick our own sensation using aromatic molecules that is in the modern anesthetics?
+To test the hypothesis of rerouting signals from the peripheral nervous system you can find evidence of extrasensory phenomena. People that can "feel" the physical pain or other important sensations of other people. I think the help from professional anesthesiology and scientists like Stuart Hameroff can help to dig into the theory of consciousness states and transition from "sleep" state to "awake" state. How can we trick our own sensation using aromatic molecules that is in the modern anesthetics?
 
 Teleportation of state can be done in the hyppocampus using gravity. Hre you can remember scene from the Matrix with endless towers of human slots. [![image](https://web.archive.org/web/20221205034332im_/https://camo.githubusercontent.com/587feed5576d81f8dc96d32ee629a15722e554783f8f0ae918889acdb5ac7dd5/68747470733a2f2f7777772e77726974657570732e6f72672f77702d636f6e74656e742f75706c6f6164732f4d61747269782d492d6d6f7669652d73657474696e672d68322e6a7067)](https://web.archive.org/web/20221205034332/https://camo.githubusercontent.com/587feed5576d81f8dc96d32ee629a15722e554783f8f0ae918889acdb5ac7dd5/68747470733a2f2f7777772e77726974657570732e6f72672f77702d636f6e74656e742f75706c6f6164732f4d61747269782d492d6d6f7669652d73657474696e672d68322e6a7067)
 
-# Requiements for "human slot" in the "real" world
+# Requirements for "human slot" in the "real" world
 -------------------------------------------------------------------------------------------------
 
-*   Ability to transfer memory from cloud to the hypocampus and vise versa
-*   First requerment assumes that memory can be trasfered not only in space dimensions but also in time dimensions
+*   Ability to transfer memory from cloud to the hippocampus and vise versa
+*   First requirement assumes that memory can be transferred not only in space dimensions but also in time dimensions
 *   Ability to instantly freeze consciousness state so that after awake human does not notice that he was sleeping
 *   Pipe from\\to chemical factory
 *   Pipe to canalisation
@@ -34,40 +34,40 @@ Teleportation of state can be done in the hyppocampus using gravity. Hre you can
 *   Pipe for biological liquids like blood with cell lines
 *   Magnetic field generators
 *   Express chemical testing
-*   Intervenios food injection
+*   Interventions food injection
 *   Medical and chemical testing equipment
 *   Biological viruses detection
 *   Biological \\ chemical \\ sound \\ electromagnetic isolation between slots
 *   Sanitation of physical liquids
 *   Quantum gravity teleportation system for individual brain parts
 *   Fridge and liquid nitrogen tank
-*   Some system that can physicaly break or disconnect cabel from the nervous system
-*   Easy repair of interface cabels, tracability of network connections
-*   Easy trasfer of dead bodies
+*   Some system that can physically break or disconnect cable from the nervous system
+*   Easy repair of interface cables, traceability of network connections
+*   Easy transfer of dead bodies
 *   Connection to the cloning factory
 *   Ability to use anonymous clones
 *   Rerouting nervous signals between several slots
-*   Ability to transfer emotions states as an informational pattern from another species with more simple brain like dogs. This is important int the case if you loose links bettwen simulation and the real world or have other communication issues. The system select bright emotional signal, so that clone in the vat dont notice glitches in the matrix.
+*   Ability to transfer emotions states as an informational pattern from another species with more simple brain like dogs. This is important int the case if you loose links between simulation and the real world or have other communication issues. The system select bright emotional signal, so that clone in the vat dont notice glitches in the matrix.
 *   Ability to echoing the real sound signals
 
 # Clone body requirements
 ---------------------------------------------------
 
 *   Size of human body between 0.2 to 4x of average humans of 20 century
-*   All vital organs can be layouoted on a planar structure for better connectivity with computer systems. This can be done with controlled morphogenesis at the growing phase in a clone factory.
+*   All vital organs can be layouted on a planar structure for better connectivity with computer systems. This can be done with controlled morphogenesis at the growing phase in a clone factory.
 *   For example skeleton and skull can be removed
 *   All non complex organs can be simplified or removed entire due to cancer risk
 *   Heart as a pump of blood can be reduced. Function of biological transport can do nanobots
 *   Date of birth in universal galactic time
 *   Timestamps of freezing states made in whole lifetime
 *   Cloud account there they hold memory stamps for particular subject
-*   Subject is not equal to particular clone.
+*   Subject is not equal to a particular clone.
 *   You can find two genetically identical clones with almost identical memory but in simulation they can be a different persons
 *   Digestive system can be reduced
 *   Identification number inside DNA
 *   Identification of clone factory (location in the galaxy, planet, location on the planet)
 *   List of clone upgrades made in the growing phase
-*   Clone factory can produce normal human body or optimised for the slot body with reduced organs or layouted on the chip via controlled morphogenesis
+*   Clone factory can produce normal human body or optimized for the slot body with reduced organs or layouted on the chip via controlled morphogenesis
 
 # Requirements for the simulation
 ---------------------------------------------------------------------
@@ -75,51 +75,51 @@ Teleportation of state can be done in the hyppocampus using gravity. Hre you can
 *   physics of the simulation is not necessary copies the physics of the "real" world
 *   quantum physics is simulated using neural network approximated calculation of Schrodinger wave equation
 *   classical physics is simulated just like in game engines
-*   all complex determenistic calculations of every atom replaced by probabalistic Monte-Carlo methods using top-down approach instead of bottom-up
+*   all complex deterministic calculations of every atom replaced by probabilistic Monte-Carlo methods using top-down approach instead of bottom-up
 *   chemical reactions is expensive in terms of computation and reduced the it possible
-*   if you need to simulated acid attack on a material you don't need to have all possible acids and know all of they properties. U need to use some abstract model of one acid and you play with time of reaction. In this case simulation use principle of equivalence in simulation of particular function
+*   if you need to simulate acid attack on a material you don't need to have all possible acids and know all of they properties. U need to use some abstract model of one acid and you play with time of reaction. In this case simulation use principle of equivalence in simulation of particular function
 *   reuse the result of chemical reactions in every standart activity like "cooking eggs"
-*   use result of calculations in one world or one time epoch in another world  
+*   use result of calculations in one world or one time epoch in another world  
 *   electromagnetic signal can be done directly without calculating wave propagation
 *   space can be calculated as oct tree structure
 *   the world is populated mostly by NPC
 *   saving world state in the cloud
-*   space is calculated only for the players in that locations there is some probability of appearance of the player \* you dont need to simulate all the universe, only one planet!
+*   space is calculated only for the players in that locations there is some probability of appearance of the player \* you don't need to simulate all the universe, only one planet!
 *   Computational capabilities of a computer varies between Number\_of\_players
 *   10^16-10^17 ~ 10^20 operations per second would be enough
 *   World support many level of details (LOD) for individual avatar and other virtual objects
-*   You don't need to simulate inner objects for example visualisation and function of engine cylinder if all you want is to travel from point A to point B in the car
+*   You don't need to simulate inner objects for example visualization and function of engine cylinder if all you want is to travel from point A to point B in the car
 *   Events in the virtual media can be simulated (fake photos in instagram, fake news in newspapers, even fake videos from other branches of one simulation). Generation of fake face using GAN requires orders of magnitude less power than simulating an event with one or several NPC itself.
 *   Full scale person simulation is required only for important players. When they get together, it can be hollywood movie, development of rocket, significant science event, invention of something, death of political figure, revolution, fall of the union and so on
 *   For simulating voice you don't need to simulate vocal tract of every possible geometry. You use speech synthesis with a neural network that clones some mel spectrogram of a real person. Real vocal tract simulated only one time in one particular world.
-*   For simulating guitar sound you don't need to propagate sound waves although it can be done in several cases where it's needed. If it causes something significant, the simulator switches to a more detailed model. Let's look at the rare case of simulating the sound of a guitar with 1 neulon string and 5 metallic strings.
+*   For simulating guitar sound you don't need to propagate sound waves although it can be done in several cases where it's needed. If it causes something significant, the simulator switches to a more detailed model. Let's look at the rare case of simulating the sound of a guitar with 1 nelon string and 5 metallic strings.
 *   Principle of procedure generation based on probability distribution. Like in the story of the man and a dead tree in the forest. If nobody who remembers the dead tree in the forest survives, there is no tree. All you need is to draw default state of reality i.e. default trees most probable types for this location
 
 # Requirements for the NPC
 -----------------------------------------------------
 
-*   audio cortex replaced by speech syntheser, voice cloner network
-*   interface with audio cortext of a real person from the real world
-*   convertor from audiosignal to neural spikes
+*   audio cortex replaced by speech synthesizer, voice cloner network
+*   interface with audio cortex of a real person from the real world
+*   convertor from audio signal to neural spikes
 *   convertor from neural spikes to audio signal
 *   dialog mode using transformer like gpt3
 
-# Requirements for ai sequrity systems. Survellience of the real world
+# Requirements for ai security systems. Surveillance of the real world
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 *   Find and block hackers that trying to manage things in the real world from the simulation
 
-The memory of some skill situated primarary in hypocampus. We can teleport and compress this particular part of the brain. All the rest does not require saving states of every neuron. The immidiate state of all neurons in a single moment of time can be compressed. In the "real" world time scale can be very different from the simulation timeline. What seems like continius expirience in a simulation can be separeted moments in a real world when real biological brain is sleeping most of the time. When you prepare you meal in the morning time lets say eggs you dont expect to be ready for highly intelegent conversation with Einstein. So you can disable mathematical logic, social intelligens, emotions in your NPC model.
+The memory of some skill situated primary in hippocampus. We can teleport and compress this particular part of the brain. All the rest does not require saving states of every neuron. The immediate state of all neurons in a single moment of time can be compressed. In the "real" world time scale can be very different from the simulation timeline. What seems like continuous experience in a simulation can be separated moments in a real world when real biological brain is sleeping most of the time. When you prepare you meal in the morning time lets say eggs you don't expect to be ready for highly intelligent conversation with Einstein. So you can disable mathematical logic, social intelligence, emotions in your NPC model.
 
 I explain how simulation technology can greatly reduce calculation of a digital brain to imitate realistic behavior.
-in thios document you can read translated subtitles from this video. Sorry for that not edited transcript. Later i try to write proper more restpectfull english version.
+in this document you can read translated subtitles from this video. Sorry for that not edited transcript. Later i try to write proper more respectful english version.
 
 #In this paper i use the following acronyms
 -----------------------------------------------------------------------------------------
 
-1.  **AC** stands for "Analog Сonsciousness" (In the real world it can be powerfull quantum computer or the real wet brains in a vat) Most expensive module in "real" money per watt \\ flop. Assuming that quantum machines is hardst to maintain as a most complicated devices for simulationg reality.
-2.  **DC** stands for "Digital Сonsciousness" (This is a classical Turing machine that is simulationg biology of the brain neuron by neuron)
-3.  **NPC** stands for "Non player character" (AGI or narrow AI that immitate behavoior of a biological being)
+1.  **AC** stands for "Analog Сonsciousness" (In the real world it can be powerful quantum computer or the real wet brains in a vat) Most expensive module in "real" money per watt \\ flop. Assuming that quantum machines is hardest to maintain as a most complicated devices for simulating reality.
+2.  **DC** stands for "Digital Сonsciousness" (This is a classical Turing machine that is simulation biology of the brain neuron by neuron)
+3.  **NPC** stands for "Non player character" (AGI or narrow AI that imitate behavior of a biological being)
 
 # Distribution of AC, DC and NPC in a simulation.
 -------------------------------------------------------------------------------------------------
@@ -129,7 +129,7 @@ We live in the world that maybe has 10000 players and all the 8 billion NPC. But
 # Speech synt of the NPC. Voice cloning . GPT-3.
 ----------------------------------------------------------------------------------------------
 
-TODO. \[Insert drawing of some sheme here\]
+TODO. \[Insert drawing of some scheme here\]
 
 [![image](https://web.archive.org/web/20221205034332im_/https://raw.githubusercontent.com/Kvazikot/BunchofBaranovIdeas/master/images/percentage_npc.png)](https://web.archive.org/web/20221205034332/https://raw.githubusercontent.com/Kvazikot/BunchofBaranovIdeas/master/images/percentage_npc.png) fig 1. Distribution of AC, DC and NPC in a simulation.
 
@@ -137,9 +137,9 @@ TODO. \[Insert drawing of some sheme here\]
 
 [![image](https://web.archive.org/web/20221205034332im_/https://raw.githubusercontent.com/Kvazikot/BunchofBaranovIdeas/master/images/load_balance_graphs.png)](https://web.archive.org/web/20221205034332/https://raw.githubusercontent.com/Kvazikot/BunchofBaranovIdeas/master/images/load_balance_graphs.png) fig 3. Load balance or amount of calculation than different modules of consciousness are connected. This figure also demonstrates different time scales between "real" world and the simulation
 
-[![image](https://web.archive.org/web/20221205034332im_/https://raw.githubusercontent.com/Kvazikot/BunchofBaranovIdeas/master/images/teleportation_of_consiesness.png)](https://web.archive.org/web/20221205034332/https://raw.githubusercontent.com/Kvazikot/BunchofBaranovIdeas/master/images/teleportation_of_consiesness.png) fig 4. Some kind of teleportation of Сonsciousness in the real world based on gravity manipulations. This includes "freezing" of the biological brain, turning it to anabiotic state. Freezing happens almost immediatly for the player, it does not notice switch, or that he was shutdown by a quantum gun for any time interval. Possible for advanced post-human 3rd level civilations on a Kardashev scale.
+[![image](https://web.archive.org/web/20221205034332im_/https://raw.githubusercontent.com/Kvazikot/BunchofBaranovIdeas/master/images/teleportation_of_consiesness.png)](https://web.archive.org/web/20221205034332/https://raw.githubusercontent.com/Kvazikot/BunchofBaranovIdeas/master/images/teleportation_of_consiesness.png) fig 4. Some kind of teleportation of Сonsciousness in the real world based on gravity manipulations. This includes "freezing" of the biological brain, turning it to anabolic state. Freezing happens almost immediately for the player, it does not notice switch, or that he was shutdown by a quantum gun for any time interval. Possible for advanced post-human 3rd level civilizations on a Kardashev scale.
 
-[![image](https://web.archive.org/web/20221205034332im_/https://raw.githubusercontent.com/Kvazikot/BunchofBaranovIdeas/master/images/audio_cortex_in_NPC.png)](https://web.archive.org/web/20221205034332/https://raw.githubusercontent.com/Kvazikot/BunchofBaranovIdeas/master/images/audio_cortex_in_NPC.png) fig 5. Audio cortex rerouting to GPT-3 from NPC to avatar. Dialog system with speech syntesysis and spectrum cloning.
+[![image](https://web.archive.org/web/20221205034332im_/https://raw.githubusercontent.com/Kvazikot/BunchofBaranovIdeas/master/images/audio_cortex_in_NPC.png)](https://web.archive.org/web/20221205034332/https://raw.githubusercontent.com/Kvazikot/BunchofBaranovIdeas/master/images/audio_cortex_in_NPC.png) fig 5. Audio cortex rerouting to GPT-3 from NPC to avatar. Dialog system with speech synthesis and spectrum cloning.
 
 References
 
@@ -180,3 +180,5 @@ References
         
     
 27.      Oblivion (2013)
+
+
