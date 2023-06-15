@@ -382,6 +382,8 @@ https://blog.longnow.org/category/long-term-thinking/<br/>
 [WoodlandsTV](https://www.youtube.com/watch?v=aI8VWjpKBlA) channel of archaeologists restoring the techniques of medieval woodworking masters,
 creating tools, etc.<br/>
 
+[Sailboat](https://twitter.com/i/status/1669011100447252480)
+
 
 ## Survival off the grid in the forest
 [Advoko MAKES](https://www.youtube.com/watch?v=war9v2DxMs4)
