@@ -16,5 +16,10 @@ They must be compatible and interchangeable and work like Lego bricks as univers
 Or like general purpouse software modules of python.
 Be robust to radiation and memory confibulations
 
+# CRISPR technology
+Another way that CRISPR technology could be used to develop brain transducers is to create actuators that can stimulate neurons. These actuators could be made by inserting CRISPR-Cas9 genes into cells that are located near neurons. The CRISPR-Cas9 genes would then be used to create proteins that can stimulate neurons to fire. The use of CRISPR technology for the development of brain transducers is still in its early stages of research. However, the potential benefits of this technology are significant. CRISPR technology could be used to develop brain transducers that are more sensitive and accurate than current technologies. Additionally, CRISPR technology could be used to develop brain transducers that are more specific, meaning that they could be used to target specific neurons or neural circuits.
+
+(this text i get from bard AI "What is brain tranducer?")
+
 References
 * https://www.newscientist.com/article/2301500-human-brain-cells-in-a-dish-learn-to-play-pong-faster-than-an-ai/
