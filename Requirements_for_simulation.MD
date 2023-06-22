@@ -55,9 +55,11 @@ Teleportation of state can be done in the hyppocampus using gravity. Hre you can
 *   Ability to transfer emotions states as an informational pattern from another species with more simple brain like dogs. This is important int the case if you loose links between simulation and the real world or have other communication issues. The system select bright emotional signal, so that clone in the vat dont notice glitches in the matrix.
 *   Ability to echoing the real sound signals
 
+
+
 # Clone body requirements
 ---------------------------------------------------
-
+*    Clone body consists of functional equivalent modules in which whole biological protein based elements were replaced by nanotech stuff. Simulating a nanotech enriched body is much easier and requires less cycles per second. When in simulation is it time to watch inside the body let say mri or pet scans evidence can be faked. For example a neuron in the optic nerve, under close examination, contained thousands of molecules like elaborately knotted ropes, running the whole length of the cell body.  At the far end, each polymer was joined to a kind of vesicle, the narrow molecular cable dwarfed by the tiny pouch of cell membrane pinched off from the outside world.  "There are almost three thousand distinct neurotransmitters; they're all proteins, built from three sub-units, with fourteen possibilities for each sub-unit.  
 *   Size of human body between 0.2 to 4x of average humans of 20 century
 *   All vital organs can be layouted on a planar structure for better connectivity with computer systems. This can be done with controlled morphogenesis at the growing phase in a clone factory.
 *   For example skeleton and skull can be removed
@@ -67,6 +69,7 @@ Teleportation of state can be done in the hyppocampus using gravity. Hre you can
 *   Timestamps of freezing states made in whole lifetime
 *   Cloud account there they hold memory stamps for particular subject
 *   Subject is not equal to a particular clone.
+*   
 *   You can find two genetically identical clones with almost identical memory but in simulation they can be a different persons
 *   Digestive system can be reduced
 *   Identification number inside DNA
@@ -115,6 +118,7 @@ Teleportation of state can be done in the hyppocampus using gravity. Hre you can
 *   convertor from audio signal to neural spikes
 *   convertor from neural spikes to audio signal
 *   dialog mode 
+*   neurons use conducting polymers to carry the signal, instead of membrane action potentials.  The cells themselves are comparable in size to a human's -- but each axon and dendrite carries multiple signals
 
 # Different types of brain emulations
 First versions of whole brain emulation was very crude. They were used in surgical operations in VR space. 
