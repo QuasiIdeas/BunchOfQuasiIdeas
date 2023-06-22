@@ -6,7 +6,7 @@ https://web.archive.org/web/20221205034332/https://github.com/Kvazikot/BunchofBa
 
 Quasikot
 text version of this document written in 12/3/2022  
-last update: 12/4/2022  
+last update: 22/6/2022  
 
 “Nature shows us only the tail of the lion. But I have no doubt that the lion belongs with it even if he cannot reveal himself all at once. We see him only the way a louse that sits upon him would.”
 
