@@ -4,7 +4,7 @@ https://web.archive.org/web/20221205034332/https://github.com/Kvazikot/BunchofBa
 # Requirements for the simulation
 ===================================================================
 
-Vladimir Baranov  
+Quasikot
 text version of this document written in 12/3/2022  
 last update: 12/4/2022  
 
@@ -104,10 +104,22 @@ Teleportation of state can be done in the hyppocampus using gravity. Hre you can
 -----------------------------------------------------
 
 *   audio cortex replaced by speech synthesizer, voice cloner network
+*   different copies of the same personalities can fork and merge in some moment in the future
+*   different layers of simulations like layers of operating system (nested virtual machines)
+*   you dont need to think and simulate every neuron in the connectom, thinking processes can be replaced by big language model
+*   some people cannot create new thought, they just repeat their old ideas over and over again like a recording
+*   in some time brain emulation have more resourses when in other times
+*   level of detail principle can be applied to the brain of the sim
+*   any new idea is based on previous ideas
 *   interface with audio cortex of a real person from the real world
 *   convertor from audio signal to neural spikes
 *   convertor from neural spikes to audio signal
-*   dialog mode using transformer like gpt3
+*   dialog mode 
+
+# Different types of brain emulations
+First versions of whole brain emulation was very crude. They were used in surgical operations in VR space. 
+For this purpouse you need to emulate only corpus collosum, brain stem, primitive reptile brain capable to maintaining a blood pressure and activate parasympathetic nervous system. It was not a person in literal sense.
+
 
 # Requirements for ai security systems. Surveillance of the real world
 --------------------------------------------------------------------------------------------------------------------------------------------
@@ -119,7 +131,7 @@ The memory of some skill situated primary in hippocampus. We can teleport and co
 I explain how simulation technology can greatly reduce calculation of a digital brain to imitate realistic behavior.
 in this document you can read translated subtitles from this video. Sorry for that not edited transcript. Later i try to write proper more respectful english version.
 
-#In this paper i use the following acronyms
+# In this paper i use the following acronyms
 -----------------------------------------------------------------------------------------
 
 1.  **AC** stands for "Analog Сonsciousness" (In the real world it can be powerful quantum computer or the real wet brains in a vat) Most expensive module in "real" money per watt \\ flop. Assuming that quantum machines is hardest to maintain as a most complicated devices for simulating reality.
@@ -185,5 +197,7 @@ References
         
     
 27.      Oblivion (2013)
+
+28. Permutation City 1994 science-fiction novel by Greg Egan
 
 
