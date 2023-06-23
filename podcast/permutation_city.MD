@@ -14,8 +14,8 @@ Scene0
 ============
 <b>Location</b>: River near the descent of the road. 
 Make shure that no people is in the frame.
-<b>Video length</b>: 30 sec
-<b>Topic</b>: General idea of a simulated worlds. How the laws of physics can be simulated in crude more simple form. 
+<b>Video length</b>: 30 sec <br/>
+<b>Topic</b>: General idea of a simulated worlds. <br/> How the laws of physics can be simulated in crude more simple form. 
 Text(narrated from paper): "In the last podcast Sabine Hossenfelder said that the idea of simulation is not scientific because nobody
 ever created such detailed worlds that includes odour for example. I always was into this idea. I translate work of Tom Campbell into russian.
 I created a document called requirement for the simulation. Ill try to understand or better say imagine the physics alternative to what we know from physics books."
@@ -35,17 +35,17 @@ Topic2: Difference in real time and simulated time.
 
 Scene1
 ============
-<b>Video length</b>: 10 sec
-Some words about myself. My story.
+<b>Video length</b>: 10 sec <br/>
+Some words about myself. My story.<br/>
 
 Describe how i work on the game engine design. What questions i ask to myself.
 Present evidence to the public of that my life can be simulated.
 EVIDENCE 1: i live promaraly in two locations. In one small part of a saint-petesburg and on the countryside
-I never be in any other locations.
-EVIDENCE 2: I rarely met with people in the real world. I talk to people on dicord.
-EVIDENCE 3: Problems with discord connection. People on discord rarely turn on webcam video
-EVIDENCE 4: snack like snickers called "STEPA". Taste is just like original "SNICKERS"
-EVIDENCE 5: Internet in Russia is limited. Many sites can be accessed only with vpn.
+I never be in any other locations.<br/>
+EVIDENCE 2: I rarely met with people in the real world. I talk to people on dicord.<br/>
+EVIDENCE 3: Problems with discord connection. People on discord rarely turn on webcam video<br/>
+EVIDENCE 4: snack like snickers called "STEPA". Taste is just like original "SNICKERS"<br/>
+EVIDENCE 5: Internet in Russia is limited. Many sites can be accessed only with vpn.<br/>
 
 Scene2
 ============
