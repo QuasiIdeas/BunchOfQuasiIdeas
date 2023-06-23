@@ -14,6 +14,7 @@ Scene0
 ============
 <b>Location</b>: River near the descent of the road. 
 Make shure that no people is in the frame.
+
 <b>Video length</b>: 30 sec <br/>
 <b>Topic</b>: General idea of a simulated worlds. <br/> How the laws of physics can be simulated in crude more simple form. 
 Text(narrated from paper): "In the last podcast Sabine Hossenfelder said that the idea of simulation is not scientific because nobody
