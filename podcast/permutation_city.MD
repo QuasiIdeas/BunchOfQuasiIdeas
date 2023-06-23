@@ -18,9 +18,9 @@ Video length: 30 sec
 Topic: General idea of a simulated worlds. How the laws of physics can be simulated in crude more simple form. 
 Text(narrated from paper): "In the last podcast Sabine Hossenfelder said that the idea of simulation is not scientific because nobody
 ever created such detailed worlds that includes odour for example. I always was into this idea. I translate work of Tom Campbell into russian.
-I created a document called requirement for the simulation. Ill try to understand or better say imagine the physics alternative to what we know from physics books.
+I created a document called requirement for the simulation. Ill try to understand or better say imagine the physics alternative to what we know from physics books."
 
-"
+
 
 Timeline of the person that live in a simulation can be viewed in context of a tecnological singularity.
 First simulation was very slow and run 1000 times slower than real time.
@@ -46,6 +46,7 @@ EVIDENCE 2: I rarely met with people in the real world. I talk to people on dico
 EVIDENCE 3: Problems with discord connection. People on discord rarely turn on webcam video
 EVIDENCE 4: snack like snickers called "STEPA". Taste is just like original "SNICKERS"
 EVIDENCE 5: Internet in Russia is limited. Many sites can be accessed only with vpn.
+
 Scene2
 ============
 Location: home
