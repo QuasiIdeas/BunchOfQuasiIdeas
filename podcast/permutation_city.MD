@@ -40,6 +40,7 @@ Some words about myself. My story.<br/>
 
 Describe how i work on the game engine design. What questions i ask to myself.
 Present evidence to the public of that my life can be simulated.
+
 EVIDENCE 1: i live promaraly in two locations. In one small part of a saint-petesburg and on the countryside
 I never be in any other locations.<br/>
 EVIDENCE 2: I rarely met with people in the real world. I talk to people on dicord.<br/>
@@ -49,8 +50,8 @@ EVIDENCE 5: Internet in Russia is limited. Many sites can be accessed only with 
 
 Scene2
 ============
-Location: home
-Video length: 2 min
+Location: home<br/>
+Video length: 2 min<br/>
 I sitting and reading old soviet newspapers and journals.
 Topic: Data in simulation can be from a real world before the people was loaded.
 Also data can be completely sintesyzed.
