@@ -12,10 +12,10 @@ All shoot with redmi smartphone.
 
 Scene0
 ============
-Location: River near the descent of the road. 
+<b>Location</b>: River near the descent of the road. 
 Make shure that no people is in the frame.
-Video length: 30 sec
-Topic: General idea of a simulated worlds. How the laws of physics can be simulated in crude more simple form. 
+<b>Video length</b>: 30 sec
+<b>Topic</b>: General idea of a simulated worlds. How the laws of physics can be simulated in crude more simple form. 
 Text(narrated from paper): "In the last podcast Sabine Hossenfelder said that the idea of simulation is not scientific because nobody
 ever created such detailed worlds that includes odour for example. I always was into this idea. I translate work of Tom Campbell into russian.
 I created a document called requirement for the simulation. Ill try to understand or better say imagine the physics alternative to what we know from physics books."
@@ -35,7 +35,7 @@ Topic2: Difference in real time and simulated time.
 
 Scene1
 ============
-Video length: 10 sec
+<b>Video length</b>: 10 sec
 Some words about myself. My story.
 
 Describe how i work on the game engine design. What questions i ask to myself.
