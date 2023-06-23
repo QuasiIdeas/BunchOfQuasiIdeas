@@ -50,8 +50,8 @@ EVIDENCE 5: Internet in Russia is limited. Many sites can be accessed only with 
 
 Scene2
 ============
-Location: home<br/>
-Video length: 2 min<br/>
+<b>Location:</b> home<br/>
+<b>Video length:</b> 2 min<br/>
 I sitting and reading old soviet newspapers and journals.
 Topic: Data in simulation can be from a real world before the people was loaded.
 Also data can be completely sintesyzed.
