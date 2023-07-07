@@ -12,7 +12,8 @@ When the posthuman civilization in Bostrom terms launched the simulation they pr
 And memory that is allocated is very limited. so they have some kind of greedy algorithm that redistribute amount of free memory with automatic reduce in resolution
 So maybe our musical industry is just a reflection of bad taste.
 More simpler mems just propagate more easily to the network.
-We hungry for content of tik tok like services that exploits the first signal system in Kanenman terms. 
-Maybe it is just a network effect. Every music have its own niche.I still struggle to find interesting japaneese jazz music in the youtube search results
+We hungry for content of tik tok like services that exploits the first signal system in Daniel Kahneman terms. 
+Maybe it is just a network effect. Every music have its own niche. I still struggle to find interesting japaneese jazz music in the youtube search results.
+Also i want to make a reference to the famous movie Idiocracy in witch this idea was extrapolated to the absolute absurd.
 
 ![image](https://th.bing.com/th/id/OIP.iVvdNupdwzf2zPDzybZncgHaPq?pid=ImgDet&rs=1)
