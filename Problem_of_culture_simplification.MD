@@ -4,7 +4,7 @@ If you compare the piece of music from average car radio from era of John Coltra
 it is dramatically simpler. I'm not a pro in music theory but I can understand the basics of harmony.
 Modern music is simpler not just in harmony sense but also in rhythmic patterns and melody itself.
 Here I can redirect you to the famous painting of Esher that illustrates this concept.
-![image](https://th.bing.com/th/id/OIP.iVvdNupdwzf2zPDzybZncgHaPq?pid=ImgDet&rs=1)
+
 If deep dive to the simulation hypothesis this issue can be viewed from the optics of crude resolution of this simulation.
 And resource limitations of the computer that actually execute the code of our reality.
 From the science of game engine design we know there are several levels of details in every game engine that exist today.
@@ -15,3 +15,4 @@ More simpler mems just propagate more easily to the network.
 We hungry for content of tik tok like services that exploits the first signal system in Kanenman terms. 
 Maybe it is just a network effect. Every music have its own niche.I still struggle to find interesting japaneese jazz music in the youtube search results
 
+![image](https://th.bing.com/th/id/OIP.iVvdNupdwzf2zPDzybZncgHaPq?pid=ImgDet&rs=1)
