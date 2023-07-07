@@ -13,3 +13,5 @@ And memory that is allocated is very limited. so they have some kind of greedy a
 So maybe our musical industry is just a reflection of bad taste.
 More simpler mems just propagate more easily to the network.
 We hungry for content of tik tok like services that exploits the first signal system in Kanenman terms. 
+Maybe it is just a network effect. Every music have its own niche.I still struggle to find interesting japaneese jazz music in the youtube search results
+
