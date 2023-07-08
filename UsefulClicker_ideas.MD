@@ -179,7 +179,7 @@ cb,"next" - click "next" button  <br/>
 </func>
   ````
 
-# Detection of rectangles
+# Detection of buttons or rectangle areas on the screenshot
 We use convolutional filters with long kernel to detect edges of rectangle.
 This contours go to the CNN that can classify rectangles and text.
 After that we apply some algo based on set teory.
