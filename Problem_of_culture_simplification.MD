@@ -1,6 +1,6 @@
 In one of my youtube podcasts I describe the problem that has our modern musical culture.
 Modern music lacks the complexity that was in the 1950-60's.
-If you compare the piece of music from random car radio from era of John Coltrane to the music that we hear now from ipod you notice that
+If you compare the piece of music from random car radio from era of John Coltrane to the music that we hear now you notice that
 it is dramatically simpler. I'm not a pro in music theory but I can understand the basics of harmony.
 Modern music is simpler not just in harmony sense but also in rhythmic patterns and melody itself.
 Here I can redirect you to the famous painting of Esher that illustrates this concept.
