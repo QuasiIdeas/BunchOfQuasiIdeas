@@ -178,10 +178,15 @@ cb,"next" - click "next" button  <br/>
 <check J="1"/>
 </func>
   ````
-  
+
+# Detection of rectangles
+We use convolutional filters with long kernel to detect edges of rectangle.
+This contours go to the CNN that can classify rectangles and text.
+After that we apply some algo based on set teory.
+The last stage of button detection is actually applying CNN for the letters. 
   
 ## Screenshots 
-![image](https://github.com/Kvazikot/UsefulMacro/blob/master/UsefulClicker/screenshots/buttons_detector_screenshot.png)
+![image](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/images/UC_ALGO.png)
 
 fig.1 Button detector
 
