@@ -8,7 +8,7 @@ Here I can redirect you to the famous painting of Esher that illustrates this co
 If you deep dive to the simulation hypothesis this issue can be viewed from the optics of crude approximation of this simulation.
 And resource limitations of the computer that actually execute the code of our reality.
 From the science of game engine design we know there are several levels of details in every game engine that exist today.
-When the posthuman civilization in Bostrom terms launched the simulation they probably had a bunch of copies of the current world that is a branch of the same original world.
+When the posthuman civilization in Bostrom terms launched the simulation they probably had a myriads of copies of the current world that is a branch of the same original world.
 And memory that is allocated for every world is very limited. so they presumably have some kind of greedy algorithm that redistribute amount of free memory beetwen the worlds with automatic reduce in resolution.
 On the other hand our musical industry is just a reflection of bad taste.
 More simpler mems just propagate and replicate more easily to the network.
