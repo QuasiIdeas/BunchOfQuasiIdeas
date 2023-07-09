@@ -11,7 +11,7 @@ From the science of game engine design we know there are several levels of detai
 When the posthuman civilization in Bostrom terms launched the simulation they probably had a myriads or tremendous number of copies of the current world that is a branch of the same original world.
 And memory that is allocated for every world is very limited. so they presumably have some kind of greedy algorithm that redistribute amount of free memory beetwen the worlds with automatic reduce in resolution.
 On the other hand our musical industry is just a reflection of bad taste.
-More simpler mems just propagate and replicate more easily to the network.
+More simpler mems just prolifirating and replicate more easily in the social network.
 We hungry for content of tik tok like services that exploits the system 1 in Daniel Kahneman terms. 
 Maybe it is just a network effect. Every music have its own niche. I still struggle to find interesting japaneese jazz music in the youtube search results.
 Also i want to make a reference to the famous movie Idiocracy in witch this idea was extrapolated to the absolute absurd.
