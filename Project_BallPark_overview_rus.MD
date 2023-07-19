@@ -122,3 +122,6 @@ Bторое есть дефекты в функции детектора кол�
 1. Nonlinear Dynamics And Chaos With Applications To Physics, Biology, Chemistry, And Engineering by Steven H. Strogatz
 2. Rapidly-Exploring Random Trees: Progress and Prospects
 3. [Unity Machine Learning Agents](https://unity.com/products/machine-learning-agents)
+4. Turgut, A. E., Çelikkanat, H., Gökçe, F., & Şahin, E. (2008). Self-organized flocking in mobile robot swarms. Swarm Intelligence, 2, 97–120.
+5. Trianni, V., & Dorigo, M. (2006). Self-organisation and communication in groups of simulated and physical robots. Biological Cybernetics, 95, 213–231.
+6. Baldassarre, G., Trianni, V., Bonani, M., Mondada, F., Dorigo, M., & Nolfi, S. (2007). Self-organized coordinated motion in groups of physically connected robots
