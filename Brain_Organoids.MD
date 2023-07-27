@@ -23,3 +23,4 @@ Another way that CRISPR technology could be used to develop brain transducers is
 
 References
 * https://www.newscientist.com/article/2301500-human-brain-cells-in-a-dish-learn-to-play-pong-faster-than-an-ai/
+* [Electricity of Life💡: Wonders of Bioelectricity and Regenerative Biology Prof Michael Levin](https://youtu.be/qninhhFlfKE)
