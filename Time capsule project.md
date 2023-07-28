@@ -26,7 +26,7 @@ Well, what's done is done. We must accept the state of reality in which we are a
 
 ### Rationale.
 Humanity may not survive the 21st century with a 50/50 chance, writes Martin Rees.
-But the plans of transhumanists are designed for a longer period. Even if we don't create our latest agi invention more powerful than a human by 2045 as Ray Kurzweil predicted - we may die from one of the existential risks (pandemic, nuclear war).
+But the plans of transhumanists are designed for a longer period. Even if we don't create our latest agi invention more powerful than a human by 2045 as Ray Kurzweil predicted - we may die from one of the existential risks (climate change, pandemic, nuclear war, chain of catastrophic events).
 If this happens, then the population will drop sharply, for example, with the onset of nuclear winter.
 Some fractions of a percent will survive in different places on the Earth.
 In thousands, and maybe even millions of years, the biosphere will recover, and the agrarian phase of civilization will begin.
