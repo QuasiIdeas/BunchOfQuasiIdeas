@@ -48,6 +48,9 @@ Accelerate the onset of the industrial phase.
 * How to make a printing press?
 * How to make a wood or metal lathe using fewer modern tools?
 
+# The importance of LLM for summurising and compressing human knowledge
+A Large Language Model (LLM) is a type of artificial intelligence (AI) model that is trained on a large dataset of text to generate language outputs that are coherent and natural-sounding. One of the key benefits of LLMs is their ability to generate text that is contextually appropriate and coherent, even when given only a vague prompt or a small amount of input. This makes them useful for applications such as content generation, language translation, and text summarization, among others
+
 ### Capsule hardware requirements
   It is necessary that the microchips of the device be designed for a period of more than 30 years.
 Modern systems such as smartphones and home computers are designed for the consumer society.
