@@ -78,9 +78,14 @@ The presence of a radio beacon in the capsule. <br>
 **Network support:** Each pod must have its own unique IP address and be able to communicate with other pods over the air
 <br>
 
+
 ### The importance of LLM for summurising and compressing human knowledge
 A Large Language Model (LLM) is a type of artificial intelligence (AI) model that is trained on a large dataset of text to generate language outputs that are coherent and natural-sounding. One of the key benefits of LLMs is their ability to generate text that is contextually appropriate and coherent, even when given only a vague prompt or a small amount of input. This makes them useful for applications such as content generation, language translation, and text summarization, among others
 
+## Requirements for LLM system (information from google's Bard)
+ At least 4 CPUs and 16 GB for generating text
+ Dataset that includes 50 million wikipedia articles in over 300 languages and 2048 books
+ 
 # Communication time capsules with a base on Mars.
 A future option is possible in which the base on Mars will exist, and there will be no civilization on Earth.
 Then the dissemination of information to Mars that there is still someone left on Earth will cause feedback in 4-d space.
