@@ -12,7 +12,7 @@ sion requires a process of thought on the part of the individu-
 al recipients. As witness, the breakdowns of civilization, the
 dark ages in the history of mankind's progress, when the
 accumulated knowledge of centuries vanished from the lives
-of men who were unable, unwilling, or forbidden to think." 
+of men who were unable, unwilling, or forbidden to think." <br/>
 AYN RAND CAPITALISM:THE UNKNOWN IDEAL
 
 The apocaliptoLIB site is a continuation of the Time Capsule device project, which in turn was described in my story "Excavations of the Ancients" [Excavations of the Ancients] (https://github.com/Kvazikot/BallPark/wiki/Artefacts-of-the-ancients)
