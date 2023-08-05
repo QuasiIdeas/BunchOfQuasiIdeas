@@ -2,10 +2,19 @@
 Baranov Vladimir vsbaranov83@gmail.com <br/>
 Document creation date: August 30, 2021<br/>
 <br/>
-[My website is on Google.](https://script.google.com/macros/s/AKfycbwz0_HoePCzmFRg8ZVKuJ1RJg28zRxOBX8w_pvGB0dU_qv-ddohq4IX4JQ8EqBaGWY/exec?page=index.html)
 
 Project goal: Overcome the Great Filter. To develop a device capable of teaching future generations living after an existential catastrophe some of our technologies or the technologies of the ancients.
 <br/>
+
+ "Man is the only living species that can transmit and expand his store of
+knowledge from generation to generation; but such transmis-
+sion requires a process of thought on the part of the individu-
+al recipients. As witness, the breakdowns of civilization, the
+dark ages in the history of mankind's progress, when the
+accumulated knowledge of centuries vanished from the lives
+of men who were unable, unwilling, or forbidden to think." 
+AYN RAND CAPITALISM:THE UNKNOWN IDEAL
+
 The apocaliptoLIB site is a continuation of the Time Capsule device project, which in turn was described in my story "Excavations of the Ancients" [Excavations of the Ancients] (https://github.com/Kvazikot/BallPark/wiki/Artefacts-of-the-ancients)
 Description of the time capsule project is here [Time-capsule](https://github.com/Kvazikot/BallPark/wiki/Time-capsule)
 
