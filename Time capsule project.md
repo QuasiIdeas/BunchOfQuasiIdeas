@@ -85,6 +85,9 @@ A Large Language Model (LLM) is a type of artificial intelligence (AI) model tha
 ## Requirements for LLM system (information from google's Bard)
  At least 4 CPUs and 16 GB of memory for generating text <br/>
  Training dataset that includes 50 million wikipedia articles in over 300 languages and 2048 books<br/>
+
+## Stable microscopic wormholes
+According to John Cramer's interpretation of quantum physics, you can use wormholes accelerated to the speed of light to transmit information over very long distances. For example, in 59 days such a system can travel 1200 light years and your message can reach even very distant stars in a short time. If there is no  chronology protection, as put forward by Stephen Hawking, then you can create a time machine using microscopic wormholes and particle accelerators. Perhabs we can send messages to a distant stars using that kind of devices. But as Steven Hawking mention this maybe not a very good idea if we consider the posibility of existance of grabby aliens, advanced civilasations that is on the third level of Kardashev scale.
  
 # Communication time capsules with a base on Mars.
 A future option is possible in which the base on Mars will exist, and there will be no civilization on Earth.
