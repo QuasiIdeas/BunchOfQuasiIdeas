@@ -47,6 +47,7 @@ WormCam technology is intimate and personal. We can watch an opponent in the mos
 * https://en.wikipedia.org/wiki/The_Edge_of_Tomorrow_(Asimov_book)
 * https://en.wikipedia.org/wiki/Time_viewer
 * https://en.wikipedia.org/wiki/The_Light_of_Other_Days
+* https://en.wikipedia.org/wiki/Transactional_interpretation
 
 
 
