@@ -168,6 +168,8 @@ We live in the world that maybe has 10000 players and all the 8 billion NPC. But
 Здесь можно обратиться к схемам управления производительностью в смартфонах. Если у вас не запущена какая либо игра, вы не используете экран и у вас малый заряд аккумулятора, то яркость экрана будет автоматически отрегулирована на минимальную, физические ядра процессоров могут быть заглушены. Важный вопрос также в количестве оперативной памяти которая отводится под модель мозга.
 Ведь нам надо сохранить немного не мало а состояние 100 миллиардов нейронов, в каждом синапсе до миллиона молекул нейротранситтера.
 Возможно там применяются некие усреднения и методы монте карло для расчетов т.е. хранится только масса или обьем вещества.
+Как только мозг перешел в активное состояние начинает расти энергопотребление, тепловыделение повышается, скорость вентиляторов в системе охлаждения растет. Долгое время работы в таком режиме может приводить к перегреву процессора или даже выходу его из строя.
+В симулированном мире это может приводить к сенсорной усталости или в состоянии сонливости.
 
 # Energy efficiency requirements.
 The digital brain model, which is a copy of the real one, seems quite complex.
@@ -186,6 +188,8 @@ In any case, this is just a question of the amount of memory that is spent on ma
 Here you can refer to performance management schemes in smartphones. If you are not running any game, you are not using the screen and your battery is low, the screen brightness will be automatically adjusted to minimum, and the physical processor cores may be muted. An important question is also the amount of RAM that is allocated to the brain model.
 After all, we need to preserve a little, not a little, but the state of 100 billion neurons, in each synapse up to a million neurotransmitter molecules.
 Perhaps they use some averaging and Monte Carlo methods for calculations, i.e. Only the mass or volume of a substance is stored.
+As soon as the brain enters an active state, energy consumption begins to increase, heat dissipation increases, and the speed of the fans in the cooling system increases. Operating for a long time in this mode can lead to overheating of the processor or even failure.
+In a simulated world, this can lead to sensory fatigue or drowsiness.
 
 TODO. \[Insert drawing of some scheme here\]
 
