@@ -202,10 +202,21 @@ Therefore, it is difficult to somehow change this model; it is launched and main
 Digital neurons that imitate the operation of real ones consume energy, or in terms of a Turing machine
 emulating them takes CPU cycles.
 ```
-Multi-Core Processing: Modern smartphone chips utilize multiple cores (including energy-efficient cores for basic tasks and high-performance cores for demanding tasks), which allows for workload distribution. This design enables SoCs to provide necessary performance without maxing out every core, reducing energy use.
-Dynamic Frequency Scaling: This widely used technique allows the processor to adjust its frequency based on demand. When full processing power isn't required, the chips run at lower frequencies, and when more processing power is needed, the frequency increases.
-Dark Silicon: The concept of Dark Silicon emerged as semiconductor manufacturing technology continued to scale down in size. While smaller processes allow for more transistors to be placed on a chip, improving its potential performance, they also increase power density, which can cause overheating if all transistors were active at the same time. To prevent this overheating, not all of the transistors are used at once, resulting in Dark Silicon.
-There are design strategies that try to leverage Dark Silicon effectively. One prominent approach is "dark silicon aware" design such as heterogeneous computing, which proposes using different types of cores within the same processor. High-performance cores can handle demanding tasks but consume more power and are used sparingly, while power-efficient cores manage everyday tasks and conserve energy.
+Multi-Core Processing: Modern smartphone chips utilize multiple cores (including energy-efficient cores for basic tasks 
+and high-performance cores for demanding tasks), which allows for workload distribution. 
+This design enables SoCs to provide necessary performance without maxing out every core, reducing energy use.
+Dynamic Frequency Scaling: This widely used technique allows the processor to adjust its frequency based on demand. 
+When full processing power isn't required, the chips run at lower frequencies, and when more processing power is needed, 
+the frequency increases.
+Dark Silicon: The concept of Dark Silicon emerged as semiconductor manufacturing technology continued to scale down in size. 
+While smaller processes allow for more transistors to be placed on a chip, improving its potential performance, 
+they also increase power density, which can cause overheating if all transistors were active at the same time. 
+To prevent this overheating, not all of the transistors are used at once, resulting in Dark Silicon.
+There are design strategies that try to leverage Dark Silicon effectively. 
+One prominent approach is "dark silicon aware" design such as heterogeneous computing, 
+which proposes using different types of cores within the same processor. 
+High-performance cores can handle demanding tasks but consume more power and are used sparingly, 
+while power-efficient cores manage everyday tasks and conserve energy.
 ```
 Therefore, some kind of energy efficiency schemes are most likely used.
 Those. those neurons or networks of biological neurons that are not used are transferred to a frozen state.
