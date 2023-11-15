@@ -151,6 +151,42 @@ We live in the world that maybe has 10000 players and all the 8 billion NPC. But
 # Speech synt of the NPC. Voice cloning . GPT-3.
 ----------------------------------------------------------------------------------------------
 
+# Требования к энергетической эффективности.
+Модель цифрового мозга, которая является копией реального представляется довольно сложной.
+Поэтому сложно как-то изменить эту модель, она запускается и поддерживается в монолитном состоянии.
+Цифровые нейроны которые иммитируют работу реальных потребляют энергию или в терминах машины Тьюринга 
+на их эмуляцию тратятся циклы процессора.
+Поэтому скорее всего применяются некие схемы энергоэффективности. 
+Т.е. нейроны или сети биологических нейронов которые не используются переводятся в замороженное состояние.
+Нам нужно сохранить количество молекул нейротрансмиттеров и потенциал мембраны для каждого "замороженного" нейрона.
+Это похоже на замороженные процессоры в андройд ОС.
+Если человек не вспоминает в данный момент какие-то события прошлого, то его гиппокам может работать не на 100%, а всего лишь на 20%
+Также если человек не переживает какие либо сильные эмоции, как например при катании на американских горках 
+его лимбическая система также будет симулирована лишь до определенной степени.
+Если конечно в будущем не будет создана некая универсальная цифровая кора где каждый нейрон представляет собой взаимозаменяемую единицу.
+В любом слуае эту лишь вопрос количества памяти которое расходуется на сохранения состояния биологической клетки. 
+Здесь можно обратиться к схемам управления производительностью в смартфонах. Если у вас не запущена какая либо игра, вы не используете экран и у вас малый заряд аккумулятора, то яркость экрана будет автоматически отрегулирована на минимальную, физические ядра процессоров могут быть заглушены. Важный вопрос также в количестве оперативной памяти которая отводится под модель мозга.
+Ведь нам надо сохранить немного не мало а состояние 100 миллиардов нейронов, в каждом синапсе до миллиона молекул нейротранситтера.
+Возможно там применяются некие усреднения и методы монте карло для расчетов т.е. хранится только масса или обьем вещества.
+
+# Energy efficiency requirements.
+The digital brain model, which is a copy of the real one, seems quite complex.
+Therefore, it is difficult to somehow change this model; it is launched and maintained in a monolithic state.
+Digital neurons that imitate the operation of real ones consume energy, or in terms of a Turing machine
+emulating them takes CPU cycles.
+Therefore, some kind of energy efficiency schemes are most likely used.
+Those. those neurons or networks of biological neurons that are not used are transferred to a frozen state.
+We need to preserve the number of neurotransmitter molecules and membrane potential for each "frozen" neuron.
+This is similar to frozen processors in the Android OS.
+If a person does not remember at the moment some events of the past, then his hippocam may not work at 100%, but only at 20%.
+Also, if a person does not experience any strong emotions, such as when riding a roller coaster
+his limbic system will also be simulated only to a certain extent.
+Unless, of course, in the future some kind of universal digital cortex is created where each neuron is an interchangeable unit.
+In any case, this is just a question of the amount of memory that is spent on maintaining the state of the biological cell.
+Here you can refer to performance management schemes in smartphones. If you are not running any game, you are not using the screen and your battery is low, the screen brightness will be automatically adjusted to minimum, and the physical processor cores may be muted. An important question is also the amount of RAM that is allocated to the brain model.
+After all, we need to preserve a little, not a little, but the state of 100 billion neurons, in each synapse up to a million neurotransmitter molecules.
+Perhaps they use some averaging and Monte Carlo methods for calculations, i.e. Only the mass or volume of a substance is stored.
+
 TODO. \[Insert drawing of some scheme here\]
 
 [![image](https://web.archive.org/web/20221205034332im_/https://raw.githubusercontent.com/Kvazikot/BunchofBaranovIdeas/master/images/percentage_npc.png)](https://web.archive.org/web/20221205034332/https://raw.githubusercontent.com/Kvazikot/BunchofBaranovIdeas/master/images/percentage_npc.png) fig 1. Distribution of AC, DC and NPC in a simulation.
