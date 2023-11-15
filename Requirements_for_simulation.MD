@@ -171,6 +171,11 @@ We live in the world that maybe has 10000 players and all the 8 billion NPC. But
 Как только мозг перешел в активное состояние начинает расти энергопотребление, тепловыделение повышается, скорость вентиляторов в системе охлаждения растет. Долгое время работы в таком режиме может приводить к перегреву процессора или даже выходу его из строя.
 В симулированном мире это может приводить к сенсорной усталости или в состоянии сонливости.
 
+Опять же энергопотребление находится в прямой зависимости от разрешения симуляции (level of details).
+В высокодетализированные моменты жизненного опыта, когда разрешение симуляции близко в максимальному физическому пределу, потребление энергии всего симулятора может быть пиковым. Например события в которых нужно симулировать сразу нескольких игроков в одном помещении, какая-то важная конференция или саммит, который может повлиять на исторические события.
+Теоретически система может строить социальный граф людей, которые в той или иной степени могут быть иметь какое-то влияние ( точ то называется soft power).
+Это могут быть блоггеры, активисты, политические деятели. Это отражается в социальном рейтинге человека, в некоторых странах таких как китай даже вводят систему социального рейтинга, но я сейчас говорю о внутреннем социальном графе, который используется для прогнозирования будущих событий. Прогноз необходимо делать на каждый кадр симуляции, мы должны заранее выделить ресурсы ( зарезервировать память или ядра процессоров) до того как событие произошло. Это важно для процессов синхронизации и визуаьной безглючности симулированного мира.
+
 # Данные которые сохранились после сингулярности.
 Представим что вы живете в промежутке между 2000 и 2030.
 Вы проживаете свою жизни в разных исторических ветках. Какая то ваша копия умерла от сталкновения с авто.
@@ -232,6 +237,11 @@ After all, we need to preserve a little, not a little, but the state of 100 bill
 Perhaps they use some averaging and Monte Carlo methods for calculations, i.e. Only the mass or volume of a substance is stored.
 As soon as the brain enters an active state, energy consumption begins to increase, heat dissipation increases, and the speed of the fans in the cooling system increases. Operating for a long time in this mode can lead to overheating of the processor or even failure.
 In a simulated world, this can lead to sensory fatigue or drowsiness.
+
+Again, power consumption is directly dependent on the simulation resolution (level of detail).
+At highly detailed moments in life experience, when the resolution of the simulation is close to its maximum physical limit, the power consumption of the entire simulator may peak. For example, events in which you need to simulate several players in one room at once, some important conference or summit that can affect historical events.
+Theoretically, the system can build a social graph of people who, to one degree or another, may have some influence (what is called soft power).
+These could be bloggers, activists, politicians. This is reflected in a person’s social rating, in some countries such as China they even introduce a social rating system, but I am now talking about the internal social graph, which is used to predict future events. The prediction must be made for each frame of the simulation; we must allocate resources in advance (reserve memory or processor cores) before the event occurs. This is important for synchronization processes and the visual glitch-free nature of the simulated world.
 
 TODO. \[Insert drawing of some scheme here\]
 
