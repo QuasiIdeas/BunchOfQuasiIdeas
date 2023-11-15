@@ -171,6 +171,31 @@ We live in the world that maybe has 10000 players and all the 8 billion NPC. But
 Как только мозг перешел в активное состояние начинает расти энергопотребление, тепловыделение повышается, скорость вентиляторов в системе охлаждения растет. Долгое время работы в таком режиме может приводить к перегреву процессора или даже выходу его из строя.
 В симулированном мире это может приводить к сенсорной усталости или в состоянии сонливости.
 
+# Данные которые сохранились после сингулярности.
+Представим что вы живете в промежутке между 2000 и 2030.
+Вы проживаете свою жизни в разных исторических ветках. Какая то ваша копия умерла от сталкновения с авто.
+Какая-то копия скончалась в авиакатастрофе, какая-то погибла на войне, в результате самоубийства и т.д.
+В итоге до сингулярности доживает одна или несколько ваших копий. Их этой копии создают полный цифровой аналог и запускаяют внутри исторической симуляции наподобии той что показана в фильме Аниматрица. Он продолжает жить но уже внутри симуляции где фактический год снова 2000.
+Для того чтобы создать такую симуляцию вам необходимо собрать как можно больше сведений о человеке.
+Какие-то ваши самые старые вещи могут быть созданы на основе реальных сканов реальных вещей, но большинство новых вещей скорее всего симулировано созданно мгновенно как новая модель машины в игровом движке GTA 5.
+Все его фотографии, 3д можель здания в котором он жил, видео записи родственников. Его профессиональные достижения, например его тексты в интернете или программы если он был программистом. Часть информации хранится в синапсах его мозга и периодичски может восстанавливатся благодаря такому свойству мозга как нейропластичность. Т.е. допустим если вы показываете человеу шоу которое он смотрел 20 лет назад, то на слудующий день он сможет вспомнить называние программы которой он пользовался 20 лет назад или какую-нибудь мелодию из дества.
+Так работает биологическая память. Соответсвенно цирфовая модель будет веси себя аналогичным образом.
+Более того для более точного восстановления памяти и оригинальныз ощущений вам нужно подделать также каки-то специфические ощущения например если у человека были бреккеты или повышенная кислотность желудка, синдром сухого глаза, может быть аллергия, приступы астмы.
+Если цель симуляции - просто посмотреть что получится в истории если все пойдет немного другим путем, то все это может иметь смысл.
+Доведет ли эта конкретная конфигурация до создания AGI или все закончится раньше.
+
+# Data that was preserved after the singularity.
+Let's imagine that you live between 2000 and 2030.
+You live your life in different historical branches. Some copy of you died from a collision with a car.
+Some copy died in a plane crash, some died in the war, as a result of suicide, etc.
+As a result, one or more copies of you survive to the singularity. A complete digital analogue of this copy is created and launched inside a historical simulation similar to the one shown in the film Animatrix. He continues to live but inside a simulation where the actual year is again 2000.
+In order to create such a simulation, you need to collect as much information as possible about the person. Some of your oldest items may be created based on real scans of real items, but most new items are likely simulated to be created instantly like a new car model in the GTA 5 game engine.
+All his photographs, 3D models of the building in which he lived, video recordings of relatives. His professional achievements, for example his texts on the Internet or programs if he was a programmer. Some of the information is stored in the synapses of his brain and can be periodically restored due to such a property of the brain as neuroplasticity. Those. Let's say if you show a person a show that he watched 20 years ago, then the next day he will be able to remember the name of the program that he used 20 years ago or some melody from his childhood.
+This is how biological memory works. Accordingly, the digital model will weigh in a similar way.
+Moreover, for a more accurate restoration of memory and original sensations, you also need to fake some specific sensations, for example, if a person had braces or high acidity of the stomach, dry eye syndrome, maybe allergies, asthma attacks.
+If the purpose of the simulation is simply to see what happens in history if things go a slightly different way, then this might all make sense.
+Will this particular configuration lead to the creation of AGI or will it all end first.
+
 # Energy efficiency requirements.
 The digital brain model, which is a copy of the real one, seems quite complex.
 Therefore, it is difficult to somehow change this model; it is launched and maintained in a monolithic state.
