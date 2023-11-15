@@ -148,7 +148,7 @@ in this document you can read translated subtitles from this video. Sorry for th
 
 We live in the world that maybe has 10000 players and all the 8 billion NPC. But in my model we all NPC and a real in the same time. It just depends on time quant of operating system in the outer world. With gravity quantum teleportation you can teleport the state of all neurons from one space time point to another in the real physical world. Maybe with advanced stable diffusion models or GAN you can merge some brain maps from one person to another.
 
-# Speech synt of the NPC. Voice cloning . GPT-3.
+
 ----------------------------------------------------------------------------------------------
 
 # Требования к энергетической эффективности.
