@@ -11,6 +11,7 @@ I was very interested in antigravity propulsion systems and Brown's work on elec
 I'm not an expert in theoretical physics, so all questions about how to implement the device should be directed to him.
 Here I will just give some screenshots from his presentations.
 
+![image](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/images/Screenshot%202024-01-02%20125855.png)
 ![image](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/images/Screenshot%202024-01-02%20130039.png)
 ![image](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/images/Screenshot%202024-01-02%20125832.png)
 ![image](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/images/Screenshot%202024-01-02%20130155.png
