@@ -26,16 +26,16 @@
 Он живет как в кино с одной линией сценария и с одной стрелой времени.
 Одна сцена плавно перетекает в другую. Все логично хотябы на уровне цепочки событий и причинность не нарушена.
 
-[!image](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/images/immortality_machine.png)
+![image](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/images/immortality_machine.png)
 
 ## Потенциальное решение со стороны физики
 Потенциальное решение для создания низкоэнергетических warp drive предложил Jack Sarfatti в работе [6].
 Я не являюсь экспертом в теоретической физике поэтому все вопросы как реализовать устройство следует направить ему.
 Здесь же я просто приведу некоторые скриншлты из его презентаций.
-[!image](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/images/Screenshot%202024-01-02%20130039.png)
-[!image](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/images/Screenshot%202024-01-02%20125832.png)
-[!image](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/images/Screenshot%202024-01-02%20130155.png
-[!image](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/images/Screenshot%202024-01-02%20130311.png)
+![image](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/images/Screenshot%202024-01-02%20130039.png)
+![image](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/images/Screenshot%202024-01-02%20125832.png)
+![image](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/images/Screenshot%202024-01-02%20130155.png
+![image](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/images/Screenshot%202024-01-02%20130311.png)
 ....
 
 Огромную сложность также представляется вопрос о деактивации Омеги.
