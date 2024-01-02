@@ -31,6 +31,8 @@ Here I will just give some screenshots from his presentations.
 * 5. https://en.wikipedia.org/wiki/Transactional_interpretation
 * 6. https://www.academia.edu/41746170/Low_Energy_Warp_Drive_Sarfatti_Lectures_in_Physics
 * 7. Future Humans and Secret Time Wars with Franc Milburn https://youtu.be/TVRHxAzCZnI
+* 8. Secrets of Antigravity Propulsion Tesla, UFOs, and Classified Aerospace Technology By Paul A. LaViolette
+* 9. https://twitter.com/JackSarfatti
 
 
 
