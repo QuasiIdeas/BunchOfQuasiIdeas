@@ -1,45 +1,23 @@
 # Omega time masheen
-В будущем возможно будет создана машина с помощью которой вы выйграете любую войну.
-Она предсказывает будущее для каждого конкретного бойца и вмешивается минимальным воздействием чтобы сохранить ему жизнь.
-Это работает почти также как reload в думе, но несколько сложнее и вк. в себя гильбертово пространство.
-Фактически такая машина управляет реальностью в настоящем из будущего.
-За тысяу лет она накопит огромное количество данных обо всем на Земле.
-Представте какую мудрость и знание о жизни вы бы накопили еслибы жили не 75 лет, а больше 1000.
-Омега обладает огромной мудростью. Это что-то наподобии распределенного в 4д пространстве разума.
-И эта машина уже на этапе разработки была обучена на оперировании со многими стрелами времени.
-Наш разум эволюционно приспособлен только к одному временному измерению.
-Омега работает в гильбертовом пространстве т.е. с неограниченным количеством временных траекторий.
-Для бойца которого возраждает Омега история кажется абсолютно согласованной.
-Он встал с утра с правильной ноги, пошел в ванную, сварил яйца, сделал тосты.
-Когда он выходил из дома в соседней парадную <b>както случайно</b> попадает авицационная бомба.
-Он благодарит судьбу за подаренный ему шанс. И убегает со всех ног из дома.
-
-Если мы отмотаем лог Омеги на предмет того что происходило с этим парнем то мы найдем следущее.
-В пятницу 14 июня Омега зафиксировала что все копии бойца во всех временных линиях погибают при ковровой бомбардирвоке города.
-НИкаких письм семье не хранятся на сервере после 14 июня от этого молодого парня. 
-В его комнате все вещи стоят на тех же местах. В конце того же года появляется могила на кладбище с его именем.
-Омега понимает что чтобы сохранить хотя бы одну копию бойца нужно как-то вмешаться в компьютер бомбардировщика до бомбежки города.
-Омега создает электромагнитную волну которая 13 июня слегка влияет на навигационные приборы самолета и он пролетает всего на несколько метров дальше.
-Бомба попадает в соседнюю парадную.
-
-Для него не было никаких дней сурка или какихто противоречивых воспоминаний.
-Он живет как в кино с одной линией сценария и с одной стрелой времени.
-Одна сцена плавно перетекает в другую. Все логично хотябы на уровне цепочки событий и причинность не нарушена.
+According to Murphy's Law, there are a million ways to do something wrong and only one way to do it right. In terms of an entire civilization, it can refer to the possible existential risks that grow with the advent of new technologies. I've written about this in more detail in these articles [Time capsule project](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/Time%20capsule%20project.md). Here I want to talk about the technology of time control or control of the fate of our civilization. It is based on studies of UAP and the ability to travel through time, which is not prohibited by the theory of general relativity
+In fact, such a machine controls reality in the present from the future. Over the course of a thousand years, it will accumulate a huge amount of data about everything on Earth. Imagine what wisdom and knowledge about life you would accumulate if you lived not 75 years, but more than 1000. Omega has great wisdom. It's something like a mind distributed in 4D space. And this machine was already trained at the development stage to operate with many arrows of time. Our minds are evolutionarily adapted to only one measure of time.
+This machine can be created by our descendants and used by special intelligence services that will operate in 4D space. The question of Omega's location in 4d coordinates is also very difficult. We can consider a variant of the future when two Omegas operate in the world at once with opposite goals.
+Here is diagram of how Omega can influence th destiny of one particular VIP person.
 
 ![image](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/images/immortality_machine.png)
 
-## Потенциальное решение со стороны физики
-Потенциальное решение для создания низкоэнергетических warp drive предложил Jack Sarfatti в работе [6].
-Я не являюсь экспертом в теоретической физике поэтому все вопросы как реализовать устройство следует направить ему.
-Здесь же я просто приведу некоторые скриншлты из его презентаций.
+## A Potential Solution from the Physics Side
+I was very interested in antigravity propulsion systems and Brown's work on electrogravity. I am sure that we do not need rockets, this is really the technology that will lead to space exploration. A potential solution for creating a low-energy warp drive was proposed by Jack Sarfatti in his work [6].
+I'm not an expert in theoretical physics, so all questions about how to implement the device should be directed to him.
+Here I will just give some screenshots from his presentations.
+
 ![image](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/images/Screenshot%202024-01-02%20130039.png)
 ![image](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/images/Screenshot%202024-01-02%20125832.png)
 ![image](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/images/Screenshot%202024-01-02%20130155.png
 ![image](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/images/Screenshot%202024-01-02%20130311.png)
 ....
 
-Огромную сложность также представляется вопрос о деактивации Омеги.
-Можно рассмотреть вариант будущего когда в мире оперируют сразу две Омеги с противоположными целями.
+
 
 # Citations from The_Light_of_Other_Days
 "The new cortical implants, adapted from neural-implant VR apparatus, were the final expression of WormCam technology: a small squeezed-vacuum wormhole generator, together with neural sensor apparatus, buried deep in the cortex of the recipient. The generator was laced with neurotropic chemicals so that, over several months, the recipient’s neurons would grow pathways into the generator. And the neural sensor was a highly sensitive neuron activity pattern analyzer, capable of pinpointing individual neuronal synapses.
