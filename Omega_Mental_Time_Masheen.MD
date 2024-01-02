@@ -25,6 +25,17 @@
 Для него не было никаких дней сурка или какихто противоречивых воспоминаний.
 Он живет как в кино с одной линией сценария и с одной стрелой времени.
 Одна сцена плавно перетекает в другую. Все логично хотябы на уровне цепочки событий и причинность не нарушена.
+
+[!image](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/images/immortality_machine.png)
+
+## Потенциальное решение со стороны физики
+Потенциальное решение для создания низкоэнергетических warp drive предложил Jack Sarfatti в работе [6].
+Я не являюсь экспертом в теоретической физике поэтому все вопросы как реализовать устройство следует направить ему.
+Здесь же я просто приведу некоторые скриншлты из его презентаций.
+[!image](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/images/Screenshot%202024-01-02%20130039.png)
+[!image](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/images/Screenshot%202024-01-02%20125832.png)
+[!image](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/images/Screenshot%202024-01-02%20130155.png
+[!image](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/images/Screenshot%202024-01-02%20130311.png)
 ....
 
 Огромную сложность также представляется вопрос о деактивации Омеги.
@@ -43,11 +54,13 @@ WormCam technology is intimate and personal. We can watch an opponent in the mos
 
 
 # References
-* https://en.wikipedia.org/wiki/Hiroshi_Sakurazaka
-* https://en.wikipedia.org/wiki/The_Edge_of_Tomorrow_(Asimov_book)
-* https://en.wikipedia.org/wiki/Time_viewer
-* https://en.wikipedia.org/wiki/The_Light_of_Other_Days
-* https://en.wikipedia.org/wiki/Transactional_interpretation
+* 1. https://en.wikipedia.org/wiki/Hiroshi_Sakurazaka
+* 2. https://en.wikipedia.org/wiki/The_Edge_of_Tomorrow_(Asimov_book)
+* 3. https://en.wikipedia.org/wiki/Time_viewer
+* 4. https://en.wikipedia.org/wiki/The_Light_of_Other_Days
+* 5. https://en.wikipedia.org/wiki/Transactional_interpretation
+* 6. https://www.academia.edu/41746170/Low_Energy_Warp_Drive_Sarfatti_Lectures_in_Physics
+
 
 
 
