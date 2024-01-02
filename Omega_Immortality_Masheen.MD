@@ -60,6 +60,8 @@ WormCam technology is intimate and personal. We can watch an opponent in the mos
 * 4. https://en.wikipedia.org/wiki/The_Light_of_Other_Days
 * 5. https://en.wikipedia.org/wiki/Transactional_interpretation
 * 6. https://www.academia.edu/41746170/Low_Energy_Warp_Drive_Sarfatti_Lectures_in_Physics
+* 7. Future Humans and Secret Time Wars with Franc Milburn https://youtu.be/TVRHxAzCZnI
+
 
 
 
