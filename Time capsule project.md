@@ -168,7 +168,7 @@ Total: 3 thousand capsules <br>
 With a construction speed of 19 days, the project could be completed in 89 years
 
 # Possible problems with burying the capsule on Earth surface.
-Tectonic processes can recycle capsule components over time. Time does not spare even mountains. mountains can turn into desert in thousands and millions of years. Perhaps a good option would be to send capsules into orbit or even to the Moon. Our socialization has not yet created anything that could last unchanged for thousands of years. Even Stonehenge appeared with everything recently on an evolutionary scale. Perhaps some data can be encoded inside DNA molecules.
+Tectonic processes can recycle capsule components over time. Time does not spare even mountains. mountains can turn into desert in thousands and millions of years. Perhaps a good option would be to send capsules into orbit or even to the Moon. Our human civilization has not yet created anything that could last unchanged for thousands of years. Stonehenge and Great Pyramids are appeared recently on an evolutionary scale. Perhaps some data can be encoded inside DNA molecules.
 
 # Capsule examples
 *International Time Capsule Society
