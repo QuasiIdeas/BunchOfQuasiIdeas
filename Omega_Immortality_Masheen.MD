@@ -19,9 +19,32 @@ Here I will just give some screenshots from his presentations.
 ....
 
 
+# Critique of Everett multiverse theory 
 
+Ontological extravagance: MWI posits the existence of a vast and infinite number of parallel universes. This is difficult to grasp and lacks empirical verification.
 
+The interference problem:  MWI struggles to explain how interference between different universes occurs. Interference is a crucial concept in quantum mechanics, yet MWI offers no clear explanation for it within its framework.
 
+The subjective experience conundrum: MWI doesn't explain how subjective consciousness arises. In Everett's view, each observer exists in an isolated world, never interacting with others. This raises questions about the nature of our unified experience.
+
+Difficulties with testability: MWI is experimentally elusive. It doesn't contradict known results, but it also doesn't predict new phenomena that could be used to confirm or disprove it.
+
+Anthropic leanings: MWI can be seen as anthropocentric, focusing heavily on the observer's experience. This neglects quantum systems that exist independently of human observation.
+
+Lingering interpretational issues: MWI doesn't definitively answer all the fundamental questions of quantum mechanics. The nature of reality and the role of the observer remain open-ended.
+
+Alternative interpretations: Other interpretations of quantum mechanics, like the Copenhagen interpretation and decoherence theory, exist and may offer solutions that MWI lacks.
+
+# A Critique of Faster-Than-Light Travel
+Defying Einstein: Our current understanding of physics, based on Einstein's theory of relativity, suggests that nothing with mass can travel faster than the speed of light. As objects approach light speed, their mass increases infinitely, requiring an infinite amount of energy to propel them further.
+
+The Nasty Neighbourhood: Even if we could overcome the energy hurdle, there's the issue of interstellar space. It's not empty; it's filled with particles and radiation. A spaceship traveling at FTL speeds would collide with these particles, generating immense and potentially catastrophic energy.
+
+Time Travel Troubles:  Some theories of FTL, like wormholes,  imply the possibility of traveling backward in time. This creates causal paradoxes – what if you travel back and prevent your own birth? The implications for causality and the stability of time itself are mind-boggling.
+
+Exotic Matter Mystery:  Many proposed FTL drives, like the Alcubierre drive, rely on the existence of exotic matter with negative mass. This hypothetical matter has never been observed, and its existence and properties remain purely theoretical.
+
+The Energy Conundrum:  Even if we overcome the  physical hurdles, the sheer amount of energy required for FTL travel is staggering.  Our current energy production pales in comparison to what would be needed to propel a spaceship at faster-than-light speeds.
 
 # References
 * 1. https://en.wikipedia.org/wiki/Hiroshi_Sakurazaka
@@ -33,6 +56,7 @@ Here I will just give some screenshots from his presentations.
 * 7. Future Humans and Secret Time Wars with Franc Milburn https://youtu.be/TVRHxAzCZnI
 * 8. Secrets of Antigravity Propulsion Tesla, UFOs, and Classified Aerospace Technology By Paul A. LaViolette
 * 9. https://twitter.com/JackSarfatti
+* 10. Isaac Asimov "Foundation series". The concept of psychohistory
 
 
 
