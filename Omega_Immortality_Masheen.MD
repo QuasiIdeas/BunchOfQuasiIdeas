@@ -4,7 +4,8 @@ In fact, such a machine controls reality in the present from the future. Over th
 This machine can be created by our descendants and used by special intelligence services that will operate in 4D space. The question of Omega's location in 4d coordinates is also very difficult. We can consider a variant of the future when two Omegas operate in the world at once with opposite goals.
 Here is diagram of how Omega can influence th destiny of one particular VIP person.
 
-![image](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/images/immortality_machine.png)
+![image](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/images/event_precog.png)
+![image](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/images/psychohistory.png)
 
 ## A Potential Solution from the Physics Side
 I was very interested in antigravity propulsion systems and Brown's work on electrogravity. I am sure that we do not need rockets, this is really the technology that will lead to space exploration. A potential solution for creating a low-energy warp drive was proposed by Jack Sarfatti in his work [6].
