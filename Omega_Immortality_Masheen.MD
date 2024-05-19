@@ -58,6 +58,7 @@ The Energy Conundrum:  Even if we overcome the  physical hurdles, the sheer amou
 * 8. Secrets of Antigravity Propulsion Tesla, UFOs, and Classified Aerospace Technology By Paul A. LaViolette
 * 9. https://twitter.com/JackSarfatti
 * 10. Isaac Asimov "Foundation series". The concept of psychohistory
+* 11. Minority Report by Philip K. Dick
 
 
 
