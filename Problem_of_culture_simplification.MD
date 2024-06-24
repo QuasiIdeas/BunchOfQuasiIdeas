@@ -25,10 +25,10 @@ We can see ideas taken from Avatar and Terminator.
 It's much easier to release another Star Wars series than to come up with a new universe from scratch. The new post-industrial economy required the birth of a new class of creators. Instead of working in a factory, people began to look for designer jobs. Therefore, the bar for creative people been lowered. But maybe I don’t pay enough attention to the gaming industry, because the bulk of creatives went there
 
 ## Important factors
-Decline in education: There is a decrease in literacy, critical thinking, and scientific knowledge. Educational systems are increasingly focused on standardized testing rather than developing higher-order skills.
-Proliferation of disinformation and anti-intellectualism: False or misleading information is widely shared on social media and other outlets. Anti-intellectualism is becoming more acceptable, and people who value knowledge and education are often ridiculed.
-Prioritization of entertainment and consumption: Society is increasingly focused on entertainment, superficial pleasures, and material goods, rather than intellectual pursuits or social issues.
-Populism and demagoguery: Politicians increasingly appeal to voters' emotions and fears, rather than reason and facts. Populist and demagogic figures can rise to power using simplistic slogans and promising quick fixes to complex problems.
-Growing intolerance and polarization: There is increasing intolerance of dissenting opinions and cultures. Society is becoming more polarized, making it difficult to have constructive dialogue and compromise.
-Decline in civic engagement: People are becoming less engaged in the political process and social issues. Apathy and distrust of institutions are growing.
-Erosion of science and expertise: The scientific method and expert knowledge are increasingly questioned or even ridiculed. This makes it difficult to make informed decisions based on evidence.
+* Decline in education: There is a decrease in literacy, critical thinking, and scientific knowledge. Educational systems are increasingly focused on standardized testing rather than developing higher-order skills.
+* Proliferation of disinformation and anti-intellectualism: False or misleading information is widely shared on social media and other outlets. Anti-intellectualism is becoming more acceptable, and people who value knowledge and education are often ridiculed.
+* Prioritization of entertainment and consumption: Society is increasingly focused on entertainment, superficial pleasures, and material goods, rather than intellectual pursuits or social issues.
+* Populism and demagoguery: Politicians increasingly appeal to voters' emotions and fears, rather than reason and facts. Populist and demagogic figures can rise to power using simplistic slogans and promising quick fixes to complex problems.
+* Growing intolerance and polarization: There is increasing intolerance of dissenting opinions and cultures. Society is becoming more polarized, making it difficult to have constructive dialogue and compromise.
+* Decline in civic engagement: People are becoming less engaged in the political process and social issues. Apathy and distrust of institutions are growing.
+* Erosion of science and expertise: The scientific method and expert knowledge are increasingly questioned or even ridiculed. This makes it difficult to make informed decisions based on evidence.
