@@ -17,3 +17,9 @@ Maybe it is just a network effect. Every music have its own niche. I still strug
 Also i want to make a reference to the famous movie Idiocracy in witch this idea was extrapolated to the absolute absurd.
 
 ![image](https://th.bing.com/th/id/OIP.iVvdNupdwzf2zPDzybZncgHaPq?pid=ImgDet&rs=1)
+
+Lack of new ideas in cinema.
+All the most interesting concepts in science fiction were before the 90s. After this time it's mostly repetition and copying.
+If you watch the latest movie Atlas 2024.
+We can see ideas taken from Avatar and Terminator.
+It's much easier to release another Star Wars series than to come up with a new universe from scratch. The new post-industrial economy required the birth of a new class of creators. Instead of working in a factory, people began to look for designer jobs. Therefore, the bar for creative people was 3. But maybe I don’t pay enough attention to the gaming industry, because the bulk of creatives went there
