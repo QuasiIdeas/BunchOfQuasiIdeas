@@ -1,8 +1,8 @@
-# Omega time masheen
-
 # Important Information
 
 <span style="color: red;">Disclaimer: The ideas presented in this document are pure fantasy and are only partially based on the current understanding of the laws of physics. I have not found any mention of real working systems of this type in the literature..</span>
+
+# Omega time masheen
 
 According to Murphy's Law, there are a million ways to do something wrong and only one way to do it right. In terms of an entire civilization, it can refer to the possible existential risks that grow with the advent of new technologies. I've written about this in more detail in these articles [Time capsule project](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/Time%20capsule%20project.md). Here I want to talk about the technology of time control or control of the fate of our civilization. It is based on studies of UAP and the ability to travel through time, which is not prohibited by the theory of general relativity
 In fact, such a machine controls reality in the present from the future. Over the course of a thousand years, it will accumulate a huge amount of data about everything on Earth. Imagine what wisdom and knowledge about life you would accumulate if you lived not 75 years, but more than 1000. Omega has great wisdom. It's something like a mind distributed in 4D space. And this machine was already trained at the development stage to operate with many arrows of time. Our minds are evolutionarily adapted to only one measure of time.
