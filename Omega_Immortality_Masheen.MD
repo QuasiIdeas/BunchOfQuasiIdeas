@@ -1,6 +1,6 @@
 # Important Information
 
-<span style="color: red;">Disclaimer: The ideas presented in this document are pure fantasy and are only partially based on the current understanding of the laws of physics. I have not found any mention of real working systems of this type in the literature..</span>
+<span style="color: red;">Disclaimer: The ideas presented in this document are pure speculation \ fantasy and are only partially based on the current understanding of the laws of physics. I have not found any mention of real working systems of this type in the literature..</span>
 
 # Omega time masheen
 
