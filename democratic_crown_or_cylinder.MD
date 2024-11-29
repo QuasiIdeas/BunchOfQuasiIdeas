@@ -2,7 +2,6 @@
 
 The latest Nobel Prizes in Economics were awarded for research directly related to the fact that the long-term welfare of nations depends on the state of democratic institutions. Much depends on the leader, on his psychological characteristics, his personality. Some are more democratic, some are more authoritarian by nature. The purpose of this work is to demonstrate how a technical device can be used to regulate the level of democratization of a high-ranking official (e.g., a president) and enable real-time monitoring of the state of democratic institutions.
 
-Incorporates elements of direct democracy:
 Requirement: Implement a system to display the "democracy level" visibly on the "crown." or cylinder
 
 Determining the democracy score:
