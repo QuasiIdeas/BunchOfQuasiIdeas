@@ -1,6 +1,6 @@
 # Device for monitoring the level of democracy of the leader in a hypotetical democratic state
 
-The latest Nobel Prizes in Economics were awarded for research directly related to the fact that the long-term welfare of nations depends on the state of democratic institutions. Much depends on the leader, on his psychological characteristics, his personality. Some are more democratic, some are more authoritarian by nature. The goal of this work is to show how, with the help of a technical device, it is possible to adjust the level of democratization of an individual holding a high position in power (for example, the president), as well as to monitor the state of democratic institutions in real time.
+The latest Nobel Prizes in Economics were awarded for research directly related to the fact that the long-term welfare of nations depends on the state of democratic institutions. Much depends on the leader, on his psychological characteristics, his personality. Some are more democratic, some are more authoritarian by nature. The purpose of this work is to demonstrate how a technical device can be used to regulate the level of democratization of a high-ranking official (e.g., a president) and enable real-time monitoring of the state of democratic institutions.
 
 Includes elements of direct democracy
 
