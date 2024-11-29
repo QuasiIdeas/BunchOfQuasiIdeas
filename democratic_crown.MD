@@ -12,8 +12,8 @@ Requirement: Provide control over the level of democracy in the form of a displa
 
 The crown has an indicator with a scale from "most democratic" to "absolute dictator".
 Can be combined with a brain chip.
-As an extreme measure, it can contain electric shock, but in the most cases cause some temporary nervous system disorders.
-Such as apathy, lack of interest in life. That is, the more democratic the leader is, the more pleasure he gets from life.
+As an extreme measure, it can contain electric shock, but in the most cases cause some temporary nervous system adjustments.
+Such as apathy, lack of interest in life in the case of authoritarian behavour. That is, the more democratic the leader is, the more pleasure he gets from life.
 
 Questions:
 1. How to ensure access control and protection of the device from hacking?
