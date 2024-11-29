@@ -16,3 +16,4 @@ Questions:
 1. How to ensure access control and protection of the device from hacking?
 2. Is it necessary to change the constitution to make wearing a "crown" mandatory?
 3. How to ensure that voting results cannot be falsified?
+4. How to avoid potential risk from the AGI that could replace the data flow representing the real will of the people with a fake one.
