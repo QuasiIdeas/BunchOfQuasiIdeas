@@ -8,7 +8,7 @@ The level of democracy is determined by direct voting on the Internet.
 The level of democracy can also be determined taking into account the research of international experts.
 Contains a scale from the most democratic to an absolute dictator.
 Can be combined with a brain chip.
-As an extreme measure, it can contain electric shock, cause some kind of nervous system disorders.
+As an extreme measure, it can contain electric shock, cause some temporary nervous system disorders.
 
 Questions:
 1. How to ensure access control and protection of the device from hacking?
