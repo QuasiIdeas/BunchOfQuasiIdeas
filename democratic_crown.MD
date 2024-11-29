@@ -9,6 +9,7 @@ The level of democracy can also be determined taking into account the research o
 Contains a scale from the most democratic to an absolute dictator.
 Can be combined with a brain chip.
 As an extreme measure, it can contain electric shock, cause some temporary nervous system disorders.
+Such as apathy, lack of interest in life. That is, the more democratic the leader is, the more pleasure he gets in life.
 
 Questions:
 1. How to ensure access control and protection of the device from hacking?
