@@ -5,7 +5,7 @@ The latest Nobel Prizes in Economics were awarded for research directly related 
 Incorporates elements of direct democracy:
 Requirement: Implement a system to display the "democracy level" visibly on the "crown." or cylinder
 
-Determining the democracy level:
+Determining the democracy score:
 1. Trust in democratic institutions: The level is influenced by how much the leader's actions erode public trust in these institutions.
 2. Public opinion polling: Conducted online, where individuals independently evaluate the leader without seeing collective results.
 3. Expert analysis: The democracy level may also include findings from studies conducted by experts.
