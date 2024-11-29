@@ -1,4 +1,4 @@
-# Device for monitoring the level of democracy of the leader in a democratic state (for example, the USA or Germany)
+# Device for monitoring the level of democracy of the leader in a hypotetical democratic state
 Includes elements of direct democracy
 
 Requirement: Provide control over the level of democracy in the form of a display on the "crown"
