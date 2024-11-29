@@ -1,6 +1,8 @@
 # Device for monitoring the level of democracy of the leader of a democratic state (for example, the USA or Germany)
 Includes elements of direct democracy
+
 Requirement: Provide control over the level of democracy in the form of a display on the "crown"
+
 The level of democracy is determined by how much the leader undermines trust in democratic institutions.
 The level of democracy is determined by direct voting on the Internet.
 The level of democracy can also be determined taking into account the research of international experts.
