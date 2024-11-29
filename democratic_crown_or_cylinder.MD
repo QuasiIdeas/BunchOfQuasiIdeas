@@ -3,7 +3,7 @@
 The latest Nobel Prizes in Economics were awarded for research directly related to the fact that the long-term welfare of nations depends on the state of democratic institutions. Much depends on the leader, on his psychological characteristics, his personality. Some are more democratic, some are more authoritarian by nature. The purpose of this work is to demonstrate how a technical device can be used to regulate the level of democratization of a high-ranking official (e.g., a president) and enable real-time monitoring of the state of democratic institutions.
 
 Incorporates elements of direct democracy:
-Requirement: Implement a system to display the "democracy level" visibly on the "crown."
+Requirement: Implement a system to display the "democracy level" visibly on the "crown." or cylinder
 
 Determining the democracy level:
 1. Trust in democratic institutions: The level is influenced by how much the leader's actions erode public trust in these institutions.
@@ -22,3 +22,5 @@ Questions:
 
 The answer to question 5 could be a duplicate of the crown that performs the same control signals on a test person selected randomly from subjects unknown to the 
 to the president's inner circle.
+
+If people trust the technology, they may view wearing a "crown" or a cylinder as a mark of gentlemanly conduct. However, its use could remain voluntary.
