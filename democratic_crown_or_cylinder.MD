@@ -1,6 +1,6 @@
 # Device for monitoring the level of democracy of the politician in a hypotetical democratic state
 
-The latest Nobel Prizes in Economics were awarded for research directly related to the fact that the long-term welfare of nations depends on the state of democratic institutions. Much depends on the leader, on his psychological characteristics, his personality. Some are more democratic, some are more authoritarian by nature. The policies implemented by a leader can affect society in various ways. A politician whose decisions benefit the majority of people can be regarded as more democratic.
+The latest Nobel Prizes in Economics were awarded for research directly related to the fact that the long-term welfare of nations depends on the state of democratic institutions. Much depends on the leader, on his psychological characteristics, his personality. Some are more democratic, some are more authoritarian by nature. The policies implemented by a politician can affect society in various ways. A politician whose decisions benefit the majority of people can be regarded as more democratic.
 
 Requirement: Implement a system to display the "democracy level" visibly on the "crown." or cylinder
 
