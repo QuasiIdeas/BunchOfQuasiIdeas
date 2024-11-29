@@ -18,3 +18,6 @@ Questions:
 3. How to ensure that voting results cannot be falsified?
 4. How to avoid potential risk from the AGI that could replace the data flow representing the real will of the people with a fake one.
 5. How to prevent potential collusion between the administration and the president to replace the crown with a fake one?
+
+The answer to question 5 could be a duplicate of the crown that performs the same control signals on a test person selected randomly from subjects unknown to the 
+to the president's inner circle.
