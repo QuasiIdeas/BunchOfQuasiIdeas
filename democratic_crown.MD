@@ -2,18 +2,15 @@
 
 The latest Nobel Prizes in Economics were awarded for research directly related to the fact that the long-term welfare of nations depends on the state of democratic institutions. Much depends on the leader, on his psychological characteristics, his personality. Some are more democratic, some are more authoritarian by nature. The purpose of this work is to demonstrate how a technical device can be used to regulate the level of democratization of a high-ranking official (e.g., a president) and enable real-time monitoring of the state of democratic institutions.
 
-Includes elements of direct democracy
+Incorporates elements of direct democracy:
+Requirement: Implement a system to display the "democracy level" visibly on the "crown."
 
-Requirement: Provide control over the level of democracy in the form of a display on the "crown"
+Determining the democracy level:
+1. Trust in democratic institutions: The level is influenced by how much the leader's actions erode public trust in these institutions.
+2. Public opinion polling: Conducted online, where individuals independently evaluate the leader without seeing collective results.
+3. Expert analysis: The democracy level may also include findings from studies conducted by international experts.
 
-* The level of democracy is determined by how much the leader undermines trust in democratic institutions.
-* The level of democracy is determined by public opinion poll on the Internet. People do not see the results of the opinion poll. Everyone makes an assessment independently
-* The level of democracy can also be determined taking into account the research of international experts.
-
-The crown has an indicator with a scale from "most democratic" to "absolute dictator".
-Can be combined with a brain chip.
-As an extreme measure, it can contain electric shock, but in the most cases cause some temporary nervous system adjustments.
-Such as apathy, lack of interest in life in the case of authoritarian behavour. That is, the more democratic the leader is, the more pleasure he gets from life.
+The crown features an indicator with a scale ranging from "most democratic" to "absolute dictator." It can be integrated with a brain chip for enhanced functionality. In extreme cases, it may include mechanisms such as an electric shock, though its primary function is to induce temporary adjustments in the nervous system. For instance, authoritarian behavior might result in effects like apathy or disinterest in life. Conversely, the more democratic the leader's behavior, the greater their sense of pleasure and well-being.
 
 Questions:
 1. How to ensure access control and protection of the device from hacking?
