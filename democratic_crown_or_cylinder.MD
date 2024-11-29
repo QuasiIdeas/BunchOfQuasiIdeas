@@ -1,4 +1,4 @@
-# Device for monitoring the level of democracy of the leader in a hypotetical democratic state
+# Device for monitoring the level of democracy of the politician in a hypotetical democratic state
 
 The latest Nobel Prizes in Economics were awarded for research directly related to the fact that the long-term welfare of nations depends on the state of democratic institutions. Much depends on the leader, on his psychological characteristics, his personality. Some are more democratic, some are more authoritarian by nature. The purpose of this work is to demonstrate how a technical device can be used to regulate the level of democratization of a high-ranking official (e.g., a president) and enable real-time monitoring of the state of democratic institutions.
 
@@ -11,7 +11,7 @@ Determining the democracy level:
 3. Expert analysis: The democracy level may also include findings from studies conducted by experts.
 4. Prediction markets analysis: Are set up to evaluate the potential impact of proposed policies on the chosen goal. These markets function by allowing participants to bet on the outcomes of different policies.
 
-The crown features an indicator with a scale ranging from "most democratic" to "absolute dictator." It can be integrated with a brain chip for enhanced functionality. In extreme cases, it may include mechanisms such as an electric shock, though its primary function is to induce temporary adjustments in the nervous system. For example, a lower democratic score might lead to effects such as reduced motivation or a diminished interest in life. Conversely, the more democratic score the leader have, the greater their sense of pleasure and well-being.
+The crown features an indicator with a scale ranging from "most democratic" to "absolute dictator." It can be integrated with a brain chip for enhanced functionality. In extreme cases, it may include mechanisms such as an electric shock, though its primary function is to induce temporary adjustments in the nervous system. For example, a lower democratic score might lead to effects such as reduced motivation or a diminished interest in life. Conversely, the more democratic score the politician have, the greater their sense of pleasure and well-being.
 
 Questions:
 1. How to ensure access control and protection of the device from hacking?
