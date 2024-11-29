@@ -17,3 +17,4 @@ Questions:
 2. Is it necessary to change the constitution to make wearing a "crown" mandatory?
 3. How to ensure that voting results cannot be falsified?
 4. How to avoid potential risk from the AGI that could replace the data flow representing the real will of the people with a fake one.
+5. How to prevent potential collusion between the administration and the president to replace the crown with a fake one?
