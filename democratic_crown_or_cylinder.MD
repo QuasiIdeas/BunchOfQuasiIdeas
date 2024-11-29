@@ -11,6 +11,8 @@ Determining the democracy score:
 3. Expert analysis: The democracy level may also include findings from studies conducted by experts.
 4. Prediction markets analysis: Are set up to evaluate the potential impact of proposed policies on the chosen goal. These markets function by allowing participants to bet on the outcomes of different policies.
 
+The idea is that the points earned are accumulated in the politician's history so that the most successful politicians can be selected not by their rhetoric, but by their actions.
+
 The crown features an indicator with a scale ranging from "most democratic" to "absolute dictator." It can be integrated with a brain chip for enhanced functionality. In extreme cases, it may include mechanisms such as an electric shock, though its primary function is to induce temporary adjustments in the nervous system. For example, a lower democratic score might lead to effects such as reduced motivation or a diminished interest in life. Conversely, the more democratic score the politician have, the greater their sense of pleasure and well-being.
 
 Questions:
