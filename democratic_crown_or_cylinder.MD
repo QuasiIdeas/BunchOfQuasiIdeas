@@ -11,7 +11,7 @@ Determining the democracy level:
 3. Expert analysis: The democracy level may also include findings from studies conducted by experts.
 4. Prediction markets analysis: Are set up to evaluate the potential impact of proposed policies on the chosen goal. These markets function by allowing participants to bet on the outcomes of different policies.
 
-The crown features an indicator with a scale ranging from "most democratic" to "absolute dictator." It can be integrated with a brain chip for enhanced functionality. In extreme cases, it may include mechanisms such as an electric shock, though its primary function is to induce temporary adjustments in the nervous system. For instance, authoritarian behavior might result in effects like apathy or disinterest in life. Conversely, the more democratic the leader's behavior, the greater their sense of pleasure and well-being.
+The crown features an indicator with a scale ranging from "most democratic" to "absolute dictator." It can be integrated with a brain chip for enhanced functionality. In extreme cases, it may include mechanisms such as an electric shock, though its primary function is to induce temporary adjustments in the nervous system. For instance, less democratic score in effects like apathy or disinterest in life. Conversely, the more democratic score the leader have, the greater their sense of pleasure and well-being.
 
 Questions:
 1. How to ensure access control and protection of the device from hacking?
