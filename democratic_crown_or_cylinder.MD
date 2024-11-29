@@ -12,7 +12,7 @@ Determining the democracy score:
 
 Points earned are accumulated in the politician's history so that the most successful politicians can be selected not only by their rhetoric, but by their actions.
 
-The crown features an indicator with a scale ranging from "most democratic" to "absolute dictator." It can be integrated with a brain chip for enhanced functionality. In extreme cases, it may include mechanisms such as an electric shock, though its primary function is to induce temporary adjustments in the nervous system. For example, a lower democratic score might lead to effects such as reduced motivation or a diminished interest in life. Conversely, the more democratic score the politician have, the greater their sense of pleasure and well-being.
+The crown features an indicator with a scale ranging from "most democratic" to "absolute dictator." It can be integrated with a brain chip for enhanced functionality. Its primary function is to induce temporary adjustments in the nervous system. For example, a lower democratic score might lead to effects such as reduced motivation or a diminished interest in life. Conversely, the more democratic score the politician have, the greater their sense of pleasure and well-being.
 
 Questions:
 1. How to ensure access control and protection of the device from hacking?
