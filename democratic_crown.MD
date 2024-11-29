@@ -7,7 +7,7 @@ Includes elements of direct democracy
 Requirement: Provide control over the level of democracy in the form of a display on the "crown"
 
 * The level of democracy is determined by how much the leader undermines trust in democratic institutions.
-* The level of democracy is determined by direct voting on the Internet.
+* The level of democracy is determined by public opinion poll on the Internet. People do not see the results of the opinion poll. Everyone makes an assessment independently
 * The level of democracy can also be determined taking into account the research of international experts.
 
 The crown has an indicator with a scale from "most democratic" to "absolute dictator".
@@ -18,7 +18,7 @@ Such as apathy, lack of interest in life. That is, the more democratic the leade
 Questions:
 1. How to ensure access control and protection of the device from hacking?
 2. Is it necessary to change the constitution to make wearing a "crown" mandatory?
-3. How to ensure that voting results cannot be falsified?
+3. How to ensure that opinion poll results cannot be falsified?
 4. How to avoid potential risk from the AGI that could replace the data flow representing the real will of the people with a fake one.
 5. How to prevent potential collusion between the administration and the president to replace the crown with a fake one?
 
