@@ -17,6 +17,10 @@ The crown features an indicator with a scale ranging from "most democratic" to "
 Cylinder design:
 The structure can utilize a curved LCD screen, capable of displaying the politician score visually, such as through a five-star rating system. The scale could incorporate color coding, with options like a gold cylinder representing a high score. Additionally, the height of the cylinder can vary to reflect different performance levels.
 
+It is possible to work out a social situation.
+When two politicians communicate, the AI ​​that assists them can display some information on the cylinder display
+A social interaction scenario can be facilitated using AI. When two politicians engage in a discussion, the AI supporting them could display relevant information on the cylinder's screen. It might act as an impartial mediator, indicating whose arguments carry more weight based on data or logical validity.
+
 Questions:
 1. How to ensure access control and protection of the device from hacking?
 2. How to ensure that opinion poll results cannot be falsified?
