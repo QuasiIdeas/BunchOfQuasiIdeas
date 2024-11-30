@@ -15,7 +15,7 @@ Points earned are accumulated in the politician's history so that the most succe
 The crown features an indicator with a scale ranging from "most democratic" to "absolute dictator." It can be integrated with a brain chip for enhanced functionality. Its primary function is to induce temporary adjustments in the nervous system. For example, a lower democratic score might lead to effects such as reduced motivation or a diminished interest in life. Conversely, the more democratic score the politician have, the greater their sense of pleasure and well-being.
 
 Cylinder design:
-The structure can utilize a curved LCD screen, capable of displaying the leader's score visually, such as through a five-star rating system. The scale could incorporate color coding, with options like a gold cylinder representing a high score. Additionally, the height of the cylinder can vary to reflect different performance levels.
+The structure can utilize a curved LCD screen, capable of displaying the politician score visually, such as through a five-star rating system. The scale could incorporate color coding, with options like a gold cylinder representing a high score. Additionally, the height of the cylinder can vary to reflect different performance levels.
 
 Questions:
 1. How to ensure access control and protection of the device from hacking?
