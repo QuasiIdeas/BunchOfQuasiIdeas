@@ -30,3 +30,6 @@ The answer to question 5 could be a duplicate of the crown that performs the sam
 to the president's inner circle.
 
 If people trust the technology, they may view wearing a "crown" or a cylinder as a mark of gentlemanly conduct. However, its use could remain voluntary.
+
+Keywords, terms and links:
+* TrueSkill, futurarchy, 
