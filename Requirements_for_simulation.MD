@@ -363,4 +363,6 @@ References
 
 29. https://en.wikipedia.org/wiki/Hypercomputation
 
+30. [Infinite Time Turing Machines](https://arxiv.org/pdf/math/9808093)
+
 
