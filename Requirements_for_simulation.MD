@@ -375,6 +375,6 @@ TODO. \[Insert drawing of some scheme here\]
 
 29. https://en.wikipedia.org/wiki/Hypercomputation
 
-30. [Infinite Time Turing Machines](https://arxiv.org/pdf/math/9808093)
+30. [Infinite Time Turing Machines (Joel David Hamkins and Andy Lewis)](https://arxiv.org/pdf/math/9808093)
 
 
