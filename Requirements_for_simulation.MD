@@ -361,4 +361,6 @@ References
 
 28. Permutation City 1994 science-fiction novel by Greg Egan
 
+29. https://en.wikipedia.org/wiki/Hypercomputation
+
 
