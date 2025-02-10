@@ -25,6 +25,7 @@ Here I will just give some screenshots from his presentations.
 ![image](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/images/Screenshot%202024-01-02%20130311.png)
 ....
 
+![image](https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Serpiente_alquimica.jpg/330px-Serpiente_alquimica.jpg)
 
 # Critique of Everett multiverse theory 
 
