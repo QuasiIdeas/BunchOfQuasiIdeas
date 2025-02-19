@@ -5,10 +5,13 @@ I have not found any mention of real working systems of this type in the literat
 
 # Omega time machine
 
-According to Murphy's Law, there are a million ways to do something wrong and only one way to do it right. In terms of an entire civilization, it can refer to the possible existential risks that grow with the advent of new technologies. I've written about this in more detail in these articles [Time capsule project](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/Time%20capsule%20project.md). Here I want to talk about the technology of time control or control of the fate of our civilization. It is based on studies of UAP and the ability to travel through time, which is not prohibited by the theory of general relativity
-In fact, such a machine controls reality in the present from the future. Over the course of a thousand years, it will accumulate a huge amount of data about everything on Earth. Imagine what wisdom and knowledge about life you would accumulate if you lived not 75 years, but more than 1000. Omega has great wisdom. It's something like a mind distributed in 4D space. And this machine was already trained at the development stage to operate with many arrows of time. Our minds are evolutionarily adapted to only one measure of time.
-This machine can be created by our descendants and used by special intelligence services that will operate in 4D space. The question of Omega's location in 4d coordinates is also very difficult. We can consider a variant of the future when two Omegas operate in the world at once with opposite goals.
-Here is diagram of how Omega can influence th destiny of one particular VIP person.
+Murphy’s Law tells us that there are countless ways to get something wrong but only one way to get it right. On a civilizational scale, this idea extends to the growing existential risks that come with advancing technology. I’ve explored this in detail in my [Time capsule project](https://github.com/Quasikot/BunchOfQuasiIdeas/blob/main/Time%20capsule%20project.md) articles, but here, I want to focus on a different concept: the ability to control time—or even the fate of our civilization itself.
+
+This idea is rooted in studies of UAP phenomena and the possibility of time travel, which general relativity does not explicitly forbid. In essence, such a machine would influence the present by drawing on knowledge from the future. Over a thousand years, it would accumulate an immense amount of data about life on Earth. Imagine the wisdom you’d gain if, instead of living for 75 years, you had over a millennium to observe and learn.
+
+This system—let’s call it Omega—would function like a mind distributed across four-dimensional space. It would be designed to operate within multiple timelines, unlike human consciousness, which is evolutionarily limited to experiencing time in just one direction. Omega could be a creation of our distant descendants, potentially wielded by specialized intelligence agencies working within a 4D framework.
+
+Determining Omega’s exact location in four-dimensional coordinates is a complex challenge. We can even imagine a future where two Omegas exist simultaneously, each working toward opposing goals. Below is a diagram illustrating how Omega could shape the destiny of a particular VIP individual.
 
 ![image](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/event_precog.png)
 ![image](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/psychohistory.png)
