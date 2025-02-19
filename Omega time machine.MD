@@ -31,25 +31,25 @@ Here I will just give some screenshots from his presentations.
 Kip Thorne, one of the leading physicists in general relativity, proposed a hypothesis about the possibility of stabilizing a wormhole—a hypothetical tunnel in spacetime that could allow for instant travel between different points in the universe or even through time.
 
 1. The Problem of Wormhole Instability
-According to Einstein’s equations, wormholes can theoretically exist, but they are highly unstable:
-
-If a wormhole contains only normal matter, it will immediately collapse due to its own gravitational attraction.
-Any particle entering the wormhole would trigger its gravitational collapse.
-So, if we want to make a wormhole traversable, we need something that can counteract gravitational contraction.
+  According to Einstein’s equations, wormholes can theoretically exist, but they are highly unstable:
+  
+  If a wormhole contains only normal matter, it will immediately collapse due to its own gravitational attraction.
+  Any particle entering the wormhole would trigger its gravitational collapse.
+  So, if we want to make a wormhole traversable, we need something that can counteract gravitational contraction.
 
 2. Exotic Matter as a Stabilization Mechanism
-Thorne suggested that a wormhole could be stabilized using exotic matter—a substance that has negative energy and creates negative pressure.
+  Thorne suggested that a wormhole could be stabilized using exotic matter—a substance that has negative energy and creates negative pressure.
+  This exotic matter would generate an antigravity effect, preventing the wormhole’s walls from collapsing.
+  Unlike normal matter, which attracts, exotic matter repels, keeping the wormhole’s throat open.
 
-This exotic matter would generate an antigravity effect, preventing the wormhole’s walls from collapsing.
-Unlike normal matter, which attracts, exotic matter repels, keeping the wormhole’s throat open.
 3. Possible Sources of Exotic Matter
-Although no known substance has been proven to fulfill this role, there are theoretical candidates:
+  Although no known substance has been proven to fulfill this role, there are theoretical candidates:
 
 Casimir Effect: In quantum vacuum theory, negative pressure arises between two closely placed conducting plates.
 Quantum Fluctuations: Under certain conditions, vacuum fluctuations might behave like exotic matter.
 Dark Energy: It possesses negative pressure, but it is unclear whether it could be used to create such structures.
 4. Connection to Time Travel
-If a wormhole can be stabilized, it could be transformed not just into a cosmic portal but also into a time machine:
+  If a wormhole can be stabilized, it could be transformed not just into a cosmic portal but also into a time machine:
 
 If one end of the wormhole is accelerated to near-light speed and then returned to its original location, time dilation (according to relativity) would create a time difference between the two ends.
 As a result, a traveler could enter one end and exit the other in the past or future.
