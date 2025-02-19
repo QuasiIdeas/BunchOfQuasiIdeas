@@ -54,6 +54,20 @@ Dark Energy: It possesses negative pressure, but it is unclear whether it could 
 If one end of the wormhole is accelerated to near-light speed and then returned to its original location, time dilation (according to relativity) would create a time difference between the two ends.
 As a result, a traveler could enter one end and exit the other in the past or future.
 
+# The Idea of Influencing the Past from the Future Through Consciousness
+Klee Irwin has explored the concept of quantum retrocausality, which suggests that information can travel not only from the past to the future but also in reverse. This idea is based on certain interpretations of quantum mechanics, such as:
+
+The Transactional Interpretation of Quantum Mechanics by John Cramer, which proposes that wave functions can propagate both forward and backward in time.
+Quantum gravity theories, which suggest that consciousness and observation may be fundamentally linked to information at the core level of reality.
+According to these theories, our consciousness may not just perceive reality but also shape it, possibly receiving influences from future states of a system.
+
+How Does This Relate to Consciousness?
+Klee Irwin suggests that consciousness is not an isolated function of the brain but could be linked to a deeper informational structure of the universe. In this context:
+
+The future could influence the past through quantum information mechanisms.
+Consciousness may act as a "projector" of reality, exerting an effect across different time scales.
+Information may exist beyond classical time, allowing for shifts in the perception of past events under certain conditions.
+
 # Critique of Everett multiverse theory 
 
 Ontological extravagance: MWI posits the existence of a vast and infinite number of parallel universes. This is difficult to grasp and lacks empirical verification.
