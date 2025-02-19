@@ -14,7 +14,7 @@ This system—let’s call it Omega—would function like a mind distributed acr
 Determining Omega’s exact location in four-dimensional coordinates is a complex challenge. We can even imagine a future where two Omegas exist simultaneously, each working toward opposing goals. Below is a diagram illustrating how Omega could shape the destiny of a particular VIP individual.
 
 ![image](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/event_precog.png)
-![image](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/psychohistory.png)
+![image](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/psychohistory (1).png)
 
 ## A Potential Solution from the Physics Side
 I was very interested in antigravity propulsion systems and Brown's work on electrogravity. I am sure that we do not need rockets, this is really the technology that will lead to space exploration. A potential solution for creating a low-energy warp drive was proposed by Jack Sarfatti in his work [6].
