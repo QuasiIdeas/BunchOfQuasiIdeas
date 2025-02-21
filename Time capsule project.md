@@ -149,9 +149,6 @@ With instructions on how to make the tool. Testing Required
 4. Agricultural tools
 5. Navigational instruments
 
-## Mini Time Capsule
-A mini time capsule with some kind of content, such as paper, can be made from a plastic bottle. Plastic has been around for over 500 years. Pack paper with the contents of a document or a message into the future in polyethylene. Thus. A flexible plastic bag is placed in a plastic bottle. Fold the paper from the notebook into a box in strips and gradually lower it into the bottle. The stripes will fill the space of the bottle. Optional: Make an origami in the form of a frog, a fish or a boat. Leave room for the stones. Throw the bottle into the sea, ocean or any nearby pond.
-
 ### Calculation of the number of time capsules depending on the number of people and their distribution over the surface
 
 For the example of Africa
