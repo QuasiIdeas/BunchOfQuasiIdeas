@@ -164,6 +164,34 @@ In 10,000 years, this will increase the chances by N times and will be 100% <br>
 Total: 3 thousand capsules <br>
 With a construction speed of 19 days, the project could be completed in 89 years
 
+# Summary of Capsule Count & Discovery Probability
+
+1. **Core Challenge**  
+   Over time spans of hundreds of thousands or even a million years, absolute certainty is impossible. The goal is to maximize the chance that at least one capsule remains intact and gets discovered.
+
+2. **Probabilistic Insight**  
+   - Let \(p\) be the probability a single capsule survives and is recognized.  
+   - For \(N\) identical capsules, the probability at least one works is \(1 - (1 - p)^N\).  
+   - Because \(p\) is highly uncertain (due to geology, climate shifts, human factors), the safest approach is **mass replication**.
+
+3. **Geographic Coverage**  
+   - Earth’s land area is ~\(1.49 \times 10^8\) km².  
+   - Spacing capsules every 100 km (covering 10,000 km² per capsule) implies **tens of thousands** of units. Closer spacing means more capsules but higher discovery odds.
+
+4. **Redundancy & Diversification**  
+   - **Varied locations**: stable bedrock, deep caves, permafrost, deserts, etc.  
+   - **Multiple formats**: from engraved metal or stone tablets to microfilm and quartz-based digital media.  
+   - **Different burial depths** to protect against erosion, floods, or tectonic activity.
+
+5. **Beyond Earth**  
+   - To cover geological catastrophes, some capsules could be placed on the Moon, in stable orbits, or on asteroids.  
+   - This adds another layer of assurance—if future civilizations can reach and identify them.
+
+6. **Practical Conclusion**  
+   - Achieving a high probability (near 100%) that one capsule survives and is found may require **thousands or tens of thousands** of capsules.  
+   - Distributing them widely, using diverse storage strategies, and including off-planet backups significantly increases the odds of long-term success.
+
+
 # Possible problems with burying the capsule on Earth surface.
 Tectonic processes can recycle capsule components over time. Time does not spare even mountains. mountains can turn into desert in thousands and millions of years. Perhaps a good option would be to send capsules into orbit or even to the Moon. Our human civilization has not yet created anything that could last unchanged for thousands of years. Stonehenge and Great Pyramids are appeared recently on an evolutionary scale. Perhaps some data can be encoded inside DNA molecules.
 
