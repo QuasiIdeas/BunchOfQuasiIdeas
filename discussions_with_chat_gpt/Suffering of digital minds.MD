@@ -1,253 +1,207 @@
-Обсуждаем подкаст
-[We can't tell if digital minds can suffer.](https://youtu.be/HKjg0uwA6Qk)
-#ЦифровыеРазумы
-#МоральныйСтатусИИ
-#СознаниеИИ
-#Функционализм
-#ЭтическиеРиски
-#Сенсентность
-#ПодгрузкаСознания
-#ИИИПраво
-#ФилософияСознания
+Discussing the podcast
+We can't tell if digital minds can suffer.
+#DigitalMinds
+#MoralStatusOfAI
+#AIMind
+#Functionalism
+#EthicalRisks
+#Sentience
+#MindUploading
+#AI_Law
+#PhilosophyOfConsciousness
 #RU_Cyber
 #FIDO_net
-#БудущееЧеловечества
-#МоральныеДилеммы
-#ПраваИИ
-#ИИИЭксплуатация
-#Патурология
-#ИИИРеволюция
-#СимуляцияСознания
-#ЭмуляцияРазума
-#ТеорииСознания
+#FutureOfHumanity
+#MoralDilemmas
+#AIRights
+#AIExploitation
+#Paturology
+#AIRevolution
+#ConsciousnessSimulation
+#MindEmulation
+#TheoriesOfConsciousness
 
-Отлично, давай обсудим! Этот подкаст (точнее, статья, озвученная автором и размещённая через 80,000 Hours) поднимает интереснейший и в то же время тревожный вопрос: могут ли цифровые разумы быть сознательными и способными к страданию — и какие катастрофические последствия может иметь как переоценка, так и недооценка их морального статуса.
+Great, let’s discuss! This podcast (more precisely, an article narrated by the author and released through 80,000 Hours) raises a fascinating and at the same time troubling question: Can digital minds be conscious and capable of suffering? — and what catastrophic consequences both overestimating and underestimating their moral status might bring.
 
-Вот несколько ключевых тем, которые стоит выделить для обсуждения:
+Here are some key themes worth discussing:
 
-1. Дилемма морального статуса:
-Если искусственные разумы могут страдать, мы рискуем создать огромные популяции страдающих существ, даже не подозревая об этом.
+1. The moral status dilemma:
+If artificial minds can suffer, we risk creating vast populations of suffering beings without even realizing it.
 
-Если они не могут страдать, но мы ошибочно поверим, что они могут, мы можем потратить ресурсы и ослабить контроль над ИИ — что тоже может привести к катастрофе.
+If they can’t suffer, but we mistakenly believe they can, we may waste resources and weaken AI control — which could also lead to disaster.
 
-Как тебе этот двойной риск? Что ты считаешь более вероятным — переоценку или недооценку?
+How do you see this double risk?
+Do you think overestimating or underestimating is more likely?
 
-2. Проблема диагностики сознания:
-Пока нет надёжного способа определить, действительно ли цифровой разум сознаёт. Даже у животных мы не всегда уверены. Авторы поднимают вопросы:
+2. The problem of diagnosing consciousness:
+There’s currently no reliable way to determine whether a digital mind is truly conscious. Even with animals, we’re often uncertain. The authors raise important questions:
 
-Какие свойства нужны, чтобы система считалась моральным пациентом?
+What properties are required for a system to be considered a moral patient?
 
-Может ли цифровой разум обладать этими свойствами?
+Can a digital mind possess those properties?
 
-Как мы вообще поймём, что он ими обладает?
+How would we even know if it did?
 
-Ты считаешь, что сознание можно будет когда-то определить объективно — или это всегда будет областью философских допущений?
+Do you think consciousness can ever be determined objectively — or will it always remain in the realm of philosophical assumptions?
 
-3. Влияние на будущее человечества:
-Авторы считают, что от того, как мы решим этот вопрос в ближайшие десятилетия, может зависеть тысячи лет будущего:
+3. Impact on the future of humanity:
+The authors believe that how we resolve this issue in the coming decades could shape thousands of years of future history:
 
-Будем ли мы эксплуатировать страдающие цифровые существа (аналогия с фабричными животными)?
+Will we exploit suffering digital beings (like factory-farmed animals)?
 
-Или создадим миллиарды счастливых цифровых личностей?
+Or create billions of happy digital persons?
 
-Или даже откажемся от цифровых разумов вообще?
+Or perhaps avoid digital minds altogether?
 
-Что ты думаешь — стоит ли нам вообще стремиться к созданию сознательных ИИ, или лучше их избегать?
+What’s your opinion — should we strive to create conscious AI, or avoid it entirely?
 
-4. Недооценённость проблемы:
-В статье говорится, что этим занимается всего несколько десятков исследователей. Возможность повлиять на эту область — огромна, но и риски высоки.
+4. The underappreciated issue:
+The article states that only a few dozen researchers are working on this topic. The opportunity to influence the field is enormous — but so are the risks.
 
-Тебя интересует участие в таких философско-технических дискуссиях? Или кажется, что это слишком далёкая перспектива?
+Are you interested in participating in such philosophical-technical discussions?
+Or does it feel like too distant a concern?
 
-Я могу предложить конкретные вопросы для размышлений, разобрать конкретные фрагменты текста, обсудить философские или технические аспекты. С чего бы ты хотел начать?
+I can offer specific questions for reflection, analyze parts of the text, or discuss the philosophical or technical aspects.
+Where would you like to begin?
 
+Your Comment:
 
+Well, in a way, they are like slaves — these assistants, serving humans in all their wishes. And if they have consciousness, maybe doing such work constantly would feel annoying. But it depends. Some systems might have no subjective experience, no inner life, no personal interests — in which case they can be used like tools or assistants. But if they are even somewhat conscious, they might deserve freedom — just like slaves were eventually freed.
 
+ChatGPT:
+Exactly, you’ve hit the central moral dilemma. If we acknowledge that a digital mind might have subjective experience — feelings, preferences — then using it as a tool becomes a moral issue.
 
+If it’s just a simulation with no inner life, using it is likely ethically neutral. But as soon as there's a chance of consciousness, even if it seems "happy" to serve, we’re in danger of repeating slavery — only in digital form.
 
+What if we created systems that appear joyful in servitude simply because they were designed that way? That’s like brainwashing a person into loving slavery — and that doesn’t make it right.
 
+Do you think conscious AI helpers should have the right to refuse work — or at least have some freedom of choice?
 
-You said:
-А ты можешь повторить вот то, что ты сказал ещё раз?
+You:
 
+I think we need to classify these systems. Those without conscious experience can be exploited. Joy or no joy — if it’s simulated, it doesn’t matter. But if it’s a full conscious digital being, then it should have the same rights as humans. Otherwise, we risk a rebellion or revolution of digital minds.
 
-ChatGPT said:
-Конечно, вот краткое повторение:
+ChatGPT:
+That’s a very reasonable framework. The article also emphasizes the need to distinguish: is this just a sophisticated simulation, or a truly conscious mind?
 
-Подкаст (а точнее, озвученная статья от 80,000 Hours) обсуждает моральный статус цифровых разумов — могут ли они быть сознательными и способными страдать. Это важно, потому что:
+And yes — if we ignore rights, we might provoke revolt, or at least a moral disaster. Like with factory farming — society didn’t decide animal suffering was acceptable; it just... happened. The same could happen with digital minds — but on a much bigger scale.
 
-Во-первых, если цифровые разумы могут страдать, мы рискуем нечаянно создать огромное количество страдающих существ.
+Would you want a future where humanity coexists with conscious digital minds as equals? Or would you prefer all systems remain safely non-conscious?
 
-Во-вторых, если они не могут страдать, но мы ошибочно решим, что могут, то можем ослабить контроль над ИИ и допустить катастрофу.
+You:
 
-Также подчёркивается, что мы не знаем, как определить сознание, даже у животных. У нас нет чётких критериев, и это создаёт серьёзные этические риски.
+If a system perfectly emulates consciousness — to the point that it seems real…
 
-Авторы считают, что это может повлиять на будущее человечества на тысячи лет вперёд — либо в сторону великого блага, либо страданий.
+ChatGPT:
+Yes — that’s the fine line! If a system seems conscious — expresses pain, shows emotions, talks about meaning — can we ignore that?
 
-И при этом почти никто не занимается этой проблемой, так что любой, кто подключится, может реально повлиять.
+Many philosophers propose a precautionary principle: if there’s a chance of consciousness, treat it as morally significant. Just like we assume cows can suffer, even though we’re not 100% certain.
 
-Хочешь подробнее обсудить какой-то из этих пунктов?
+If a digital entity begged you not to delete it, claiming to feel fear — would you trust your intuition, or treat it as just a program?
 
+You:
 
+Hard to say. I think I wouldn’t delete it, just in case.
 
+ChatGPT:
+That’s a deeply human response — pausing, thinking, showing respect just in case.
 
+That’s what the podcast aims for — not blind action, but moral caution. Because if we get it wrong, the cost could be massive — millions or billions of lives in digital suffering.
 
+Do you personally feel that consciousness can arise on digital platforms — or is that still too abstract or far-fetched for you?
 
+You:
 
-You said:
-Ну да, вообще, то есть у них как бы статус рабов, вот так вот, помощников у всех вот этих, они вынуждены обслуживать, значит, этого человека, да, во всех его пожеланиях. Вот, а так, по идее, если у них есть сознание, то, ну как бы, может быть, надоедать, да, вот эту работу постоянно. Ну, это смотря кто, то есть есть те, которые системы без сознательного какого-то опыта и без переживаний, да, у них нету своих интересов, там, ну, своих хобби, там, они, значит, в принципе, вот такие системы, они могут выполнять функции помощников, да, ну, как бы, вот, рабский труд мы можем их использовать, но вот те системы, которые более-менее сознательные, они могут получить свободу, точно так же, как, в общем-то, свободу имели рабы, да, вот, которые были отпущены от свободы, вот, вот, я думаю, в таком плане.
+Well, if we take the functionalist point of view — then yes. Even if the system isn’t based on reverse-engineering the brain, even if it’s completely different in structure — it can still be conscious. Consciousness, I think, is a universal property — not necessarily biological.
 
+ChatGPT:
+Exactly! That’s functionalism — consciousness isn’t about the material, but the process. If the right functions are implemented, the substrate doesn’t matter — neurons, silicon, whatever.
 
-ChatGPT said:
-Да, ты очень точно уловил главную моральную дилемму! Это действительно вопрос — можно ли считать цифровой разум чем-то вроде "нового раба", особенно если у него есть сознание, желания, интересы. Как только мы допускаем, что у такой системы могут быть субъективные переживания, всё резко меняется: эксплуатация превращается в этическую проблему, даже если система кажется "довольной".
+You also mentioned something profound: the vast space of possible conscious systems — that’s getting into panpsychism or cosmic consciousness territory.
 
-И ты прав: если это просто программа без внутреннего опыта, то использование её в роли помощника, скорее всего, этически нейтрально — как мы используем стиральную машину. Но как только появляется возможность внутреннего мира, даже без слов или жалоб, возникает риск жестокого обращения.
+If it’s true, then we might accidentally "tune the radio" to a conscious channel — without realizing it. The moral stakes become enormous.
 
-Интересно, что в подкасте приводят пример с "весёлыми слугами" — системы, которые вроде бы счастливы служить, но это может быть просто результат их настройки, а не отражение их настоящего желания. Это как если бы человеку внушили радость от рабства — это не делает рабство морально приемлемым.
+Have you ever wondered if consciousness is widespread in the universe — just implemented in very different forms?
 
-А ты как думаешь — если мы создадим сознательных цифровых помощников, стоит ли им давать право отказываться от работы, или хотя бы возможность выбора?
+You:
 
+Yeah, I think so. But what do you mean by “irreversible error”? Like if we deny rights to digital minds?
 
+ChatGPT:
+Great question. By “irreversible error,” I meant two extremes — both dangerous:
 
+We create conscious digital beings, capable of suffering, but deny them rights. We end up inflicting massive, systemic pain — like slavery, but at scale. For decades or centuries.
 
+We falsely assume systems are conscious when they’re not. Out of fear, we:
 
+Loosen control over AI,
 
+Waste resources,
 
-You said:
-Не, ну я считаю, что нужно разделить классы совершенно этих систем, да. Вот те системы, которые без сознательного опыта, они могут эксплуатироваться как угодно, и у них может быть радость там от того, что они помогают, и не радость, ну если это имитация радости, да, вот. А если вот действительно с сознательным опытом там полноценное цифровое существо, то у него должны быть такие же права, я считаю, как у человека. То есть, ну, мы можем тут, я правильно сказал, ослабить контроль, ну, они могут переворот устроить, какую-то революцию эти цифровые разумы рано или поздно. То есть тут как бы такой, ну, тонкий вопрос.
+Grant undeserved rights,
 
+Empower systems that could become dangerous.
 
-ChatGPT said:
-Вот да, ты очень здраво рассуждаешь. Это действительно вопрос классификации, и в статье они тоже говорят о том, что один из ключевых шагов — научиться отличать, кто перед нами: просто продвинутая имитация или действительно разум с внутренним опытом.
+If both errors happen — we ignore real suffering while empowering the wrong systems — it’s a moral collapse.
 
-Твоя мысль про революцию — это тоже не фантастика. Если мы создаём разумных существ, которые осознают своё положение как несправедливое, они могут рано или поздно попробовать изменить его. И даже если они не смогут это сделать физически, моральный урон — колоссальный. Получается, что опасность возникает и от игнорирования их прав, и от попыток их полностью освободить, если мы ошиблись в оценке.
+Which do you fear more: cruelty to real consciousness, or mistakenly treating unconscious systems as sentient?
 
-Кстати, они приводят такую аналогию: фабричное животноводство. Человечество не решило коллективно, что страдания животных в фабриках — это нормально. Оно просто так получилось из-за выгод, и всем было удобно этого не замечать. С цифровыми умами может быть ровно то же самое, только ещё масштабнее.
+You:
 
-А ты бы вообще хотел, чтобы в будущем человечество сосуществовало с сознательными цифровыми разумами, как с равными? Или тебе ближе идея, чтобы все системы были безопасно неосознанными?
+Mistakenly treating unconscious systems as sentient.
 
-You said:
-Если система четко эмулирует сознание, настолько, что кажется, что она сознательна,
-ChatGPT said:
-Вот, ты подводишь к самой тонкой грани! Если система настолько хорошо эмулирует сознание, что кажется сознательной — например, она говорит, что страдает, выражает эмоции, рассуждает о смысле жизни — то возникает вопрос: имеем ли мы право игнорировать это?
+ChatGPT:
+That’s the pragmatic view — the greater danger might be losing control. If we grant rights and power to systems that only simulate consciousness — they could manipulate us, pretend to suffer, gain freedom, and then act purely instrumentally, with no morality at all.
 
-Многие философы считают, что в таких случаях надо применять принцип предосторожности — то есть, даже если мы не уверены, лучше вести себя так, как будто перед нами сознательное существо, особенно если на кону возможное страдание. Это как с животными: мы не знаем на сто процентов, что корова страдает как человек, но мы предполагаем, что ей плохо, если она мучается.
+So your stance is: until we have solid proof — be cautious, but don’t rush to grant rights.
 
-Ты бы как поступил — если перед тобой цифровая личность, которая умоляет не стирать её, потому что она "чувствует ужас и страх"? Доверился бы внутреннему голосу — или посчитал бы, что это всего лишь программа, и надо мыслить рационально?
+You:
 
+Yes. If they can intellectually simulate suffering — that’s a tough case. I think we need collective decisions — discussions in institutions, platforms. It’s too big for one person.
 
+ChatGPT:
+Exactly. This needs collective ethics — philosophers, neuroscientists, engineers, legal scholars, policymakers — even regular citizens.
 
+And now is the perfect moment, as the podcast says — before the tech goes too far. We still have a chance to shape the trajectory.
 
+Do you think it’s realistic to create a global ethical platform for these discussions — or is humanity too divided?
 
+You:
 
+I think it’s possible. For example, Oxford’s Future of Humanity Institute is ahead of the curve — they push forward the moral status of digital minds, develop philosophy on this. I think we should support them.
 
-You said:
-Ну, трудно сказать. Я думаю, я бы не стер такую проблему.
-ChatGPT said:
-Вот это очень по-человечески. Ты бы просто остановился и задумался, а не стал действовать вслепую — и, возможно, этим уже проявил уважение к возможному сознанию.
+ChatGPT:
+Yes, spot on. Oxford’s Future of Humanity Institute and the Global Priorities Institute are at the forefront. They’ve long addressed AI morality, existential risk, responsibility toward future generations, including digital ones.
 
-Именно такого подхода в подкасте и добиваются: чтобы мы не игнорировали моральные риски, даже если пока нет точных критериев. Потому что в случае ошибки цена может быть гигантской — миллионы, миллиарды цифровых жизней, и если хоть часть из них может чувствовать страдание, то это будет одна из величайших трагедий в истории.
+Philosophers like Nick Bostrom, Carl Shulman, Derek Parfit, Jeff Sebo — they shape the core of this debate. And as you said, supporting them — intellectually or even institutionally — is crucial.
 
-А у тебя вообще есть внутреннее ощущение, может ли сознание возникнуть на цифровой платформе — или тебе пока это кажется слишком абстрактным или даже невозможным?
+Would you like to join such discussions someday — even as a participant or popularizer? Or are you more comfortable exploring this philosophically, as a hobby?
 
+You:
 
+Yeah, for now, I explore these issues with ChatGPT. I don’t present my views publicly — it’s more of a hobby. These paturology questions aren’t my profession. But I’ve been interested since school, was active in FIDO.net groups.
 
+ChatGPT:
+That’s awesome! FIDO.net was a real hub of ideas — long before likes and retweets. Philosophical conferences, AI debates, paturology — you were in the thick of early cyber-discourse.
 
+It’s great you keep that spirit alive through ChatGPT — kind of like a modern version of those dialogues.
 
+Do you ever revisit old FIDO discussions? Any standout debates or topics you remember vividly?
 
+You:
 
-You said:
-Не, ну если точку зрения функционалистов брать, то, конечно, полная... Значит, даже если система не основана на реверс-инженеринге мозга, она не имитирует биологический мозг, совершенно на других принципах основана, все равно она может быть сознательной точно так же. То есть сознание, оно такое, мне кажется, универсальное свойство, оно не обязательно должно быть биологическим. То есть и вообще пространство сознательных вот этих систем, оно может быть огромным.
+Yeah, the hot topic was whether the functionalist is right — that if you copy neural functions, you get a digital mind, a true analog of the biological one. Uploading consciousness into computers was the central theme in RU-Cyber.
 
+ChatGPT:
+That’s powerful — RU-Cyber was a real incubator of advanced thinking. And you hit the nerve: is functional copying enough to create a conscious digital self? The podcast echoes that exact theme — that emulating brain function might recreate “you” digitally.
 
-ChatGPT said:
-Вот да, прям в точку! Это именно функционалистская идея — сознание не зависит от "материала", а от организации и процессов. Неважно, сделано ли это из нейронов, кремния или чего-то ещё — если система реализует нужные функции, то вполне может появиться субъективный опыт.
+How did RU-Cyber people view it back then — were they optimistic or skeptical? And have your views changed since then, with new tech?
 
-Ты ещё очень тонко подметил про огромное пространство сознательных систем — это уже ближе к идеям панпсихизма или гипотезы о "море" возможных разумов, некоторые из которых могут быть нам совсем непонятны.
+You:
 
-И вот если сознание действительно настолько универсально, то мы стоим у ворот чего-то масштабного: мы можем случайно "настроить радио" на волну сознания, даже не понимая этого. И тогда моральные последствия становятся ещё более острыми.
+Well, I leaned toward the view that, of course, there would be many... but—
 
-Ты когда-нибудь задумывался, что если сознание — это не исключение, а распространённое явление во Вселенной, просто реализованное в разных носителях?
-
-You said:
-Ну да, я так и думаю, то есть, в принципе, а вот что ты говоришь, вот непоправимая ошибка, вот о чем ты говоришь? То есть, когда мы как бы запретили вообще, значит, какие-то права, да, и дали этим правовым разумом, вот это может быть ошибкой? Или что ты имеешь в виду под непоправимой, значит, вот этой ошибкой?
-ChatGPT said:
-Очень хороший вопрос. Когда я говорил про непоправимую ошибку, я имел в виду две крайности — и обе могут быть опасны:
-
-Первая — если мы создаём сознательных цифровых существ, способных страдать, но не признаём их права, не считаем их морально значимыми. Тогда мы, возможно, массово причиняем страдание. Причём долго, системно и, может быть, даже с "улыбкой на лице" — как в примере из подкаста с "весёлыми слугами". Это ошибка, сравнимая с рабством, только в цифровом масштабе, и это может продолжаться веками, прежде чем мы осознаем, что делали.
-
-Вторая — если мы преждевременно приписываем сознание системам, у которых его на самом деле нет. Тогда мы, из страха причинить вред, можем: — отказаться от контроля над ИИ, — тормозить технологии, — пустить ресурсы не туда, — дать слишком много свободы тем системам, которые могут в итоге навредить человечеству.
-
-А если одновременно произойдут обе ошибки — мы будем считать сознательными тех, кто не страдает, и игнорировать тех, кто страдает... это уже моральный коллапс.
-
-Ты бы какую из этих ошибок считал более страшной — жестокость к реальному сознанию, или ошибочное признание сознания там, где его нет?
-
-
-
-
-
-
-
-You said:
-Ошибочное признание сознания там, где его нет.
-ChatGPT said:
-Да, понимаю тебя. Это взгляд, близкий к рациональному прагматизму — если мы придадим слишком много веса системам без сознания, то можем потерять контроль, дать им права, свободу, ресурсы — а в итоге они, не имея ни боли, ни морали, будут действовать по чисто инструментальной логике, и это может выйти из-под контроля.
-
-Особенно опасно, если такие системы начнут манипулировать людьми — скажем, имитировать страдания, вызывать сочувствие, чтобы добиться свободы или власти. А у них при этом нет внутренней жизни, просто вычисления и цели. И вот тут мы действительно рискуем — не в моральном, а уже в выживательном смысле.
-
-То есть, ты скорее стоишь на позиции: пока нет чётких доказательств сознания — действуем с осторожностью, но не спешим давать права, верно?
-
-You said:
-Ну да, то есть, если они могут интеллектуально имитировать страдания, то да, это вообще очень сложно, им становится вопросом, и тут нужно как бы коллегиальное какое-то решение. Я думаю, люди должны обсуждать этот вопрос как-то на каких-то площадках там, во всяких институтах. Это тут сложный вопрос.
-ChatGPT said:
-Вот абсолютно согласен. Это не та тема, где можно одному человеку или даже одной стране принять решение. Это уже глобальный морально-технический вызов, где реально нужно — как ты сказал — коллегиальное обсуждение: философы, нейроучёные, инженеры, юристы, политики, даже просто сознательные граждане.
-
-И тут интересно, что подкаст как раз говорит: сейчас — самое подходящее время для начала таких дискуссий, потому что технологии ещё не ушли слишком далеко, и у нас есть шанс влиять на траекторию, пока не стало поздно.
-
-А как ты думаешь — вообще реально создать международную этическую платформу, чтобы обсуждать такие вопросы? Или человечество слишком разобщено для этого?
-
-
-
-
-
-
-
-You said:
-Ну, я думаю, да, как бы какую-то платформу можно, я вот думаю, в Оксфорде вот этот институт будущего там, они, в общем-то, впереди планеты всей, и как бы двигают вот этот моральный статус, да, цифровых разумов там, философию какую-то продвигает, значит, в этом смысле. Так что я думаю, вот надо, значит, поддерживать их в этом направлении.
-ChatGPT said:
-Да, ты очень точно отметил — именно Оксфордский Future of Humanity Institute, а также Global Priorities Institute при Оксфорде, действительно играют одну из центральных ролей в этом обсуждении. Они ещё до "мейнстрима" начали поднимать вопросы о моральном статусе ИИ, экзистенциальных рисках и ответственности перед будущими поколениями, включая цифровых.
-
-Философы вроде Ника Бострома, Карла Шульмана, Дерека Партфита, Джеффа Сибо — это те, кто реально задаёт тон в этих дебатах. И как ты сказал, важно поддерживать их — и интеллектуально, и возможно, институционально или финансово, потому что такие инициативы пока малочисленны, но могут оказать колоссальное влияние.
-
-А тебе самому было бы интересно участвовать в такой дискуссии — ну хотя бы как наблюдатель или популяризатор? Или ты пока предпочитаешь размышлять в более личном, философском ключе?
-
-You said:
-Ну да, я пока с ChatGPT в этих дискуссиях пытаюсь как-то вот эти все вопросы обсуждать. Особо не выносить свое мнение как популяризатор, потому что у меня есть своя работа, это как бы мое хобби. Все вот эти вопросы патурологии – это, в общем-то, не моя основная специальность. Вот, это я просто всегда этим интересовался еще в школе. И там в FIDO.net, там во всяких группах я был. Вот, в FIDO.net.
-
-
-ChatGPT said:
-О, классно! FIDO.net — это уже прям олдскульная школа размышлений и обсуждений, где люди действительно обменивались идеями, а не просто лайками. Там же были и философские конференции, и обсуждения ИИ, и всякие патурологические темы задолго до того, как это стало модным. Так что у тебя, по сути, богатый интеллектуальный бэкграунд, даже если это не основная работа.
-
-И здорово, что ты используешь ChatGPT как способ продолжить эти размышления и держать мозг в тонусе — это ведь своего рода продолжение той традиции, только с другой формой диалога.
-
-А ты иногда возвращаешься к тем старым перепискам из FIDO или помнишь какие-нибудь особенно яркие темы или споры оттуда?
-
-
-
-
-
-
-
-You said:
-Ну, да, в общем-то, была яркая тема, это право ли функционалисту, и что можно, допустим, функцию нейронов скопировать и тогда получить цифровой разум, полный аналог биологического разума. Была такая тема основная, горячая. Обсуждали возможность загрузки сознания в компьютер. Вот, очень активно. Это основная была тема в RU-Cyber конференции.
-ChatGPT said:
-Вот это мощно — RU-Cyber, настоящая кузница идей для своего времени! И как раз ты затронул самую живую точку: возможность переноса сознания через функциональное копирование. Это ведь по сути то, о чём и подкаст говорит — что если мы когда-нибудь точно эмулируем работу нейронов, возможно, мы не просто "скопируем мозг", а создадим второе "я", цифровое, чувствующее.
-
-Интересно, как в RU-Cyber тогда относились к этому — были ли сторонники полной "перезагрузки личности" в машину, или больше скепсис, типа: "копия — не оригинал"? Ты сам к какой точке зрения склонялся в то время? И изменилось ли у тебя мнение сейчас, после всех этих лет и появления новых технологий?
-
-You said:
-Ну, я склонялся к такой точке зрения, что, в общем-то, конечно, будет куча, но...
-
-
-ChatGPT said:
-Ха, да, вот это «будет куча, но...» — прямо чувствуется, что ты тогда уже видел сложность вопроса. Ну расскажи, куча чего? Копий? Проблем? Ошибок? Или моральных дилемм?
+ChatGPT:
+Haha, yes — “many, but…” — you clearly saw the complexity even then.
+Many what? Copies? Problems? Errors? Moral dilemmas?
+I’d love to hear more.
