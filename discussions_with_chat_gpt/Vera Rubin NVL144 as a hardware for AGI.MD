@@ -1,13 +1,13 @@
 Well, Andrey Karpatov says...
 
 ChatGPT said:
-Oh? What does Andrey Karpatov say? What's the context—AI, philosophy, or something else?
+Oh? What does Andrey Karpaty say? What's the context—AI, philosophy, or something else?
 
 You said:
 He says that operating systems are now emerging in which the core is an LLM model. Can you elaborate on what he means by a new operating system?
 
 ChatGPT said:
-Got it. When Karpatov talks about “new operating systems” with LLMs at their core, he doesn’t mean classic OSs like Windows or Linux, but a fundamentally new paradigm of human-computer interaction, where a large language model becomes the primary intermediary.
+Got it. When Karpaty talks about “new operating systems” with LLMs at their core, he doesn’t mean classic OSs like Windows or Linux, but a fundamentally new paradigm of human-computer interaction, where a large language model becomes the primary intermediary.
 
 Instead of traditional interfaces with windows, menus, and a command line, the user interacts through dialogue—just like you're doing with me now. The LLM is not just an assistant, but a control layer: it can launch programs, find files, analyze user behavior, adapt to individual styles, and even suggest improvements.
 
