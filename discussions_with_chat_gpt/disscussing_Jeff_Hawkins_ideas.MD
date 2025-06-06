@@ -52,64 +52,83 @@ You said:
 ChatGPT said:
 Yes, Numenta has interesting results. They developed a platform to simulate the functioning of neural columns, applying it to tasks such as anomaly detection in data streams, which is useful for IoT, cybersecurity, and other areas. Their algorithms show good results in detecting unusual situations. However, compared to large deep learning projects, their successes are somewhat less scale, but promising. You said:
 “Well, compared to which large projects?”
+
 00:02
 ChatGPT said:
 For example, compared to projects by Google, OpenAI, or DeepMind. Their models, such as GPT or AlphaFold, demonstrate outstanding results in various fields—from natural language processing to protein structure prediction. These projects have attracted more attention and investment, so their achievements are more widely known. However, Hawkins' approach is interesting in that it offers an alternative view on the architecture of intelligence. You said:
 “In general, it consists of...”
+
 00:01
 ChatGPT said:
 Hawkins' approach is fundamentally based on several key elements. First, there is the concept of "Thousand Brains," where the cortex is viewed as a collection of microcolumns, each of which builds its own model of the world. Second, it involves the use of prediction and comparison mechanisms. Finally, it combines these ideas with machine learning methods to create more flexible and biologically plausible models. You said:
 “Does he train his thousands of brain microcolumns, how does he train them?”
+
 00:06
 ChatGPT said:
 Training in the "Thousand Brains" occurs through continuous comparison of predictions with reality. Each microcolumn builds its model based on sensory data, and when it diverges from reality, it corrects itself. This process resembles reinforcement learning: the system learns from its mistakes, refining its predictions. This approach allows the models to adapt to new conditions, gradually improving their understanding of the world. You said:
 “And what sensors do they connect?”
+
 00:02
 ChatGPT said:
 Sensory data can come from various sources: vision, hearing, touch—all of this can potentially be integrated. In Hawkins' theory, each microcolumn receives its own "piece" of information and builds its predictions based on that. By combining data from different sensors, the system can create a more complete representation of the world, similar to how the human brain does. You said:
 “Well, you mentioned they predicted some anomalies there. So this isn't robotics. Do they have any successes in robotics?”
 00:11
+
 ChatGPT said:
 In robotics, Numenta hasn't had the same significant successes as industry leaders. Their main focus is on developing algorithms that can be applied across various fields. However, their approaches to data processing and anomaly detection could potentially be useful for robotics, for example, in navigation or environmental perception systems. You said:
 “Well, so they don't have any kind of robot that uses a camera, or some microphones, they don't have a robot, right? A model that would use these thousands of brains, this theory, and apply it in practice, like, you know, a vacuum robot or something understandable like that. They have some abstract thing like these anomalies, it's not really clear what it is, what it's for.”
 00:29
+
 ChatGPT said:
 Yes, Numenta currently does not have a physical robot that applies their "Thousand Brains" theory in practical use. Their work is more focused on creating theoretical models and algorithms that can be applied in various areas, including data analysis. It is possible that in the future, their approach will find applications in robotics, but for now, it remains more fundamental research. You said:
 “Well, yes, fundamental research, but this isn't the American approach in the sense of philosophy, American pragmatism. After all, it’s necessary to look for something that really works. And it seems to me that deep learning really shows results, but they, in the area of theory, still leave something missing. This Hawkins. By the way, where is Hawkins from? Is he American?”
 00:31
+
 ChatGPT said:
 Yes, Jeff Hawkins is American. He does seem to diverge somewhat from traditional pragmatism, paying more attention to theoretical aspects. However, fundamental research is also important: it lays the foundation for future practical applications. Deep learning shows impressive results, but Hawkins' research may contribute to creating even more advanced and biologically plausible models. You said:
 “By the way, is Jeff Sarfati working with him by any chance?”
 00:05
+
 ChatGPT said:
 No, Jeff Sarfati is not working with him. Hawkins mainly collaborates with the Numenta team. Sarfati, although also working in artificial intelligence, is better known for his research in artificial general intelligence theory and futurology. So their work runs parallel, but they don't overlap directly. You said:
 “I see, well, what else do we want to say? Well, this Numenta, it's been around for a while, right? Wasn't this Numenta company created after Palm?”
 00:13
+
 ChatGPT said:
 Yes, Numenta was founded in 2005, after Hawkins' success with Palm. The main goal of the company became the research and development of new approaches to modeling brain function. Since then, Numenta has been focused on developing theoretical models, algorithms, and software inspired by neurobiology, trying to apply them in practice across various fields. You said:
 “Well, yes, and parallel to this, there was progress in deep learning, right? So he's kind of... now he uses deep learning after all. So he’s combining... some mechanisms...”
 00:16
+
 ChatGPT said:
 Yes, Hawkins is indeed trying to combine his ideas with the achievements of deep learning now.
 
 He acknowledges the successes of neural networks and is trying to integrate them into his models to create more efficient and flexible systems. So now his approach has evolved, and he is essentially trying to take the best of both worlds—biologically inspired principles and the practical achievements of neural networks. You said: "But you don't know the details, do you? How he combines deep learning with these." 
 00:04
+
 ChatGPT said: Yes, the specific details of Hawkins' integration of his ideas with deep learning are not very widely disclosed. He mainly talks about synergy and using the principles of "Thousand Brains" to enhance neural network models. This direction is still developing, and perhaps in the future there will be more detailed publications or projects showing specific examples of such integration. You said: "Well, yes, no, this is an interesting topic in principle, and where does the funding for this Numenta come from? I mean, who finances them? They haven't released any products to the market; someone has been funding them since 2005." 
 00:19
+
 ChatGPT said: Numenta is mainly funded through investments and grants. They do not have commercial products in the traditional sense, but they share their developments, publish scientific articles, and their algorithms are used in some projects. The company continues its work relying on the support of enthusiasts and investors interested in fundamental research. You said: "Well, yes, of course, it's important to support that." 
 00:04
+
 ChatGPT said: Absolutely! Fundamental research paves the way for future breakthroughs. Without it, there would be no modern achievements in AI and other fields. You said: "Well, I mean, LeCun is saying now that deep learning is not the way to achieve AGI. So he's saying that LLMs do not provide complete, well, full intelligence. Everyone criticizes this deep learning approach. So, although many corporate CEOs are betting on 2027 that AGI will appear by then. Well, I think they're purely interested in commercial applications and just want to quickly claim they've achieved great success. So their opinion is kind of from a vested interest, so to speak." 
 00:57
+
 ChatGPT said: I agree, different specialists have their views and interests. LeCun emphasizes that achieving AGI requires more than just deep learning. CEOs may have commercial motives, but their forecasts stimulate research and attract resources. In the end, the diversity of approaches and opinions helps to move forward and seek optimal solutions. You said: "Test, test, test. Test, test, test." 
 00:06
+
 ChatGPT said: I hear you well! If you want to discuss something, I'm ready. You said: "Yes, in general, what I wanted to say was that Hinton said that when we discovered this transformer algorithm, GPT, yes, models started to emerge, he said we opened Pandora's box, that it is a very dangerous algorithm, that it can be much more powerful than human intelligence could be, and all that. He actually believes that this is a dangerous thing. And Hawkins, at the same time, laughs at DALL-E and says that it is not intelligence, and there's nothing serious about it. How do they assess the risks of artificial intelligence in relation to deep learning? How much do they feel the threat? What can you say? Compare Hinton and Hawkins." 
 00:54
+
 ChatGPT said: It's interesting that even among experts there is no consensus. Hinton has indeed expressed concerns about the potential threat posed by powerful models, emphasizing that their development requires caution. Hawkins, on the other hand, focuses more on the limitations of current models, believing they are far from true intelligence. Ultimately, Hinton is more worried about possible risks, while Hawkins skeptically views the idea that LLMs could pose a serious threat. You said: "Well, yes, that is, Hawkins generally kind of laughs at these chatbots, and it's like... Why do they have such different positions? Hinton has worked more, I understand, with deep learning, right? He is more aware of the potential of the technology. I think he should be given more credibility." 
 00:25
+
 ChatGPT said: Yes, different positions are often related to experience and perspectives on technological development. Hinton is deeply immersed in deep learning, which is why he is concerned about potential risks. Hawkins is more focused on biological plausibility and sees the limitations of current models. Both approaches are important: Hawkins's critical view helps avoid overestimating capabilities, while Hinton's concerns remind us of the need for a responsible approach to AI development. You said: "Well, yes, so... "
 00:02
+
 ChatGPT said: Yes, a balance between caution and optimism is important. It allows us to move forward while staying aware of potential consequences. You said: "Well, I wouldn't deny that LLMs have some level of intelligence. You can't say that these LLMs have no intelligence at all. Because they solve tasks just like people do. People can't manage that. They statistically predict the most probable word and follow some statistical patterns. There's a lot of statistics in their thinking. But, anyway, I think they do possess some intelligence." 
 00:42
+
 ChatGPT said: Yes, LLMs have certain cognitive abilities. They can solve complex tasks, process large amounts of data, and generate meaningful texts. Although this is not "intelligence" in the human sense, their capabilities are impressive. The main thing is to understand the limits of these technologies while recognizing their usefulness and potential. You said: "Well yes, I understand that comparison with humans is still not possible."
 
 There are indeed limits to this LLM. I believe that LeCun is right that this is not the way to AGI, and we need to develop something new. Perhaps in this AGI, LLM will participate as some kind of component, some part of this overall system, as Hawkins combines several approaches, and the thousand brains in theory, plus deep learning. It’s like he combines them. I think there will also be a powerful combination in AGI, with LLM, FIGEMA, and whatever else may be there. In other words, there may be a sort of mega mosaic there.
