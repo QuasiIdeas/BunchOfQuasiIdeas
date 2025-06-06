@@ -35,7 +35,9 @@ ChatGPT said:
 
 If you need anything else, feel free to ask!
 
-In cultural terms, one can recall the stereotypical images where the values of hedonism, consumerism, and a focus solely on personal gain without regard to moral or spiritual principles dominate. Of course, in reality, things are not so black and white, and most people and cultures occupy some middle ground between these poles. But as a concept, the opposite of the Protestant ethic is more of a focus on immediate pleasures, a lack of long-term goals, and a reluctance to contribute to the common good. You asked:
+In cultural terms, one can recall the stereotypical images where the values of hedonism, consumerism, and a focus solely on personal gain without regard to moral or spiritual principles dominate. Of course, in reality, things are not so black and white, and most people and cultures occupy some middle ground between these poles. But as a concept, the opposite of the Protestant ethic is more of a focus on immediate pleasures, a lack of long-term goals, and a reluctance to contribute to the common good. 
+
+You asked:
 "Can we say that the success of some cultures is directly related to the presence of the Protestant ethic there? That achievements in science and technology—can culture influence the successes of a certain society or ethnic group?"
 
 ChatGPT responded:
