@@ -1,4 +1,5 @@
 The Time Vault: A Simulation-Aware, Interplanetary Framework for Civilizational Continuity
+
 Author — Vladimir Baranov @Kwazikot | vsbaranov83@gmail.com | Saint Petersburg State University of Aerospace Instrumentation
 (Detailed drafts & schematics: https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/Time%20capsule%20project.md)
 
