@@ -15,7 +15,7 @@ accumulated knowledge of centuries vanished from the lives
 of men who were unable, unwilling, or forbidden to think." <br/>
 AYN RAND CAPITALISM:THE UNKNOWN IDEAL
 
-The apocaliptoLIB site is a continuation of the Time Capsule device project, which in turn was described in my story "Excavations of the Ancients" [Excavations of the Ancients](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/Artefacts-of-the-ancients.MD))
+The site is a continuation of the Time Capsule device project, which in turn was described in my story "Excavations of the Ancients" [Excavations of the Ancients](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/Artefacts-of-the-ancients.MD))
 
 
 # Time capsule
@@ -665,7 +665,7 @@ It should support the most horizontal communities and the free exchange of knowl
 We focus on generation Z, which, according to statistics, wants to live as independently as possible, to do something with their own hands.
 
 A person who plays the role of a propagandist due to the specifics of digital platforms such as youtube or spotify
-Should regularly emphasize the importance of projects like apocaliptoiLIB and the time capsule for prosperity or just simple survival
+Should regularly emphasize the importance of projects like the time capsule for prosperity or just simple survival
 humanity in the future. We need to remind people all the time about the importance of manual labor, the importance of knowledge or know-how.
 about how to do something useful with your own hands.
 
@@ -755,7 +755,7 @@ If a certain percentage of smart people with a suitable education come to the si
 There will be anarchy in the world of the apocalypse. This means no state apparatus or police. No one can protect you if you are weak and cannot protect yourself. The advantage of democracy and deanonymization is that you can assign conditional authority to participants in scientific discourse. But in principle, this will be clear at the level of post likes. That is, ideally, even a developer or a so-called system administrator cannot remove information from the network. Once you have lost your post id (16 digit post number) you have lost the ability to remove information from the hologram. No one can delete your post, not even the network administrator. The only thing they can do is block access to everyone who has allocated space on Google Drive, and only Google can do this, and then through long lawsuits. In this case, the entire library will fall at once. We all remember the day when mickey mouse and all his posts were unfairly removed from twitter.
 
 ## Features
-Like book, like post, dislike post. In short, the idea is to implement stackoverflow specifically for apocaliptoLIB The forum is organized in the form of questions with voting for the best solutions. You can also see how quora, stackexchange, mail.ru questions are implemented. Maybe you can embed questions from the quora platform inside your site. But the main idea of ​​the forum is a critical analysis of library materials. Then there is the organization of tours, a community of surfers, etc. Around this, you can advertise all sorts of products for survivalists.
+Like book, like post, dislike post. In short, the idea is to implement stackoverflow specifically for time capsule The forum is organized in the form of questions with voting for the best solutions. You can also see how quora, stackexchange, mail.ru questions are implemented. Maybe you can embed questions from the quora platform inside your site. But the main idea of ​​the forum is a critical analysis of library materials. Then there is the organization of tours, a community of surfers, etc. Around this, you can advertise all sorts of products for survivalists.
 
 # Library design.
 The library should provide access to the book directly online.
