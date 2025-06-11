@@ -8,6 +8,8 @@ Saint Petersburg State University of Aerospace Instrumentation
 **Abstract**
 This paper proposes a long-duration Time Vault—a robust repository of critical knowledge—whose purpose is dual: (1) to aid post-catastrophic recovery on Earth and (2) to act as a cosmic beacon for future off-world human colonies or non-human intelligences. The concept blends engineering practicality with two philosophical pillars: the simulation hypothesis and the cosmic-expansion imperative advocated by Carl Sagan, Iosif Shklovsky, and the Russian cosmists (Nikolai Fedorov, Konstantin Tsiolkovsky, Vladimir Vernadsky). If reality is computationally instantiated, deliberate efforts to preserve and disseminate intelligence signal value to whatever meta-system sustains the simulation; if the universe is purely material, the vault fulfills the cosmists’ vision that humanity must spread life, reason, and responsibility beyond Earth.
 
+If our universe operates as a simulation contingent on agent behavior, then deliberate actions toward long-term resilience—like building such a vault—may affect the allocation of computational resources from the simulation's host system. Thus, the vault becomes both a technological artifact and a signal of intent to the meta-level observer, increasing the chances of survival, not only in physical terms, but within the logic of the simulation itself.
+
 # 1 | Why a Vault—Why Beyond Earth?
 “Civilizations become either space-faring or extinct.” — Carl Sagan, Pale Blue Dot
 “The task of humankind is the common cause: to resurrect and continue the work of all the departed in the cosmos.” — Nikolai Fedorov (Philosophy of the Common Task)
