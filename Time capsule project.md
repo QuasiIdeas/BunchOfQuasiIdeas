@@ -1,4 +1,4 @@
-* * * # Site apocalyptoLIB <br/>
+* * * # Time capsule project <br/>
 Baranov Vladimir vsbaranov83@gmail.com <br/>
 Document creation date: August 30, 2021<br/>
 <br/>
