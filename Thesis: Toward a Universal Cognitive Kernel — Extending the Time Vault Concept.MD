@@ -1,4 +1,4 @@
-# Universal Time Capsule Project
+# Thesis: Toward a Universal Cognitive Kernel — Extending the Time Vault Concept.
 
 **Author**: Vladimir Baranov ([Twitter/X](https://x.com/Kwazikot))  
 **Email**: vsbaranov83@gmail.com  
