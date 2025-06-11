@@ -42,7 +42,7 @@ Bootstrap encyclopaedia — low-tech metallurgy, medicine, agriculture, renewabl
 
 Ethical charter — autonomy, harm avoidance, stewardship; echoes Enlightenment humanism and modern AI-alignment.
 
-# 4 | Deferred Execution via Post-Human Industry
+# 4 | Deferred Execution via Post-AGI self reproducing robotic Industry
 Autonomous robotic foundries make mass deployment of vaults nearly free. The present paper functions as a blueprint meme: seeded today, executed when post-human or AI-enhanced civilisation has resources to spare. Aligning future AGI with cosmism—expand life, resurrect knowledge, steward the cosmos—makes large-scale vault production a natural sub-goal.
 
 # 5 | Counter-Critiques & Responses
