@@ -15,8 +15,8 @@ accumulated knowledge of centuries vanished from the lives
 of men who were unable, unwilling, or forbidden to think." <br/>
 AYN RAND CAPITALISM:THE UNKNOWN IDEAL
 
-The apocaliptoLIB site is a continuation of the Time Capsule device project, which in turn was described in my story "Excavations of the Ancients" [Excavations of the Ancients] (https://github.com/Kvazikot/BallPark/wiki/Artefacts-of-the-ancients)
-Description of the time capsule project is here [Time-capsule](https://github.com/Kvazikot/BallPark/wiki/Time-capsule)
+The apocaliptoLIB site is a continuation of the Time Capsule device project, which in turn was described in my story "Excavations of the Ancients" [Excavations of the Ancients](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/Artefacts-of-the-ancients.MD))
+
 
 # Time capsule
 
