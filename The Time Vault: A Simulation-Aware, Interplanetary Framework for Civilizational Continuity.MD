@@ -1,7 +1,6 @@
 The Time Vault: A Simulation-Aware, Interplanetary Framework for Civilizational Continuity
 
 Author — Vladimir Baranov @Kwazikot | vsbaranov83@gmail.com | Saint Petersburg State University of Aerospace Instrumentation
-(Detailed drafts & schematics: https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/Time%20capsule%20project.md)
 
 **Abstract**
 This paper proposes a long-duration Time Vault—a robust repository of critical knowledge—whose purpose is dual: (1) to aid post-catastrophic recovery on Earth and (2) to act as a cosmic beacon for future off-world human colonies or non-human intelligences. The concept blends engineering practicality with two philosophical pillars: the simulation hypothesis and the cosmic-expansion imperative advocated by Carl Sagan, Iosif Shklovsky, and the Russian cosmists (Nikolai Fedorov, Konstantin Tsiolkovsky, Vladimir Vernadsky). If reality is computationally instantiated, deliberate efforts to preserve and disseminate intelligence signal value to whatever meta-system sustains the simulation; if the universe is purely material, the vault fulfills the cosmists’ vision that humanity must spread life, reason, and responsibility beyond Earth.
@@ -66,3 +65,5 @@ Vladimir Vernadsky — The Biosphere (https://en.wikipedia.org/wiki/Vladimir_Ver
 Iosif Shklovsky & Carl Sagan — Intelligent Life in the Universe (1966)
 
 Carl Sagan — Pale Blue Dot (1994)
+
+(Detailed drafts & schematics: https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/Time%20capsule%20project.md)
