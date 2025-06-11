@@ -1,6 +1,6 @@
-Thought for 8 seconds
-The Time Vault: A Simulation-Aware Argument for Civilizational Continuity
+# The Time Vault: A Simulation-Aware Argument for Civilizational Continuity
 Author: Vladimir Baranov — @Kwazikot | vsbaranov83@gmail.com | Saint Petersburg State University of Aerospace Instrumentation (СПБГУАП)
+Date: 11 june 2025
 
 (Full project text and technical notes: https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/Time%20capsule%20project.md)
 
