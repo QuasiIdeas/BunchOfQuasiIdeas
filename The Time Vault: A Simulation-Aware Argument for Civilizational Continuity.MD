@@ -28,3 +28,6 @@ The Time Vault is not a guarantee against collapse; it is a signal through colla
 
 For complete design drafts, diagrams, and update logs, see the GitHub repository:
 https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/Time%20capsule%20project.md
+
+
+(On resource allocation in a simulation)[https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/discussions_with_chat_gpt/on_mathematical_pluralism.MD]
