@@ -115,3 +115,5 @@ If intelligence is truly substrate‑independent, then any being capable of inte
 
 > “The cosmos is within us. We are made of star‑stuff. We are a way for the universe to know itself.”
 > — **Carl Sagan**
+
+Technocosm Archive of Russian Cosmism — https://technocosm.narod.ru/k2f/topics.htm
