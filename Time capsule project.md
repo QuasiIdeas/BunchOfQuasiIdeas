@@ -394,7 +394,7 @@ Tectonic processes can recycle capsule components over time. Time does not spare
 - **Children’s Education Programs**: Introduce simplified capsule concepts in schools to test clarity (e.g., making paper or lenses).
 
 
-# Additional Ideas for Designing the **apocalyptoLIB** Storage System
+# Additional Ideas for Designing the *LIB** Storage System
 
 ## 1. Multi-Environmental Resilience
 
@@ -615,7 +615,7 @@ The durability of the capsule hinges on several key variables:
 
 # Conclusion
 
-These enhancements to the **apocalyptoLIB** storage system promote:
+These enhancements to the **LIB** storage system promote:
 - Environmental adaptability  
 - Layered, resilient knowledge preservation  
 - Use of robust, long-lasting microchips  
@@ -625,10 +625,10 @@ Let me know if you'd like to expand on any part of this!
 
 
 #----------------------------------------------------------------------------------------------------------------------
-# Site apocalyptoLIB
+# Site LIB
 Project goal: Overcome the Great Filter. To develop a device capable of teaching future generations living after an existential catastrophe some of our technologies or the technologies of the ancients.
 
-The apocalyptoLIB site is a continuation of the Time Capsule device project, which in turn was described in my story "Excavations of the Ancients"
+The LIB site is a continuation of the Time Capsule device project, which in turn was described in my story "Excavations of the Ancients"
 
 Site purpose.
 To provide for the use and compilation of the inhabitants of the planet Earth an electronic library with themes related to the reorganization of civilization
@@ -706,7 +706,7 @@ Ideally, you need to allocate the territory of a small country for such experime
 
 
 # Statistics.
-Currently in apocalyptoLIB: 85 books
+Currently in LIB: 85 books
 
 # Feedback. Critical maximum scientific analysis of materials of the survival library.
 Arrange crowdfunding or at least feedback
@@ -727,7 +727,7 @@ You can make some kind of protection against primitive bots such as captcha
 Smart people that I need on the site like to work for money. The first who will come to the site will most likely be narrow-minded inhabitants or, even worse, trolls. I still have no way to pay for the work of fat admins who do not monkey but repetitive work for 90 thousand a month. When I tried to rent a virtual machine on Google, I ran into a problem with Russian savings banks. Google does not accept my debit card, and moreover, the Qiwi platform in the form of a virtual card also sucks. When Wonky was bankrupt he had to mortgage his house. I don’t have the opportunity to rent a full-fledged server from Google now. I don't even have a formal job.
 
 # The second stage of development. The principle of holography.
-In apocalyptoLIB, you need to do something like the neuroevolution of posts,
+In LIB, you need to do something like the neuroevolution of posts,
 so that information is holographically distributed across all Google drives.
 If one Google drive falls off, you will get something like this.
 
@@ -748,11 +748,11 @@ The rest of the posts eventually turn into an absolutely chaotic set of characte
 We hope that there will be friendly robots in the context of the entire text or discussion threads on the forum will restore the original text.
 
 ## Criteria for assessing the success of the project
-If a certain percentage of smart people with a suitable education come to the site and are ready to cooperate within the framework of the apocalypto, either I will consider this the first victory. Next, we organize a conference on a freenet, bastion, or other decentralized p2p network (discord, according to the source https://digdeeper.neocities.org/, collects information about the phone and does other dirty tricks). I repeat once again that the task is not trivial, requiring a separate direction in research - restarting civilization after a collapse. Here you need to compile the knowledge about how the whole civilization works, something like Lewis Dartnell did (The knowledge how to rebuild our world from scratch) and retrain many people. Recycle books, recreate old technologies and entire industries. Organize autonomous medieval guilds living almost without electricity. To study these communities living outside the big cities for at least a few years in terms of psychology, how people will adapt. This is a very large scientific and engineering work. If we do not want to suddenly find ourselves with a broken trough, we must start today. It will be necessary to create new products and, like engineers developing a product for the mass market, test them "in the wild." Find flaws, fix documentation, republish books.
+If a certain percentage of smart people with a suitable education come to the site and are ready to cooperate within the framework of the lib, either I will consider this the first victory. Next, we organize a conference on a freenet, bastion, or other decentralized p2p network (discord, according to the source https://digdeeper.neocities.org/, collects information about the phone and does other dirty tricks). I repeat once again that the task is not trivial, requiring a separate direction in research - restarting civilization after a collapse. Here you need to compile the knowledge about how the whole civilization works, something like Lewis Dartnell did (The knowledge how to rebuild our world from scratch) and retrain many people. Recycle books, recreate old technologies and entire industries. Organize autonomous medieval guilds living almost without electricity. To study these communities living outside the big cities for at least a few years in terms of psychology, how people will adapt. This is a very large scientific and engineering work. If we do not want to suddenly find ourselves with a broken trough, we must start today. It will be necessary to create new products and, like engineers developing a product for the mass market, test them "in the wild." Find flaws, fix documentation, republish books.
 
 
 ## Moderation system
-There will be anarchy in the world of the apocalypse. This means no state apparatus or police. No one can protect you if you are weak and cannot protect yourself. The advantage of democracy and deanonymization is that you can assign conditional authority to participants in scientific discourse. But in principle, this will be clear at the level of post likes. That is, ideally, even a developer or a so-called system administrator cannot remove information from the network. Once you have lost your post id (16 digit post number) you have lost the ability to remove information from the hologram. No one can delete your post, not even the network administrator. The only thing they can do is block access to everyone who has allocated space on Google Drive, and only Google can do this, and then through long lawsuits. In this case, the entire library will fall at once. We all remember the day when mickey mouse and all his posts were unfairly removed from twitter.
+This means no state apparatus or police. No one can protect you if you are weak and cannot protect yourself. The advantage of democracy and deanonymization is that you can assign conditional authority to participants in scientific discourse. But in principle, this will be clear at the level of post likes. That is, ideally, even a developer or a so-called system administrator cannot remove information from the network. Once you have lost your post id (16 digit post number) you have lost the ability to remove information from the hologram. No one can delete your post, not even the network administrator. The only thing they can do is block access to everyone who has allocated space on Google Drive, and only Google can do this, and then through long lawsuits. In this case, the entire library will fall at once. We all remember the day when mickey mouse and all his posts were unfairly removed from twitter.
 
 ## Features
 Like book, like post, dislike post. In short, the idea is to implement stackoverflow specifically for time capsule The forum is organized in the form of questions with voting for the best solutions. You can also see how quora, stackexchange, mail.ru questions are implemented. Maybe you can embed questions from the quora platform inside your site. But the main idea of ​​the forum is a critical analysis of library materials. Then there is the organization of tours, a community of surfers, etc. Around this, you can advertise all sorts of products for survivalists.
