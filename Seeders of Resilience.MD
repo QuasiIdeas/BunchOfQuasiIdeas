@@ -63,3 +63,28 @@ flowchart LR
   Iplus --> |Orbital solar & fusion enablers| II["K-II: harnessing the star"]
   II --> |Dyson swarms & migration tech| III["K-III: galactic scale"]
   III --> |Meets AGI • SR-fabs • Nanotech| Net["Galactic Internet Node"]
+
+## 6 |  Further Reading & Related Concepts
+Freeman Dyson – “Eternal Intelligence” & Dyson Shells
+Vision of post-biological intellects thriving around stars.
+
+Olaf Stapledon – Star Maker (1937)
+Early literary exploration of nested cosmic civilizations and knowledge seeding.
+
+Arthur C. Clarke – “Starseed” notion (The Fountains of Paradise, 1979)
+Concept of dispersing knowledge capsules across space.
+
+Tipler & Barrow – The Anthropic Cosmological Principle (1986)
+Discussion of intelligence influencing cosmic destiny (Omega Point).
+
+Robert Bradbury – “Matrioshka Brains” (1999)
+Hyper-dense computation megastructures as galactic Internet cores.
+
+Nick Bostrom – “The Simulation Argument” (2003)
+Philosophical basis for signaling value within a computed universe.
+
+Russian Cosmism (Fedorov, Tsiolkovsky, Vernadsky)
+Early frameworks for human cosmic expansion, resurrection and noösphere growth.
+
+Carl Sagan & Iosif Shklovsky – Intelligent Life in the Universe (1966)
+Foundational text on interstellar communication and cross-civilizational ethics.
