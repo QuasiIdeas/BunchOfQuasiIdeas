@@ -63,6 +63,7 @@ flowchart LR
   Iplus --> |Orbital solar & fusion enablers| II["K-II: harnessing the star"]
   II --> |Dyson swarms & migration tech| III["K-III: galactic scale"]
   III --> |Meets AGI • SR-fabs • Nanotech| Net["Galactic Internet Node"]
+```
 
 ## 6 |  Further Reading & Related Concepts
 Freeman Dyson – “Eternal Intelligence” & Dyson Shells
