@@ -106,8 +106,8 @@ This project proposes a conceptual and technological framework for a **universal
 
 This project explicitly **rejects any form of mind control or coercive influence** over future civilizations or entities. Its design is guided by the principle of **respecting the cognitive freedom and integrity** of any being who might encounter it—be it post-human, alien, or biologically divergent.
 
-The capsule is not a vessel of manipulation, but one of **offered knowledge** and **invited collaboration**.
-
+The capsule is not a vessel of manipulation, but one of **offered knowledge** and **invited collaboration**.  
+**Its curriculum focuses strictly on universal scientific and technological principles; it does not prescribe any specific culture, ideology, or value system.** Cultural references that remain are provided only as historical context and are clearly marked as such, leaving room for each civilization to evolve its own ethical and cultural trajectory.
 ---
 
 ## Related Thinkers and Movements
