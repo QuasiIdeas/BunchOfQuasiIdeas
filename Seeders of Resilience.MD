@@ -1,6 +1,10 @@
 # **Seeders of Resilience**  
 ### A Thesis within the *Universal Cognitive Kernel* Project  
 
+Author — Vladimir Baranov 
+
+https://x.com/Kwazikot | vsbaranov83@gmail.com | Saint Petersburg State University of Aerospace Instrumentation
+
 > **Primary goal:** radically boost the robustness of *any* intelligent civilization against existential catastrophe by deploying a **“Seeder”** technology that accelerates progress across Kardashev levels (I → II → III).  
 > **Related story:** *Artefacts of the Ancients* — <https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/Artefacts-of-the-ancients.MD>
 
