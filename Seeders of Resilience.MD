@@ -77,6 +77,7 @@ flowchart LR
 
 
 html<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/Technetic-Graph.png" alt="Graph" width="400">
+<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/technetic_graph.png" alt="Graph" width="400">
 
 
 The Seeder should evolve from a static “library of technologies” into a Technetic Graph: a machine-readable dependency graph that encodes how to unfold an entire industrial ecosystem as quickly and safely as possible, starting from whatever capabilities a recovering or first-contact civilization already has.
