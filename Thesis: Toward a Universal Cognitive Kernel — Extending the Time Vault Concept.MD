@@ -69,6 +69,67 @@ Its goal: bootstrap abstract reasoning from raw perception.
 2. Open-source modelling of cross-modal learning paths.  
 3. Embed Kernel modules into next-gen Time Vault designs (lunar, Martian, NEO).
 
+## DeepMind-Inspired Pedagogical Architecture  
+
+The Capsule’s “Skinner-box” tutor is not an ad-hoc trick; it ports several lines of
+published DeepMind research into an embodied learning artefact.
+
+**Curriculum & auto-difficulty.**  
+AlphaStar and Agent57 converged faster when tasks were
+automatically simplified after failure and hardened after success.
+The Vault mirrors that scheme: three consecutive errors trigger an
+easier puzzle, a 70 % success streak unlocks the next glyph chain.
+
+**Curiosity-driven RL.**  
+Papers such as *Never Give Up* and *Reward is Enough* show that a
+small, intrinsic novelty signal can replace dense external rewards.
+In the Vault the “ding” of light-and-tone is the only extrinsic
+reward; settlers’ own curiosity and social prestige supply the
+intrinsic drive, turning learning into self-propelled exploration.
+
+**Meta-reinforcement learning.**  
+DeepMind’s meta-RL agents adapt policies after a handful of
+episodes.  The Kernel does the same: it measures which sensory
+channel—audio, light, tactile—yields the fastest mastery and
+re-allocates bandwidth on the fly, then gradually blends the
+weaker channels back in to reach full multimodal fluency.
+
+**RLHF—human feedback in the loop.**  
+Where recent language models are fine-tuned with human preference
+gradients, the Vault uses settlers’ correct or incorrect actions
+as real-time feedback.  The replay buffer is transparent and
+auditable, satisfying the same safety criteria that guide
+DeepMind’s alignment experiments.
+
+**Safe exploration & audit trail.**  
+Exploration rate is capped; no negative stimuli are ever used.
+Every state-action-reward tuple is logged, so future researchers
+can inspect the exact curriculum path and verify that no covert
+manipulation occurred—an on-site application of DeepMind’s work on
+interpretable, alignment-focused RL.
+
+In short, the Universal Cognitive Kernel becomes a *live test-bed*
+for curriculum learning, intrinsic-motivation agents, meta-RL
+adaptation and RLHF safety—only the “agents” are stone-age or
+alien settlers, and the classroom is a quartz vault glowing in the
+twilight.
+
+### Linguistic On-Ramp  
+
+Beneath the engineering and survival curricula lies a linguistic
+through-line: **the Vault’s reinforcement loop is explicitly designed
+to bootstrap the settlers into a workable subset of human language.**
+Pictograms are paired with phonetic cues; successful call-and-response
+games gradually extend from single syllables to multisyllabic tokens,
+then to subject-verb-object mini-sentences.  By the time the
+Technetic-Graph and higher-tier blueprints are unlocked, the learner
+cohort can already parse a reduced but expressive grammar derived from
+modern English IPA plus a small auxiliary symbol set.  Thus, while the
+Vault never imposes ideology, it *does* provide a shared linguistic
+scaffold, ensuring that future dialogue—whether with visiting humans,
+other Vaults, or the Galactic hub—has a common semantic substrate.
+
+
 ---
 
 ## Abstract
