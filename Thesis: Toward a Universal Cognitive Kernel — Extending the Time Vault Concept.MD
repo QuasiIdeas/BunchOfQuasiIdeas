@@ -7,6 +7,8 @@
 
 ---
 
+[img!](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/7d3cb880-9995-4dbc-93d9-1dcc59de4214.png)
+
 ## 1 | From Time Capsule to Cognitive Kernel  
 
 In the original *Time Vault* concept, the capsule is a symbolic-technical node of civilizational resilience.  
