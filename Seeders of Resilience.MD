@@ -38,8 +38,6 @@ Because the reserve capsules ride in kilo-gram-scale “cold packets” accelera
 
 This closed-loop logistics chain accomplishes three things at once: it confirms to the hub that intelligent life is active; it locks in the planet’s coordinates for future cultural exchange; and it cascades extra knowledge modules just fast enough to stay ahead of the civilization’s growth curve, but never so fast that local agency is bypassed. In effect, the first successful puzzle is both a graduation ceremony and a cosmic postcode request: “We are here, we are learning—send books, not gods.”
 
-![img](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/vault_connection.png)
-![img](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/galactic_network.png)
 
 A civilization’s Seeder module activates **interstellar uplinks** only after local society demonstrates:  
 
@@ -182,6 +180,9 @@ Hardware and software heterogeneity is mandated by design.
 A human or otherwise pluralistic oversight council retains veto power over runaway convergence.
 
 Even with such safeguards, the strongest insurance is a culturally rich human (or post-human but multi-modal) civilization that frames strategic objectives and prevents technology from collapsing into a single, self-justifying replicator. That is why the Time-Vault’s educational pathway—nurturing a scientist caste rather than dropping prefab robots—remains the more robust foundation.
+
+<img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/vault_connection.png" alt="Graph" width="400">
+<img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/galactic_network.png>
 
 ## 8 |  Further Reading & Related Concepts
 Freeman Dyson – “Eternal Intelligence” & Dyson Shells
