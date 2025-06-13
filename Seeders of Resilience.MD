@@ -182,7 +182,7 @@ A human or otherwise pluralistic oversight council retains veto power over runaw
 Even with such safeguards, the strongest insurance is a culturally rich human (or post-human but multi-modal) civilization that frames strategic objectives and prevents technology from collapsing into a single, self-justifying replicator. That is why the Time-Vault’s educational pathway—nurturing a scientist caste rather than dropping prefab robots—remains the more robust foundation.
 
 <img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/vault_connection.png" alt="Graph" width="400">
-<img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/galactic_network.png>
+<img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/galactic_network.png" alt="Graph" width="400">
 
 ## 8 |  Further Reading & Related Concepts
 Freeman Dyson – “Eternal Intelligence” & Dyson Shells
