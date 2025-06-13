@@ -104,3 +104,5 @@ Early frameworks for human cosmic expansion, resurrection and noösphere growth.
 
 Carl Sagan & Iosif Shklovsky – Intelligent Life in the Universe (1966)
 Foundational text on interstellar communication and cross-civilizational ethics.
+
+![img](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/civ_seeder.png)
