@@ -33,6 +33,7 @@ We introduce the notion of a **Universal Mind Scaffold (UMS)** — an adaptive p
 
 This is not a static message. It is a **cognitive seed** — a bootstrapped tutor designed to grow through play, imitation, and inference.
 
+[Thesis: Toward a Universal Cognitive Kernel — Extending the Time Vault Concept.](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/Thesis%3A%20Toward%20a%20Universal%20Cognitive%20Kernel%20%E2%80%94%20Extending%20the%20Time%20Vault%20Concept.MD)
 ---
 
 ## 3. Scenario: Discovery by Vocal Alien Beings
