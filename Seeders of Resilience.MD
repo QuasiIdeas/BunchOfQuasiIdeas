@@ -83,7 +83,33 @@ The graph is stored in a compact “tech DSL.” Signed patches—new processes,
 
 In effect, the Technetic Graph transforms the Seeder from a passive archive into an adaptive, crowdsourced roadmap—one that can be updated by any civilization that reaches a higher Kardashev tier, then handed forward to the next.
 
-## 7 |  Further Reading & Related Concepts
+## 7 | Take-Off Tempo: Fast vs Slow Paths
+
+The Technetic Graph is deliberately **bimodal**.  
+It supports a rapid (“fast take-off”) trajectory and a slow-and-steady (“safe climb”) trajectory, allowing any recipient civilization to balance **urgency** against **robustness**.
+
+| Mode | When It Makes Sense | Seeder Behaviour |
+|------|--------------------|------------------|
+| **Fast take-off** <br>(decades → a few centuries) | *Prerequisites already in place:* <br>• basic technosphere (mines, smelting, grid) <br>• cohesive, motivated society <br>• external threat window (asteroid, stellar flare) | The planner prunes the Technetic Graph to the **shortest path**. <br>– Immediate focus on AGI advisor, autonomous fabs, orbital solar. <br>– Target: leap to K-I+ / early K-II within 1-3 generations; deploy first interstellar relays. |
+| **Slow & safe** <br>(centuries → millennia) | *Sparse or fractured conditions:* <br>• demographic trauma after collapse <br>• fragile biosphere, scant resources <br>• main risk = social fracturing | The planner expands the **long-recovery branch**. <br>– Starts with agro-solar, bioremediation, regenerative medicine. <br>– Gradual ramp-up: crafts → industry → auto-fabs. <br>– Key metric is social stability & supply-chain redundancy, not speed. |
+
+### Autonomy of Choice
+
+* A **diagnostic block** scores energy, tooling, demography, external hazard.  
+* A **Robustness vs Urgency (R/U) metric** sets the default plan:  
+  * low-R / high-U → fast track,  
+  * high-R / low-U → slow track.  
+* The recipient culture can always **override**: the Seeder *recommends* but never coerces.
+
+### Why Both Tracks Matter
+
+* **Excessive speed** without stabilisers risks alignment errors, resource wars, new collapse.  
+* **Excessive caution** risks missing narrow astronomical windows of opportunity.
+
+In short, the Seeder’s planner surfaces either an **“express list”** or a **“step-ladder”** through the Technetic Graph, matching the civilisation’s starting conditions and strategic appetite.
+
+
+## 8 |  Further Reading & Related Concepts
 Freeman Dyson – “Eternal Intelligence” & Dyson Shells
 Vision of post-biological intellects thriving around stars.
 
