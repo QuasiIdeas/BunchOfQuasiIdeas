@@ -183,6 +183,7 @@ Because the reserve capsules ride in kilo-gram-scale “cold packets” accelera
 This closed-loop logistics chain accomplishes three things at once: it confirms to the hub that intelligent life is active; it locks in the planet’s coordinates for future cultural exchange; and it cascades extra knowledge modules just fast enough to stay ahead of the civilization’s growth curve, but never so fast that local agency is bypassed. In effect, the first successful puzzle is both a graduation ceremony and a cosmic postcode request: “We are here, we are learning—send books, not gods.”
 
 ![img](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/vault_connection.png)
+![img](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/galactic_network.png)
 
 ## 8 |  Further Reading & Related Concepts
 Freeman Dyson – “Eternal Intelligence” & Dyson Shells
