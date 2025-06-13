@@ -173,6 +173,17 @@ A human or otherwise pluralistic oversight council retains veto power over runaw
 
 Even with such safeguards, the strongest insurance is a culturally rich human (or post-human but multi-modal) civilization that frames strategic objectives and prevents technology from collapsing into a single, self-justifying replicator. That is why the Time-Vault’s educational pathway—nurturing a scientist caste rather than dropping prefab robots—remains the more robust foundation.
 
+10 | Post-Activation Signalling and Reserve-Capsule Logistics
+Once a Vault is opened and its low-level puzzles are solved, the Kernel treats this as proof that sapient curiosity and cooperative problem-solving are present on-site. At that moment it initiates an encrypted “awakening ping” aimed at the nearest Galactic-Internet hub. The carrier is a narrow-band, linearly-chirped laser pulse that piggybacks on the star’s natural Fraunhofer lines, so even a modest debris-grade transmitter can reach interstellar distances without betraying the planet’s location to unknown eavesdroppers.
+
+The ping contains three data fields: (1) a hashed identifier of the Vault instance; (2) an ephemeris packet derived from the star’s spectral fingerprint and three local pulsar time-stamps—enough for the hub to triangulate the planet at sub-AU precision; and (3) a snapshot of the technetic-graph progress made during the first learning cycle. If the graph shows that only tier-0 capabilities have been unlocked, the hub schedules reserve Seeder pods to be micro-launched on the next directed-Lithobrake window. A tier-1 or tier-2 snapshot triggers shipment of specialised libraries instead: biotech upgrades, nano-fab templates, or cultural archives.
+
+Because the reserve capsules ride in kilo-gram-scale “cold packets” accelerated by laser sail or Lorentz-loop sling, their arrival time is measured in decades, not centuries. Each packet includes redundant holographic beacons that self-deploy into halo orbits, forming a local mesh. The original Vault now becomes the master node of that mesh, broadcasting synchronisation ticks so incoming packets can brake precisely and soft-land within a pre-computed two-sigma ellipse.
+
+This closed-loop logistics chain accomplishes three things at once: it confirms to the hub that intelligent life is active; it locks in the planet’s coordinates for future cultural exchange; and it cascades extra knowledge modules just fast enough to stay ahead of the civilization’s growth curve, but never so fast that local agency is bypassed. In effect, the first successful puzzle is both a graduation ceremony and a cosmic postcode request: “We are here, we are learning—send books, not gods.”
+
+![img](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/vault_connection.png)
+
 ## 8 |  Further Reading & Related Concepts
 Freeman Dyson – “Eternal Intelligence” & Dyson Shells
 Vision of post-biological intellects thriving around stars.
