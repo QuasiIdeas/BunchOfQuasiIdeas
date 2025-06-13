@@ -1,9 +1,13 @@
 # Towards a Universal Mind Interface: Time Capsule as a Cross-Species Intelligence Bridge
 
-*Author: Vladimir Baranov ([Kwazikot on X](https://x.com/Kwazikot), [vsbaranov83@gmail.com](mailto:vsbaranov83@gmail.com))
-Affiliation: SPbGUAP
-See related project: [Time Capsule Project on GitHub](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/Time%20capsule%20project.md)*
-and [Thesis: Toward a Universal Cognitive Kernel — Extending the Time Vault Concept.](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/Thesis%3A%20Toward%20a%20Universal%20Cognitive%20Kernel%20%E2%80%94%20Extending%20the%20Time%20Vault%20Concept.MD)
+|                         |                                                         |
+|-------------------------|---------------------------------------------------------|
+| **Author**             | Vladimir Baranov — [Kwazikot on X](https://x.com/Kwazikot) |
+| **Email**              | [vsbaranov83@gmail.com](mailto:vsbaranov83@gmail.com)     |
+| **Affiliation**        | Saint-Petersburg State University of Aerospace Instrumentation (SPb GUAP) |
+| **Core Project**       | **Time Capsule Project** · <https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/Time%20capsule%20project.md> |
+| **Extended Thesis**    | **Toward a Universal Cognitive Kernel — Extending the Time-Vault Concept** · <https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/Thesis%3A%20Toward%20a%20Universal%20Cognitive%20Kernel%20%E2%80%94%20Extending%20the%20Time%20Vault%20Concept.MD> |
+
 ---
 
 ## Abstract
