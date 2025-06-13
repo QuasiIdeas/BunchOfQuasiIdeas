@@ -7,8 +7,6 @@
 
 ---
 
-![img](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/7d3cb880-9995-4dbc-93d9-1dcc59de4214.png)
-
 ## 1 | From Time Capsule to Cognitive Kernel  
 
 In the original *Time Vault* concept, the capsule is a symbolic-technical node of civilizational resilience.  
@@ -121,6 +119,8 @@ The device is not a vessel of manipulation, but one of **offered knowledge** and
 - **Nick Bostrom** — simulation argument and long-termist ethics.
 
 ---
+
+![img](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/7d3cb880-9995-4dbc-93d9-1dcc59de4214.png)
 
 ## Conclusion
 
