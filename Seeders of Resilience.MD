@@ -108,6 +108,8 @@ It supports a rapid (“fast take-off”) trajectory and a slow-and-steady (“s
 
 In short, the Seeder’s planner surfaces either an **“express list”** or a **“step-ladder”** through the Technetic Graph, matching the civilisation’s starting conditions and strategic appetite.
 
+## 8 Example of seed vault in the game Subnautica
+
 html<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/40d50e43-6b00-4faa-b08a-26ed1afc98e1.png" alt="Graph" width="400">
 
 ## 9 Another example of seed vault is time capsule from my article
