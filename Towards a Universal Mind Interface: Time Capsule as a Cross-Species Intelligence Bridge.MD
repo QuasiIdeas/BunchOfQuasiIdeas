@@ -90,6 +90,8 @@ Should the capsule be ignored, its beacon brightens gradually; if aggression esc
 
 
 html<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/70a9caee-6269-4815-a664-deee6df78c72.png" alt="Graph" width="400">
+html<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/aliens_with_capsula.png" alt="Graph" width="400">
+
 ## 6. Conclusion
 
 While our immediate context is Earth and human civilization, we must anticipate post-singularity agency: autonomous AI-based civilizations may outlive us and inherit this mission. The capsule project, thus, transitions from a purely survivalist technology to a **metaphysical bridge across minds** — known and unknown.
