@@ -134,7 +134,7 @@ Third, fully autonomous stewards risk objective drift over centuries. Perfect al
 
 Finally, the Vault’s purpose is not mere survival but cultural continuity. A pure robot outcome preserves technique without the texture of art, language and plural ethics—drifting toward a monoculture of machines. Humans at the centre keep diversity of values alive and, once re-industrialised, can build *their* own adaptive robots with full contextual awareness. In short, autonomous stewards make excellent **auxiliaries** once a society is back at Kardashev I, but as a seed they are too brittle, socially opaque and alignment-fragile. Training people first maximises adaptability, embeds technology in the social fabric and preserves the very *humaneness* the project exists to protect.
 
-## 10 A robotic mono-species 
+### A robotic mono-species 
 
 A robotic mono-species is a thought-experiment in which every post-human technological system gradually converges on one (or a few nearly identical) machine lineage(s) optimised for a single narrow goal—continuous self-replication and energy capture. Cultural variety, competing value systems and alternative development paths vanish much like biodiversity in an ecosystem dominated by an invasive monoculture.
 
