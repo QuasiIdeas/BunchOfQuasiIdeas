@@ -78,6 +78,16 @@ Optional elements:
 
 ---
 
+> **Tamper Safety** – The kernel sits inside a nested, self-healing ceramic/quartz shell.  
+>  Gentle exploration is rewarded; sustained brute force triggers escalating but harmless deterrents (flash-bang, odor).  
+>  A palm-sized “seed puck” can eject and hide, ensuring the knowledge survives even if the outer housing is destroyed.
+
+The capsule first makes itself noticeable without alarming the locals: a slow, pulsing glow, a low rhythmic hum that can be felt as much as heard, and a faint neutral scent establish its presence as something intriguing yet non-threatening. Anyone who touches, taps or places an object on the smooth outer pad sees an immediate response—light flashes, tone bursts, animated glyphs—so that cause, effect and reward are understood within seconds even by a preliterate observer. Every follow-up interaction is framed as a playful puzzle. Repeat the rhythm, trace the glowing line, fit a stone into the recess, and the capsule answers with more elaborate patterns or a practical gift such as the template for a sharper cutting flake. Because the same symbols always accompany the same actions and outcomes, a miniature vocabulary of pictograms forms naturally; spoken hints appear only after the audience can reliably match sign to result, letting a rudimentary phonetic layer build on top of established visual meaning.
+
+Success is made socially desirable. A solver walks away wearing a softly glowing mark or carries a light-amulet that elevates status within the group, encouraging imitation and creating an early “knowledge caste.” The learning path itself unfolds in tiers—basic mechanics and leverage, then fire and metal, then optics and simple electrics. At each milestone the capsule projects a brief celebratory animation that is equal parts festival and teaser: images of strong bridges, water mills, clear night-sky observatories show concrete, attainable futures that tie new skills to obvious benefits. The pedagogy is strictly non-coercive: wrong moves are met with silence rather than punishment, and progression simply pauses until cooperative behaviour resumes, reinforcing the idea that learning is shared play, never forced obedience.
+
+Should the capsule be ignored, its beacon brightens gradually; if aggression escalates, it deploys harmless deterrents—dazzling flashes or an unpleasant but fleeting odour—to protect the core while leaving the outer game intact. When a stable cohort masters the full pictographic grammar, the device reveals its deeper trove: the technetic dependency graph and advanced tool blueprints. At that point the fledgling scientist caste has both the motivation and the intellectual scaffolding to carry forward a self-sustaining research tradition, turning initial curiosity into a culture of systematic inquiry without ever having had an ideology imposed upon it.
+
 ## 6. Conclusion
 
 While our immediate context is Earth and human civilization, we must anticipate post-singularity agency: autonomous AI-based civilizations may outlive us and inherit this mission. The capsule project, thus, transitions from a purely survivalist technology to a **metaphysical bridge across minds** — known and unknown.
