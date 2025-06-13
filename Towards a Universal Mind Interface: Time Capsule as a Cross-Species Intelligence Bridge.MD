@@ -89,8 +89,8 @@ Success is made socially desirable. A solver walks away wearing a softly glowing
 Should the capsule be ignored, its beacon brightens gradually; if aggression escalates, it deploys harmless deterrents—dazzling flashes or an unpleasant but fleeting odour—to protect the core while leaving the outer game intact. When a stable cohort masters the full pictographic grammar, the device reveals its deeper trove: the technetic dependency graph and advanced tool blueprints. At that point the fledgling scientist caste has both the motivation and the intellectual scaffolding to carry forward a self-sustaining research tradition, turning initial curiosity into a culture of systematic inquiry without ever having had an ideology imposed upon it.
 
 
-html<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/70a9caee-6269-4815-a664-deee6df78c72.png" alt="Graph" width="400">
-html<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/aliens_with_capsula.png" alt="Graph" width="400">
+<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/70a9caee-6269-4815-a664-deee6df78c72.png" alt="Graph" width="400">
+<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/aliens_with_capsula.png" alt="Graph" width="400">
 
 ## 6. Conclusion
 
