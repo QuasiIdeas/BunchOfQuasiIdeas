@@ -88,6 +88,8 @@ Success is made socially desirable. A solver walks away wearing a softly glowing
 
 Should the capsule be ignored, its beacon brightens gradually; if aggression escalates, it deploys harmless deterrents—dazzling flashes or an unpleasant but fleeting odour—to protect the core while leaving the outer game intact. When a stable cohort masters the full pictographic grammar, the device reveals its deeper trove: the technetic dependency graph and advanced tool blueprints. At that point the fledgling scientist caste has both the motivation and the intellectual scaffolding to carry forward a self-sustaining research tradition, turning initial curiosity into a culture of systematic inquiry without ever having had an ideology imposed upon it.
 
+
+html<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/70a9caee-6269-4815-a664-deee6df78c72.png" alt="Graph" width="400">
 ## 6. Conclusion
 
 While our immediate context is Earth and human civilization, we must anticipate post-singularity agency: autonomous AI-based civilizations may outlive us and inherit this mission. The capsule project, thus, transitions from a purely survivalist technology to a **metaphysical bridge across minds** — known and unknown.
