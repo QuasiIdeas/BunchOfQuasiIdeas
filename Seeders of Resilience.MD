@@ -114,6 +114,7 @@ A natural extension of the Subnautica analogy is to cast one class of Seeder ins
 html<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/40d50e43-6b00-4faa-b08a-26ed1afc98e1.png" alt="Graph" width="400">
 
 ## 9 Another example of seed vault is time capsule from my article
+
 [Towards a Universal Mind Interface: Time Capsule as a Cross-Species Intelligence Bridge](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/Towards%20a%20Universal%20Mind%20Interface%3A%20Time%20Capsule%20as%20a%20Cross-Species%20Intelligence%20Bridge.MD)
 html<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/70a9caee-6269-4815-a664-deee6df78c72.png" alt="Graph" width="400">
 
