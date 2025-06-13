@@ -140,26 +140,20 @@ This project proposes a conceptual and technological framework for a **universal
 
 ## Key Theses
 
-### 1. **Post-Catastrophic Survival**
-- In the event of a global collapse, surviving communities may lose access to key knowledge required to rebuild industrial civilization.
-- Traditional books and libraries may survive, but are vulnerable to destruction, inaccessibility, or cultural discontinuity.
-- A well-encapsulated autonomous archive can help **re-seed civilization**.
+In the event of a global collapse, surviving communities may lose access to key knowledge required to rebuild industrial civilization.
+Traditional books and libraries may survive, but are vulnerable to destruction, inaccessibility, or cultural discontinuity.
+A well-encapsulated autonomous archive can help **re-seed civilization**.
+In a post-singularity world with **autonomous self-replicating robotic industries**, these capsules can be mass-produced and deployed across Earth or other planets.
+Once AGI is aligned with human values, it can take responsibility for **automated dissemination and long-term storage** of these archives.
 
-### 2. **Integration with Transhumanism and Robotics**
-- In a post-singularity world with **autonomous self-replicating robotic industries**, these capsules can be mass-produced and deployed across Earth or other planets.
-- Once AGI is aligned with human values, it can take responsibility for **automated dissemination and long-term storage** of these archives.
+Inspired by Carl Sagan and Iosif Shklovsky’s ideas about cosmic civilizations, this project includes an **exoanthropological aspect**: deploying capsules throughout the Solar System and beyond.
+The idea is to **signal and seed** human knowledge in planetary systems that may support life or intelligence in different evolutionary stages.
 
-### 3. **Cosmic Expansion**
-- Inspired by Carl Sagan and Iosif Shklovsky’s ideas about cosmic civilizations, this project includes an **exoanthropological aspect**: deploying capsules throughout the Solar System and beyond.
-- The idea is to **signal and seed** human knowledge in planetary systems that may support life or intelligence in different evolutionary stages.
+The project gains an additional justification under the **Simulation Hypothesis**: if computational resources are allocated to simulated worlds based on their survival likelihood, improving civilizational robustness increases our simulated timeline.
+Therefore, **prolonging civilization increases resource allocation within the simulation**, making the time capsule indirectly useful even within a virtual context.
 
-### 4. **Philosophical Foundation: The Simulation Hypothesis**
-- The project gains an additional justification under the **Simulation Hypothesis**: if computational resources are allocated to simulated worlds based on their survival likelihood, improving civilizational robustness increases our simulated timeline.
-- Therefore, **prolonging civilization increases resource allocation within the simulation**, making the time capsule indirectly useful even within a virtual context.
-
-### 5. **Toward a Universal Interface**
-- To reach not only post-collapse human societies but also **hypothetical non-human intelligences** (including potential alien minds), the capsule aims to be **format-agnostic and cognitively universal**.
-- The concept includes **pictographic, mathematical, and sensory-based encoding**, inspired by projects like the Voyager Golden Record.
+To reach not only post-collapse human societies but also **hypothetical non-human intelligences** (including potential alien minds), the capsule aims to be **format-agnostic and cognitively universal**.
+The concept includes **pictographic, mathematical, and sensory-based encoding**, inspired by projects like the Voyager Golden Record.
 
 ---
 
