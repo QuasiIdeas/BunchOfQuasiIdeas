@@ -7,7 +7,7 @@
 
 ---
 
-[img!](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/7d3cb880-9995-4dbc-93d9-1dcc59de4214.png)
+![img](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/7d3cb880-9995-4dbc-93d9-1dcc59de4214.png)
 
 ## 1 | From Time Capsule to Cognitive Kernel  
 
