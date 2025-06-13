@@ -65,9 +65,24 @@ flowchart LR
   III --> |Meets AGI • SR-fabs • Nanotech| Net["Galactic Internet Node"]
 ```
 
-## 6 |  Further Reading & Related Concepts
+## 6 | Addendum — The Technetic-Graph Extension
+The Seeder should evolve from a static “library of technologies” into a Technetic Graph: a machine-readable dependency graph that encodes how to unfold an entire industrial ecosystem as quickly and safely as possible, starting from whatever capabilities a recovering or first-contact civilization already has.
+
+Nodes represent discrete capabilities—“smelt aluminium,” “grow high-efficiency solar cells,” “culture pluripotent stem cells,” “print 5 nm ASICs.”
+
+Edges capture prerequisite relationships, resource flows, and minimal tool-chains, effectively turning the graph into a dynamic recipe book.
+
+When the kernel discovers that some nodes are already satisfied in the local environment, it prunes or shortcuts the graph and automatically recalculates the fastest bootstrap path. Each node links to a lightweight simulation that estimates energy, feedstock, and time costs under local conditions, so the receiver can prioritise steps that are both feasible and robustness-maximising.
+
+The graph is stored in a compact “tech DSL.” Signed patches—new processes, safer reagents, superior fabrication routes—can be added without rewriting the entire archive, allowing the Seeder network to remain current as civilisations progress. Progress across the graph is scored by a robustness index: branches that diversify power sources, duplicate critical supply chains, or reduce single-point failures receive higher weighting than mere speed boosters.
+
+In effect, the Technetic Graph transforms the Seeder from a passive archive into an adaptive, crowdsourced roadmap—one that can be updated by any civilization that reaches a higher Kardashev tier, then handed forward to the next.
+
+## 7 |  Further Reading & Related Concepts
 Freeman Dyson – “Eternal Intelligence” & Dyson Shells
 Vision of post-biological intellects thriving around stars.
+
+Boris Ivanovich Kudrin Technogenic Self-Organization
 
 Olaf Stapledon – Star Maker (1937)
 Early literary exploration of nested cosmic civilizations and knowledge seeding.
