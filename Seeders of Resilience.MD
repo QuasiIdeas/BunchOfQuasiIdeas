@@ -185,6 +185,10 @@ Even with such safeguards, the strongest insurance is a culturally rich human (o
 <img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/vault_connection.png" alt="Graph" width="400">
 <img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/galactic_network.png" alt="Graph" width="400">
 
+### On Galactic Feedback and Data-Scarcity
+
+Sceptics point out that a truly global “Galactic Internet” may never materialise: emerging civilisations are likely to be local and sporadic, their transmission protocols incompatible, their willingness to share uncertain.  A Kernel that waits for neat, continuous telemetry could sit silent for millennia, accumulating no statistics at all.  Yet the opposite argument has weight.  Physics does not demand a single backbone—only a self-describing packet format (pulsar-time stamp, spectral hash of the parent star, diagnostic log).  Any probe or relay that stumbles on such a packet can parse it and forward it, so even scattered nodes accrete into an accidental mesh.  Evolutionary pressure also favours openness: societies that absorb even fragmentary “patches” (how not to mis-align an AI, how to dodge a local energy trap) survive longer and thus remain in the sample pool, while hermetic cultures prune themselves from history.  Two or three successful exchanges start a snowball: each node relays not only the original file but its own patch-journal, so informational bandwidth grows quasi-exponentially, even if physical meetings are rare.  Finally, partial data are still data; noisy astrophysical catalogues have long produced real laws of stellar evolution, and equally noisy technetic logs can reveal which technologies stall growth and which catalyse robustness.  Therefore we embed a feedback protocol not because we expect a fire-hose of telemetry tomorrow, but because every extra handshake drops the existential error-bar, and given cosmic time the statistics will accumulate.
+
 ## 8 |  Further Reading & Related Concepts
 Freeman Dyson – “Eternal Intelligence” & Dyson Shells
 Vision of post-biological intellects thriving around stars.
