@@ -2,7 +2,7 @@
 
 **Author**: Vladimir Baranov ([Twitter/X](https://x.com/Kwazikot))  
 **Email**: vsbaranov83@gmail.com  
-**Institution**: SPbSUAP  
+**Institution**: Saint Petersburg State University of Aerospace Instrumentation
 **Original GitHub Link**: [Project Repository](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/Time%20capsule%20project.md)
 
 ### **Related papers** :
