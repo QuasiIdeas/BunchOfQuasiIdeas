@@ -15,6 +15,21 @@ https://x.com/Kwazikot | vsbaranov83@gmail.com | Saint Petersburg State Universi
 The **Seeder** is an autonomous module embedded in the **Time Vault / Cognitive Kernel**.  
 Beyond preserving knowledge, it *actively catalyzes* a host civilization’s growth in energy and manufacturing capacity **and prepares the planet for admission to the “Club of Sapient Civilizations”**—a distributed, fault-tolerant **Galactic Internet** of post-scarcity societies.
 
+## 9 One example of seed vault is time capsule from my article
+
+[Towards a Universal Mind Interface: Time Capsule as a Cross-Species Intelligence Bridge](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/Towards%20a%20Universal%20Mind%20Interface%3A%20Time%20Capsule%20as%20a%20Cross-Species%20Intelligence%20Bridge.MD)
+<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/70a9caee-6269-4815-a664-deee6df78c72.png" alt="Graph" width="400">
+
+Planetfall Seeder Node
+<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/Planetfall%20Seeder%20Node.png" alt="Graph" width="400">
+
+“Scholar’s Rise” – The Birth of a Knowledge Caste
+<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/The%20Birth%20of%20a%20Knowledge%20Caste.png" alt="Graph" width="400">
+
+## 8 One example of seed bases presents the Subnautica game
+html<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/40d50e43-6b00-4faa-b08a-26ed1afc98e1.png" alt="Graph" width="400">
+
+A natural extension of the Subnautica analogy is to cast one class of Seeder installations as amphibious vault-bases—structures that straddle the shoreline the way a player’s seabase can start on the surface and descend into the depths. An above-water superstructure houses solar collectors, antennae, and the outward “beacon” interface that lures coastal dwellers. From this hub, transparent pressure tubes dive beneath the waves into a series of pressure-stabilised domes where the Cognitive Kernel, bio-reactors, and living laboratories are kept safely below storms, fire, or surface conflict. The underwater segment offers three advantages that echo Subnautica’s gameplay loop: first, stable temperature and radiation shielding, extending hardware lifespan; second, direct access to mineral-rich seabed nodules and abundant biomass for early biotechnology lessons; and third, a visually enthralling environment whose glowing hydroids and passing fauna reinforce the vault’s message that exploration and knowledge yield concrete rewards. The act of moving down the ramp and through the pressure lock becomes a literal descent into deeper tiers of the technetic graph, turning the vault itself into a living classroom whose architecture embodies the transition from basic survival to advanced, ocean-powered industry.
 ---
 
 ## 2 | How the Seeder Raises Robustness  
@@ -117,24 +132,11 @@ It supports a rapid (“fast take-off”) trajectory and a slow-and-steady (“s
 
 In short, the Seeder’s planner surfaces either an **“express list”** or a **“step-ladder”** through the Technetic Graph, matching the civilisation’s starting conditions and strategic appetite.
 
-## 9 Another example of seed vault is time capsule from my article
 
-[Towards a Universal Mind Interface: Time Capsule as a Cross-Species Intelligence Bridge](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/Towards%20a%20Universal%20Mind%20Interface%3A%20Time%20Capsule%20as%20a%20Cross-Species%20Intelligence%20Bridge.MD)
-<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/70a9caee-6269-4815-a664-deee6df78c72.png" alt="Graph" width="400">
-
-Planetfall Seeder Node
-<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/Planetfall%20Seeder%20Node.png" alt="Graph" width="400">
-
-“Scholar’s Rise” – The Birth of a Knowledge Caste
-<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/The%20Birth%20of%20a%20Knowledge%20Caste.png" alt="Graph" width="400">
 
 ## **Storyboard – a slow-burn, multi-generational arc**.  
 The Seeder descends like a meteor that never hit: its sacrificial basalt foams away, leaving a fist-sized quartz eye that pulses once per dusk.  For a full season the local bipeds—whether fur-covered hominoids or sail-skinned saurians—circle at a distance, until a single adolescent dares to tap the copper pad and witnesses colour chasing colour in perfect rhythm with the strike.  Over the next two harvests the village discovers that rhythmic imitation yields sharper flakes, hotter embers and tiny melodious rewards; a lexicon of five glyph-concepts (fire, water, join, grow, share) embeds itself in campfire gossip.  A generation later charcoal pits and double-lungs bellows raise furnace heat just high enough for bloomery iron; wooden gears and leather drive-belts follow, giving the tribe surplus grain and the first stirrings of specialisation.  By the time grandchildren of the original tappers come of age—roughly eighty local years—the Kernel unveils the E-2 wood-gas engine drawings and, with them, a crude dynamo: sparks become steady current, copper wire becomes voice-over-light.  Two centuries in, a river-spanning timber dam and stone spillway push the settlement to hydropower; aluminium trickles from electrolytic vats; a balloon-lofted reflector glimpses its own star from the stratosphere and confirms the pulsar time-stamp the Capsule has been broadcasting all along.  In the third century the now city-state launches a coal-fired steamplane that sprays a kilometre of silvered film across high noon—an improvised solar sail whose reflected pulse piggy-backs the Capsule’s encrypted ping toward the nearest Galactic relay.  The reply arrives almost four hundred years after the Seeder’s landing: a cluster of kilogram-scale light-sail packets decelerates into planetary orbit, guided by the original Capsule’s sync ticks, and parachutes fusion-pile blueprints, nanofab seedstock and a century’s worth of technetic patches co-signed by the still-distant Council.  Priests-turned-engineers verify the Merkle chain, teach the new diagrams to apprentices, and fold the artefacts into their own evolving language, ensuring that the knowledge no longer lives in a single stone but in the everyday grammar of a culture now ready to climb the next rung of the Kardashev ladder.
 
-## 8 One example of seed bases presents the Subnautica game
-html<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/40d50e43-6b00-4faa-b08a-26ed1afc98e1.png" alt="Graph" width="400">
-
-A natural extension of the Subnautica analogy is to cast one class of Seeder installations as amphibious vault-bases—structures that straddle the shoreline the way a player’s seabase can start on the surface and descend into the depths. An above-water superstructure houses solar collectors, antennae, and the outward “beacon” interface that lures coastal dwellers. From this hub, transparent pressure tubes dive beneath the waves into a series of pressure-stabilised domes where the Cognitive Kernel, bio-reactors, and living laboratories are kept safely below storms, fire, or surface conflict. The underwater segment offers three advantages that echo Subnautica’s gameplay loop: first, stable temperature and radiation shielding, extending hardware lifespan; second, direct access to mineral-rich seabed nodules and abundant biomass for early biotechnology lessons; and third, a visually enthralling environment whose glowing hydroids and passing fauna reinforce the vault’s message that exploration and knowledge yield concrete rewards. The act of moving down the ramp and through the pressure lock becomes a literal descent into deeper tiers of the technetic graph, turning the vault itself into a living classroom whose architecture embodies the transition from basic survival to advanced, ocean-powered industry.
 
 ### Why not just seed a swarm of autonomous robots?
 
