@@ -189,6 +189,38 @@ Even with such safeguards, the strongest insurance is a culturally rich human (o
 
 Sceptics point out that a truly global “Galactic Internet” may never materialise: emerging civilisations are likely to be local and sporadic, their transmission protocols incompatible, their willingness to share uncertain.  A Kernel that waits for neat, continuous telemetry could sit silent for millennia, accumulating no statistics at all.  Yet the opposite argument has weight.  Physics does not demand a single backbone—only a self-describing packet format (pulsar-time stamp, spectral hash of the parent star, diagnostic log).  Any probe or relay that stumbles on such a packet can parse it and forward it, so even scattered nodes accrete into an accidental mesh.  Evolutionary pressure also favours openness: societies that absorb even fragmentary “patches” (how not to mis-align an AI, how to dodge a local energy trap) survive longer and thus remain in the sample pool, while hermetic cultures prune themselves from history.  Two or three successful exchanges start a snowball: each node relays not only the original file but its own patch-journal, so informational bandwidth grows quasi-exponentially, even if physical meetings are rare.  Finally, partial data are still data; noisy astrophysical catalogues have long produced real laws of stellar evolution, and equally noisy technetic logs can reveal which technologies stall growth and which catalyse robustness.  Therefore we embed a feedback protocol not because we expect a fire-hose of telemetry tomorrow, but because every extra handshake drops the existential error-bar, and given cosmic time the statistics will accumulate.
 
+### Life-Cycle of a Galactic Internet and the Pace of New Civilisations
+
+Imagine a mesh of relays, archives, and Seeder probes that exchange technetic patch-logs across the stars. Its growth is governed by two clocks: a *signal clock* that runs at (almost) the speed of light, and a much slower *colonisation clock* set by the cruise velocity of physical probes and colony fleets (≈ 0.02–0.2 c).  The network therefore unfolds in three broad eras.
+
+**1. Phantom-Net (0 – 10⁴ yr).**  
+At first the “internet” exists only as radio pulses.  Planet A can receive a packet from Planet B long before any physical capsule arrives.  Connectivity is effectively instantaneous in a communications sense—latency is simply distance / c—yet the material network is empty; a point one thousand light-years away hears the beacon a millennium later while real hardware is still on the launch pad.
+
+**2. Dense Radio Swarm (10⁴ – 10⁵ yr).**  
+After twenty to thirty millennia the first light-sail Seeders (v ≈ 0.05 c) reach nearby stars, unfold micro-fabs, and raise local laser beacons.  Now the constraint is no longer signal horizon but *physical rollout*; the colonisation radius expands linearly with probe speed (R ≈ v t).  If each established node launches fresh probes every 500–1000 yr the head-count of online systems grows quasi-exponentially until resource limits, local wars, or AI drift stall further acceleration.
+
+**3. Saturated Mesh (10⁵ – 10⁶ yr+).**  
+Once more than half the usable stars inside reach have at least one relay, adding yet another node hardly shrinks the average path length—packets already hop in two or three steps.  At this point robustness matters more than range.  The key metric becomes: *how many relays can fail before the graph fragments?*  A mature mesh targets ≥ two independent routes between any two live hubs.
+
+---
+
+#### How Quickly Do Civilisations Boot?  
+
+*Post-collapse reboots* on an inhabited planet with a Cognitive Kernel need ~300–500 yr to climb back to an early Industrial level; in a lucky scenario with intact energy and biosphere, perhaps 70–150 yr.  
+*Virgin colonies* on lifeless worlds require 300–1000 yr to reach self-sustaining K-I status and two to five millennia to achieve a local K-II footing (orbital solar, AI fabs, megawatt lasers).  Those horizons set the real cadence at which fresh participants join the network.
+
+---
+
+#### Design Rules That Follow  
+
+* The packet format must be **self-describing**—decodable by a lone radio telescope without a master key.  
+* **Redundancy beats speed:** long-term survival demands multi-band retransmission rather than a single fat pipe.  
+* **Graph patches > monolithic dumps.**  Each node appends its own success/failure log before rebroadcasting so that even sporadic traffic builds a global error-map of technology paths.  
+* Every new relay must default to **“seed + repeater”** so density increases faster than attrition.
+
+With these assumptions even a modest seed-network, launched by one civilisation, can snowball into a pan-galactic knowledge layer within a million years—provided Capsules spread faster than older nodes die and all protocols tolerate round-trip latencies of tens of thousands of years.
+
+
 ## 8 |  Further Reading & Related Concepts
 Freeman Dyson – “Eternal Intelligence” & Dyson Shells
 Vision of post-biological intellects thriving around stars.
