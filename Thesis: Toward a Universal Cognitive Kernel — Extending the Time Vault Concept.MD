@@ -5,7 +5,7 @@
 **Institution**: SPbSUAP  
 **Original GitHub Link**: [Project Repository](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/Time%20capsule%20project.md)
 
-### ** Related papers ** :
+### **Related papers** :
 - [Seeders of Resilience](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/Seeders%20of%20Resilience.MD)
 - [The Time Vault: A Simulation-Aware, Interplanetary Framework for Civilizational Continuity](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/The%20Time%20Vault%3A%20A%20Simulation----Aware%2C%20Interplanetary%20Framework%20for%20Civilizational%20Continuity.MD)
 - [Towards a Universal Mind Interface: Time Capsule as a Cross-Species Intelligence Bridge](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/Towards%20a%20Universal%20Mind%20Interface%3A%20Time%20Capsule%20as%20a%20Cross-Species%20Intelligence%20Bridge.MD)
