@@ -297,6 +297,9 @@ Boris Ivanovich Kudrin Technogenic Self-Organization
 Olaf Stapledon – Star Maker (1937)
 Early literary exploration of nested cosmic civilizations and knowledge seeding.
 
+Valentin Turchin — **“Metasystem Transition” concept**
+*Source*: V. Turchin, **The Phenomenon of Science** (Columbia U. Press, 1977)
+
 Arthur C. Clarke – “Starseed” notion (The Fountains of Paradise, 1979)
 Concept of dispersing knowledge capsules across space.
 
