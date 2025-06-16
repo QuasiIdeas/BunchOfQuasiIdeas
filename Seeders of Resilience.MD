@@ -29,6 +29,8 @@ Planetfall Seeder Node
 ## 8 One example of seed bases presents the Subnautica game
 html<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/40d50e43-6b00-4faa-b08a-26ed1afc98e1.png" alt="Graph" width="400">
 
+## 2 | Self-replicating factories as mechanism of spreading capsules
+As these **self-replicating factories** (“von Neumann probes”) spread outward, a single seed craft can reach a nearby star, mine local asteroids to build dozens of new factories, and launch them on at ~0.1 c. Analyses suggest such an exponential wavefront could sweep across the entire Milky Way in ≲ 0.5 million years and, by leap-frogging between galaxies, fill all reachable space within a few hundred million years ([Carl Shulman, 2012](https://reflectivedisequilibrium.blogspot.com/2012/09/spreading-happiness-to-stars-seems.html); [Self-replicating spacecraft — Wikipedia](https://en.wikipedia.org/wiki/Self-replicating_spacecraft)).
 
 A natural extension of the Subnautica analogy is to cast one class of Seeder installations as amphibious vault-bases—structures that straddle the shoreline the way a player’s seabase can start on the surface and descend into the depths. An above-water superstructure houses solar collectors, antennae, and the outward “beacon” interface that lures coastal dwellers. From this hub, transparent pressure tubes dive beneath the waves into a series of pressure-stabilised domes where the Cognitive Kernel, bio-reactors, and living laboratories are kept safely below storms, fire, or surface conflict. The underwater segment offers three advantages that echo Subnautica’s gameplay loop: first, stable temperature and radiation shielding, extending hardware lifespan; second, direct access to mineral-rich seabed nodules and abundant biomass for early biotechnology lessons; and third, a visually enthralling environment whose glowing hydroids and passing fauna reinforce the vault’s message that exploration and knowledge yield concrete rewards. The act of moving down the ramp and through the pressure lock becomes a literal descent into deeper tiers of the technetic graph, turning the vault itself into a living classroom whose architecture embodies the transition from basic survival to advanced, ocean-powered industry.
 
@@ -43,6 +45,8 @@ A natural extension of the Subnautica analogy is to cast one class of Seeder ins
 | Post-singularity drift | **Node integration with Galactic Internet** | Shared data redundancy, collective defense |
 
 ---
+
+While their primary mission is replication and expansion, these factories could simultaneously manufacture **universal cognitive kernels**—robust time-capsule modules that preserve knowledge, culture, and AI tutors. In this way the “capsules of time” emerge as a natural by-product of the cosmic manufacturing pipeline, seeding our legacy wherever the factory wavefront passes.
 
 ## 3 | Admission Criteria for the Galactic Internet  
 
