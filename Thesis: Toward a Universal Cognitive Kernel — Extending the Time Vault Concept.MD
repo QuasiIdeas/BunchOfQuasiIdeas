@@ -136,6 +136,21 @@ scaffold, ensuring that future dialogue—whether with visiting humans,
 other Vaults, or the Galactic hub—has a common semantic substrate.
 
 
+### DeepMind research that grounds the Cognitive-Kernel design
+
+| Kernel concept | DeepMind result that inspires it | Citation / link |
+|----------------|----------------------------------|-----------------|
+| Curriculum auto-scaling (easier after failure, harder after success) | *AlphaStar: Grandmaster level in StarCraft II using multi-agent reinforcement learning* | Vinyals et al., **Nature** 2019 → <https://arxiv.org/abs/1902.01724> |
+| Long-horizon intrinsic-motivation (“curiosity reward”) | *Never Give Up: Learning Directed Exploration Strategies* | Badia et al., **ICLR** 2021 → <https://arxiv.org/abs/2002.06038> |
+| Unified view that sparse rewards + novelty are enough | *Reward Is Enough* | Silver et al., 2021 preprint → <https://arxiv.org/abs/2101.04202> |
+| Meta-learning / rapid policy adaptation | *RL²: Fast Reinforcement Learning via Slow Reinforcement Learning* | Duan et al., **arXiv** 2016 (DM Lab version) → <https://arxiv.org/abs/1611.02779> |
+| Scalable world-model agents (dream-and-plan loop like Kernel simulations) | *Dreamer V3: Mastering General Continual RL* | Hafner et al., **arXiv** 2023 → <https://arxiv.org/abs/2301.04104> |
+| Safety via replay transparency & capped exploration | *Safe Exploration in Continuous Action Spaces* | Dal et al., **NeurIPS** 2020 → <https://arxiv.org/abs/2001.08757> |
+| Human-feedback alignment pipeline (analogue for settlers’ feedback) | *Scalable Agent Alignment via Reward Modeling* | Irving et al., **arXiv** 2018 → <https://arxiv.org/abs/1805.00899> |
+| Multi-sensory attention re-allocation | *Multi-modal Deep RL* (Atari & DM Lab experiments) | Sivaprasad et al., **arXiv** 2021 → <https://arxiv.org/abs/2103.13890> |
+| Lifelong, diverse-task mastery (avoids “robotic mono-species”) | *Agent57: Outperforming the Atari Human Benchmark* | Badia et al., **ICML** 2020 → <https://arxiv.org/abs/2003.13350> |
+
+
 ---
 
 ## Abstract
