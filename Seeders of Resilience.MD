@@ -98,7 +98,7 @@ flowchart LR
 ## 6 | Addendum — The Technetic-Graph Extension
 
 
-html<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/Technetic-Graph.png" alt="Graph" width="400">
+html<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/technetic_graf.png" alt="Graph" width="400">
 <br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/technetic_graph.png" alt="Graph" width="400">
 
 
