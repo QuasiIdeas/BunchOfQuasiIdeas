@@ -99,9 +99,13 @@ flowchart LR
 
 
 html<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/technetic_graf.png" alt="Graph" width="400">
+
 technetic_graph_v1
+
 html<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/technetic_graph_v2.png" alt="Graph" width="400">
+
 technetic_graph_v2
+
 <br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/technetic_graph.png" alt="Graph" width="400">
 
 
