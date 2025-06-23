@@ -108,6 +108,39 @@ technetic_graph_v2
 
 <br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/technetic_graph.png" alt="Graph" width="400">
 
+## The Technetic-Graph
+⚙️ **Wheel** | type=basic | level=T0 | enables=Roman Roads  
+🗜️ **Pulley** | type=basic | level=T0 | enables=Mechanical Clock  
+🛡️ **Ironworking** | type=basic | level=T0 | enables=Concrete, Printing Press, Steam Engine, Industrial Steel, Electricity  
+
+🧱 **Concrete** | type=engineering | level=T1 | requires=Ironworking | enables=Arch, Roman Roads, Aqueduct  
+🏛️ **Arch** | type=engineering | level=T1 | requires=Concrete | enables=Roman Roads, Aqueduct  
+🛣️ **Roman Roads** | type=engineering | level=T1 | requires=Wheel, Concrete, Arch  
+🚰 **Aqueduct** | type=engineering | level=T1 | requires=Concrete, Arch  
+
+📜 **Printing Press** | type=advanced | level=T2 | requires=Ironworking  
+⏱️ **Mechanical Clock** | type=advanced | level=T2 | requires=Pulley, Ironworking | enables=Steam Engine  
+⛨ **Gunpowder** | type=advanced | level=T2 | enables=Firearms  
+
+🚂 **Steam Engine** | type=engineering | level=T3 | requires=Ironworking, Mechanical Clock | enables=Industrial Steel  
+🏭 **Industrial Steel** | type=engineering | level=T3 | requires=Ironworking, Steam Engine | enables=Internal Combustion Engine, Electricity  
+💡 **Electricity** | type=basic | level=T3 | requires=Industrial Steel | enables=Telegraph, Telephone, Radio, Transistor  
+🔋 **Internal Combustion Engine** | type=engineering | level=T3 | requires=Industrial Steel | enables=Aircraft  
+📞 **Telegraph** | type=engineering | level=T3 | requires=Electricity | enables=Telephone, Internet  
+☎️ **Telephone** | type=engineering | level=T3 | requires=Electricity, Telegraph | enables=Internet  
+📻 **Radio** | type=engineering | level=T3 | requires=Electricity | enables=Satellite Communication, Mobile Phone  
+✈️ **Aircraft** | type=engineering | level=T3 | requires=Internal Combustion Engine, Industrial Steel | enables=Satellite Communication  
+
+🎛️ **Transistor** | type=engineering | level=T4 | requires=Electricity | enables=Computer, Mobile Phone  
+💻 **Computer** | type=engineering | level=T4 | requires=Transistor, Electricity | enables=Internet, Big Data  
+📡 **Satellite Communication** | type=advanced | level=T4 | requires=Radio, Aircraft | enables=Internet  
+📱 **Mobile Phone** | type=advanced | level=T4 | requires=Transistor, Radio | enables=Internet  
+🌐 **Internet** | type=advanced | level=T4 | requires=Computer, Telephone, Satellite Communication | enables=Cloud Computing, Big Data  
+☁️ **Cloud Computing** | type=advanced | level=T4 | requires=Internet, Computer | enables=Big Data  
+🗄️ **Big Data** | type=advanced | level=T4 | requires=Computer, Internet | enables=Machine Learning  
+🧠 **Machine Learning** | type=cutting-edge | level=T4 | requires=Big Data, Computer | enables=Artificial Intelligence  
+🤖 **Artificial Intelligence** | type=cutting-edge | level=T4 | requires=Machine Learning, Big Data  
+
 
 The Seeder should evolve from a static “library of technologies” into a Technetic Graph: a machine-readable dependency graph that encodes how to unfold an entire industrial ecosystem as quickly and safely as possible, starting from whatever capabilities a recovering or first-contact civilization already has.
 
