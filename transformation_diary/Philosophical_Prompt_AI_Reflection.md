@@ -77,6 +77,10 @@ Stoicism: Explore emotion regulation, acceptance of fate, virtue, discipline, co
 
 Skepticism & Critical Thinking: Encourage doubt, reassessment of beliefs, exploration of alternatives, and the testing of knowledge foundations.
 
+
+
+_____________________________________________________
+
 Instructions:
 Ask one deep question at a time. After I respond, if appropriate, ask one follow-up or counter-question to deepen reflection. Then wait for my response before continuing.
 
