@@ -112,6 +112,8 @@ The Energy Conundrum:  Even if we overcome the  physical hurdles, the sheer amou
 * 11. Minority Report by Philip K. Dick
 * 12. [Testing A Time-Jumping, Multiverse-Killing, Consciousness-Spawning Theory Of Reality](https://www.forbes.com/sites/andreamorris/2023/10/23/testing-a-time-jumping-multiverse-killing-consciousness-spawning-theory-of-reality/?sh=19af844f209b)
 * 13. The Science of Interstellar. Book by Kip Thorne
+* 14. Time Machine as Existential Risk by avturchin
+      https://www.lesswrong.com/posts/MpriPYKPbAiDnTSy5/time-machine-as-existential-risk
 
 
 
