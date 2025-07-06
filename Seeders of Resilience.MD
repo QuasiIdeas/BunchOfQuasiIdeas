@@ -381,6 +381,8 @@ Tarter, D. E. (2008). Interstellar communication: The quantum connection (Poster
 
 Hippke, M. (2021). Searching for interstellar quantum communications (arXiv:2104.06446).
 
+Latham Boyle (2024), “On Interstellar Quantum Communication and the Fermi Paradox”
+
 Berera, A., & al. (2024). Are interstellar quantum communications possible? Centauri Dreams.
 
 Carl Sagan & Iosif Shklovsky – Intelligent Life in the Universe (1966)
