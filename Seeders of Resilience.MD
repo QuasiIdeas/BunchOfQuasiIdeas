@@ -377,6 +377,12 @@ Philosophical basis for signaling value within a computed universe.
 Russian Cosmism (Fedorov, Tsiolkovsky, Vernadsky)
 Early frameworks for human cosmic expansion, resurrection and noösphere growth.
 
+Tarter, D. E. (2008). Interstellar communication: The quantum connection (Poster 19-16-P). В E. Korpela & A. Howard (Eds.), AbSciCon 2008 – Session 19: Future SETI: Technologies, Techniques, and Strategies (Astrobiology, 8(2), 384-388). https://doi.org/10.1089/ast.2008.1243
+
+Hippke, M. (2021). Searching for interstellar quantum communications (arXiv:2104.06446).
+
+Berera, A., & al. (2024). Are interstellar quantum communications possible? Centauri Dreams.
+
 Carl Sagan & Iosif Shklovsky – Intelligent Life in the Universe (1966)
 Foundational text on interstellar communication and cross-civilizational ethics.
 
