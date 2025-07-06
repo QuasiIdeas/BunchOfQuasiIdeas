@@ -13,6 +13,33 @@
 
 ---
 
+
+## Abstract
+
+This project proposes a conceptual and technological framework for a **universal time capsule**—a durable, self-sufficient, and potentially interplanetary repository of core human knowledge and values. The idea is rooted in **transhumanist philosophy**, AI development, and the simulation hypothesis. It aims not only to preserve civilization after collapse but to extend human legacy across time and space.
+
+---
+
+## Key Theses
+
+In the event of a global collapse, surviving communities may lose access to key knowledge required to rebuild industrial civilization.
+Traditional books and libraries may survive, but are vulnerable to destruction, inaccessibility, or cultural discontinuity.
+A well-encapsulated autonomous archive can help **re-seed civilization**.
+In a post-singularity world with **autonomous self-replicating robotic industries**, these capsules can be mass-produced and deployed across Earth or other planets.
+Once AGI is aligned with human values, it can take responsibility for **automated dissemination and long-term storage** of these archives.
+
+Inspired by Carl Sagan and Iosif Shklovsky’s ideas about cosmic civilizations, this project includes an **exoanthropological aspect**: deploying capsules throughout the Solar System and beyond.
+The idea is to **signal and seed** human knowledge in planetary systems that may support life or intelligence in different evolutionary stages.
+
+The project gains an additional justification under the **Simulation Hypothesis**: if computational resources are allocated to simulated worlds based on their survival likelihood, improving civilizational robustness increases our simulated timeline.
+Therefore, **prolonging civilization increases resource allocation within the simulation**, making the time capsule indirectly useful even within a virtual context.
+
+To reach not only post-collapse human societies but also **hypothetical non-human intelligences** (including potential alien minds), the capsule aims to be **format-agnostic and cognitively universal**.
+The concept includes **pictographic, mathematical, and sensory-based encoding**, inspired by projects like the Voyager Golden Record.
+
+---
+
+
 ## 1 | From Time Capsule to Cognitive Kernel  
 
 In the original *Time Vault* concept, the capsule is a symbolic-technical node of civilizational resilience.  
@@ -150,33 +177,6 @@ other Vaults, or the Galactic hub—has a common semantic substrate.
 | Multi-sensory attention re-allocation | *Multi-modal Deep RL* (Atari & DM Lab experiments) | Sivaprasad et al., **arXiv** 2021 → <https://arxiv.org/abs/2103.13890> |
 | Lifelong, diverse-task mastery (avoids “robotic mono-species”) | *Agent57: Outperforming the Atari Human Benchmark* | Badia et al., **ICML** 2020 → <https://arxiv.org/abs/2003.13350> |
 
-
----
-
-## Abstract
-
-This project proposes a conceptual and technological framework for a **universal time capsule**—a durable, self-sufficient, and potentially interplanetary repository of core human knowledge and values. The idea is rooted in **transhumanist philosophy**, AI development, and the simulation hypothesis. It aims not only to preserve civilization after collapse but to extend human legacy across time and space.
-
----
-
-## Key Theses
-
-In the event of a global collapse, surviving communities may lose access to key knowledge required to rebuild industrial civilization.
-Traditional books and libraries may survive, but are vulnerable to destruction, inaccessibility, or cultural discontinuity.
-A well-encapsulated autonomous archive can help **re-seed civilization**.
-In a post-singularity world with **autonomous self-replicating robotic industries**, these capsules can be mass-produced and deployed across Earth or other planets.
-Once AGI is aligned with human values, it can take responsibility for **automated dissemination and long-term storage** of these archives.
-
-Inspired by Carl Sagan and Iosif Shklovsky’s ideas about cosmic civilizations, this project includes an **exoanthropological aspect**: deploying capsules throughout the Solar System and beyond.
-The idea is to **signal and seed** human knowledge in planetary systems that may support life or intelligence in different evolutionary stages.
-
-The project gains an additional justification under the **Simulation Hypothesis**: if computational resources are allocated to simulated worlds based on their survival likelihood, improving civilizational robustness increases our simulated timeline.
-Therefore, **prolonging civilization increases resource allocation within the simulation**, making the time capsule indirectly useful even within a virtual context.
-
-To reach not only post-collapse human societies but also **hypothetical non-human intelligences** (including potential alien minds), the capsule aims to be **format-agnostic and cognitively universal**.
-The concept includes **pictographic, mathematical, and sensory-based encoding**, inspired by projects like the Voyager Golden Record.
-
----
 
 ## Ethical Note on Mind Control and Agency
 
