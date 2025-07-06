@@ -98,7 +98,7 @@ Exotic Matter Mystery:  Many proposed FTL drives, like the Alcubierre drive, rel
 
 The Energy Conundrum:  Even if we overcome the  physical hurdles, the sheer amount of energy required for FTL travel is staggering.  Our current energy production pales in comparison to what would be needed to propel a spaceship at faster-than-light speeds.
 
-### Time Machine as Existential Risk — Andrey Turchin (2025)  
+### Time Machine as Existential Risk — Alexey Turchin (2025)  
 Turchin frames hypothetical time machines as a distinct class of existential risks on par with AGI. He identifies six major threat categories (timeline erasure, “Novikov catastrophe,” “Novikov bomb,” and others) and calls for pre-emptive global governance measures such as moratoria, custodial agencies, and “time locks.” This work enriches the Omega Time Machine concept by underlining the socio-technical safeguards that any technology capable of sending information from the future to the past would require.
 
 # References
