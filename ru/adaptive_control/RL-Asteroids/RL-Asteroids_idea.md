@@ -1,7 +1,10 @@
 # Adaptive Control: Космический корабль в астероидном поле
 
 Автор: Kwasikot и o3
+
 Дата: июль 2025  
+
+https://x.com/Kwazikot | vsbaranov83@gmail.com | Санкт-Петербургский государственный университет аэрокосмической instrumentation
 
 ## Описание проекта
 
