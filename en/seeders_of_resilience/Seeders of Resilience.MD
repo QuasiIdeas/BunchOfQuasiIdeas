@@ -17,7 +17,7 @@ Beyond preserving knowledge, it *actively catalyzes* a host civilization’s gro
 
 ## 9 One example of seed vault is time capsule from my article
 
-[Towards a Universal Mind Interface: Time Capsule as a Cross-Species Intelligence Bridge](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/Towards%20a%20Universal%20Mind%20Interface%3A%20Time%20Capsule%20as%20a%20Cross-Species%20Intelligence%20Bridge.MD)
+[Towards a Universal Mind Interface: Time Capsule as a Cross-Species Intelligence Bridge](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/en/seeders_of_resilience/Towards%20a%20Universal%20Mind%20Interface%20Time%20Capsule%20as%20a%20Cross-Species%20Intelligence%20Bridge.MD)
 <br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/70a9caee-6269-4815-a664-deee6df78c72.png" alt="Graph" width="400">
 
 Planetfall Seeder Node
