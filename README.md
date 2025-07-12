@@ -112,6 +112,7 @@ Reinforcement-learning прототип «BallPark» на основе Unity ML-
 Серия эссе о новой экономике после AGI: адаптивное управление, культурный сдвиг, экономика свободного времени и др.
 
 **Документы:**
+- [ru/postcapitalism/project_requirements.md](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/ru/postcapitalism/project_requirements.md)  
 - [ru/postcapitalism/adaptive_AI_governance.md](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/ru/postcapitalism/adaptive_AI_governance.md)  
 - [ru/postcapitalism/cultural_shift.md](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/ru/postcapitalism/cultural_shift.md)  
 - [ru/postcapitalism/economics_of_post_work.md](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/ru/postcapitalism/economics_of_post_work.md)  
