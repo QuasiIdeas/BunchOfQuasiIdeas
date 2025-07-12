@@ -4,7 +4,7 @@
 **Email**: vsbaranov83@gmail.com  
 **Institution**: Saint Petersburg State University of Aerospace Instrumentation
 
-**Original GitHub Link**: [Project Repository](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/Time%20capsule%20project.md)
+**Original GitHub Link**: [Project Repository](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/tree/main/en/seeders_of_resilience)
 
 ### **Related papers** :
 - [Seeders of Resilience](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/en/seeders_of_resilience/Seeders%20of%20Resilience.MD)
