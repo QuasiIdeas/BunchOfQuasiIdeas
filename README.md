@@ -141,11 +141,12 @@ Reinforcement-learning прототип «BallPark» на основе Unity ML-
 **Документы:**
 - [ru/sf/Слияние сознаний.md](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/ru/sf/Слияние%20сознаний.md)
 
-## Simulation (RU)
+## Simulation (RU\EN)
 
 Заметки о моделировании наблюдателей и этических аспектах «мир-симов».
 
 **Документы:**
+- [ru/simulation/Requirements_for_simulation.MD](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/ru/simulation/Requirements_for_simulation.MD)
 - [ru/simulation/Low-resolution_simulation_ru.md](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/ru/simulation/Low-resolution_simulation_ru.md)  
 - [ru/simulation/Observer-moments_ethics.md](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/ru/simulation/Observer-moments_ethics.md)
 
