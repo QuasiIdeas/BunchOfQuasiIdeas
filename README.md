@@ -9,18 +9,6 @@ Create a virtual forum where users interact with artificial intelligences, each 
 **Документы:**
 - [en/intellectualist_2.0/AI Forum Intellectualist 2.0.MD](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/en/intellectualist_2.0/AI%20Forum%20Intellectualist%202.0.MD)
 
-## Other (EN)
-
-Protocol #002 describes organisational penalties for stagnation, plus assorted notes on cultural evolution, low-res world-sims и др.
-
-**Документы:**
-- [en/other/Automatic_video_content_creation_language.md](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/en/other/Automatic_video_content_creation_language.md)  
-- [en/other/Brain_Organoids.MD](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/en/other/Brain_Organoids.MD)  
-- [en/other/Future Strategist.MD](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/en/other/Future%20Strategist.MD)  
-- [en/other/Low resolution simulations for our world.MD](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/en/other/Low%20resolution%20simulations%20for%20our%20world.MD)  
-- [en/other/Problem_of_culture_simplification.MD](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/en/other/Problem_of_culture_simplification.MD)  
-- [en/other/democratic_crown_or_cylinder.MD](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/en/other/democratic_crown_or_cylinder.MD)
-
 ## Seeders Of Resilience (EN)
 
 A multi-scale simulator exploring how decentralised “seeders” might preserve civilisation after extreme events.
@@ -46,6 +34,19 @@ A thought-experiment on retro-causal simulations and temporal epistemology.
 
 **Документы:**
 - [en/time_machine/Space of Possible Minds.MD](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/en/time_machine/Space%20of%20Possible%20Minds.MD)
+
+## Other (EN)
+
+Protocol #002 describes organisational penalties for stagnation, plus assorted notes on cultural evolution, low-res world-sims и др.
+
+**Документы:**
+- [en/other/Automatic_video_content_creation_language.md](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/en/other/Automatic_video_content_creation_language.md)  
+- [en/other/Brain_Organoids.MD](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/en/other/Brain_Organoids.MD)  
+- [en/other/Future Strategist.MD](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/en/other/Future%20Strategist.MD)  
+- [en/other/Low resolution simulations for our world.MD](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/en/other/Low%20resolution%20simulations%20for%20our%20world.MD)  
+- [en/other/Problem_of_culture_simplification.MD](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/en/other/Problem_of_culture_simplification.MD)  
+- [en/other/democratic_crown_or_cylinder.MD](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/en/other/democratic_crown_or_cylinder.MD)
+
 
 ## Useful Clicker Ideas (EN)
 
