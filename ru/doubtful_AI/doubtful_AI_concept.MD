@@ -39,7 +39,7 @@
 - Имитирует когнитивную паузу — "задержку" перед ответом, когда требуется дополнительный анализ.
 
 ## Визуализация предсказаний и внутренней симуляции мышления
-<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/doubtfull_1.pngg" alt="График" width="600">
+<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/doubtfull_1.png" alt="График" width="600">
 <br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/doubtfull_2.png" alt="График" width="600">
 
 Для усиления восприятия когнитивного процесса ИИ предлагается добавить визуальные панели с динамически обновляемыми изображениями, иллюстрирующими "мысли", "предсказания" или возможные ветви будущего, которые система обрабатывает в данный момент.
