@@ -98,13 +98,19 @@ The visual interface of the doubting AI can be expanded to a societal scale. We 
 
 > A central screen with a semi-transparent face of the Civic Oracle, surrounded by floating visualizations of future worlds. Behind them is a ring map of voices and hypotheses. The outer layer is the swarm silhouette of HiveMind participants connected voluntarily. All of this is in real-time.
 
-In this future, it is not only AI that predicts the world. Every person is a potential predictor, making choices and seeing how their doubts shape the future. ## Civic Weak Measurements and Retro-Causal Participation
+In this future, it is not only AI that predicts the world. Every person is a potential predictor, making choices and seeing how their doubts shape the future. 
 
-One of the key metaphors of the Civic Oracle may be the concept of **weak measurement** from quantum mechanics, where the observer's influence does not destroy the superposition but gently shifts the probability distribution of future outcomes. This allows for the integration of the participation of millions of people not through rigid voting but through **subtle signals of intuition, feelings, emotions, and probabilistic predictions**. ### Principles of Operation
+## Civic Weak Measurements and Retro-Causal Participation
+
+One of the key metaphors of the Civic Oracle may be the concept of **weak measurement** from quantum mechanics, where the observer's influence does not destroy the superposition but gently shifts the probability distribution of future outcomes. This allows for the integration of the participation of millions of people not through rigid voting but through **subtle signals of intuition, feelings, emotions, and probabilistic predictions**. 
+
+### Principles of Operation
 
 - **Citizen as a weak measurer:** the person does not dictate a decision but *shifts the field of probabilities* through a light touch: interactive scenario assessment, reaction to visual imagery, forecast, intuitive choice. 
 - **HiveMind as an aggregator of weak signals:** the system collects distributions without destroying individuality and builds an interferogram of collective prediction. 
-- **Civic Oracle as a post-selector:** after events occur, the system compares actual outcomes with collected "weak measurements," enhancing understanding of *what collective signals led to what*. ### Scenario Example
+- **Civic Oracle as a post-selector:** after events occur, the system compares actual outcomes with collected "weak measurements," enhancing understanding of *what collective signals led to what*. 
+
+### Scenario Example
 
 1. Civic Oracle generates three visual images of the future - urban planning, political direction, technological development. 
 2. Participants connect to the interface - some simply observe, some move sliders, some choose probabilities of success. 
