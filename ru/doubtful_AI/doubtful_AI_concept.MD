@@ -144,6 +144,8 @@
 
 ---
 
+<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/civic_oracle3.png" alt="График" width="600">
+
 ### Возможное продолжение
 
 - Создание **предсказательной карты Земли**, где в реальном времени видны волны уверенности и тревоги.
