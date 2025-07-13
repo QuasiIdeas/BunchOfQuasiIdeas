@@ -39,9 +39,8 @@
 - Имитирует когнитивную паузу — "задержку" перед ответом, когда требуется дополнительный анализ.
 
 ## Визуализация предсказаний и внутренней симуляции мышления
-
-![image](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/doubtfull_1.png)
-![image](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/doubtfull_2.png)
+<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/doubtfull_1.pngg" alt="График" width="600">
+<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/doubtfull_2.png" alt="График" width="600">
 
 Для усиления восприятия когнитивного процесса ИИ предлагается добавить визуальные панели с динамически обновляемыми изображениями, иллюстрирующими "мысли", "предсказания" или возможные ветви будущего, которые система обрабатывает в данный момент.
 
@@ -108,7 +107,7 @@
 > Центральный экран с полупрозрачным лицом Civic Oracle, вокруг — плавающие визуализации будущих миров. За ними — кольцевая карта голосов и гипотез. Внешний слой — роевой контур участников HiveMind, подключённых по желанию. Всё — в режиме реального времени.
 
 ---
-<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/civic_oracle2.png" alt="График" width="400">
+<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/civic_oracle2.png" alt="График" width="600">
 
 В этом будущем не только ИИ прогнозирует мир. Каждый человек — потенциальный предсказатель, совершающий выбор и видящий, как его сомнения формируют будущее.
 
