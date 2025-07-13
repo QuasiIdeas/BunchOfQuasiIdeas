@@ -83,9 +83,9 @@ The visual interface of the doubting AI can be expanded to a societal scale. We 
 - **Collective Participation in Future Prediction** — anyone can connect to the system, making hypotheses, evaluating consequences, and supplementing the model with their judgments.
 - **Transparency of Thinking** — all stages of decision-making are visually displayed: in the form of scales, diagrams, infographics, and even artistic images created through Stable Diffusion and other visual models.
 
-Here's the translation of the provided text into English:
+- **Doubting AI System** - remains the central axis of reasoning, but does not suppress the opinions of citizens; on the contrary, it *shows* where it lacks confidence and invites human participation. 
 
-- **Doubting AI System** - remains the central axis of reasoning, but does not suppress the opinions of citizens; on the contrary, it *shows* where it lacks confidence and invites human participation. ### Architectural Components
+### Architectural Components
 
 - **Civic Oracle** - the core that aggregates data, opinions, and scenarios of possible future actions. It compares different branches of the future, like in a multiverse. 
 - **HiveMind Interface** - a voluntary neuro-social system: it allows the user to participate in swarm thinking by providing parts of their attention, ideas, and empathy. It operates like a Borg system but maintains individuality. 
@@ -126,9 +126,9 @@ This approach bridges physics and politics: it gives people the opportunity to *
 - Setting up Civic Oracle as a *national, and then planetary ethical choice tool*. 
 - Exploring how human weak signals can be as accurate as AI forecasts — especially in moral and cultural issues. ## Conclusion
 
-Creating a model with conscious doubt and visual representation of internal dynamics is a step towards more honest, deeper, and human-centered artificial intelligence. Such AI will not just respond — it will reflect. ## Related Sources and Ideas
+Creating a model with conscious doubt and visual representation of internal dynamics is a step towards more honest, deeper, and human-centered artificial intelligence. Such AI will not just respond — it will reflect. 
 
-### V. I. Vernadsky — Biosphere and Noosphere
+## Related Sources and Ideas
 
 - Vernadsky, V. I. *Scientific Thought as a Planetary Phenomenon*. [Text on the Runivers website](http://www.runivers.ru/bookreader/book50025/#page/1)  
   Vernadsky first introduced the concept of the **noosphere** — the realm where human thought becomes a planetary force. The concept of Civic Oracle is a logical continuation of this thinking: the noosphere, visualized and supported by AI. ### Isaac Asimov — Psychohistory and Hari Seldon
@@ -138,8 +138,6 @@ Creating a model with conscious doubt and visual representation of internal dyna
 
 - Herman Kahn. *The Year 2000: A Framework for Speculation on the Next Thirty-Three Years*. [Open Library: The Year 2000](https://openlibrary.org/works/OL15821140W/The_Year_2000)  
   A classic of strategic forecasting, using scenarios and probabilistic models to model the future.
-
-Here is the translated text:
 
 His methods are akin to the "weak measurements" of social policy. ### Pierre Teilhard de Chardin — Omega Point and Collective Mind
 
