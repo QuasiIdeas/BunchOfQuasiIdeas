@@ -41,6 +41,12 @@ TEMPERATURE = 0.9
 MIN_DELAY_MIN = 30  # min interval between facts
 MAX_DELAY_MIN = 120  # max interval
 TIMEOUT_MS = 10_000  # window lives for 10 seconds
+# ─── NEW: select level ───
+#   "school"   - high school / popular level
+#   "undergrad" - senior undergraduate courses
+#   "grad"      - master's student / postgraduate
+#   "expert"    - advanced (including specialized terms)
+LEVEL = "undergrad"
 ```
 
 *Increase the intervals if you want to call the API less often, or decrease them if you need facts more frequently.*
