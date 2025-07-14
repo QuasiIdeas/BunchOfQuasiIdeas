@@ -33,7 +33,7 @@ MODEL_NAME     = "gpt-4o-mini"     # замените на "o3", если дос
 TEMPERATURE    = 0.9
 MIN_DELAY_MIN  = 0               # минимум минут между фактами
 MAX_DELAY_MIN  = 1               # максимум минут между фактами
-TIMEOUT_MS     = 10_000            # окно закрывается через 10 секунд
+TIMEOUT_MS     = 20_000            # окно закрывается через 10 секунд
 
 TOPIC_POOL = [
     # — естественные науки —
@@ -99,12 +99,17 @@ def fetch_fact() -> str:
     return resp.choices[0].message.content.strip()
 
 
+
+
 def show_popup(text: str) -> None:
-    """Показывает окно с фактом и автоматически закрывает его через TIMEOUT_MS."""
     root = tk.Tk()
     root.withdraw()
-    root.after(TIMEOUT_MS, root.destroy)                 # автозакрытие
+    root.attributes("-topmost", True)
+    root.lift()
+    root.focus_force()
+    root.after(TIMEOUT_MS, root.destroy)
     messagebox.showinfo("Знаете ли вы, что...", text, parent=root)
+
 
 
 def main() -> None:
