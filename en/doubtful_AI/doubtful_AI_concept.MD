@@ -100,6 +100,17 @@ The visual interface of the doubting AI can be expanded to a societal scale. We 
 
 In this future, it is not only AI that predicts the world. Every person is a potential predictor, making choices and seeing how their doubts shape the future. 
 
+## Proxy Agents and Their Role in HiveMind
+
+Proxy agents act as intermediaries that transform raw, diverse signals from various groups and individuals into standardized vectors. This allows the system to unify perspectives from people with different cultural, religious, political, and scientific backgrounds. Proxy agents serve as cultural and ideological translators, helping to identify common ground and foster a more harmonious space for dialogue. In doing so, they reduce polarization and enhance mutual understanding.
+
+<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/proxy_agent.png" alt="График" width="600">
+
+## Role Selection in HiveMind
+
+In HiveMind, users can choose different roles that reflect their current perspective or context. The same person may think as an engineer, a parent, a citizen, or a creative individual depending on the situation. Role selection helps other participants understand the lens through which someone is contributing and enriches the collective thought process. Additionally, AI may suggest roles based on the discussion context or encourage users to explore new perspectives, enabling a more multifaceted and dynamic dialogue.
+
+
 ## Civic Weak Measurements and Retro-Causal Participation
 
 One of the key metaphors of the Civic Oracle may be the concept of **weak measurement** from quantum mechanics, where the observer's influence does not destroy the superposition but gently shifts the probability distribution of future outcomes. This allows for the integration of the participation of millions of people not through rigid voting but through **subtle signals of intuition, feelings, emotions, and probabilistic predictions**. 
