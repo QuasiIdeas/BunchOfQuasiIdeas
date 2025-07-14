@@ -1,8 +1,20 @@
 #!/usr/bin/env pythonw
 # -*- coding: utf-8 -*-
 """
-know_you_background.py  —  фоновый «факт-бот» со статистикой
+know_you_background.py
+──────────────────────
+Фоновый «факт-бот» со статистикой «знаю / не знаю» и меткой IGNORED.
+
+• Каждые 0–5 мин запрашивает у OpenAI факт и показывает окно.
+• Кнопки:
+      ▸ «Знаю»        → факт учитывается как KNOWN
+      ▸ «Теперь знаю» → факт учитывается как NEW
+  Если за 20 сек пользователь ничего не нажал (или закрыл окно) — факт
+  помечается IGNORED и не попадает в статистику.
+• Лог `fact_bot.log` — строки `KNOWN | NEW | IGNORED` и актуальный ratio.
+• Статистика хранится в `fact_stats.json` (ключи total/known).
 """
+from __future__ import annotations
 
 import json
 import logging
@@ -15,12 +27,12 @@ from typing import Final
 import tkinter as tk
 from openai import OpenAI          # pip install --upgrade openai>=1.0
 
-# ────────── настройки ──────────
-MODEL_NAME:     Final[str] = "gpt-4o-mini"   # или "o3", если доступен
+# ────────── базовые настройки ──────────
+MODEL_NAME:     Final[str] = "gpt-4o-mini"
 TEMPERATURE:    Final[float] = 0.9
 MIN_DELAY_MIN:  Final[int]   = 0
 MAX_DELAY_MIN:  Final[int]   = 1
-TIMEOUT_MS:     Final[int]   = 20_000        # 20 сек
+TIMEOUT_MS:     Final[int]   = 20_000         # 20 с
 
 TOPIC_POOL: Final[list[str]] = [
     # — естественные науки —
@@ -89,12 +101,12 @@ def save_stats() -> None:
         logging.error(f"Cannot write stats file: {exc}")
 
 # ────────── OpenAI ──────────
-client = OpenAI()                 # берёт OPENAI_API_KEY из окружения
+client = OpenAI()
 
 # ────────── функции ──────────
 def fetch_fact() -> str:
-    topic = random.choice(TOPIC_POOL)
-    nonce = secrets.token_urlsafe(10)
+    topic  = random.choice(TOPIC_POOL)
+    nonce  = secrets.token_urlsafe(10)
     prompt = (
         f"Выбери один интересный факт из области «{topic}» и сформулируй его "
         "точно в одном-двух предложениях, начиная фразой "
@@ -109,12 +121,12 @@ def fetch_fact() -> str:
     return resp.choices[0].message.content.strip()
 
 
-def show_popup(text: str) -> bool:
+def show_popup(text: str) -> str:
     """
-    Окно с кнопками «Знаю» / «Теперь знаю».
-    Возвращает True, если нажали «Знаю», иначе False.
+    Показывает окно с кнопками.
+    Возвращает строку статуса: 'KNOWN', 'NEW', 'IGNORED'.
     """
-    result = {"known": False}
+    status = {"val": "IGNORED"}          # значение по-умолчанию
 
     root = tk.Tk()
     root.withdraw()
@@ -131,42 +143,47 @@ def show_popup(text: str) -> bool:
     btn_frame = tk.Frame(win, pady=8)
     btn_frame.pack()
 
-    def finish(known: bool):
-        result["known"] = known
+    def finish(val: str):
+        status["val"] = val
         win.destroy()
 
-    tk.Button(btn_frame, text="Знаю", width=12,
-              command=lambda: finish(True)).pack(side="left", padx=5)
+    tk.Button(btn_frame, text="Знаю",        width=12,
+              command=lambda: finish("KNOWN")).pack(side="left",  padx=5)
     tk.Button(btn_frame, text="Теперь знаю", width=12,
-              command=lambda: finish(False)).pack(side="right", padx=5)
+              command=lambda: finish("NEW")).pack(side="right", padx=5)
 
-    win.after(TIMEOUT_MS, lambda: finish(False))
+    # timeout → IGNORED
+    win.after(TIMEOUT_MS, win.destroy)
+    # закрытие крестиком тоже считается IGNORED
+    win.protocol("WM_DELETE_WINDOW", win.destroy)
 
-    # ждём уничтожения окна (не полный mainloop)
     root.wait_window(win)
     root.destroy()
-    return result["known"]
+    return status["val"]
 
 
-def update_and_log(fact: str, known: bool) -> None:
-    stats["total"] += 1
-    if known:
-        stats["known"] += 1
-    ratio = stats["known"] / stats["total"]
-    save_stats()
-    status = "KNOWN" if known else "NEW"
-    logging.info(f"{status}: {fact}  |  ratio={ratio:.2%} "
-                 f"({stats['known']}/{stats['total']})")
+def process_fact(fact: str, status: str) -> None:
+    """Обновляет статистику (если KNOWN/NEW) и пишет лог."""
+    if status in ("KNOWN", "NEW"):
+        stats["total"] += 1
+        if status == "KNOWN":
+            stats["known"] += 1
+        save_stats()
+        ratio = stats["known"] / stats["total"]
+        logging.info(f"{status}: {fact}  |  ratio={ratio:.2%} "
+                     f"({stats['known']}/{stats['total']})")
+    else:                                    # IGNORED
+        logging.info(f"IGNORED: {fact}")
 
 
 # ────────── основной цикл ──────────
 def main() -> None:
-    logging.info("──────── bot started ────────")
+    logging.info("──── bot started ────")
     while True:
         try:
-            fact = fetch_fact()
-            known_flag = show_popup(fact)
-            update_and_log(fact, known_flag)
+            fact   = fetch_fact()
+            status = show_popup(fact)        # 'KNOWN'/'NEW'/'IGNORED'
+            process_fact(fact, status)
         except Exception as exc:
             logging.exception(f"ERROR: {exc}")
 
