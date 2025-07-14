@@ -22,7 +22,7 @@ from openai import OpenAI          # pip install --upgrade openai>=1.0
 # ────────── настройки ──────────
 MODEL_NAME   = "gpt-4o-mini"      # замените на "o3", когда будет доступ
 TEMPERATURE  = 0.9
-TIMEOUT_MS   = 10_000             # авто-закрытие окна (мс)
+TIMEOUT_MS   = 20_000             # авто-закрытие окна (мс)
 
 TOPIC_POOL = [
     # естественные науки

@@ -28,11 +28,12 @@ from tkinter import messagebox
 from openai import OpenAI          # pip install --upgrade openai>=1.0
 
 
-# ────────── НАСТРОЙКИ ──────────
-MODEL_NAME      = "gpt-4o-mini"   # замените на "o3", когда получите доступ
-TEMPERATURE     = 0.9
-MIN_DELAY_MIN   = 0              # минимум минут между фактами
-MAX_DELAY_MIN   = 120             # максимум минут между фактами
+# ────────── настройки ──────────
+MODEL_NAME     = "gpt-4o-mini"     # замените на "o3", если доступен
+TEMPERATURE    = 0.9
+MIN_DELAY_MIN  = 0               # минимум минут между фактами
+MAX_DELAY_MIN  = 1               # максимум минут между фактами
+TIMEOUT_MS     = 10_000            # окно закрывается через 10 секунд
 
 TOPIC_POOL = [
     # — естественные науки —
@@ -75,12 +76,11 @@ TOPIC_POOL = [
     "пчеловодство", "логистика", "металлургия",
 ]
 
-client = OpenAI()                 # ключ берётся из переменной окружения OPENAI_API_KEY
+client = OpenAI()  # ключ берётся из переменной окружения OPENAI_API_KEY
 
-
-# ────────── ФУНКЦИИ ──────────
+# ────────── функции ──────────
 def fetch_fact() -> str:
-    """Запрашивает у модели факт из случайной области + nonce-токен."""
+    """Запрашивает у модели факт из случайной области, добавляя nonce."""
     topic = random.choice(TOPIC_POOL)
     nonce = secrets.token_urlsafe(10)
 
@@ -100,21 +100,19 @@ def fetch_fact() -> str:
 
 
 def show_popup(text: str) -> None:
-    """Показывает окно и ждёт, пока пользователь нажмёт OK."""
+    """Показывает окно с фактом и автоматически закрывает его через TIMEOUT_MS."""
     root = tk.Tk()
     root.withdraw()
+    root.after(TIMEOUT_MS, root.destroy)                 # автозакрытие
     messagebox.showinfo("Знаете ли вы, что...", text, parent=root)
-    root.destroy()
 
 
-# ────────── ОСНОВНОЙ ЦИКЛ ──────────
 def main() -> None:
     while True:
         try:
             fact = fetch_fact()
             show_popup(fact)
         except Exception as exc:
-            # хотите — запишите в лог-файл
             print(f"[fact-bot] Ошибка: {exc}", flush=True)
 
         delay_sec = random.uniform(MIN_DELAY_MIN, MAX_DELAY_MIN) * 60
