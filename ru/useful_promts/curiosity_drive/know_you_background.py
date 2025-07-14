@@ -3,16 +3,13 @@
 """
 know_you_background.py
 ──────────────────────
-Фоновый «факт-бот» со статистикой «знаю / не знаю» и меткой IGNORED.
+Фоновый «факт-бот» со статистикой «знаю / не знаю / ignored»
+и указанием темы факта в журнале.
 
-• Каждые 0–5 мин запрашивает у OpenAI факт и показывает окно.
-• Кнопки:
-      ▸ «Знаю»        → факт учитывается как KNOWN
-      ▸ «Теперь знаю» → факт учитывается как NEW
-  Если за 20 сек пользователь ничего не нажал (или закрыл окно) — факт
-  помечается IGNORED и не попадает в статистику.
-• Лог `fact_bot.log` — строки `KNOWN | NEW | IGNORED` и актуальный ratio.
-• Статистика хранится в `fact_stats.json` (ключи total/known).
+• Случайный интервал 0-5 мин.
+• Кнопки «Знаю» / «Теперь знаю»; по тайм-ауту 20 с факт считается IGNORED.
+• Лог-файл показывает: STATUS [ТЕМА]: факт  |  ratio=…
+• В статистику (fact_stats.json) идут только KNOWN/NEW.
 """
 from __future__ import annotations
 
@@ -27,12 +24,12 @@ from typing import Final
 import tkinter as tk
 from openai import OpenAI          # pip install --upgrade openai>=1.0
 
-# ────────── базовые настройки ──────────
+# ────────── параметры ──────────
 MODEL_NAME:     Final[str] = "gpt-4o-mini"
 TEMPERATURE:    Final[float] = 0.9
 MIN_DELAY_MIN:  Final[int]   = 0
 MAX_DELAY_MIN:  Final[int]   = 1
-TIMEOUT_MS:     Final[int]   = 20_000         # 20 с
+TIMEOUT_MS:     Final[int]   = 20_000           # 20 с
 
 TOPIC_POOL: Final[list[str]] = [
     # — естественные науки —
@@ -74,6 +71,7 @@ TOPIC_POOL: Final[list[str]] = [
     "ихтиология", "астробиология", "агрономия", "виноделие",
     "пчеловодство", "логистика", "металлургия",
 ]
+
 # ────────── лог и статистика ──────────
 SCRIPT_DIR = Path(__file__).resolve().parent
 LOG_PATH   = SCRIPT_DIR / "fact_bot.log"
@@ -104,7 +102,8 @@ def save_stats() -> None:
 client = OpenAI()
 
 # ────────── функции ──────────
-def fetch_fact() -> str:
+def fetch_fact() -> tuple[str, str]:
+    """Возвращает (факт, тема)."""
     topic  = random.choice(TOPIC_POOL)
     nonce  = secrets.token_urlsafe(10)
     prompt = (
@@ -118,22 +117,23 @@ def fetch_fact() -> str:
         messages=[{"role": "system", "content": prompt}],
         temperature=TEMPERATURE,
     )
-    return resp.choices[0].message.content.strip()
+    fact = resp.choices[0].message.content.strip()
+    return fact, topic
 
 
 def show_popup(text: str) -> str:
     """
-    Показывает окно с кнопками.
-    Возвращает строку статуса: 'KNOWN', 'NEW', 'IGNORED'.
+    Окно с кнопками.
+    Возвращает 'KNOWN', 'NEW' или 'IGNORED'.
     """
-    status = {"val": "IGNORED"}          # значение по-умолчанию
+    status = {"val": "IGNORED"}          # дефолт
 
     root = tk.Tk()
     root.withdraw()
     root.attributes("-topmost", True)
 
     win = tk.Toplevel(root)
-    win.title("Знаете ли вы, что...")
+    win.title("Знаете ли вы, что…")
     win.attributes("-topmost", True)
     win.resizable(False, False)
 
@@ -152,9 +152,7 @@ def show_popup(text: str) -> str:
     tk.Button(btn_frame, text="Теперь знаю", width=12,
               command=lambda: finish("NEW")).pack(side="right", padx=5)
 
-    # timeout → IGNORED
-    win.after(TIMEOUT_MS, win.destroy)
-    # закрытие крестиком тоже считается IGNORED
+    win.after(TIMEOUT_MS, win.destroy)          # тайм-аут → IGNORED
     win.protocol("WM_DELETE_WINDOW", win.destroy)
 
     root.wait_window(win)
@@ -162,18 +160,18 @@ def show_popup(text: str) -> str:
     return status["val"]
 
 
-def process_fact(fact: str, status: str) -> None:
-    """Обновляет статистику (если KNOWN/NEW) и пишет лог."""
+def process_fact(fact: str, topic: str, status: str) -> None:
+    """Обновляет статистику (если нужно) и пишет запись в лог."""
     if status in ("KNOWN", "NEW"):
         stats["total"] += 1
         if status == "KNOWN":
             stats["known"] += 1
         save_stats()
         ratio = stats["known"] / stats["total"]
-        logging.info(f"{status}: {fact}  |  ratio={ratio:.2%} "
+        logging.info(f"{status} [{topic}]: {fact}  |  ratio={ratio:.2%} "
                      f"({stats['known']}/{stats['total']})")
-    else:                                    # IGNORED
-        logging.info(f"IGNORED: {fact}")
+    else:  # IGNORED
+        logging.info(f"IGNORED [{topic}]: {fact}")
 
 
 # ────────── основной цикл ──────────
@@ -181,9 +179,9 @@ def main() -> None:
     logging.info("──── bot started ────")
     while True:
         try:
-            fact   = fetch_fact()
-            status = show_popup(fact)        # 'KNOWN'/'NEW'/'IGNORED'
-            process_fact(fact, status)
+            fact, topic = fetch_fact()
+            status      = show_popup(fact)
+            process_fact(fact, topic, status)
         except Exception as exc:
             logging.exception(f"ERROR: {exc}")
 
