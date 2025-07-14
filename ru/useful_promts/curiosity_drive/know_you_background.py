@@ -1,42 +1,28 @@
 #!/usr/bin/env pythonw
 # -*- coding: utf-8 -*-
 """
-know_you_background.py
-~~~~~~~~~~~~~~~~~~~~~~
-
-Фоновый «факт-бот» для Windows:
-
-• Через случайные интервалы (30-120 мин по умолчанию) запрашивает у OpenAI
-  один короткий факт и показывает всплывающее окно «Знаете ли вы, что…».
-• Каждый запрос выбирает СЛУЧАЙНУЮ предметную область из большого пула
-  (≈150 тегов), чтобы темы постоянно менялись.
-• К промпту добавляется nonce-токен, что практически исключает повтор
-  одинаковых формулировок.
-
-Запускайте через **pythonw.exe** или упакуйте в `.exe` с
-`pyinstaller --noconsole`. Ярлык положите в папку автозагрузки
-(`Win+R → shell:startup`) либо оформите задачу в Планировщике.
+know_you_background.py  —  фоновый «факт-бот» со статистикой
 """
 
+import json
+import logging
 import random
 import secrets
 import time
-import tkinter as tk
-from tkinter import messagebox
 from pathlib import Path
-import logging
+from typing import Final
 
+import tkinter as tk
 from openai import OpenAI          # pip install --upgrade openai>=1.0
 
-
 # ────────── настройки ──────────
-MODEL_NAME     = "gpt-4o-mini"     # замените на "o3", если доступен
-TEMPERATURE    = 0.9
-MIN_DELAY_MIN  = 0               # минимум минут между фактами
-MAX_DELAY_MIN  = 5               # максимум минут между фактами
-TIMEOUT_MS     = 20_000            # окно закрывается через 10 секунд
+MODEL_NAME:     Final[str] = "gpt-4o-mini"   # или "o3", если доступен
+TEMPERATURE:    Final[float] = 0.9
+MIN_DELAY_MIN:  Final[int]   = 0
+MAX_DELAY_MIN:  Final[int]   = 1
+TIMEOUT_MS:     Final[int]   = 20_000        # 20 сек
 
-TOPIC_POOL = [
+TOPIC_POOL: Final[list[str]] = [
     # — естественные науки —
     "астрономия", "космология", "планетология", "квантовая механика",
     "физика частиц", "оптика", "акустика", "термодинамика", "материаловедение",
@@ -76,33 +62,45 @@ TOPIC_POOL = [
     "ихтиология", "астробиология", "агрономия", "виноделие",
     "пчеловодство", "логистика", "металлургия",
 ]
+# ────────── лог и статистика ──────────
+SCRIPT_DIR = Path(__file__).resolve().parent
+LOG_PATH   = SCRIPT_DIR / "fact_bot.log"
+STATS_PATH = SCRIPT_DIR / "fact_stats.json"
 
-
-# ────────── лог-файл ──────────
-LOG_PATH = Path(__file__).with_name("fact_bot.log")
 logging.basicConfig(
     filename=LOG_PATH,
     level=logging.INFO,
-    format="%(asctime)s  %(levelname)s  %(message)s",
+    format="%(asctime)s  %(levelname)-7s  %(message)s",
     encoding="utf-8",
 )
 
-client = OpenAI()  # OPENAI_API_KEY берётся из переменных окружения
+stats = {"total": 0, "known": 0}
+if STATS_PATH.exists():
+    try:
+        stats.update(json.loads(STATS_PATH.read_text(encoding="utf-8")))
+    except Exception:
+        pass
 
+def save_stats() -> None:
+    try:
+        STATS_PATH.write_text(json.dumps(stats, ensure_ascii=False, indent=2),
+                              encoding="utf-8")
+    except Exception as exc:
+        logging.error(f"Cannot write stats file: {exc}")
+
+# ────────── OpenAI ──────────
+client = OpenAI()                 # берёт OPENAI_API_KEY из окружения
 
 # ────────── функции ──────────
 def fetch_fact() -> str:
-    """Запрашивает у модели факт из случайной области, добавляя nonce."""
     topic = random.choice(TOPIC_POOL)
     nonce = secrets.token_urlsafe(10)
-
     prompt = (
         f"Выбери один интересный факт из области «{topic}» и сформулируй его "
         "точно в одном-двух предложениях, начиная фразой "
         "«Знаете ли вы, что ...». Не упоминай тему явно, не добавляй источников.\n\n"
         f"<RANDOM_NONCE>{nonce}</RANDOM_NONCE>"
     )
-
     resp = client.chat.completions.create(
         model=MODEL_NAME,
         messages=[{"role": "system", "content": prompt}],
@@ -111,30 +109,69 @@ def fetch_fact() -> str:
     return resp.choices[0].message.content.strip()
 
 
-def show_popup(text: str) -> None:
-    """Показывает окно поверх всех приложений; закрывается через TIMEOUT_MS."""
+def show_popup(text: str) -> bool:
+    """
+    Окно с кнопками «Знаю» / «Теперь знаю».
+    Возвращает True, если нажали «Знаю», иначе False.
+    """
+    result = {"known": False}
+
     root = tk.Tk()
     root.withdraw()
-    root.attributes("-topmost", True)   # заставляем всплыть поверх
-    root.lift()
-    root.after(TIMEOUT_MS, root.destroy)
-    messagebox.showinfo("Знаете ли вы, что...", text, parent=root)
+    root.attributes("-topmost", True)
+
+    win = tk.Toplevel(root)
+    win.title("Знаете ли вы, что...")
+    win.attributes("-topmost", True)
+    win.resizable(False, False)
+
+    tk.Label(win, text=text, wraplength=420,
+             justify="left", padx=10, pady=10).pack()
+
+    btn_frame = tk.Frame(win, pady=8)
+    btn_frame.pack()
+
+    def finish(known: bool):
+        result["known"] = known
+        win.destroy()
+
+    tk.Button(btn_frame, text="Знаю", width=12,
+              command=lambda: finish(True)).pack(side="left", padx=5)
+    tk.Button(btn_frame, text="Теперь знаю", width=12,
+              command=lambda: finish(False)).pack(side="right", padx=5)
+
+    win.after(TIMEOUT_MS, lambda: finish(False))
+
+    # ждём уничтожения окна (не полный mainloop)
+    root.wait_window(win)
+    root.destroy()
+    return result["known"]
+
+
+def update_and_log(fact: str, known: bool) -> None:
+    stats["total"] += 1
+    if known:
+        stats["known"] += 1
+    ratio = stats["known"] / stats["total"]
+    save_stats()
+    status = "KNOWN" if known else "NEW"
+    logging.info(f"{status}: {fact}  |  ratio={ratio:.2%} "
+                 f"({stats['known']}/{stats['total']})")
 
 
 # ────────── основной цикл ──────────
 def main() -> None:
+    logging.info("──────── bot started ────────")
     while True:
         try:
             fact = fetch_fact()
-            logging.info(f"FACT: {fact}")      # факт в лог
-            show_popup(fact)
+            known_flag = show_popup(fact)
+            update_and_log(fact, known_flag)
         except Exception as exc:
-            logging.exception(f"ERROR fetching/printing fact: {exc}")
+            logging.exception(f"ERROR: {exc}")
 
-        delay_sec = random.uniform(MIN_DELAY_MIN, MAX_DELAY_MIN) * 60
-        time.sleep(delay_sec)
+        time.sleep(random.uniform(MIN_DELAY_MIN, MAX_DELAY_MIN) * 60)
 
 
 if __name__ == "__main__":
-    logging.info("───────────── bot started ─────────────")
     main()
