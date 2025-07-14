@@ -29,7 +29,14 @@ MODEL_NAME:     Final[str] = "gpt-4o-mini"
 TEMPERATURE:    Final[float] = 0.9
 MIN_DELAY_MIN:  Final[int]   = 0
 MAX_DELAY_MIN:  Final[int]   = 1
-TIMEOUT_MS:     Final[int]   = 20_000           # 20 с
+TIMEOUT_MS:     Final[int]   = 30_000           # 30 с
+
+# ─── НОВОЕ: выбираем уровень ───
+#   "school"   — школьник / популярный уровень
+#   "undergrad"— старшие курсы бакалавриата
+#   "grad"     — магистрат / аспирант
+#   "expert"   — продвинутый (вплоть до специализированных терминов)
+LEVEL = "undergrad"
 
 TOPIC_POOL: Final[list[str]] = [
     # — естественные науки —
@@ -103,15 +110,38 @@ client = OpenAI()
 
 # ────────── функции ──────────
 def fetch_fact() -> tuple[str, str]:
-    """Возвращает (факт, тема)."""
+    """Возвращает (факт, тема) с учётом LEVEL."""
     topic  = random.choice(TOPIC_POOL)
     nonce  = secrets.token_urlsafe(10)
-    prompt = (
-        f"Выбери один интересный факт из области «{topic}» и сформулируй его "
-        "точно в одном-двух предложениях, начиная фразой "
-        "«Знаете ли вы, что ...». Не упоминай тему явно, не добавляй источников.\n\n"
-        f"<RANDOM_NONCE>{nonce}</RANDOM_NONCE>"
-    )
+
+    PROMPT_TEMPLATES = {
+        "school": (
+            "Сформулируй один увлекательный научно-исторический факт"
+            f" из области «{topic}» понятным языком средней школы. "
+            "Начни строго фразой «Знаете ли вы, что ...». Не добавляй источников."
+        ),
+        "undergrad": (
+            "Сформулируй один удивительный факт из области «{topic}», "
+            "который было бы интересно обсудить на последних курсах бакалавриата "
+            "(advanced undergraduate). Используй термины, но избегай узкоспец. "
+            "Начни строго с «Знаете ли вы, что ...». Без источников."
+        ),
+        "grad": (
+            "Сформулируй один нетривиальный факт уровня магистратуры "
+            f"по теме «{topic}». Допустима специализированная терминология, "
+            "но без формул. Начало: «Знаете ли вы, что ...». Без ссылок."
+        ),
+        "expert": (
+            "Приведи один глубокий, малоизвестный факт экспертного уровня по "
+            f"теме «{topic}», допустимы узкоспециализированные термины "
+            "и ссылочные обозначения (но не вставляй референсы). "
+            "Начни строго с «Знаете ли вы, что ...»."
+        ),
+    }
+
+    base_prompt = PROMPT_TEMPLATES.get(LEVEL, PROMPT_TEMPLATES["school"])
+    prompt = f"{base_prompt}\n\n<RANDOM_NONCE>{nonce}</RANDOM_NONCE>"
+
     resp = client.chat.completions.create(
         model=MODEL_NAME,
         messages=[{"role": "system", "content": prompt}],
@@ -119,7 +149,6 @@ def fetch_fact() -> tuple[str, str]:
     )
     fact = resp.choices[0].message.content.strip()
     return fact, topic
-
 
 def show_popup(text: str) -> str:
     """
