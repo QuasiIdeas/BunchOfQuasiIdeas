@@ -197,7 +197,7 @@ def process_fact(fact: str, topic: str, status: str) -> None:
             stats["known"] += 1
         save_stats()
         ratio = stats["known"] / stats["total"]
-        logging.info(f"{status} [{topic}]: {fact}  |  ratio={ratio:.2%} "
+        logging.info(f"{status} [{topic}]: {fact}  |  ratio={ratio: 0.2%} "
                      f"({stats['known']}/{stats['total']})")
     else:  # IGNORED
         logging.info(f"IGNORED [{topic}]: {fact}")

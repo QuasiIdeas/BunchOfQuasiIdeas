@@ -1,0 +1,29 @@
+2025-07-14 17:23:19,494  INFO     ──── bot started ────
+2025-07-14 17:23:21,623  INFO     HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-14 17:23:27,660  ERROR    ERROR: Format specifier missing precision
+Traceback (most recent call last):
+  File "d:\Projects\BunchOfQuasiIdeas\en\useful_promts\curiosity_drive\know_you_background.py", line 206, in main
+    process_fact(fact, topic, status)
+  File "d:\Projects\BunchOfQuasiIdeas\en\useful_promts\curiosity_drive\know_you_background.py", line 193, in process_fact
+    logging. info(f"{status} [{topic}]: {fact}  |  ratio={ratio:. 2%} "
+                                                         ^^^^^^^^^^^^
+ValueError: Format specifier missing precision
+2025-07-14 17:25:25,628  INFO     ──── bot started ────
+2025-07-14 17:25:27,882  INFO     HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-14 17:25:30,528  ERROR    ERROR: Format specifier missing precision
+Traceback (most recent call last):
+  File "d:\Projects\BunchOfQuasiIdeas\en\useful_promts\curiosity_drive\know_you_background.py", line 206, in main
+    process_fact(fact, topic, status)
+  File "d:\Projects\BunchOfQuasiIdeas\en\useful_promts\curiosity_drive\know_you_background.py", line 193, in process_fact
+    logging. info(f"{status} [{topic}]: {fact}  |  ratio={ratio:. 2%} "
+                                                         ^^^^^^^^^^^^
+ValueError: Format specifier missing precision
+2025-07-14 17:26:05,872  INFO     ──── bot started ────
+2025-07-14 17:26:08,657  INFO     HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-14 17:26:10,926  INFO     KNOWN [immunology]: Did you know that the concept of time dilation, predicted by Einstein's theory of relativity, suggests that time can actually pass at different rates depending on the relative velocities of observers and the strength of gravitational fields they are experiencing? This means that if you were to travel close to the speed of light or in a strong gravitational field, you could age more slowly compared to someone who remains stationary on Earth, leading to fascinating implications for our understanding of time and space.  |  ratio= 66.67% (2/3)
+2025-07-14 17:27:10,846  INFO     HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-14 17:27:13,510  INFO     KNOWN [Byzantium]: Did you know that the average human brain generates about 20 watts of electrical power while awake, which is enough to power a dim light bulb? This fascinating aspect of neurobiology highlights not only the brain's energy consumption but also its complexity in processing information and controlling bodily functions, making it a captivating topic for discussions in advanced neuroscience and psychology courses.  |  ratio= 75.00% (3/4)
+2025-07-14 17:27:41,531  INFO     HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-14 17:27:49,139  INFO     KNOWN [ergonomics]: Did you know that the vast majority of the universe is composed of dark matter and dark energy, which together account for about 95% of the total mass-energy content, yet remain largely undetectable and unexplained by current scientific theories? This mystery challenges our understanding of fundamental physics and pushes researchers to explore new paradigms in cosmology.  |  ratio= 80.00% (4/5)
+2025-07-14 17:27:54,683  INFO     HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-14 17:27:57,633  INFO     KNOWN [the Industrial Revolution]: Did you know that the human brain generates enough electrical power to light a small bulb, producing about 20 watts of energy when awake? This fascinating capability underscores the brain's complexity and the intricate processes involved in neural communication and cognitive function, making it a compelling topic for discussions on neuroscience and bioenergetics in advanced undergraduate courses.  |  ratio= 83.33% (5/6)
