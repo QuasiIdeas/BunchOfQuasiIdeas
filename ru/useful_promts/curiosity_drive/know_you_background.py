@@ -18,12 +18,13 @@ know_you_background.py
 (`Win+R → shell:startup`) либо оформите задачу в Планировщике.
 """
 
-import os
 import random
 import secrets
 import time
 import tkinter as tk
 from tkinter import messagebox
+from pathlib import Path
+import logging
 
 from openai import OpenAI          # pip install --upgrade openai>=1.0
 
@@ -32,7 +33,7 @@ from openai import OpenAI          # pip install --upgrade openai>=1.0
 MODEL_NAME     = "gpt-4o-mini"     # замените на "o3", если доступен
 TEMPERATURE    = 0.9
 MIN_DELAY_MIN  = 0               # минимум минут между фактами
-MAX_DELAY_MIN  = 1               # максимум минут между фактами
+MAX_DELAY_MIN  = 5               # максимум минут между фактами
 TIMEOUT_MS     = 20_000            # окно закрывается через 10 секунд
 
 TOPIC_POOL = [
@@ -76,7 +77,18 @@ TOPIC_POOL = [
     "пчеловодство", "логистика", "металлургия",
 ]
 
-client = OpenAI()  # ключ берётся из переменной окружения OPENAI_API_KEY
+
+# ────────── лог-файл ──────────
+LOG_PATH = Path(__file__).with_name("fact_bot.log")
+logging.basicConfig(
+    filename=LOG_PATH,
+    level=logging.INFO,
+    format="%(asctime)s  %(levelname)s  %(message)s",
+    encoding="utf-8",
+)
+
+client = OpenAI()  # OPENAI_API_KEY берётся из переменных окружения
+
 
 # ────────── функции ──────────
 def fetch_fact() -> str:
@@ -99,30 +111,30 @@ def fetch_fact() -> str:
     return resp.choices[0].message.content.strip()
 
 
-
-
 def show_popup(text: str) -> None:
+    """Показывает окно поверх всех приложений; закрывается через TIMEOUT_MS."""
     root = tk.Tk()
     root.withdraw()
-    root.attributes("-topmost", True)
+    root.attributes("-topmost", True)   # заставляем всплыть поверх
     root.lift()
-    root.focus_force()
     root.after(TIMEOUT_MS, root.destroy)
     messagebox.showinfo("Знаете ли вы, что...", text, parent=root)
 
 
-
+# ────────── основной цикл ──────────
 def main() -> None:
     while True:
         try:
             fact = fetch_fact()
+            logging.info(f"FACT: {fact}")      # факт в лог
             show_popup(fact)
         except Exception as exc:
-            print(f"[fact-bot] Ошибка: {exc}", flush=True)
+            logging.exception(f"ERROR fetching/printing fact: {exc}")
 
         delay_sec = random.uniform(MIN_DELAY_MIN, MAX_DELAY_MIN) * 60
         time.sleep(delay_sec)
 
 
 if __name__ == "__main__":
+    logging.info("───────────── bot started ─────────────")
     main()
