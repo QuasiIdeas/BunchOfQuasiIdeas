@@ -6,7 +6,7 @@ Project: Synthetic Cultures Generator
 
 ## Introduction
 
-The aim of the project is to develop an architecture for a synthetic cultures generator where **genius AI agents** can **evolve and manifest**. We are designing this mechanism not for entertainment or historical reconstruction, but within the framework of the **future described by Darya Amadei**, where a "country of geniuses" may exist within data centers—an artificial society capable of generating continuous innovations, ideas, meanings, and cultural forms. 
+The aim of the project is to develop an architecture for a synthetic cultures generator where **genius AI agents** can **evolve and manifest**. We are designing this mechanism not for entertainment or historical reconstruction, but within the framework of the **future described by Dario Amodei**, where a "country of geniuses" may exist within data centers—an artificial society capable of generating continuous innovations, ideas, meanings, and cultural forms. 
 
 ## Key Ideas
 

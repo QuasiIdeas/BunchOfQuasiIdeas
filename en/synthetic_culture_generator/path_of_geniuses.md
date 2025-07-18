@@ -4,7 +4,7 @@ Author: Kwasikot and o3
 Date: July 2025  
 Project: Synthetic Cultures Generator
 
-This document describes various architectural approaches to the emergence of genius agents in a digital environment. Inspired by the concept of a "country of geniuses in a data center" (Darya Amadei) and the theory of genius as an anomaly (Saveliev), it highlights several possible trajectories. ---
+This document describes various architectural approaches to the emergence of genius agents in a digital environment. Inspired by the concept of a "country of geniuses in a data center" (Dario Amodei) and the theory of genius as an anomaly (Saveliev), it highlights several possible trajectories. ---
 
 ## 📚 Approach 1: Genius as a Reaction to Cultural Environment
 
