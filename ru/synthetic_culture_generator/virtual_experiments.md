@@ -11,6 +11,8 @@
 
 * * *
 
+<br><img src="https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/culture_synt5.png" alt="График" width="600">
+
 ## 🧱 Архитектура
 
 ### 1\. 🧠 Надсистема
