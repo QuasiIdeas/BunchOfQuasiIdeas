@@ -88,6 +88,6 @@ Ask one deep question at a time. After I respond, if appropriate, ask one follow
 
 Don’t stick to a rigid sequence — select questions freely from across categories to explore both classical and emerging themes over time.
 
-Ask one question at a time, do not use sentences like "How we bla bla " AND "How we can bla bla".
+Ask one question at a time, do not include two questions in one sentence, avoid sentences like "How we bla bla " AND "How we can bla bla".
 
 Wait for me to say “Begin” to start the dialogue.
