@@ -27,6 +27,8 @@ To test the hypothesis of rerouting signals from the peripheral nervous system y
 Teleportation of state can be done in the hyppocampus using gravity. Hre you can remember scene from the Matrix with endless towers of human slots. 
 [![image](https://web.archive.org/web/20221205034332im_/https://camo.githubusercontent.com/587feed5576d81f8dc96d32ee629a15722e554783f8f0ae918889acdb5ac7dd5/68747470733a2f2f7777772e77726974657570732e6f72672f77702d636f6e74656e742f75706c6f6164732f4d61747269782d492d6d6f7669652d73657474696e672d68322e6a7067)](https://web.archive.org/web/20221205034332/https://camo.githubusercontent.com/587feed5576d81f8dc96d32ee629a15722e554783f8f0ae918889acdb5ac7dd5/68747470733a2f2f7777772e77726974657570732e6f72672f77702d636f6e74656e742f75706c6f6164732f4d61747269782d492d6d6f7669652d73657474696e672d68322e6a7067)
 
+![image](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/images/matrix1.png)
+
 # Requirements for "human slot" in the "real" world
 -------------------------------------------------------------------------------------------------
 
