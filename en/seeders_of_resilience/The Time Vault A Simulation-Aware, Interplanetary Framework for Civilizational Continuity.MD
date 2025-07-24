@@ -71,4 +71,4 @@ Iosif Shklovsky & Carl Sagan — Intelligent Life in the Universe (1966)
 
 Carl Sagan — Pale Blue Dot (1994)
 
-(Detailed drafts & schematics: https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/Time%20capsule%20project.md)
+(Detailed drafts & schematics: https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/en/seeders_of_resilience/time_capsule/Time%20capsule%20project.md)

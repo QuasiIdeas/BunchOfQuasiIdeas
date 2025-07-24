@@ -20,7 +20,7 @@ In this paper, we extend the concept of the time capsule beyond human civilizati
 
 If humanity is to become an interplanetary — or interstellar — civilization, we must ensure the persistence and translatability of our knowledge and values. Inspired by the ideas of Carl Sagan, who believed that the cosmos is filled with potentially intelligent life, and Shklovsky, who studied the physics of interstellar communication, we propose a new use-case for time capsules: transmitting structured seeds of cognition that can be reconstructed even by non-human intelligences.
 
-This paper expands the original time capsule project ([Baranov, 2024](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/Time%20capsule%20project.md)), adding a conceptual framework for interspecies knowledge transfer.
+This paper expands the original time capsule project ([Baranov, 2024]( https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/en/seeders_of_resilience/time_capsule/Time%20capsule%20project.md )), adding a conceptual framework for interspecies knowledge transfer.
 
 ---
 
