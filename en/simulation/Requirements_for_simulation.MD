@@ -361,7 +361,7 @@ TODO. \[Insert drawing of some scheme here\]
 22.      The Matrix (1999)
         
     
-23.      The Matrix Reloaded (2003)
+23.      The Matrix R0eloaded (2003)
         
     
 24.      The Matrix Revolutions (2003)
@@ -380,5 +380,7 @@ TODO. \[Insert drawing of some scheme here\]
 29. https://en.wikipedia.org/wiki/Hypercomputation
 
 30. [Infinite Time Turing Machines (Joel David Hamkins and Andy Lewis)](https://arxiv.org/pdf/math/9808093)
+
+31. Meet the Neuroscientist Using AI to Unlock the Secrets of Language! https://youtu.be/6PU07WO7OGY
 
 
