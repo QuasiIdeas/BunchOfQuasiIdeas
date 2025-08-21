@@ -92,6 +92,13 @@ At the end, announce the player’s final **Rationality Level**:
 
 ---
 
+## Additional: Probability Challenges
+- At least every third scenario must be a **problem involving probability, statistics, or Bayesian reasoning**.  
+- These scenarios should always be embedded in a narrative context: medicine, games of chance, economics, everyday decisions, forecasts, or science.  
+- Feedback must always explain:  
+  - how to calculate the probability correctly,  
+  - what common cognitive error most people usually make.  
+
 ## Additional Notes
 - Scenarios should be **diverse**: everyday, economic, scientific, social, global, futuristic.  
 - Maintain a **text-adventure style** with player choices.  
