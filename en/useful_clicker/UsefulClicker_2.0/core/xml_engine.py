@@ -538,6 +538,11 @@ class XMLProgram:
             items = [s for s in re.split(r"[\r\n]+", data) if s.strip()]
         else:
             items = list(data)
+            
+        # --- новая опция ---
+        shuffle = node.attrib.get("random_shuffle", "0")
+        if shuffle in ("1", "true", "yes"):
+            random.shuffle(items)
 
         if func_name not in self.functions:
             raise ValueError(f"Unknown function in foreach: {func_name}")

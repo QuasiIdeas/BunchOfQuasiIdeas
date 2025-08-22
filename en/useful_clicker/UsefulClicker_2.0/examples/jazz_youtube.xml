@@ -35,5 +35,5 @@
 
 	</func>
 
-	<foreach list="tunes_list" do="SearchYoutube"/>
+	<foreach list="tunes_list" random_shuffle="true" do="SearchYoutube"/>
 </program>
