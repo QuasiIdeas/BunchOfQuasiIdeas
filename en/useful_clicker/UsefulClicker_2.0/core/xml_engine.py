@@ -208,12 +208,13 @@ def _cleanup_list_item(s: str) -> str:
     s = s.strip(" \t\"'“”‘’")
     return s
 
-def _llm_generate_list(prompt: str, separator: str = "\n") -> list[str]:
+def _llm_generate_list(prompt: str, separator: str = "\n", logger: logging.Logger = _setup_logger()) -> list[str]:
     try:
         from llm.openai_client import LLMClient  # если есть
         client = LLMClient()
         raw_items = client.generate_list(prompt, separator=separator)
-    except Exception:
+    except Exception as e:
+        logger.info(f"Exception: {e}")
         raw_items = [
             "Fourplay — 101 Eastbound",
             "Bob James — Westchester Lady",
@@ -252,12 +253,14 @@ def _llm_generate_list(prompt: str, separator: str = "\n") -> list[str]:
                 out.append(p)
     return out
 
-def _llm_generate_text(prompt: str) -> str:
+def _llm_generate_text(prompt: str, logger) -> str:
     try:
         from llm.openai_client import LLMClient
         client = LLMClient()
         return client.generate_text(prompt)
-    except Exception:
+    except Exception as e:
+        logger.info(f"Exception: {e}")
+
         return "\n".join(_llm_generate_list(prompt))
 
 
@@ -503,7 +506,7 @@ class XMLProgram:
         prompt = _substitute_vars(prompt, self.variables)
 
         if out_fmt == "list":
-            items = _llm_generate_list(prompt, separator=sep)
+            items = _llm_generate_list(prompt, separator=sep, logger=self.logger)
             clean = []
             for s in items:
                 t = _cleanup_list_item(str(s))
@@ -511,7 +514,7 @@ class XMLProgram:
                     clean.append(t)
             self.variables[out_var] = clean
         else:
-            text = _llm_generate_text(prompt)
+            text = _llm_generate_text(prompt, self.logger)
             self.variables[out_var] = text
         self.logger.info(f"LLMCALL -> {out_var} (format={out_fmt})")
         self._delays(node)
