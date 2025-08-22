@@ -4,7 +4,7 @@
 <llmcall output_var="tunes_list"
 			 output_format="list"
 			 separator="\n"
-			 prompt="Выдай список из 100 потрясающих видео и программ о науке и технике. Включи разнообразные стили: документальные фильмы (Discovery, National Geographic, PBS, BBC), научные шоу, лекции, подкасты, популяризацию космоса, технологий и биологии. Формат выхода: только список названий, разделённый символом переноса строки. Каждый вызов должен выдавать разные варианты, избегай повторений. "/>
+			 prompt="Give me a list of 100 amazing videos and programs about science and technology. Include diverse styles: documentaries (Discovery, National Geographic, PBS, BBC), science shows, lectures, podcasts, popularization of space, technology, and biology. Output format: only a list of titles separated by line breaks. Each run must produce different options, avoiding repetitions"/>
 
 	<func name="SearchYoutube">
 	  <click button="left" x="200" y="10" />
