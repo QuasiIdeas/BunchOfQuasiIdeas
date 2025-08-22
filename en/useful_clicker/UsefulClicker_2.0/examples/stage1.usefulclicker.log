@@ -1,0 +1,25 @@
+[2025-08-22 14:40:40,922] INFO: CALL Type test 2
+[2025-08-22 14:40:40,923] INFO: SHELL type=cmd bg=True cmd=notepad.exe
+[2025-08-22 14:40:41,805] INFO: WAIT 800ms
+[2025-08-22 14:40:42,636] INFO: TYPE mode=copy_paste text='This is an example of text that was gene...'
+[2025-08-22 14:40:42,770] INFO: CALL Change font
+[2025-08-22 14:40:42,896] INFO: HOTKEY alt+o
+[2025-08-22 14:40:43,018] INFO: KEYSEQUENCE 'f'
+[2025-08-22 14:40:43,235] INFO: HOTKEY alt+s
+[2025-08-22 14:40:43,845] INFO: TYPE mode=type text='48...'
+[2025-08-22 14:40:43,947] INFO: KEYSEQUENCE 'enter'
+[2025-08-22 14:40:49,465] INFO: CALL Type test 2
+[2025-08-22 14:40:49,465] INFO: SHELL type=cmd bg=True cmd=notepad.exe
+[2025-08-22 14:41:34,049] INFO: CALL Type test 2
+[2025-08-22 14:41:34,049] INFO: SHELL type=cmd bg=True cmd=notepad.exe
+[2025-08-22 14:48:10,690] INFO: CALL Type test 2
+[2025-08-22 14:48:10,691] INFO: SHELL type=cmd bg=True cmd=notepad.exe
+[2025-08-22 14:48:10,699] INFO: WAIT 800ms
+[2025-08-22 14:48:11,617] INFO: FOCUS title~='Notepad' -> True
+[2025-08-22 14:48:11,622] INFO: TYPE mode=copy_paste text='This is an example of text that was gene...'
+[2025-08-22 14:48:11,743] INFO: CALL Change font
+[2025-08-22 14:48:11,854] INFO: HOTKEY alt+o
+[2025-08-22 14:48:11,958] INFO: KEYSEQUENCE 'f'
+[2025-08-22 14:48:12,163] INFO: HOTKEY alt+s
+[2025-08-22 14:48:12,768] INFO: TYPE mode=type text='48...'
+[2025-08-22 14:48:12,873] INFO: KEYSEQUENCE 'enter'

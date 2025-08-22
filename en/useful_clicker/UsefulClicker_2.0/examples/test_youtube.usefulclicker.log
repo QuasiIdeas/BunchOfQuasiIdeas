@@ -1,0 +1,24 @@
+[2025-08-22 17:45:22,629] INFO: CALL Demo
+[2025-08-22 17:45:22,734] INFO: HOTKEY F6
+[2025-08-22 17:45:22,836] INFO: WAIT 800ms
+[2025-08-22 17:45:23,636] INFO: TYPE mode=copy_paste text='https://www.youtube.com/results?search_q...'
+[2025-08-22 17:45:31,758] INFO: CALL Demo
+[2025-08-22 17:45:31,867] INFO: HOTKEY F6
+[2025-08-22 17:45:31,969] INFO: WAIT 800ms
+[2025-08-22 17:45:32,770] INFO: TYPE mode=copy_paste text='https://www.youtube.com/results?search_q...'
+[2025-08-22 17:45:37,787] INFO: CALL Demo
+[2025-08-22 17:45:37,893] INFO: HOTKEY F6
+[2025-08-22 17:45:37,995] INFO: WAIT 800ms
+[2025-08-22 17:45:38,796] INFO: TYPE mode=copy_paste text='https://www.youtube.com/results?search_q...'
+[2025-08-22 17:46:24,418] INFO: CALL Demo
+[2025-08-22 17:46:24,522] INFO: HOTKEY F6
+[2025-08-22 17:46:24,625] INFO: WAIT 800ms
+[2025-08-22 17:46:25,426] INFO: TYPE mode=copy_paste text='https://www.youtube.com/results?search_q...'
+[2025-08-22 17:46:25,541] INFO: WAIT 800ms
+[2025-08-22 17:46:26,341] INFO: HOTKEY enter
+[2025-08-22 17:46:43,755] INFO: CALL Demo
+[2025-08-22 17:46:43,862] INFO: HOTKEY F6
+[2025-08-22 17:46:43,964] INFO: WAIT 800ms
+[2025-08-22 17:46:44,764] INFO: TYPE mode=copy_paste text='https://www.youtube.com/results?search_q...'
+[2025-08-22 17:46:44,879] INFO: WAIT 800ms
+[2025-08-22 17:46:45,680] INFO: HOTKEY enter
