@@ -110,11 +110,14 @@ XML-Тег <check> позволяет проверить значение пер
 
 # Как работает тег <shell>
 ```xml
-<shell bg="1" shell_type="powershell" cmd="notepad.exe" comment="run notepad"/>
+<shell bg="1" shell_type="powershell" output_var="" output_var="K" output_format="list" separator=" "  cmd="notepad.exe" comment="run notepad"/>
 ```
 Запускает shell команду используя оболочку shell_type.
 Команда cmd.
 Аргумент bg поределяет будет ли команда запущена в фоне, т.е. без консольного окна.
+output_var определяет внутренню переменную кликера куда будет сохраняться stdout команды.
+output_format определяет будет ли это список с разделителем separator или просто текст output_format="text".
+
 
 # Как работает тег <type>
 ```xml
