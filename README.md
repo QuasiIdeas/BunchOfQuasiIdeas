@@ -6,6 +6,8 @@
 
 Create a virtual forum where users interact with artificial intelligences, each representing a distinct worldview, argumentation strategy and cultural background.
 
+- [UsefulClicker_2.0](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/tree/main/en/useful_clicker/UsefulClicker_2.0)
+
 **Документы:**
 - [en/intellectualist_2.0/AI Forum Intellectualist 2.0.MD](https://github.com/QuasiIdeas/BunchOfQuasiIdeas/blob/main/en/intellectualist_2.0/AI%20Forum%20Intellectualist%202.0.MD)
 
