@@ -13,6 +13,13 @@ from typing import Dict, Any, Optional
 from urllib.parse import quote_plus
 import importlib
 from typing import Dict, Any, Optional
+import threading
+import time
+try:
+    import keyboard  # hotkey listener for pause
+except Exception:
+    keyboard = None
+
 
 # ---------- XML backend ----------
 try:
@@ -107,6 +114,7 @@ def _substitute_vars(value: str, variables: Dict[str, Any]) -> str:
         return _apply_filter(raw, filt)
 
     return _VAR_PATTERN.sub(repl, value)
+
 
 
 # ==========================
@@ -301,6 +309,8 @@ class XMLProgram:
         self.xml_path = Path(xml_path)
         self.debug = debug
         self.logger = _setup_logger()
+        self.paused = False
+        self._start_pause_listener()  # запустим слушатель пробела
         self.variables: Dict[str, Any] = {}
         self.functions: Dict[str, ET.Element] = {}
         self.xml_text: str = ""
@@ -342,6 +352,33 @@ class XMLProgram:
     # ---------- Общие задержки ----------
     def _delays(self, node: ET.Element):
         _sleep_delays(node)
+        
+    def _start_pause_listener(self):
+        """Запускает поток, который вешает хоткей 'space' для паузы/резюма."""
+    
+        def _worker():
+            if keyboard is None:
+                self.logger.info("PAUSE: keyboard module not available; pause hotkey disabled.")
+                return
+            try:
+                keyboard.add_hotkey("space", self._toggle_pause)
+                self.logger.info("PAUSE: press <Space> to toggle pause/resume.")
+                keyboard.wait()  # держим слушатель живым
+            except Exception as e:
+                self.logger.info(f"PAUSE listener error: {e}")
+
+        t = threading.Thread(target=_worker, daemon=True)
+        t.start()
+
+    def _toggle_pause(self):
+        self.paused = not self.paused
+        self.logger.info(f"PAUSE {'ON' if self.paused else 'OFF'}")
+
+    def _pause_gate(self):
+        """Если включена пауза — ждём, пока её не снимут. Вызывать перед исполнением любой ноды/действия."""
+        while getattr(self, "paused", False):
+            time.sleep(0.05)
+
 
     # ---------- Обработчики тегов ----------
     def handle_set(self, node: ET.Element):
@@ -773,6 +810,9 @@ class XMLProgram:
 
     # ---------- Диспетчер ----------
     def _exec_node(self, node: ET.Element):
+        
+        self._pause_gate()
+    
         tag = node.tag if isinstance(getattr(node, "tag", None), str) else ""
         tagl = tag.lower()
 
