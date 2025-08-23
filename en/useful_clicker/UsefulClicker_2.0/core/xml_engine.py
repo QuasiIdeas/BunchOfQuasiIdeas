@@ -326,6 +326,24 @@ class XMLProgram:
             pass
         self.variables.setdefault("SCREEN_W", 1920)
         self.variables.setdefault("SCREEN_H", 1080)
+        
+        
+    def _sleep_ms_interruptible(self, total_ms: int):
+        """Спит total_ms, уважая паузу. Дробит ожидание на короткие интервалы."""
+        if total_ms <= 0:
+            return
+        end_ts = time.time() + total_ms / 1000.0
+        step = 0.05  # 50ms — частота проверки паузы
+        while True:
+            # уважаем паузу
+            self._pause_gate()
+            now = time.time()
+            if now >= end_ts:
+                break
+            # спим коротко; если осталось меньше step — досыпаем остаток
+            remain = end_ts - now
+            time.sleep(step if remain > step else remain)
+
 
     # ---------- Загрузка XML + <include> ----------
     def _load_xml(self):
@@ -351,7 +369,26 @@ class XMLProgram:
 
     # ---------- Общие задержки ----------
     def _delays(self, node: ET.Element):
-        _sleep_delays(node)
+        #_sleep_delays(node)
+        df = node.get("delay_fixed")
+        dm = node.get("delay_ms")
+
+        # фиксированная задержка — целиком
+        if df:
+            try:
+                self._sleep_ms_interruptible(int(df))
+            except Exception:
+                pass
+
+        # случайная задержка — до указанного максимума
+        if dm:
+            try:
+                import random
+                jitter = random.uniform(0, int(dm) / 1000.0)
+                self._sleep_ms_interruptible(int(jitter * 1000))
+            except Exception:
+                pass
+
         
     def _start_pause_listener(self):
         """Запускает поток, который вешает хоткей 'space' для паузы/резюма."""
@@ -617,11 +654,13 @@ class XMLProgram:
             raise ValueError(f"Unknown function in foreach: {func_name}")
 
         for idx, val in enumerate(items):
+            self._pause_gate()
             self.variables[var_name] = val
             self.variables["index"] = idx
             self.variables["arg0"] = val
             func = self.functions[func_name]
             for child in list(func):
+                self._pause_gate()
                 self._exec_node(child)
 
         self._delays(node)
@@ -664,13 +703,14 @@ class XMLProgram:
         self.logger.info(f"REPEAT times={n}")
         for _ in range(n):
             for child in list(node):
+                self._pause_gate()
                 self._exec_node(child)
         self._delays(node)
 
     def handle_wait(self, node: ET.Element):
         ms = int(node.get("ms", "0"))
         self.logger.info(f"WAIT {ms}ms")
-        time.sleep(ms / 1000.0)
+        self._sleep_ms_interruptible(ms)
 
     def handle_extnode(self, node: ET.Element):
         """
