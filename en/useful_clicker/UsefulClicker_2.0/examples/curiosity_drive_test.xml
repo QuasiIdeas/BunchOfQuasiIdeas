@@ -8,7 +8,7 @@
          output_var="science_terms_list"
          output_format="list"
          separator="\n"
-         disciplines="Biology, Chemistry"
+         disciplines="Evolutionary biology, Epigenetics, Transcription factors, Developmental biology, Immunology, Infectious diseases, Hepatology, Neurobiology, Cell biology, Oncology, Biotechnology, Pharmacology, Gerontology, Machine learning"
          num_terms="15"/>
 
 	<func name="SearchYoutube">
