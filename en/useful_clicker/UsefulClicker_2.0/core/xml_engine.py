@@ -410,6 +410,7 @@ class XMLProgram:
                 keyboard.add_hotkey("ctrl+space", self._toggle_pause)
                 keyboard.add_hotkey("ctrl+n", self._skip_wait_now)
                 self.logger.info("PAUSE: press <ctrl + Space> to toggle pause/resume.")
+                self.logger.info("NEXT: press <ctrl + N> to next search.")
                 keyboard.wait()  # держим слушатель живым
             except Exception as e:
                 self.logger.info(f"PAUSE listener error: {e}")
