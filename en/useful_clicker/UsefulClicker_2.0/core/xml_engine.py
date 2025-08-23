@@ -19,10 +19,7 @@ try:
     import keyboard  # hotkey listener for pause
 except Exception:
     keyboard = None
-try:
-    from voice.voice_daemon import VoiceDaemon
-except Exception:
-    VoiceDaemon = None
+
 
 # ---------- XML backend ----------
 try:
@@ -352,7 +349,6 @@ class XMLProgram:
         self.xml_path = Path(xml_path)
         self.debug = debug
         self.logger = _setup_logger()
-        self.voice = None
         self.skip_wait = False
         self.paused = False
         self._start_pause_listener()  # запустим слушатель пробела
@@ -371,36 +367,8 @@ class XMLProgram:
             pass
         self.variables.setdefault("SCREEN_W", 1920)
         self.variables.setdefault("SCREEN_H", 1080)
-
-    def _ensure_voice(self):
-        """Стартует голосовой демон при первом запросе, если включён VOICE_ENABLED/ENV."""
-        if self.voice is not None:
-            return
-
-        # можно включать через переменную в XML, флаг окружения или дефолт
-        flag_xml = str(self.variables.get("VOICE_ENABLED", "0")).strip().lower() in ("1", "true", "yes")
-        flag_env = str(os.getenv("USEFULCLICKER_VOICE", "0")).strip().lower() in ("1", "true", "yes")
-        if not (flag_xml or flag_env):
-            return
-
-        if VoiceDaemon is None:
-            self.logger.info("VOICE: VoiceDaemon not available (import failed).")
-            return
-
-        # можно прочитать желаемый индекс микрофона из переменной VOICE_DEVICE (если задашь его через <set>)
-        dev = self.variables.get("VOICE_DEVICE")
-        try:
-            dev = int(dev) if dev is not None and str(dev).strip() != "" else None
-        except Exception:
-            dev = None
-
-        try:
-            self.voice = VoiceDaemon(model_name="base", device=dev, lang=None).start()
-            self.logger.info("VOICE: background voice daemon started.")
-        except Exception as e:
-            self.logger.info(f"VOICE: failed to start ({e})")
-            self.voice = None
-              
+        
+        
     def _sleep_ms_interruptible(self, total_ms: int):
         """Sleep total_ms ms, respecting pause and skip-wait hotkey."""
         if total_ms <= 0:
@@ -513,36 +481,6 @@ class XMLProgram:
             self.logger.info(f"SET {k} = {val}")
             self.variables[k] = val
         self._delays(node)
-        
-    def handle_if(self, node: ET.Element):
-        cond_raw = node.get("cond", "")
-        try:
-            cond_expanded = _substitute_vars(cond_raw, self.variables)
-        except Exception:
-            cond_expanded = cond_raw
-
-        try:
-            res = bool(eval((cond_expanded.strip() or "False"), {"__builtins__": {}}, {}))
-            self.logger.info(f"IF cond='{cond_expanded}' -> {res}")
-        except Exception as e:
-            self.logger.info(f"IF eval error: cond='{cond_expanded}' ({e}) -> False")
-            res = False
-
-        in_else = False
-        for child in list(node):
-            tag = getattr(child, "tag", None)
-            # пропускаем комментарии/PI/текст
-            if not isinstance(tag, str):
-                continue
-            tagl = tag.lower()
-            if tagl == "else":
-                in_else = True
-                continue
-            # выполняем нужную ветку
-            if (res and not in_else) or ((not res) and in_else):
-                self._exec_node(child)
-
-
 
     def handle_check(self, node: ET.Element):
         tol = float(node.get("tol")) if node.get("tol") else None
@@ -609,67 +547,6 @@ class XMLProgram:
         self._delays(node)
 
 
-    def handle_voice_event(self, node: ET.Element):
-        """
-        <voice_event wait="30000" type="any|command|query" out="VOICE_TEXT"/>
-        Ждёт до wait мс событие от голосового демона и сохраняет текст и тип.
-        """
-        # обеспечить запуск демона к моменту первого вызова
-        self._ensure_voice()
-
-        want = (node.get("type") or "any").lower()
-        out = node.get("out") or "VOICE_TEXT"
-        wait_ms = int(node.get("wait", "0"))
-
-        text = ""
-        typ = ""
-
-        if self.voice is None:
-            # демон не поднялся — вернём пусто
-            self.variables[out] = text
-            self.variables[out + "_type"] = typ
-            self._delays(node)
-            return
-
-        # попытка совместимости: если у объекта есть get_event -> используем его
-        if hasattr(self.voice, "get_event"):
-            # старый контроллер
-            deadline = time.time() + (wait_ms / 1000.0) if wait_ms else None
-            while True:
-                self._pause_gate()
-                evt = self.voice.get_event(timeout_ms=200)
-                if evt:
-                    if want in ("any", getattr(evt, "type", "")):
-                        text = getattr(evt, "text", "") or ""
-                        typ = getattr(evt, "type", "") or ""
-                        break
-                if deadline and time.time() > deadline:
-                    break
-        else:
-            # VoiceDaemon с get_next_command / get_next_query
-            deadline = time.time() + (wait_ms / 1000.0) if wait_ms else None
-            while True:
-                self._pause_gate()
-                evt = None
-                if want in ("any", "command"):
-                    evt = self.voice.get_next_command(timeout_ms=0)
-                    if evt and (want in ("any", "command")):
-                        text, typ = evt.text, "command"
-                        break
-                if want in ("any", "query"):
-                    evt = self.voice.get_next_query(timeout_ms=0)
-                    if evt and (want in ("any", "query")):
-                        text, typ = evt.text, "query"
-                        break
-                if deadline and time.time() > deadline:
-                    break
-                time.sleep(0.05)
-
-        self.variables[out] = text
-        self.variables[out + "_type"] = typ
-        self.logger.info(f"VOICE_EVENT -> {out}='{text}' type='{typ}'")
-        self._delays(node)
-
     def handle_hotkey(self, node: ET.Element):
         combo = node.get("hotkey")
         seq = node.get("keysequence")
@@ -683,93 +560,58 @@ class XMLProgram:
             _keysequence(seq, delay_ms=d_ms)
         self._delays(node)
 
-    def _decode_escapes(self, s: str) -> str:
-        # переводит "\n", "\t", "\x.." и пр. в реальные символы
-        return s.encode("utf-8").decode("unicode_escape")
-
     def handle_shell(self, node: ET.Element):
-        """
-        <shell shell_type="cmd|powershell|bash"
-               bg="0|1"
-               showConsole="0|1"
-               output_var="VAR"
-               output_format="text|list"
-               separator="\\n"
-               cmd="echo hi ${NAME}"/>
-        Или текстом:
-        <shell> echo hello ${NAME} </shell>
-        """
-        shell_type = (node.get("shell_type") or "cmd").lower()
-        bg = str(node.get("bg", "0")).strip().lower() in ("1","true","yes")
-        show_console = str(node.get("showConsole", "0")).strip().lower() in ("1","true","yes")
+        cmd = node.get("cmd") or (node.text or "")
+        shell_type = node.get("shell_type", "cmd")
+        bg = node.get("bg", "0") == "1"
+        output_var = node.get("output_var")
+        output_format = (node.get("output_format") or "text").lower()
+        separator = node.get("separator", " ")
 
-        # separator для разбиения stdout, если output_format="list"
-        sep_raw = node.get("separator") or "\n"
-        separator = self._decode_escapes(sep_raw)
+        if not cmd.strip():
+            return
 
-        out_var = node.get("output_var")
-        out_fmt = (node.get("output_format") or "text").lower()
+        self.logger.info(f"SHELL type={shell_type} bg={bg} cmd={cmd}")
 
-        # исходная команда может быть в атрибуте cmd или в тексте ноды
-        cmd_raw = node.get("cmd")
-        if cmd_raw is None:
-            cmd_raw = node.text or ""
+        startupinfo = None
+        if bg and os.name == "nt":
+            startupinfo = subprocess.STARTUPINFO()
+            startupinfo.dwFlags |= subprocess.STARTF_USESHOWWINDOW
 
-        # ПОДСТАНОВКА переменных во всех атрибутах/тексте
-        cmd_expanded = _substitute_vars(cmd_raw, self.variables)
-
-        # ЛОГ — уже с подставленными значениями
-        self.logger.info(f"SHELL type={shell_type} bg={bg} cmd={cmd_expanded}")
-
-        # Формируем реальную команду под платформу/оболочку
-        if shell_type in ("cmd", "cmd.exe", "windows", "win"):
-            exe = "cmd"
-            args = [exe, "/c", cmd_expanded]
-            creationflags = 0 if show_console else 0x08000000  # CREATE_NO_WINDOW
-        elif shell_type in ("powershell", "pwsh"):
-            exe = "powershell"
-            args = [exe, "-NoProfile", "-Command", cmd_expanded]
-            creationflags = 0 if show_console else 0x08000000
-        elif shell_type in ("bash", "sh"):
-            exe = "bash"
-            args = [exe, "-lc", cmd_expanded]
-            creationflags = 0
+        if shell_type == "powershell":
+            full_cmd = ["powershell", "-NoProfile", "-Command", cmd]
+        elif shell_type == "bash":
+            full_cmd = ["bash", "-lc", cmd]
         else:
-            # по умолчанию пробуем системную оболочку
-            exe = "cmd" if os.name == "nt" else "bash"
-            args = [exe, "/c" if os.name == "nt" else "-lc", cmd_expanded]
-            creationflags = 0 if show_console or os.name != "nt" else 0x08000000
+            full_cmd = cmd
 
-        try:
-            if bg and not out_var:
-                # Фоновый запуск без захвата вывода
-                subprocess.Popen(args, creationflags=creationflags)
+        if bg:
+            if isinstance(full_cmd, list):
+                subprocess.Popen(full_cmd, stdout=subprocess.PIPE if output_var else None,
+                                 stderr=subprocess.PIPE if output_var else None, text=True,
+                                 startupinfo=startupinfo)
             else:
-                # С захватом вывода (или синхронно)
-                cp = subprocess.run(
-                    args,
-                    capture_output=True,
-                    text=True,
-                    creationflags=creationflags,
-                    check=False,
-                )
-                stdout = (cp.stdout or "").strip()
-                stderr = (cp.stderr or "").strip()
-                if stderr:
-                    self.logger.info(f"SHELL stderr: {stderr}")
+                subprocess.Popen(full_cmd, shell=True, stdout=subprocess.PIPE if output_var else None,
+                                 stderr=subprocess.PIPE if output_var else None, text=True,
+                                 startupinfo=startupinfo)
+            if output_var:
+                self.variables[output_var] = ""
+        else:
+            if isinstance(full_cmd, list):
+                proc = subprocess.run(full_cmd, capture_output=bool(output_var), text=True,
+                                      startupinfo=startupinfo)
+            else:
+                proc = subprocess.run(full_cmd, shell=True, capture_output=bool(output_var), text=True,
+                                      startupinfo=startupinfo)
+            if output_var:
+                out = proc.stdout or ""
+                if output_format == "list":
+                    val = [s for s in out.strip().split(separator) if s]
+                else:
+                    val = out
+                self.variables[output_var] = val
 
-                if out_var is not None:
-                    if out_fmt == "list":
-                        self.variables[out_var] = [s for s in stdout.split(separator) if s.strip()]
-                    else:
-                        self.variables[out_var] = stdout
-
-        except Exception as e:
-            self.logger.info(f"SHELL error: {e}")
-
-        # задержки после ноды (с учётом паузы/skip-wait, если у тебя реализовано)
         self._delays(node)
-
 
     def handle_focus(self, node: ET.Element):
         title = node.get("title") or node.get("title_contains") or ""
@@ -1068,9 +910,6 @@ class XMLProgram:
 
         if tagl == "set":
             self.handle_set(node)
-        elif tagl == "if":
-            self.handle_if(node)
-            return
         elif tagl == "check":
             self.handle_check(node)
         elif tagl == "type":
@@ -1097,8 +936,6 @@ class XMLProgram:
             self.handle_wait(node)
         elif tagl == "extnode":
             self.handle_extnode(node)
-        elif tagl == "voice_event":
-            self.handle_voice_event(node)
         else:
             # игнор неизвестных на этом этапе
             pass
