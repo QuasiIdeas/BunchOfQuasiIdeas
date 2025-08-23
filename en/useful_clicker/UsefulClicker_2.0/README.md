@@ -46,7 +46,28 @@ This allows UsefulClicker to automatically discover and browse **science & techn
 
 ### Example: YouTube Search Workflow
 
-`<!-- Generate a list of science & technology terms --><extnode module="curiosity_drive_node" func="run_node" output_var="science_terms" output_format="list" separator="\n" disciplines="Physics, Computer Science" num_terms="15"/><!-- Define a function to search on YouTube --><func name="SearchYoutube"> <hotkey hotkey="ctrl+l"/> <wait ms="200"/> <type mode="copy_paste" text="https://www.youtube.com/results?search_query=${arg0|url}"/> <wait ms="300"/> <hotkey hotkey="enter"/></func><!-- Iterate over terms in random order --><foreach list="science_terms" do="SearchYoutube" random_shuffle="1"/>`
+```
+<!-- Generate a list of science & technology terms -->
+<extnode module="curiosity_drive_node"
+         func="run_node"
+         output_var="science_terms"
+         output_format="list"
+         separator="\n"
+         disciplines="Physics, Computer Science"
+         num_terms="15"/>
+
+<!-- Define a function to search on YouTube -->
+<func name="SearchYoutube">
+  <hotkey hotkey="ctrl+l"/>
+  <wait ms="200"/>
+  <type mode="copy_paste" text="https://www.youtube.com/results?search_query=${arg0|url}"/>
+  <wait ms="300"/>
+  <hotkey hotkey="enter"/>
+</func>
+
+<!-- Iterate over terms in random order -->
+<foreach list="science_terms" do="SearchYoutube" random_shuffle="1"/>
+```
 
 Now the clicker:
 
@@ -58,6 +79,12 @@ Now the clicker:
     
 4.  Scrolls randomly and clicks on results.
     
+
+Note: UsefulClicker relies on an external LLM (Large Language Model) for generating keywords and prompts. To enable this functionality, set your API key as an environment variable before running the program:
+
+On Linux/macOS: export OPENAI_API_KEY="your_api_key_here"
+
+On Windows (PowerShell): setx OPENAI_API_KEY "your_api_key_here"
 
 * * *
 
