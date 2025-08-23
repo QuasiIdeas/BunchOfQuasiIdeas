@@ -361,7 +361,7 @@ class XMLProgram:
                 self.logger.info("PAUSE: keyboard module not available; pause hotkey disabled.")
                 return
             try:
-                keyboard.add_hotkey("space", self._toggle_pause)
+                keyboard.add_hotkey("ctrl+space", self._toggle_pause)
                 self.logger.info("PAUSE: press <Space> to toggle pause/resume.")
                 keyboard.wait()  # держим слушатель живым
             except Exception as e:
