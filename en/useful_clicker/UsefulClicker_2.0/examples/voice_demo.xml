@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<program>
+
+<!-- включаем голос -->
+<set VOICE_ENABLED="True"/>
+
+<!-- индекс микрофона -->
+<!-- <set VOICE_DEVICE="1"/> -->
+
+<!-- ждём голосовую команду или поисковую фразу до 30с -->
+<voice_event wait="30000" type="any" out="VOICE_TEXT"/>
+
+
+
+
+<!-- цикл ожидания следующей фразы -->
+<repeat times="999999">
+  <voice_event wait="60000" type="any" out="VOICE_TEXT"/>
+  <!-- … как выше … -->
+  <!-- если пришла команда -->
+<if cond="'${VOICE_TEXT_type}'=='command'">
+  <shell cmd="echo 1 BRANCH"/>
+  <!-- разруливаем команды -->
+  <func name="CmdNext"><hotkey hotkey="shift+n"/></func>
+  <func name="CmdPause"><hotkey hotkey="k"/></func>
+  <func name="CmdResume"><hotkey hotkey="k"/></func>
+  <func name="CmdSeekFwd"><hotkey hotkey="l"/></func>   <!-- YouTube +10 сек -->
+  <func name="CmdSeekBack"><hotkey hotkey="j"/></func>  <!-- YouTube -10 сек -->
+  <func name="CmdScrollDown"><hotkey hotkey="pgdn"/></func>
+  <func name="CmdScrollUp"><hotkey hotkey="pgup"/></func>
+  <!-- простейший диспетчер -->
+  <call name="CmdNext"     arg0="${VOICE_TEXT}"/>
+  <call name="CmdPause"    arg0="${VOICE_TEXT}"/>
+  <call name="CmdResume"   arg0="${VOICE_TEXT}"/>
+  <call name="CmdSeekFwd"  arg0="${VOICE_TEXT}"/>
+  <call name="CmdSeekBack" arg0="${VOICE_TEXT}"/>
+  <call name="CmdScrollDown" arg0="${VOICE_TEXT}"/>
+  <call name="CmdScrollUp"   arg0="${VOICE_TEXT}"/>
+<else/>
+    <shell cmd="echo 2 BRANCH"/>
+  <!-- иначе это поисковый запрос -->
+  <func name="SearchYoutube">
+    <click button="left" x="200" y="10" />
+    <wait ms="150"/>
+    <hotkey hotkey="ctrl+l"/><wait ms="150"/>
+	<wait ms="150"/>
+    <type mode="copy_paste" text="https://www.youtube.com/results?search_query=${arg0|url}"/>
+    <wait ms="200"/><hotkey hotkey="enter"/>
+  </func>
+  <call name="SearchYoutube" arg0="${VOICE_TEXT}"/>
+</if>
+
+</repeat>
+
+
+
+
+
+
+
+
+
+
+<voice_event wait="30000" type="any" out="VOICE_TEXT"/>
+<shell cmd="echo VOICE_TEXT='${VOICE_TEXT}' TYPE='${VOICE_TEXT_type}'"/>
+
+<if cond="'${VOICE_TEXT_type}'=='command'">
+  <shell cmd="echo 1 BRANCH"/>
+  <!-- обработка команд -->
+<else/>
+  <shell cmd="echo 2 BRANCH"/>
+  <!-- это поисковый запрос -->
+  <func name="SearchYoutube">
+    <click button="left" x="200" y="10" />
+    <hotkey hotkey="ctrl+l"/><wait ms="150"/>
+    <type mode="copy_paste" text="https://www.youtube.com/results?search_query=${arg0|url}"/>
+    <wait ms="200"/><hotkey hotkey="enter"/>
+  </func>
+  <!-- ВАЖНО: используйте VOICE_TEXT, а не VOICE_QUERY, если вызывали <voice_event> -->
+  <call name="SearchYoutube" arg0="${VOICE_TEXT}"/>
+</if>
+
+
+</program>

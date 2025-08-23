@@ -117,8 +117,11 @@ def _llm_generate_text(prompt: str, llm=None) -> str:
                 preview = "\n".join(text.splitlines()[:5])
                 logger.info(f"LLM OUTPUT (preview):\n{preview}\n...")
                 return text.strip()
-        except Exception:
+        except Exception as e:
+            logger.info(f"LLM get exception {e}.")
             pass
+            
+    logger.info("LLM is none.")
     # Мок: вернём 10 «терминов» (без жирных, чтобы проще парсить)
     mock = [
         "Quantum Entanglement — non-classical correlations between particles",

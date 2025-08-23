@@ -35,6 +35,10 @@
 		<set X2="CX + 200"/>
 		<set Y2="CY + 150"/>
 		<click area="${X1},${Y1},${X2},${Y2}" button="left"/>
+		<set X1="CX - 400"/>
+		<set Y1="CY - 150"/>
+		<set X2="CX"/>
+		<set Y2="CY + 150"/>
 		<click area="${X1},${Y1},${X2},${Y2}" button="left"/>
 
 
