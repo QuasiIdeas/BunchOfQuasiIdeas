@@ -309,6 +309,7 @@ class XMLProgram:
         self.xml_path = Path(xml_path)
         self.debug = debug
         self.logger = _setup_logger()
+        self.skip_wait = False
         self.paused = False
         self._start_pause_listener()  # запустим слушатель пробела
         self.variables: Dict[str, Any] = {}
@@ -329,18 +330,23 @@ class XMLProgram:
         
         
     def _sleep_ms_interruptible(self, total_ms: int):
-        """Спит total_ms, уважая паузу. Дробит ожидание на короткие интервалы."""
+        """Sleep total_ms ms, respecting pause and skip-wait hotkey."""
         if total_ms <= 0:
             return
         end_ts = time.time() + total_ms / 1000.0
-        step = 0.05  # 50ms — частота проверки паузы
+        step = 0.05
         while True:
+            # прерывание ожидания по Ctrl+N
+            if self.skip_wait:
+                self.skip_wait = False
+                break
+
             # уважаем паузу
             self._pause_gate()
+
             now = time.time()
             if now >= end_ts:
                 break
-            # спим коротко; если осталось меньше step — досыпаем остаток
             remain = end_ts - now
             time.sleep(step if remain > step else remain)
 
@@ -389,7 +395,10 @@ class XMLProgram:
             except Exception:
                 pass
 
-        
+    def _skip_wait_now(self):
+        self.skip_wait = True
+        self.logger.info("WAIT skipped by Ctrl+N")
+    
     def _start_pause_listener(self):
         """Запускает поток, который вешает хоткей 'space' для паузы/резюма."""
     
@@ -399,6 +408,7 @@ class XMLProgram:
                 return
             try:
                 keyboard.add_hotkey("ctrl+space", self._toggle_pause)
+                keyboard.add_hotkey("ctrl+n", self._skip_wait_now)
                 self.logger.info("PAUSE: press <ctrl + Space> to toggle pause/resume.")
                 keyboard.wait()  # держим слушатель живым
             except Exception as e:
