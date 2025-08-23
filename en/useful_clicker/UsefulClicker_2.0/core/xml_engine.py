@@ -162,6 +162,47 @@ def _sleep_delays(node: ET.Element):
 # ==========================
 # Низкоуровневые действия
 # ==========================
+
+def _safe_point(x: int, y: int, margin: int = 5) -> tuple[int, int]:
+    """Сдвигает координаты из опасной зоны (углы/края) внутрь экрана."""
+    if not pyautogui:
+        return x, y
+    try:
+        sw, sh = pyautogui.size()
+    except Exception:
+        sw, sh = 1920, 1080
+    x = max(margin, min(int(x), sw - margin))
+    y = max(margin, min(int(y), sh - margin))
+    return x, y
+
+def _move_then_click(x: int, y: int, button: str = "left", retries: int = 2, allow_corner: bool = False):
+    """Переместить курсор в безопасную точку и кликнуть. Перепробовать при FailSafe."""
+    if not pyautogui:
+        return
+    try:
+        if not allow_corner:
+            x, y = _safe_point(x, y, margin=5)
+        pyautogui.moveTo(x, y, duration=0.02)
+        pyautogui.click(x=x, y=y, button=button)
+    except Exception as e:
+        # Перехватим FailSafe и попробуем ещё раз из центра
+        import traceback
+        if isinstance(e, getattr(pyautogui, "FailSafeException", Exception)) or "FailSafe" in str(e):
+            for _ in range(retries):
+                try:
+                    if not allow_corner:
+                        # уведём мышь в центр и повторим
+                        sw, sh = pyautogui.size()
+                        pyautogui.moveTo(sw//2, sh//2, duration=0.05)
+                        x2, y2 = _safe_point(x, y, margin=8)
+                        pyautogui.moveTo(x2, y2, duration=0.03)
+                    pyautogui.click(x=x2 if not allow_corner else x, y=y2 if not allow_corner else y, button=button)
+                    return
+                except Exception:
+                    time.sleep(0.05)
+            # если не вышло — пробрасываем дальше
+        raise
+
 def _hotkey(combo: str, delay_ms: Optional[int] = None):
     if not pyautogui:
         return
@@ -219,11 +260,10 @@ def _type_text(text: str, mode: str = "type"):
         pyautogui.write(s)
 
 
-def _click_xy(x: int, y: int, button: str = "left"):
+def _click_xy(x: int, y: int, button: str = "left", allow_corner: bool = False):
     if not pyautogui:
-        return
-    pyautogui.click(x=x, y=y, button=button)
-
+       return
+    _move_then_click(x, y, button=button, allow_corner=allow_corner)
 
 def _click_area(area_tuple, button: str = "left"):
     if not pyautogui:
@@ -231,7 +271,7 @@ def _click_area(area_tuple, button: str = "left"):
     x1, y1, x2, y2 = area_tuple
     rx = random.randint(min(x1, x2), max(x1, x2))
     ry = random.randint(min(y1, y2), max(y1, y2))
-    pyautogui.click(x=rx, y=ry, button=button)
+    _move_then_click(rx, ry, button=button)
 
 
 # ==========================
@@ -473,6 +513,7 @@ class XMLProgram:
 
     def handle_click(self, node: ET.Element):
         button = node.get("button", "left")
+        allow_corner = str(node.get("allow_corner","0")).strip().lower() in ("1","true","yes")
         area = node.get("area")
         if area:
             # Подстановка переменных и безопасная оценка выражений в каждом числе
@@ -502,7 +543,7 @@ class XMLProgram:
                 x = int(float(x_raw))
                 y = int(float(y_raw))
             self.logger.info(f"CLICK x={x} y={y} button={button}")
-            _click_xy(x, y, button=button)
+            _click_xy(x, y, button=button, allow_corner=allow_corner)
         self._delays(node)
 
 
