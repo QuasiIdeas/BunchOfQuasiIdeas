@@ -14,6 +14,16 @@
   <func name="CmdSeekBackOnce"><hotkey hotkey="j"/>       </func>
   <func name="CmdScrollDown">  <hotkey hotkey="pgdn"/>    </func>
   <func name="CmdScrollUp">    <hotkey hotkey="pgup"/>    </func>
+	<!-- Клик по зоне, где обычно первый результат (десктоп-верстка) -->
+	<func name="CmdClickFirstResult">
+	<set X1="${SCREEN_W}*0.28"/>
+	<set X2="${SCREEN_W}*0.72"/>
+	<set Y1="${SCREEN_H}*0.26"/>
+	<set Y2="${SCREEN_H}*0.44"/>
+	<!-- или: <set X1="round(${SCREEN_W}*0.28)"/> и т.д. -->
+	<click area="${X1},${Y1},${X2},${Y2}"/>
+    <wait ms="150"/>
+	</func>
 
   <!-- поиск на YouTube -->
   <func name="SearchYoutube">
@@ -35,6 +45,9 @@
       <shell cmd="echo COMMAND: '${VOICE_TEXT}'"/>
 
       <!-- диспетчер по названию команды -->
+	  <if cond="'${VOICE_TEXT}'=='click_first'">
+		<call name="CmdClickFirstResult"/>
+	  </if>
       <if cond="'${VOICE_TEXT}'=='next'">
         <call name="CmdNext"/>
       </if>

@@ -69,6 +69,8 @@ class VoiceDaemon:
     # English & Russian command patterns
     # Order matters: more specific earlier.
     CMD_RULES = [
+        # CLICK first result (en/ru, с вариациями)
+        (r"^\s*(click|клик(ни)?|открой|выбери|select|open)(\s+(the\s*)?(first|перв(ый|ое)))?(\s+(video|видео))?\b", "click_first"),
         # NEXT
         (r"^\s*(next|skip|play next|go next|следующ(ий|ая)|дальш(е|ий))\b", "next"),
         # PREV
