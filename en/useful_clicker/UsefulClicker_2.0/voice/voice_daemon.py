@@ -27,9 +27,42 @@ except Exception:
     LLMClient = None
 
 
-EventType = Literal["command", "query"]
 
-import sounddevice as sd
+
+# === Global Hotkey Bridge (module-level) ===
+# Other modules (e.g., xml_engine) can import these to react to hotkeys without duplicating listeners.
+try:
+    import keyboard as _kbd_bridge
+except Exception:
+    _kbd_bridge = None
+
+SKIP_EVENT = __import__("threading").Event()       # set() => request to skip current wait/step
+PAUSE_TOGGLE_EVENT = __import__("threading").Event()  # set() => toggle pause; the consumer should immediately clear()
+
+_hotkeys_started = False
+
+def start_hotkey_bridge():
+    """Start a single global hotkey listener per process.
+    - Ctrl+N sets SKIP_EVENT
+    - Ctrl+Space sets PAUSE_TOGGLE_EVENT
+    """
+    global _hotkeys_started
+    if _hotkeys_started:
+        return
+    if _kbd_bridge is None:
+        return
+    try:
+        def _on_skip():
+            SKIP_EVENT.set()
+        def _on_pause():
+            PAUSE_TOGGLE_EVENT.set()
+        _kbd_bridge.add_hotkey("ctrl+n", _on_skip)
+        _kbd_bridge.add_hotkey("ctrl+space", _on_pause)
+        _hotkeys_started = True
+    except Exception:
+        # If keyboard hook fails (permissions), consumers can still poll these Events by other means.
+        pass
+EventType = Literal["command", "query"]
 
 def list_microphones():
     print("=== Mics ===")
@@ -136,6 +169,7 @@ class VoiceDaemon:
 
     # ----------------- public API -----------------
     def start(self):
+        start_hotkey_bridge()
         self._stop.clear()
         self._start_stream()
         self._listen_thread = threading.Thread(target=self._listen_audio_loop, daemon=True)
@@ -191,6 +225,21 @@ class VoiceDaemon:
         calib_collected = 0
 
         while not self._stop.is_set():
+
+            # global pause toggle from hotkey bridge
+            try:
+                from voice.voice_daemon import PAUSE_TOGGLE_EVENT
+                if PAUSE_TOGGLE_EVENT.is_set():
+                    PAUSE_TOGGLE_EVENT.clear()
+                    # simple local pause: wait until toggled again
+                    paused = True
+                    while paused and not self._stop.is_set():
+                        time.sleep(0.05)
+                        if PAUSE_TOGGLE_EVENT.is_set():
+                            PAUSE_TOGGLE_EVENT.clear()
+                            paused = False
+            except Exception:
+                pass
             try:
                 chunk = self._audio_q.get(timeout=0.1)
             except queue.Empty:
