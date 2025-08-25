@@ -362,6 +362,8 @@ class XMLProgram:
         self.xml_path = Path(xml_path)
         self.debug = debug
         self.logger = _setup_logger()
+        self._extnode_cache = {}   # {(module, class): instance}
+        self._extmodule_cache = {} # {module: module_object}
         self.voice = None
         self.skip_wait = False
         self.paused = False
@@ -956,141 +958,63 @@ class XMLProgram:
         self._delays(node)
 
 
-    def handle_extnode(self, node: ET.Element):
-        """
-        Универсальная внешняя нода.
+    # в начале файла (если нужно)
+    from typing import Any, Dict
 
-        Пример:
-          <extnode module="curiosity_drive_node"
-                   class="CuriosityDriveNode"
-                   method="run"
-                   output_var="science_terms"
-                   output_format="text"
-                   separator="\n"
-                   disciplines="Physics, Computer Science"
-                   subtopics="Quantum Mechanics, Algorithms"
-                   num_terms="20"/>
-
-        Атрибуты управления:
-          - module: обязательный (python-модуль, например curiosity_drive_node)
-          - class:  опционально (класс в модуле, например CuriosityDriveNode)
-          - method: опционально, по умолчанию 'run'
-          - func:   опционально (альтернатива class/method) — имя функции, напр. run_node
-          - output_var: имя переменной куда класть результат
-          - output_format: "text" (по умолчанию) или "list"
-          - separator: сепаратор для склейки списка (по умолчанию "\n")
-
-        Все остальные атрибуты (disciplines, subtopics, num_terms, и т.д.)
-        прокидываются в модуль как kwargs (после подстановки ${var} и умного кастинга).
-        """
+    def handle_extnode(self, node):
         mod_name = node.get("module")
-        out_var = node.get("output_var")
-        out_fmt = (node.get("output_format") or "text").lower()
-        separator = (node.get("separator") or "\n").encode("utf-8").decode("unicode_escape")
+        cls_name = node.get("class")
+        method   = node.get("method")
+        out_var  = node.get("output_var")
 
-        if not mod_name:
-            self.logger.info("EXTNODE skipped: 'module' is required")
-            self._delays(node)
-            return
+        if not mod_name or not method:
+            raise RuntimeError("<extnode> requires module and method")
 
-        # Подстановка и сбор kwargs
+        # 1) Импортируем модуль (с кэшем, если уже добавил self._extmodule_cache)
+        import importlib
+        if not hasattr(self, "_extmodule_cache"):
+            self._extmodule_cache = {}
+        mod = self._extmodule_cache.get(mod_name)
+        if mod is None:
+            mod = importlib.import_module(mod_name)
+            self._extmodule_cache[mod_name] = mod
+
+        # 2) Готовим цель вызова (класс или модульная функция)
+        if cls_name:
+            if not hasattr(self, "_extnode_cache"):
+                self._extnode_cache = {}
+            key = (mod_name, cls_name)
+            inst = self._extnode_cache.get(key)
+            if inst is None:
+                cls = getattr(mod, cls_name)
+                inst = cls()  # при необходимости передай параметры в конструктор
+                self._extnode_cache[key] = inst
+            call_target = getattr(inst, method)
+        else:
+            call_target = getattr(mod, method)
+
+        # 3) Собираем kwargs (БЕЗ _eval_expr!)
         kw: Dict[str, Any] = {}
         for k, v in node.attrib.items():
-            if k in {"module", "class", "method", "func", "output_var", "output_format", "separator",
-                     "delay_fixed", "delay_ms"}:
+            if k in {"module", "class", "method", "output_var",
+                     "delay_fixed", "delay_ms", "func", "output_format", "separator"}:
                 continue
-            vv = _substitute_vars(v, self.variables)
-            # Специальные поля, которые логично преобразовать в списки:
-            if k in ("disciplines", "subtopics"):
-                kw[k] = _parse_csv_list(vv)
-            elif k.lower().endswith("_list"):
+            vv = _substitute_vars(v, self.variables)  # подстановка ${...}
+            if k in ("disciplines", "subtopics") or k.lower().endswith("_list"):
                 kw[k] = _parse_csv_list(vv)
             else:
                 kw[k] = _smart_cast(vv)
 
-        # Пытаемся создать LLM-клиента (если есть)
-        llm_client = None
-        try:
-            from llm.openai_client import LLMClient  # опционально
-            llm_client = LLMClient()
-        except Exception:
-            pass
+        # 4) Вызов ТАК: **kw (а не kwargs!)
+        res = call_target(**kw)
 
-        # Динамический импорт
-        try:
-            mod = importlib.import_module(mod_name)
-        except Exception as e:
-            self.logger.info(f"EXTNODE import error for module '{mod_name}': {e}")
-            self._delays(node)
-            return
-
-        result = None
-        try:
-            func_name = node.get("func")
-            cls_name = node.get("class")
-            method_name = node.get("method") or "run"
-
-            if func_name:
-                # вариант 1: модульная функция execute/run_node(**kwargs, llm=None)
-                target = getattr(mod, func_name)
-                result = target(**kw, llm=llm_client)
-            elif cls_name:
-                # вариант 2: класс с методом run(...). Можно передать llm в конструктор.
-                cls = getattr(mod, cls_name)
-                try:
-                    inst = cls(llm=llm_client)
-                except Exception:
-                    inst = cls()
-                meth = getattr(inst, method_name)
-                result = meth(**kw)
-            else:
-                # вариант 3: по умолчанию ищем run_node или run
-                if hasattr(mod, "run_node"):
-                    result = getattr(mod, "run_node")(**kw, llm=llm_client)
-                elif hasattr(mod, "run"):
-                    result = getattr(mod, "run")(**kw, llm=llm_client)
-                else:
-                    raise AttributeError("No entrypoint: expected 'func', or 'class'+'method', or module.run_node/run")
-        except Exception as e:
-            # лог с трейсом полезнее
-            try:
-                import traceback
-                tb = traceback.format_exc()
-                self.logger.info(f"EXTNODE runtime error: {e}\n{tb}")
-            except Exception:
-                self.logger.info(f"EXTNODE runtime error: {e}")
-            self._delays(node)
-            return
-
-        # Нормализация результата и сохранение
+        # 5) Сохранить результат в переменную (если нужно)
         if out_var:
-            if out_fmt == "list":
-                if result is None:
-                    value = []
-                elif isinstance(result, (list, tuple)):
-                    value = [str(x) for x in result]
-                elif isinstance(result, str):
-                    # если модуль вернул текст, разбиваем по separator
-                    value = [s for s in result.split(separator) if s.strip()]
-                elif isinstance(result, dict) and "list" in result:
-                    value = [str(x) for x in result["list"]]
-                else:
-                    value = [str(result)]
-                self.variables[out_var] = value
-            else:  # text
-                if result is None:
-                    text = ""
-                elif isinstance(result, str):
-                    text = result
-                elif isinstance(result, (list, tuple)):
-                    text = separator.join(str(x) for x in result)
-                elif isinstance(result, dict) and "text" in result:
-                    text = str(result["text"])
-                else:
-                    text = str(result)
-                self.variables[out_var] = text
+            self.variables[out_var] = "" if res is None else res
 
         self._delays(node)
+
+
 
     # ---------- Диспетчер ----------
     def _exec_node(self, node: ET.Element):
