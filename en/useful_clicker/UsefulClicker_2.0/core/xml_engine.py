@@ -481,33 +481,123 @@ class XMLProgram:
     def handle_extnode(self, node: ET.Element):
         mod_name = node.get("module"); cls_name = node.get("class"); method = node.get("method")
         out_var = node.get("output_var")
-        if not mod_name or not method:
-            self.logger.info("<extnode> requires module and method"); return
-        mod = self._extmodule_cache.get(mod_name)
-        if mod is None:
-            mod = importlib.import_module(mod_name); self._extmodule_cache[mod_name]=mod
-        if cls_name:
-            key=(mod_name, cls_name)
-            inst = self._extclass_cache.get(key)
-            if inst is None:
-                cls = getattr(mod, cls_name); inst = cls(); self._extclass_cache[key]=inst
-            call_target = getattr(inst, method)
-        else:
-            call_target = getattr(mod, method)
+        if not mod_name:
+            self.logger.info("<extnode> requires module"); return
+        # optional output formatting
+        separator = (node.get("separator") or "").encode("utf-8").decode("unicode_escape")
+        out_fmt = (node.get("output_format") or "text").lower()
+
+        # Collect kwargs from XML (with substitutions and simple casts)
         kw: Dict[str, Any] = {}
         for k,v in node.attrib.items():
-            if k in {"module","class","method","output_var"}: continue
+            if k in {"module","class","method","func","output_var","output_format","separator"}: 
+                continue
             vv = _substitute_vars(v, self.variables)
             if k.endswith("_list") or k in {"disciplines","subtopics"}:
                 kw[k] = [p.strip() for p in vv.split(",") if p.strip()]
             else:
                 kw[k] = _smart_cast(vv)
+
+        # Try to create LLM client (compat first)
+        llm_client = None
         try:
-            res = call_target(**kw) if kw else call_target()
-        except TypeError:
-            res = call_target()
-        if out_var: self.variables[out_var] = "" if res is None else res
-        self.logger.info(f"EXTNODE {mod_name}.{cls_name+'.' if cls_name else ''}{method} -> {out_var}")
+            from llm.openai_client_compat import LLMClientCompat as _LLM
+            llm_client = _LLM()
+        except Exception:
+            try:
+                from llm.openai_client import LLMClient as _LLM
+                llm_client = _LLM()
+            except Exception:
+                llm_client = None
+
+        # Import target module
+        try:
+            mod = self._extmodule_cache.get(mod_name) or importlib.import_module(mod_name)
+            self._extmodule_cache[mod_name] = mod
+        except Exception as e:
+            self.logger.info(f"EXTNODE import error for module '{mod_name}': {e}")
+            return
+
+        # Resolve call target
+        func_name = node.get("func")
+        result = None
+        try:
+            if func_name:
+                # module-level function
+                call_target = getattr(mod, func_name)
+                # Try with llm first, then without
+                try:
+                    result = call_target(**{**kw, "llm": llm_client})
+                except TypeError:
+                    result = call_target(**kw) if kw else call_target()
+            elif cls_name:
+                # class + method (default 'run')
+                method_name = method or "run"
+                key=(mod_name, cls_name)
+                inst = self._extclass_cache.get(key)
+                if inst is None:
+                    cls = getattr(mod, cls_name)
+                    # try constructor(llm=...)
+                    try:
+                        inst = cls(llm=llm_client)
+                    except TypeError:
+                        inst = cls()
+                    self._extclass_cache[key]=inst
+                meth = getattr(inst, method_name)
+                try:
+                    result = meth(**{**kw, "llm": llm_client})
+                except TypeError:
+                    result = meth(**kw) if kw else meth()
+            else:
+                # Fall back to common entrypoints
+                if hasattr(mod, "run_node"):
+                    try:
+                        result = getattr(mod, "run_node")(**{**kw, "llm": llm_client})
+                    except TypeError:
+                        result = getattr(mod, "run_node")(**kw) if kw else getattr(mod, "run_node")()
+                elif hasattr(mod, "run"):
+                    try:
+                        result = getattr(mod, "run")(**{**kw, "llm": llm_client})
+                    except TypeError:
+                        result = getattr(mod, "run")(**kw) if kw else getattr(mod, "run")()
+                else:
+                    raise AttributeError("No entrypoint: expected 'func', or 'class'+'method', or module.run_node/run")
+        except Exception as e:
+            try:
+                import traceback; tb = traceback.format_exc()
+                self.logger.info(f"EXTNODE runtime error: {e}{tb}")
+            except Exception:
+                self.logger.info(f"EXTNODE runtime error: {e}")
+            return
+
+        # Save output if requested
+        if out_var:
+            if out_fmt == "list":
+                if result is None:
+                    value = []
+                elif isinstance(result, (list, tuple)):
+                    value = [str(x) for x in result]
+                elif isinstance(result, str):
+                    value = [s for s in result.split(separator) if s.strip()]
+                elif isinstance(result, dict) and "list" in result:
+                    value = [str(x) for x in result["list"]]
+                else:
+                    value = [str(result)]
+                self.variables[out_var] = value
+            else:
+                if result is None:
+                    text = ""
+                elif isinstance(result, str):
+                    text = result
+                elif isinstance(result, (list, tuple)):
+                    text = separator.join(str(x) for x in result)
+                elif isinstance(result, dict) and "text" in result:
+                    text = str(result["text"])
+                else:
+                    text = str(result)
+                self.variables[out_var] = text
+
+        self.logger.info(f"EXTNODE {mod_name}.{(cls_name+'.' if cls_name else '')}{func_name or method or 'run'} -> {out_var}")
 
     # ---- dispatcher ----
     def _exec_node(self, node):
