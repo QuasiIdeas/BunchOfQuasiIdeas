@@ -48,6 +48,7 @@ class _Core:
             return ""
         if 0 <= self.q_index < len(self.query_list):
             q = self.query_list[self.q_index]
+            print(f"[YTDBG] next_query -> {q}")
             self.q_index += 1
             self._last_step_ts = now
             return q or ""
@@ -79,11 +80,28 @@ class _Core:
 _CORE = _Core()
 
 # Модульные функции, чтобы не создавать классы в <extnode>
-def on_voice(text: str = "", vtype: str = "") -> str:
-    _CORE.on_voice(text=text, vtype=vtype); return ""
+
 
 def next_cmd() -> str:
     return _CORE.next_cmd()
 
+
+def on_voice(text: str = "", vtype: str = "") -> str:
+    _CORE.on_voice(text=text, vtype=vtype)
+    try:
+        print(f"[YTDBG] on_voice vtype={vtype!r} text={text!r} "
+              f"-> size={len(_CORE.query_list)} epoch={_CORE.epoch}")
+        if _CORE.query_list[:3]:
+            print(f"[YTDBG] preview: {_CORE.query_list[:3]}")
+    except Exception:
+        pass
+    return ""
+
 def next_query() -> str:
-    return _CORE.next_query()
+    q = _CORE.next_query()
+    try:
+        print(f"[YTDBG] next_query -> {q!r} "
+              f"(idx={_CORE.q_index}/{len(_CORE.query_list)})")
+    except Exception:
+        pass
+    return q
