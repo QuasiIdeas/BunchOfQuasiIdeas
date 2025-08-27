@@ -478,6 +478,83 @@ class XMLProgram:
         self.variables.pop("index", None)
         self.variables.pop("arg0", None)
 
+    def handle_llmcall(self, node: ET.Element):
+        # параметры
+        prompt = _substitute_vars(node.get("prompt",""), self.variables)
+        out_var = node.get("output_var")
+        out_fmt = (node.get("output_format") or "text").lower()
+        separator = (node.get("separator") or "\n").encode("utf-8").decode("unicode_escape")
+
+        # создаём LLM-клиент как в extnode
+        llm_client = None
+        self.logger.info("LLM: creating client (compat→native)...")
+        try:
+            from llm.openai_client_compat import LLMClientCompat as _LLM
+            llm_client = _LLM()
+            self.logger.info("LLM: client ready (compat).")
+        except Exception as e1:
+            try:
+                from llm.openai_client import LLMClient as _LLM
+                llm_client = _LLM()
+                self.logger.info("LLM: client ready (native).")
+            except Exception as e2:
+                self.logger.info(f"LLM: client unavailable ({e1} / {e2})")
+
+        text = ""
+        used = "none"
+        if llm_client is None:
+            self.logger.info("LLM: skipped (no client).")
+        else:
+            t0 = time.time()
+            try:
+                if out_fmt == "list" and hasattr(llm_client, "generate_list"):
+                    # прямой список с разделителем
+                    value = llm_client.generate_list(prompt, separator=separator)
+                    dt = (time.time() - t0) * 1000.0
+                    self.logger.info(f"LLM: prompt done in {dt:.1f} ms; used=generate_list")
+                    self.variables[out_var] = value
+                    if not value:
+                        self.logger.info(f"LLM warning: {out_var} is empty list")
+                    else:
+                        self.logger.info(f"LLM output[{out_var}] size={len(value)}")
+                    return  # уже всё сохранили → выходим
+                elif hasattr(llm_client, "generate_text"):
+                    text = llm_client.generate_text(prompt)
+                    used = "generate_text"
+                else:
+                    # попытка на случай других реализаций
+                    for meth in ("complete", "generate", "chat", "__call__"):
+                        fn = getattr(llm_client, meth, None)
+                        if not fn: continue
+                        try:
+                            text = fn(prompt)  # или fn(prompt=prompt) если нужно
+                        except TypeError:
+                            text = fn(prompt=prompt)
+                        used = meth
+                        break
+            except Exception as e:
+                self.logger.info(f"LLM: call failed: {e}")
+            dt = (time.time() - t0) * 1000.0
+            self.logger.info(f"LLM: prompt done in {dt:.1f} ms; used={used}")
+
+        # сохранение строки (если пришли сюда из generate_text/иных)
+        if out_var:
+            if out_fmt == "list":
+                value = [s for s in (text or "").split(separator) if s.strip()]
+                self.variables[out_var] = value
+                if not value:
+                    self.logger.info(f"LLM warning: {out_var} is empty list")
+                else:
+                    self.logger.info(f"LLM output[{out_var}] size={len(value)}")
+            else:
+                self.variables[out_var] = text or ""
+                if not (text or "").strip():
+                    self.logger.info(f"LLM warning: {out_var} is empty string")
+                else:
+                    self.logger.info(f"LLM output[{out_var}] len={len(text)}")
+
+
+
     def handle_extnode(self, node: ET.Element):
         mod_name = node.get("module"); cls_name = node.get("class"); method = node.get("method")
         out_var = node.get("output_var")
@@ -500,15 +577,18 @@ class XMLProgram:
 
         # Try to create LLM client (compat first)
         llm_client = None
+        self.logger.info("LLM: creating client (compat→native)...")  # ### NEW
         try:
             from llm.openai_client_compat import LLMClientCompat as _LLM
             llm_client = _LLM()
-        except Exception:
+            self.logger.info("LLM: client ready (compat).")          # ### NEW
+        except Exception as e1:
             try:
                 from llm.openai_client import LLMClient as _LLM
                 llm_client = _LLM()
-            except Exception:
+            except Exception as e2:
                 llm_client = None
+                self.logger.info(f"LLM: client unavailable ({e1} / {e2})")  # ### NEW
 
         # Import target module
         try:
@@ -584,6 +664,10 @@ class XMLProgram:
                 else:
                     value = [str(result)]
                 self.variables[out_var] = value
+                # --- добавь это ---
+                if not value:
+                    self.logger.info(f"EXTNODE warning: {out_var} is empty list")
+
             else:
                 if result is None:
                     text = ""
@@ -596,6 +680,8 @@ class XMLProgram:
                 else:
                     text = str(result)
                 self.variables[out_var] = text
+                if not (text or "").strip():
+                    self.logger.info(f"EXTNODE warning: {out_var} is empty string")  # ### NEW
 
         self.logger.info(f"EXTNODE {mod_name}.{(cls_name+'.' if cls_name else '')}{func_name or method or 'run'} -> {out_var}")
 
@@ -617,6 +703,7 @@ class XMLProgram:
         elif tagl=="repeat": self.handle_repeat(node)
         elif tagl=="func": self.handle_func(node)
         elif tagl=="call": self.handle_call(node)
+        elif tagl == "llmcall": self.handle_llmcall(node)
         elif tagl=="foreach": self.handle_foreach(node)
         elif tagl=="extnode": self.handle_extnode(node)
         elif tagl=="voice_event": self.handle_voice_event(node)

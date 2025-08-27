@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <program>
+<call name="Main"/>
+<func name="Main">
 	<llmcall output_var="pragmatism_tips"
 			 output_format="list"
 			 separator="\n"
@@ -42,4 +44,5 @@
 	</func>
 
 	<foreach list="pragmatism_tips" random_shuffle="true" do="SearchYoutube"/>
+</func>
 </program>
