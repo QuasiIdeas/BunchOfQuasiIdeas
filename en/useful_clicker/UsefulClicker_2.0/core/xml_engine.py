@@ -18,6 +18,10 @@ def _setup_logger() -> logging.Logger:
 
 logger = _setup_logger()
 
+# Exception used to signal requested restart (distinct from exit)
+class RestartRequested(Exception):
+    pass
+
 # -------- Hotkey bridge (WinAPI) --------
 SKIP_EVENT = None
 PAUSE_TOGGLE_EVENT = None
@@ -159,6 +163,8 @@ class XMLProgram:
         self._extmodule_cache = {}
         self._extclass_cache = {}
         self.voice = None  # VoiceDaemon instance
+        # Flag to signal program restart (requested from external UI)
+        self.restart_requested = False
         # Flag to signal program exit via hotkey
         self.exit_flag = False
 
@@ -204,6 +210,13 @@ class XMLProgram:
                 self.logger.info(f"keyboard hotkeys error: {e}")
         threading.Thread(target=worker, daemon=True).start()
 
+    def request_restart(self):
+        """Request a restart of the running program. The engine will raise
+        RestartRequested at the next safe checkpoint (before next node or inside waits).
+        """
+        self.logger.info("Restart requested (flag set)")
+        self.restart_requested = True
+
     def _toggle_pause(self):
         self.paused = not self.paused
         self.logger.info(f"PAUSE {'ON' if self.paused else 'OFF'}")
@@ -244,6 +257,8 @@ class XMLProgram:
             # check for exit request
             if self.exit_flag:
                 raise SystemExit
+            if self.restart_requested:
+                raise RestartRequested()
             self._poll_hotkeys_inline()
             time.sleep(0.05)
 
@@ -255,6 +270,8 @@ class XMLProgram:
             # check for exit request
             if self.exit_flag:
                 raise SystemExit
+            if self.restart_requested:
+                raise RestartRequested()
             self._poll_hotkeys_inline()
             if self.skip_wait:
                 self.skip_wait = False
@@ -821,9 +838,16 @@ class XMLProgram:
         # Exit immediately if exit_flag is set
         if self.exit_flag:
             raise SystemExit
+        if self.restart_requested:
+            raise RestartRequested()
         tag = getattr(node, "tag", None)
         if not isinstance(tag, str):
             return  # skip comments/PI
+        # expose current node info for UIs
+        try:
+            self.variables["_CURRENT_NODE_TAG"] = tag.lower()
+        except Exception:
+            pass
         self._pause_gate()
         tagl = tag.lower()
         if   tagl=="set": self.handle_set(node)

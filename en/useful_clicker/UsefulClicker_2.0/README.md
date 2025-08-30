@@ -137,6 +137,13 @@ pip install -r requirements.txt
 ## Run
 run.bat
 
+UI frontends
+- The runner supports pluggable UI frontends. Use --ui to select one, for example:
+  python main.py examples/new_music.xml --ui qt_ui
+- A Qt5 frontend is provided in ui/qt_ui (requires PyQt5). It implements basic
+  controls: Play/Pause, Next (skip), Restart, XML load/save and simple LLM/Curiosity
+  regeneration buttons.
+
 Extras:
 - Tesseract OCR required for `<clicktext>`. Install and ensure `tesseract.exe` is in PATH.
 - Windows focus: use `<focus title="..."/>` (pygetwindow).
