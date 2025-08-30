@@ -1,17 +1,20 @@
 """
 ollama_client.py
 
-Client for Ollama LLM via subprocess ('ollama run').
+Client for Ollama LLM via HTTP API (/api/generate).
 """
 import os
-import subprocess
 import logging
+try:
+    import httpx
+except ImportError:
+    httpx = None
 
 log = logging.getLogger("usefulclicker.llm")
 
 class OllamaClient:
     """
-    LLM client that calls 'ollama run' for text and list outputs.
+    LLM client that calls Ollama HTTP API for text and list outputs.
     """
     def __init__(self):
         # Default model for Ollama
@@ -20,26 +23,39 @@ class OllamaClient:
 
     def generate_text(self, prompt: str, model: str | None = None, temperature: float | None = None) -> str:
         """
-        Generate text using Ollama CLI. Sends prompt as stdin.
+        Generate text using Ollama HTTP API at /api/generate.
         """
+        if httpx is None:
+            raise RuntimeError("httpx is required for Ollama HTTP client")
         use_model = model or self.model
-        # Use 'ollama run <model>' and feed prompt via stdin
-        cmd = ["ollama", "run", use_model]
+        api_url = os.getenv("USEFULCLICKER_OLLAMA_API_URL", "http://localhost:11434/api/generate")
+        payload: dict[str, any] = {"model": use_model, "prompt": prompt}
         if temperature is not None:
-            cmd.extend(["--temperature", str(temperature)])
-        # Call ollama CLI
-        proc = subprocess.run(
-            cmd,
-            input=prompt,
-            text=True,
-            capture_output=True,
-        )
-        if proc.returncode != 0:
-            log.info(f"Ollama generate error: {proc.stderr.strip()}")
-            raise RuntimeError(f"Ollama generate failed ({proc.returncode})")
-        text = proc.stdout.strip()
-        log.info(f"Ollama OK ({len(text)} chars).")
-        return text
+            payload["temperature"] = temperature
+        try:
+            resp = httpx.post(api_url, json=payload, timeout=60)
+            resp.raise_for_status()
+            data = resp.json()
+            # Extract text: support 'completion' or 'text' or OpenAI-like 'choices'
+            if isinstance(data, dict):
+                if "completion" in data:
+                    text = data["completion"]
+                elif "text" in data:
+                    text = data["text"]
+                elif "choices" in data and isinstance(data["choices"], list) and data["choices"]:
+                    ch = data["choices"][0]
+                    text = ch.get("text") or ch.get("message", {}).get("content", "")
+                else:
+                    # Fallback to raw response
+                    text = str(data)
+            else:
+                text = str(data)
+            text = text.strip()
+            log.info(f"Ollama OK ({len(text)} chars).")
+            return text
+        except Exception as e:
+            log.info(f"Ollama HTTP error: {e}")
+            raise
 
     def generate_list(
         self,
