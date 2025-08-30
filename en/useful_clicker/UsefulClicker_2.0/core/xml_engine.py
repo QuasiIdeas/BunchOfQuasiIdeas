@@ -528,26 +528,51 @@ class XMLProgram:
         # log LLM call parameters
         self.logger.info(f"LLMCALL params: model={model}, temperature={temperature}")
 
-        # создаём LLM-клиент (compat→native→ollama)...
+        # select LLM client based on provider: 'openai', 'ollama', or auto
+        provider = node.get("provider")
         llm_client = None
-        self.logger.info("LLM: creating client (compat→native→ollama)...")
-        try:
-            from llm.openai_client_compat import LLMClientCompat as _LLM
-            llm_client = _LLM()
-            self.logger.info("LLM: client ready (compat).")
-        except Exception as e1:
-            try:
-                from llm.openai_client import LLMClient as _LLM
-                llm_client = _LLM()
-                self.logger.info("LLM: client ready (native).")
-            except Exception as e2:
+        self.logger.info(f"LLM: creating client for provider={provider or '<auto>'}...")
+        if provider:
+            prov = provider.strip().lower()
+            if prov == "ollama":
                 try:
                     from llm.ollama_client import OllamaClient as _LLM
                     llm_client = _LLM()
                     self.logger.info("LLM: client ready (ollama).")
-                except Exception as e3:
-                    llm_client = None
-                    self.logger.info(f"LLM: client unavailable ({e1} / {e2} / {e3})")
+                except Exception as e:
+                    self.logger.info(f"LLM: ollama client unavailable: {e}")
+            elif prov == "openai":
+                try:
+                    from llm.openai_client_compat import LLMClientCompat as _LLM
+                    llm_client = _LLM()
+                    self.logger.info("LLM: client ready (compat).")
+                except Exception:
+                    try:
+                        from llm.openai_client import LLMClient as _LLM
+                        llm_client = _LLM()
+                        self.logger.info("LLM: client ready (native).")
+                    except Exception as e:
+                        self.logger.info(f"LLM: openai client unavailable: {e}")
+            else:
+                self.logger.info(f"LLM: unknown provider '{provider}', skipping client setup")
+        else:
+            # auto-detect: try OpenAI compat, then native, then Ollama
+            try:
+                from llm.openai_client_compat import LLMClientCompat as _LLM
+                llm_client = _LLM()
+                self.logger.info("LLM: client ready (compat).")
+            except Exception as e1:
+                try:
+                    from llm.openai_client import LLMClient as _LLM
+                    llm_client = _LLM()
+                    self.logger.info("LLM: client ready (native).")
+                except Exception as e2:
+                    try:
+                        from llm.ollama_client import OllamaClient as _LLM
+                        llm_client = _LLM()
+                        self.logger.info("LLM: client ready (ollama).")
+                    except Exception as e3:
+                        self.logger.info(f"LLM: client unavailable ({e1} / {e2} / {e3})")
 
         text = ""
         used = "none"
@@ -634,11 +659,11 @@ class XMLProgram:
             try:
                 temperature = float(_substitute_vars(temp_raw, self.variables))
             except Exception:
-                # leave temperature as None if parsing fails
                 temperature = None
         if model is not None:
             model = _substitute_vars(model, self.variables)
-        self.logger.info(f"EXTNODE LLM params: model={model}, temperature={temperature}")
+        provider = node.get("provider")  # 'openai' or 'ollama'
+        self.logger.info(f"EXTNODE LLM params: model={model}, temperature={temperature}, provider={provider}")
 
         # Collect kwargs from XML (with substitutions and simple casts)
         kw: Dict[str, Any] = {}
@@ -651,26 +676,50 @@ class XMLProgram:
             else:
                 kw[k] = _smart_cast(vv)
 
-        # Try to create LLM client (compat→native→ollama)
+        # select LLM client based on provider: 'openai', 'ollama', or auto
         llm_client = None
-        self.logger.info("LLM: creating client (compat→native→ollama)...")
-        try:
-            from llm.openai_client_compat import LLMClientCompat as _LLM
-            llm_client = _LLM()
-            self.logger.info("LLM: client ready (compat).")
-        except Exception as e1:
-            try:
-                from llm.openai_client import LLMClient as _LLM
-                llm_client = _LLM()
-                self.logger.info("LLM: client ready (native).")
-            except Exception as e2:
+        self.logger.info(f"LLM: creating client for provider={provider or '<auto>'}...")
+        if provider:
+            prov = provider.strip().lower()
+            if prov == "ollama":
                 try:
                     from llm.ollama_client import OllamaClient as _LLM
                     llm_client = _LLM()
                     self.logger.info("LLM: client ready (ollama).")
-                except Exception as e3:
-                    llm_client = None
-                    self.logger.info(f"LLM: client unavailable ({e1} / {e2} / {e3})")
+                except Exception as e:
+                    self.logger.info(f"LLM: ollama client unavailable: {e}")
+            elif prov == "openai":
+                try:
+                    from llm.openai_client_compat import LLMClientCompat as _LLM
+                    llm_client = _LLM()
+                    self.logger.info("LLM: client ready (compat).")
+                except Exception:
+                    try:
+                        from llm.openai_client import LLMClient as _LLM
+                        llm_client = _LLM()
+                        self.logger.info("LLM: client ready (native).")
+                    except Exception as e:
+                        self.logger.info(f"LLM: openai client unavailable: {e}")
+            else:
+                self.logger.info(f"LLM: unknown provider '{provider}', skipping client setup")
+        else:
+            # auto-detect: try OpenAI compat, then native, then Ollama
+            try:
+                from llm.openai_client_compat import LLMClientCompat as _LLM
+                llm_client = _LLM()
+                self.logger.info("LLM: client ready (compat).")
+            except Exception as e1:
+                try:
+                    from llm.openai_client import LLMClient as _LLM
+                    llm_client = _LLM()
+                    self.logger.info("LLM: client ready (native).")
+                except Exception as e2:
+                    try:
+                        from llm.ollama_client import OllamaClient as _LLM
+                        llm_client = _LLM()
+                        self.logger.info("LLM: client ready (ollama).")
+                    except Exception as e3:
+                        self.logger.info(f"LLM: client unavailable ({e1} / {e2} / {e3})")
 
         # Import target module
         try:
