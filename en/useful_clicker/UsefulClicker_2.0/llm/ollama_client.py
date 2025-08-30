@@ -39,6 +39,8 @@ class OllamaClient:
             payload["temperature"] = temperature
         try:
             resp = httpx.post(api_url, json=payload, timeout=60)
+            # Debug: raw HTTP response body from Ollama
+            log.info(f"Ollama RAW response: {resp.text}")
             resp.raise_for_status()
             data = resp.json()
             # Extract text: support 'completion' or 'text' or OpenAI-like 'choices'
