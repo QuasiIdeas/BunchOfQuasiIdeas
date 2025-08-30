@@ -29,7 +29,7 @@ class LLMClient:
             proxy_state = "off"
 
         self.client = OpenAI(api_key=api_key, http_client=http_client)
-        self.model = os.getenv("USEFULCLICKER_OPENAI_MODEL", "gpt-4o-mini")
+        self.model = os.getenv("USEFULCLICKER_OPENAI_MODEL", "gpt-5")
         log.info(f"Client ready (model={self.model}, proxy={proxy_state}).")
 
     def generate_text(self, prompt: str) -> str:
@@ -37,7 +37,7 @@ class LLMClient:
         resp = self.client.chat.completions.create(
             model=self.model,
             messages=[{"role":"user","content":prompt}],
-            temperature=0.7,
+            temperature=1,
         )
         txt = (resp.choices[0].message.content or "").strip()
         log.info(f"OK ({len(txt)} chars).")

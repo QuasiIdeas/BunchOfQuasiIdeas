@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <program>
+<call name="Main"/>
+<func name="Main">
+<llmcall
+  output_var="postironic_lines"
+  output_format="list"
+  separator="\n"
+  prompt="You are a query generator for a clicker that searches YouTube and the web. 
 
-  <!-- Генерация поисковых запросов по теме постиронии -->
-  <llmcall
-      output_var="postirony_terms"
-      output_format="list"
-      separator="\n">
-Сгенерируй 10 коротких поисковых запросов для YouTube,
-которые помогут найти постироничный контент, мемы и видео.
-Используй английский язык.
-Добавь разные стили: memes, TikTok, weirdcore, metamodern, absurd humor.
-Фокус: "post-irony", "meta-humor", "surreal memes".
-  </llmcall>
+Goal: produce exactly 20 concise search queries (3–7 words each) that will find post-ironic content, memes, and videos from the last 90 days.
+
+Language: English.
+Mix styles: memes, TikTok, weirdcore, metamodern, absurd humor.
+Focus keywords: post-irony, meta-humor, surreal memes.
+Each query 2–4 words, one per line.
+
+Return exactly 20 lines."
+/>
 
 
 	<func name="SearchYoutube">
@@ -46,5 +51,7 @@
 
 	</func>
 
-	<foreach list="postirony_terms" random_shuffle="true" do="SearchYoutube"/>
+	<foreach list="postironic_lines" random_shuffle="true" do="SearchYoutube"/>
+</func>
 </program>
+
