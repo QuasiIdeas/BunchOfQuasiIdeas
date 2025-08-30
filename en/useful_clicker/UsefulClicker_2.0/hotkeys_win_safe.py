@@ -20,6 +20,8 @@ VK_N         = 0x4E
 
 SKIP_EVENT = threading.Event()
 PAUSE_TOGGLE_EVENT = threading.Event()
+# Event for exit hotkey (Esc or Ctrl+Q)
+EXIT_EVENT = threading.Event()
 
 _started = False
 
@@ -37,6 +39,18 @@ def _msg_loop():
             print(f"{LOG_PREFIX} RegisterHotKey Ctrl+N failed (id=2)", file=sys.stderr)
         else:
             print(f"{LOG_PREFIX} Registered Ctrl+N (id=2)", file=sys.stderr)
+        # Register Escape key (no modifiers) for exit
+        VK_ESCAPE = 0x1B
+        if not user32.RegisterHotKey(None, 3, 0, VK_ESCAPE):
+            print(f"{LOG_PREFIX} RegisterHotKey Escape failed (id=3)", file=sys.stderr)
+        else:
+            print(f"{LOG_PREFIX} Registered Escape (id=3)", file=sys.stderr)
+        # Register Ctrl+Q for exit
+        VK_Q = 0x51
+        if not user32.RegisterHotKey(None, 4, MOD_CONTROL, VK_Q):
+            print(f"{LOG_PREFIX} RegisterHotKey Ctrl+Q failed (id=4)", file=sys.stderr)
+        else:
+            print(f"{LOG_PREFIX} Registered Ctrl+Q (id=4)", file=sys.stderr)
     except Exception as e:
         print(f"{LOG_PREFIX} RegisterHotKey error: {e}", file=sys.stderr)
 
@@ -59,6 +73,8 @@ def _msg_loop():
                     PAUSE_TOGGLE_EVENT.set()
                 elif hotkey_id == 2:
                     SKIP_EVENT.set()
+                elif hotkey_id in (3, 4):
+                    EXIT_EVENT.set()
             user32.TranslateMessage(ctypes.byref(msg))
             user32.DispatchMessageW(ctypes.byref(msg))
         except Exception as e:

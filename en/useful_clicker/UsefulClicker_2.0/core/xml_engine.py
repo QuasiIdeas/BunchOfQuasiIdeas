@@ -21,13 +21,15 @@ logger = _setup_logger()
 # -------- Hotkey bridge (WinAPI) --------
 SKIP_EVENT = None
 PAUSE_TOGGLE_EVENT = None
+EXIT_EVENT = None
 try:
     if platform.system().lower() == "windows":
         sys.path.insert(0, os.path.dirname(__file__))
-        from hotkeys_win_safe import start_hotkeys, SKIP_EVENT as _SE, PAUSE_TOGGLE_EVENT as _PE
+        from hotkeys_win_safe import start_hotkeys, SKIP_EVENT as _SE, PAUSE_TOGGLE_EVENT as _PE, EXIT_EVENT as _EE
         start_hotkeys()
         SKIP_EVENT = _SE
         PAUSE_TOGGLE_EVENT = _PE
+        EXIT_EVENT = _EE
         print("[xml_engine_full_voice] hotkeys_win_safe started", file=sys.stderr)
 except Exception as e:
     print(f"[xml_engine_full_voice] hotkeys bridge unavailable: {e}", file=sys.stderr)
@@ -157,6 +159,8 @@ class XMLProgram:
         self._extmodule_cache = {}
         self._extclass_cache = {}
         self.voice = None  # VoiceDaemon instance
+        # Flag to signal program exit via hotkey
+        self.exit_flag = False
 
         # Screen defaults
         try:
@@ -176,12 +180,25 @@ class XMLProgram:
     def _start_fallback_hotkeys(self):
         if self._hotkeys_started: return
         def worker():
-            if keyboard is None: return
+            # Fallback hotkey registration using 'keyboard' library
+            if keyboard is None:
+                return
             try:
+                # Pause and skip controls
                 keyboard.add_hotkey("ctrl+space", self._toggle_pause)
                 keyboard.add_hotkey("ctrl+n", self._skip_now)
-                self.logger.info("Hotkeys armed (fallback): pause=Ctrl+Space, skip=Ctrl+N")
-                self._hotkeys_started=True
+                # Exit controls: Escape or Ctrl+Q -> set exit_flag
+                def _exit_cb():
+                    self.exit_flag = True
+                    try:
+                        self.logger.info("Exit requested via hotkey (flag set)")
+                    except Exception:
+                        pass
+                keyboard.add_hotkey("esc", _exit_cb)
+                keyboard.add_hotkey("ctrl+q", _exit_cb)
+                self._hotkeys_started = True
+                self.logger.info("Hotkeys armed (fallback): pause=Ctrl+Space, skip=Ctrl+N, exit=Esc/Ctrl+Q")
+                # Block this thread to keep hotkeys active
                 keyboard.wait()
             except Exception as e:
                 self.logger.info(f"keyboard hotkeys error: {e}")
@@ -196,7 +213,7 @@ class XMLProgram:
         self.logger.info("WAIT skip requested")
 
     def _poll_hotkeys_inline(self):
-        global SKIP_EVENT, PAUSE_TOGGLE_EVENT
+        global SKIP_EVENT, PAUSE_TOGGLE_EVENT, EXIT_EVENT
         try:
             if SKIP_EVENT is not None and SKIP_EVENT.is_set():
                 SKIP_EVENT.clear()
@@ -204,6 +221,10 @@ class XMLProgram:
             if PAUSE_TOGGLE_EVENT is not None and PAUSE_TOGGLE_EVENT.is_set():
                 PAUSE_TOGGLE_EVENT.clear()
                 self._toggle_pause()
+            if EXIT_EVENT is not None and EXIT_EVENT.is_set():
+                EXIT_EVENT.clear()
+                self.exit_flag = True
+                self.logger.info("Exit requested via hotkey (inline)")
         except Exception:
             pass
         if keyboard is None: return
@@ -220,6 +241,9 @@ class XMLProgram:
 
     def _pause_gate(self):
         while self.paused:
+            # check for exit request
+            if self.exit_flag:
+                raise SystemExit
             self._poll_hotkeys_inline()
             time.sleep(0.05)
 
@@ -228,15 +252,20 @@ class XMLProgram:
         end = time.monotonic() + ms/1000.0
         tick = 0.03
         while True:
+            # check for exit request
+            if self.exit_flag:
+                raise SystemExit
             self._poll_hotkeys_inline()
             if self.skip_wait:
-                self.skip_wait=False
+                self.skip_wait = False
                 self.logger.info("WAIT interrupted")
                 return
             if self.paused:
-                time.sleep(tick); continue
+                time.sleep(tick)
+                continue
             now = time.monotonic()
-            if now >= end: return
+            if now >= end:
+                return
             time.sleep(min(tick, end-now))
 
     # ---- Voice ----
@@ -484,6 +513,20 @@ class XMLProgram:
         out_var = node.get("output_var")
         out_fmt = (node.get("output_format") or "text").lower()
         separator = (node.get("separator") or "\n").encode("utf-8").decode("unicode_escape")
+        # allow model/temperature to be specified on the XML node
+        model = node.get("model")
+        temp_raw = node.get("temperature")
+        temperature = None
+        if temp_raw is not None:
+            try:
+                temperature = float(_substitute_vars(temp_raw, self.variables))
+            except Exception:
+                try:
+                    temperature = float(temp_raw)
+                except Exception:
+                    temperature = None
+        # log LLM call parameters
+        self.logger.info(f"LLMCALL params: model={model}, temperature={temperature}")
 
         # создаём LLM-клиент как в extnode
         llm_client = None
@@ -509,7 +552,14 @@ class XMLProgram:
             try:
                 if out_fmt == "list" and hasattr(llm_client, "generate_list"):
                     # прямой список с разделителем
-                    value = llm_client.generate_list(prompt, separator=separator)
+                    # try to pass model/temperature if supported
+                    try:
+                        value = llm_client.generate_list(prompt, separator=separator, model=model, temperature=temperature)
+                    except TypeError:
+                        try:
+                            value = llm_client.generate_list(prompt, separator=separator, model=model)
+                        except TypeError:
+                            value = llm_client.generate_list(prompt, separator=separator)
                     dt = (time.time() - t0) * 1000.0
                     self.logger.info(f"LLM: prompt done in {dt:.1f} ms; used=generate_list")
                     self.variables[out_var] = value
@@ -519,7 +569,14 @@ class XMLProgram:
                         self.logger.info(f"LLM output[{out_var}] size={len(value)}")
                     return  # уже всё сохранили → выходим
                 elif hasattr(llm_client, "generate_text"):
-                    text = llm_client.generate_text(prompt)
+                    # try to pass model/temperature if supported
+                    try:
+                        text = llm_client.generate_text(prompt, model=model, temperature=temperature)
+                    except TypeError:
+                        try:
+                            text = llm_client.generate_text(prompt, model=model)
+                        except TypeError:
+                            text = llm_client.generate_text(prompt)
                     used = "generate_text"
                 else:
                     # попытка на случай других реализаций
@@ -563,6 +620,19 @@ class XMLProgram:
         # optional output formatting
         separator = (node.get("separator") or "").encode("utf-8").decode("unicode_escape")
         out_fmt = (node.get("output_format") or "text").lower()
+        # extract and log LLM parameters from XML node
+        model = node.get("model")
+        temp_raw = node.get("temperature")
+        temperature = None
+        if temp_raw is not None:
+            try:
+                temperature = float(_substitute_vars(temp_raw, self.variables))
+            except Exception:
+                # leave temperature as None if parsing fails
+                temperature = None
+        if model is not None:
+            model = _substitute_vars(model, self.variables)
+        self.logger.info(f"EXTNODE LLM params: model={model}, temperature={temperature}")
 
         # Collect kwargs from XML (with substitutions and simple casts)
         kw: Dict[str, Any] = {}
@@ -687,6 +757,9 @@ class XMLProgram:
 
     # ---- dispatcher ----
     def _exec_node(self, node):
+        # Exit immediately if exit_flag is set
+        if self.exit_flag:
+            raise SystemExit
         tag = getattr(node, "tag", None)
         if not isinstance(tag, str):
             return  # skip comments/PI
@@ -713,11 +786,20 @@ class XMLProgram:
 
     def run(self):
         self.logger.info("RUN start")
-        for node in list(self.tree):
-            if not isinstance(getattr(node, "tag", None), str): 
-                continue
-            if node.tag.lower()=="func": continue
-            self._exec_node(node)
+        try:
+            for node in list(self.tree):
+                # stop if exit requested
+                if self.exit_flag:
+                    self.logger.info("RUN aborted by exit flag")
+                    break
+                if not isinstance(getattr(node, "tag", None), str):
+                    continue
+                if node.tag.lower() == "func":
+                    continue
+                self._exec_node(node)
+        except SystemExit:
+            self.logger.info("RUN aborted via SystemExit")
+            return
         self.logger.info("RUN end")
 
 # Entrypoint

@@ -9,7 +9,9 @@
          output_format="list"
          separator="\n"
          disciplines="Evolutionary biology, Epigenetics, Transcription factors, Developmental biology, Immunology, Infectious diseases, Hepatology, Neurobiology, Cell biology, Oncology, Biotechnology, Pharmacology, Gerontology, Machine learning"
-         num_terms="15"/>
+        num_terms="15"
+        model="gpt-5"
+        temperature="1"/>
 
 	<func name="SearchYoutube">
 	  <click button="left" x="200" y="10" />
