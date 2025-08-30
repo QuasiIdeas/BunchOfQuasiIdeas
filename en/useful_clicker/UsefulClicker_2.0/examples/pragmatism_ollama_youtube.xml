@@ -2,11 +2,12 @@
 <program>
 	<call name="Main"/>
 	<func name="Main">
-		<llmcall output_var="pragmatism_tips"
-			 output_format="list"
-			 separator="\n"
-			 model="llama3.2:latest"
-			 temperature="0.7"
+        <llmcall output_var="pragmatism_tips"
+                 output_format="list"
+                 separator="\n"
+                 provider="ollama"
+                 model="llama3.2:latest"
+                 temperature="0.7"
 			 prompt="Generate a list of 20 practical tips, exercises, or decision-making scenarios that help develop pragmatism. 
 	Each item should be concise, action-oriented, and focus on realistic, result-driven thinking. 
 	Cover diverse areas: everyday choices, career, learning, problem-solving, and social interactions. 
