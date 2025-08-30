@@ -1,7 +1,7 @@
 """
 ollama_client.py
 
-Client for Ollama LLM via subprocess ('ollama generate').
+Client for Ollama LLM via subprocess ('ollama run').
 """
 import os
 import subprocess
@@ -11,7 +11,7 @@ log = logging.getLogger("usefulclicker.llm")
 
 class OllamaClient:
     """
-    LLM client that calls 'ollama generate' for text and list outputs.
+    LLM client that calls 'ollama run' for text and list outputs.
     """
     def __init__(self):
         # Default model for Ollama
@@ -23,7 +23,8 @@ class OllamaClient:
         Generate text using Ollama CLI. Sends prompt as stdin.
         """
         use_model = model or self.model
-        cmd = ["ollama", "generate", use_model]
+        # Use 'ollama run <model>' and feed prompt via stdin
+        cmd = ["ollama", "run", use_model]
         if temperature is not None:
             cmd.extend(["--temperature", str(temperature)])
         # Call ollama CLI
