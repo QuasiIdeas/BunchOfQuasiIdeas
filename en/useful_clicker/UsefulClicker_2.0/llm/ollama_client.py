@@ -29,7 +29,12 @@ class OllamaClient:
             raise RuntimeError("httpx is required for Ollama HTTP client")
         use_model = model or self.model
         api_url = os.getenv("USEFULCLICKER_OLLAMA_API_URL", "http://localhost:11434/api/generate")
-        payload: dict[str, any] = {"model": use_model, "prompt": prompt}
+        # construct request payload for Ollama HTTP API
+        payload: dict[str, any] = {
+            "model": use_model,
+            "prompt": prompt,
+            "stream": False
+        }
         if temperature is not None:
             payload["temperature"] = temperature
         try:
