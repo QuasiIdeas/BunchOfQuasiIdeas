@@ -106,11 +106,18 @@ Output format: only a list of items separated by line breaks.
 
 # --------------------- Внешний интерфейс ноды -----------------------------
 
-def _llm_generate_text(prompt: str, llm=None) -> str:
+def _llm_generate_text(prompt: str, llm=None, model: str | None = None, temperature: float | None = None) -> str:
     """Попытка вызвать реальный LLMClient, иначе — мок-ответ."""
     if llm is not None:
         try:
-            text = llm.generate_text(prompt)
+            # try to pass model/temperature if the client supports them
+            try:
+                text = llm.generate_text(prompt, model=model, temperature=temperature)
+            except TypeError:
+                try:
+                    text = llm.generate_text(prompt, model=model)
+                except TypeError:
+                    text = llm.generate_text(prompt)
             if isinstance(text, str) and text.strip():
                 logger.info("LLM output received.")
                 # логируем первые строки, чтобы не засорять консоль
@@ -151,7 +158,7 @@ def _ensure_list(text: str) -> list[str]:
     return out
 
 # Вариант А: модульная точка входа
-def run_node(disciplines=None, subtopics=None, num_terms=20, llm=None, **kwargs):
+def run_node(disciplines=None, subtopics=None, num_terms=20, llm=None, model: str | None = None, temperature: float | None = None, **kwargs):
     """
     disciplines: список/строка дисциплин; если None → из глобального списка
     subtopics:  игнорируем здесь (учтены внутри generate_prompt)
@@ -172,7 +179,7 @@ def run_node(disciplines=None, subtopics=None, num_terms=20, llm=None, **kwargs)
     d = random.choice(dlist) if dlist else "Science"
 
     prompt = generate_prompt(d, used_terms=None, num_terms=int(num_terms) if num_terms else None)
-    text = _llm_generate_text(prompt, llm=llm)
+    text = _llm_generate_text(prompt, llm=llm, model=model, temperature=temperature)
 
     # ⚠️ Движку удобнее отдать текст (он сам умеет разложить в список при output_format="list")
     return text
