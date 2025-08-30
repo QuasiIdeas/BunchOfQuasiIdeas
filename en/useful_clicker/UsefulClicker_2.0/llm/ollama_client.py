@@ -45,7 +45,10 @@ class OllamaClient:
             data = resp.json()
             # Extract text: support 'completion' or 'text' or OpenAI-like 'choices'
             if isinstance(data, dict):
-                if "completion" in data:
+                # Ollama HTTP API returns 'response' field
+                if "response" in data:
+                    text = data["response"]
+                elif "completion" in data:
                     text = data["completion"]
                 elif "text" in data:
                     text = data["text"]
