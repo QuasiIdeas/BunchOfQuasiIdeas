@@ -528,9 +528,9 @@ class XMLProgram:
         # log LLM call parameters
         self.logger.info(f"LLMCALL params: model={model}, temperature={temperature}")
 
-        # создаём LLM-клиент как в extnode
+        # создаём LLM-клиент (compat→native→ollama)...
         llm_client = None
-        self.logger.info("LLM: creating client (compat→native)...")
+        self.logger.info("LLM: creating client (compat→native→ollama)...")
         try:
             from llm.openai_client_compat import LLMClientCompat as _LLM
             llm_client = _LLM()
@@ -541,7 +541,13 @@ class XMLProgram:
                 llm_client = _LLM()
                 self.logger.info("LLM: client ready (native).")
             except Exception as e2:
-                self.logger.info(f"LLM: client unavailable ({e1} / {e2})")
+                try:
+                    from llm.ollama_client import OllamaClient as _LLM
+                    llm_client = _LLM()
+                    self.logger.info("LLM: client ready (ollama).")
+                except Exception as e3:
+                    llm_client = None
+                    self.logger.info(f"LLM: client unavailable ({e1} / {e2} / {e3})")
 
         text = ""
         used = "none"
@@ -645,20 +651,26 @@ class XMLProgram:
             else:
                 kw[k] = _smart_cast(vv)
 
-        # Try to create LLM client (compat first)
+        # Try to create LLM client (compat→native→ollama)
         llm_client = None
-        self.logger.info("LLM: creating client (compat→native)...")  # ### NEW
+        self.logger.info("LLM: creating client (compat→native→ollama)...")
         try:
             from llm.openai_client_compat import LLMClientCompat as _LLM
             llm_client = _LLM()
-            self.logger.info("LLM: client ready (compat).")          # ### NEW
+            self.logger.info("LLM: client ready (compat).")
         except Exception as e1:
             try:
                 from llm.openai_client import LLMClient as _LLM
                 llm_client = _LLM()
+                self.logger.info("LLM: client ready (native).")
             except Exception as e2:
-                llm_client = None
-                self.logger.info(f"LLM: client unavailable ({e1} / {e2})")  # ### NEW
+                try:
+                    from llm.ollama_client import OllamaClient as _LLM
+                    llm_client = _LLM()
+                    self.logger.info("LLM: client ready (ollama).")
+                except Exception as e3:
+                    llm_client = None
+                    self.logger.info(f"LLM: client unavailable ({e1} / {e2} / {e3})")
 
         # Import target module
         try:
