@@ -305,15 +305,15 @@ class MainWindowWrapper:
                         if tag == 'curiositynode':
                             has_cur = True; break
                         # also accept extnode/module=curiosity_drive_node
-                    if tag == 'extnode' and ( (n.get('module') or '').strip() == 'curiosity_drive_node' ):
-                        has_cur = True
-                        try:
-                            ov = n.get('output_var')
-                            if ov:
-                                self._curiosity_output_var = ov
-                        except Exception:
-                            pass
-                        break
+                        if tag == 'extnode' and ( (n.get('module') or '').strip() == 'curiosity_drive_node' ):
+                            has_cur = True
+                            try:
+                                ov = n.get('output_var')
+                                if ov:
+                                    self._curiosity_output_var = ov
+                            except Exception:
+                                pass
+                            break
                     except Exception:
                         continue
             if has_cur:
@@ -476,7 +476,56 @@ class MainWindowWrapper:
                 out = 'curiosity module not available'
                 items = []
             else:
-                txt = cdn.run_node()
+                # choose provider based on UI selection if available
+                provider = None
+                try:
+                    rb_ollama = getattr(self.win, 'radioButton', None)
+                    rb_openai = getattr(self.win, 'radioButton_2', None)
+                    if rb_ollama is not None and rb_ollama.isChecked():
+                        provider = 'ollama'
+                    elif rb_openai is not None and rb_openai.isChecked():
+                        provider = 'openai'
+                except Exception:
+                    provider = None
+
+                llm_client = None
+                if provider == 'openai':
+                    try:
+                        from llm.openai_client_compat import LLMClientCompat as _LLM
+                        llm_client = _LLM()
+                    except Exception:
+                        try:
+                            from llm.openai_client import LLMClient as _LLM
+                            llm_client = _LLM()
+                        except Exception:
+                            llm_client = None
+                elif provider == 'ollama':
+                    try:
+                        from llm.ollama_client import OllamaClient as _LLM
+                        llm_client = _LLM()
+                    except Exception:
+                        llm_client = None
+                else:
+                    # auto-detect (fallback)
+                    try:
+                        from llm.openai_client_compat import LLMClientCompat as _LLM
+                        llm_client = _LLM()
+                    except Exception:
+                        try:
+                            from llm.openai_client import LLMClient as _LLM
+                            llm_client = _LLM()
+                        except Exception:
+                            try:
+                                from llm.ollama_client import OllamaClient as _LLM
+                                llm_client = _LLM()
+                            except Exception:
+                                llm_client = None
+
+                try:
+                    txt = cdn.run_node(llm=llm_client)
+                except TypeError:
+                    # fallback if run_node doesn't accept llm param
+                    txt = cdn.run_node()
                 out = txt
                 items = [s for s in txt.splitlines() if s.strip()]
             def ui_update():
