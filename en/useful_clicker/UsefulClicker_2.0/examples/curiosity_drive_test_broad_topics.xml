@@ -8,6 +8,7 @@
          output_var="science_terms_list"
          output_format="list"
          separator="\n"
+		 model="gpt-4o-mini"
          num_terms="15"/>
 
 	<func name="SearchYoutube">
