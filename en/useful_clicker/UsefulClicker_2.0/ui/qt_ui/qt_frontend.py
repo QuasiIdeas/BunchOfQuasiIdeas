@@ -62,12 +62,6 @@ class MainWindowWrapper:
         self.xml_path = Path(xml_path)
         self.prog = None
         self.worker = None
-        # curiosity output variable name (detected from XML extnode) and last cached value
-        self._curiosity_output_var = None
-        self._last_curiosity_value = None
-        # cached lists to keep UI stable if other code clears widgets
-        self._cached_disciplines = []
-        self._cached_subtopics = {}
 
         # Wire basic controls
         self.win.playButton.clicked.connect(self.on_play_pause)
@@ -168,70 +162,18 @@ class MainWindowWrapper:
         if idx is not None:
             self.win.listIndex.setText(f"{idx}")
 
-        # NOTE: do not change visibility of tabs here to avoid flicker/hiding
-        # after they are initialized. Visibility is managed once at XML load time.
-        # Poll curiosity output variable (if engine running) and update UI when it changes
-        try:
-            ov = getattr(self, '_curiosity_output_var', None)
-            if ov and self.prog:
-                val = self.prog.variables.get(ov)
-                if val is not None and val != self._last_curiosity_value:
-                    self._last_curiosity_value = val
-                    # normalize into list of strings
-                    if isinstance(val, (list, tuple)):
-                        items = [str(x) for x in val]
-                        raw = '\n'.join(items)
-                    else:
-                        raw = str(val)
-                        items = [l for l in raw.splitlines() if l.strip()]
-                    try:
-                        if hasattr(self.win, 'raw_llm_output_textarea'):
-                            try:
-                                self.win.raw_llm_output_textarea.setPlainText(raw)
-                            except Exception:
-                                try:
-                                    self.win.raw_llm_output_textarea.setHtml('<pre>%s</pre>' % raw)
-                                except Exception:
-                                    pass
-                    except Exception:
-                        pass
-                    try:
-                        if hasattr(self.win, 'termsList'):
-                            self.win.termsList.clear()
-                            for it in items:
-                                self.win.termsList.addItem(str(it))
-                    except Exception:
-                        pass
-        except Exception:
-            pass
-        # Ensure discipline/subtopics lists stay populated (repair if cleared externally)
-        try:
-            dlw = getattr(self.win, 'disciplinesList', None)
-            if dlw is not None and dlw.count() == 0 and self._cached_disciplines:
-                for s in self._cached_disciplines:
-                    try:
-                        dlw.addItem(s)
-                    except Exception:
-                        pass
-            slw = getattr(self.win, 'subtopicsList', None)
-            if slw is not None and slw.count() == 0 and self._cached_subtopics:
-                # try to repopulate for currently selected discipline
-                cur = None
-                try:
-                    cur_item = dlw.currentItem() if dlw is not None else None
-                    cur = cur_item.text() if cur_item is not None else None
-                except Exception:
-                    cur = None
-                if not cur and self._cached_disciplines:
-                    cur = self._cached_disciplines[0]
-                if cur and cur in self._cached_subtopics:
-                    for s in self._cached_subtopics.get(cur, []):
-                        try:
-                            slw.addItem(s)
-                        except Exception:
-                            pass
-        except Exception:
-            pass
+        # update Curiosity/llm tabs visibility depending on parsed xml
+        if hasattr(self, 'parsed_tree'):
+            has_cur = any(n.tag.lower() == 'curiositynode' for n in self.parsed_tree.findall('.//*'))
+            has_llm = any(n.tag.lower() == 'llmcall' for n in self.parsed_tree.findall('.//*'))
+            try:
+                self.win.CuriosityNodeTab.setVisible(has_cur)
+            except Exception:
+                pass
+            try:
+                self.win.llmcall_tab.setVisible(has_llm)
+            except Exception:
+                pass
 
     def open_xml(self):
         fn, _ = QtWidgets.QFileDialog.getOpenFileName(self.win, 'Open XML', str(self.xml_path.parent), 'XML Files (*.xml);;All Files (*)')
@@ -295,140 +237,6 @@ class MainWindowWrapper:
         except Exception:
             self.parsed_tree = None
         self.populate_tree()
-        # initialize CuriosityNode controls if present in XML
-        try:
-            has_cur = False
-            if self.parsed_tree is not None:
-                for n in self.parsed_tree.findall('.//*'):
-                    try:
-                        tag = (n.tag or '').lower()
-                        if tag == 'curiositynode':
-                            has_cur = True; break
-                        # also accept extnode/module=curiosity_drive_node
-                        if tag == 'extnode' and ( (n.get('module') or '').strip() == 'curiosity_drive_node' ):
-                            has_cur = True
-                            try:
-                                ov = n.get('output_var')
-                                if ov:
-                                    self._curiosity_output_var = ov
-                            except Exception:
-                                pass
-                            break
-                    except Exception:
-                        continue
-            if has_cur:
-                self._init_curiosity_tab()
-            # detect llmcall presence as well and set tab visibility
-            has_llm = False
-            try:
-                if self.parsed_tree is not None:
-                    for n in self.parsed_tree.findall('.//*'):
-                        try:
-                            if (n.tag or '').lower() == 'llmcall':
-                                has_llm = True; break
-                        except Exception:
-                            continue
-            except Exception:
-                has_llm = False
-            try:
-                self.win.CuriosityNodeTab.setVisible(has_cur)
-            except Exception:
-                pass
-            try:
-                self.win.llmcall_tab.setVisible(has_llm)
-            except Exception:
-                pass
-            # schedule re-init after a short delay in case other UI actions clear widgets
-            try:
-                QtCore.QTimer.singleShot(700, lambda: self._init_curiosity_tab() if has_cur else None)
-            except Exception:
-                pass
-        except Exception:
-            pass
-
-    def _init_curiosity_tab(self):
-        """Populate disciplinesList and subtopicsList from curiosity_drive_node module."""
-        # ensure repo root is on sys.path so curiosity_drive_node can be imported
-        try:
-            repo_root = Path(__file__).resolve().parents[2]
-            rp = str(repo_root)
-            import sys
-            if rp not in sys.path:
-                sys.path.insert(0, rp)
-        except Exception:
-            pass
-        try:
-            import curiosity_drive_node as cdn
-        except Exception:
-            cdn = None
-        if cdn is None:
-            return
-        # Populate disciplinesList
-        try:
-            dlw = getattr(self.win, 'disciplinesList', None)
-            if dlw is not None:
-                dlw.clear()
-                self._cached_disciplines = []
-                for d in getattr(cdn, 'disciplines', []):
-                    try:
-                        s = str(d)
-                    except Exception:
-                        s = repr(d)
-                    dlw.addItem(s)
-                    self._cached_disciplines.append(s)
-        except Exception:
-            pass
-        # Populate subtopicsList (empty by default or for first discipline)
-        try:
-            slw = getattr(self.win, 'subtopicsList', None)
-            if slw is not None:
-                slw.clear()
-                # if there is at least one discipline, show its subtopics
-                first = None
-                try:
-                    first = cdn.disciplines[0] if getattr(cdn, 'disciplines', None) else None
-                except Exception:
-                    first = None
-                if first and getattr(cdn, 'subtopics', None):
-                    items = cdn.subtopics.get(first, [])
-                    self._cached_subtopics = {}
-                    for k,v in getattr(cdn, 'subtopics', {}).items():
-                        try:
-                            self._cached_subtopics[str(k)] = [str(x) for x in v]
-                        except Exception:
-                            self._cached_subtopics[str(k)] = [repr(x) for x in v]
-                    for it in self._cached_subtopics.get(str(first), []):
-                        slw.addItem(it)
-        except Exception:
-            pass
-        # connect selection change: when discipline selected -> populate subtopics
-        try:
-            if dlw is not None and slw is not None:
-                def _on_discipline_changed(current, previous=None):
-                    try:
-                        txt = current.text() if current is not None else None
-                    except Exception:
-                        try:
-                            txt = str(current)
-                        except Exception:
-                            txt = None
-                    slw.clear()
-                    if txt and getattr(cdn, 'subtopics', None):
-                        items = cdn.subtopics.get(txt, [])
-                        for it in items:
-                            try:
-                                slw.addItem(str(it))
-                            except Exception:
-                                slw.addItem(repr(it))
-                try:
-                    dlw.currentItemChanged.connect(_on_discipline_changed)
-                except Exception:
-                    try:
-                        dlw.itemSelectionChanged.connect(lambda: _on_discipline_changed(dlw.currentItem()))
-                    except Exception:
-                        pass
-        except Exception:
-            pass
 
     def populate_tree(self):
         tw = self.win.treeWidget
@@ -452,14 +260,7 @@ class MainWindowWrapper:
                 add_item(it, ch)
 
         root = self.parsed_tree
-        try:
-            root_text = str(root.tag)
-        except Exception:
-            try:
-                root_text = repr(root.tag)
-            except Exception:
-                root_text = '<root>'
-        root_item = QtWidgets.QTreeWidgetItem([root_text])
+        root_item = QtWidgets.QTreeWidgetItem([root.tag])
         tw.addTopLevelItem(root_item)
         for ch in list(root):
             add_item(root_item, ch)
@@ -476,56 +277,7 @@ class MainWindowWrapper:
                 out = 'curiosity module not available'
                 items = []
             else:
-                # choose provider based on UI selection if available
-                provider = None
-                try:
-                    rb_ollama = getattr(self.win, 'radioButton', None)
-                    rb_openai = getattr(self.win, 'radioButton_2', None)
-                    if rb_ollama is not None and rb_ollama.isChecked():
-                        provider = 'ollama'
-                    elif rb_openai is not None and rb_openai.isChecked():
-                        provider = 'openai'
-                except Exception:
-                    provider = None
-
-                llm_client = None
-                if provider == 'openai':
-                    try:
-                        from llm.openai_client_compat import LLMClientCompat as _LLM
-                        llm_client = _LLM()
-                    except Exception:
-                        try:
-                            from llm.openai_client import LLMClient as _LLM
-                            llm_client = _LLM()
-                        except Exception:
-                            llm_client = None
-                elif provider == 'ollama':
-                    try:
-                        from llm.ollama_client import OllamaClient as _LLM
-                        llm_client = _LLM()
-                    except Exception:
-                        llm_client = None
-                else:
-                    # auto-detect (fallback)
-                    try:
-                        from llm.openai_client_compat import LLMClientCompat as _LLM
-                        llm_client = _LLM()
-                    except Exception:
-                        try:
-                            from llm.openai_client import LLMClient as _LLM
-                            llm_client = _LLM()
-                        except Exception:
-                            try:
-                                from llm.ollama_client import OllamaClient as _LLM
-                                llm_client = _LLM()
-                            except Exception:
-                                llm_client = None
-
-                try:
-                    txt = cdn.run_node(llm=llm_client)
-                except TypeError:
-                    # fallback if run_node doesn't accept llm param
-                    txt = cdn.run_node()
+                txt = cdn.run_node()
                 out = txt
                 items = [s for s in txt.splitlines() if s.strip()]
             def ui_update():
